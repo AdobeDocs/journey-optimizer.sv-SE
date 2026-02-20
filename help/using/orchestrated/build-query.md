@@ -197,7 +197,7 @@ Verktygsfältet för regelhanterarens arbetsyta innehåller alternativ för att 
 
 Beroende på dina behov kan du behöva skapa mellanliggande grupper av komponenter genom att gruppera komponenterna i en och samma grupp och länka dem tillsammans.
 
-* Om du vill gruppera två befintliga villkor markerar du ett av de två villkoren och klickar på ikonen ![Flytta upp &#x200B;](assets/do-not-localize/rule-builder-icon-up.svg) eller ![Flytta ned markeringsikonen](assets/do-not-localize/rule-builder-icon-down.svg) för att gruppera det med villkoret ovanför eller nedanför.
+* Om du vill gruppera två befintliga villkor markerar du ett av de två villkoren och klickar på ikonen ![Flytta upp ](assets/do-not-localize/rule-builder-icon-up.svg) eller ![Flytta ned markeringsikonen](assets/do-not-localize/rule-builder-icon-down.svg) för att gruppera det med villkoret ovanför eller nedanför.
 
 * Om du vill gruppera ett befintligt villkor med ett nytt, markerar du villkoret, klickar på ![bilden med knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) och väljer **[!UICONTROL Add group]**. Markera det nya attributet som ska läggas till i gruppen och bekräfta sedan.
 

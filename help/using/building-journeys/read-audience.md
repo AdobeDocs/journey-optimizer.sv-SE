@@ -83,12 +83,12 @@ Du anger: **Målgrupp** (obligatoriskt), **Namnområde** (obligatoriskt), **Läs
    >[!NOTE]
    >
    >Dessutom kan du rikta in dig på [!DNL Adobe Experience Platform] målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md).
-   >Du kan även rikta in målgrupper [som har överförts från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE#import-audience){target="_blank"}.
+   >Du kan även rikta in målgrupper [som har överförts från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
    >[Läs mer om hur du genererar och målgruppsanpassar i Journey Optimizer](../audience/about-audiences.md).
 
    Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
 
-   ![Gränssnitt för målgruppsval som visar tillgängliga [!DNL Adobe Experience Platform] målgrupper &#x200B;](assets/read-segment-selection.png)
+   ![Gränssnitt för målgruppsval som visar tillgängliga [!DNL Adobe Experience Platform] målgrupper ](assets/read-segment-selection.png)
 
    När målgruppen har lagts till kan du med knappen **[!UICONTROL Copy]** kopiera dess namn och ID:
 
@@ -98,7 +98,7 @@ Du anger: **Målgrupp** (obligatoriskt), **Namnområde** (obligatoriskt), **Läs
 
    >[!NOTE]
    >
-   >Det är bara de personer som har **Realiserad**-målgruppsdeltagarstatus som går in på resan. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Det är bara de personer som har **Realiserad**-målgruppsdeltagarstatus som går in på resan. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. I fältet **[!UICONTROL Namespace]** väljer du det namnutrymme som ska användas för att identifiera personerna. Som standard är fältet förifyllt med det senast använda namnutrymmet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace).
 
@@ -124,7 +124,7 @@ Du kan även aktivera **Använd en extra identifierare** för att köra resan i 
 
 * Vi rekommenderar att du bara använder gruppmålgrupper i en **Läs målgrupp** -aktivitet. Detta ger en tillförlitlig och enhetlig räkning för de målgrupper som används under en resa. Läsarna är utformade för att gruppbearbetas. Om ditt användningsfall behöver realtidsdata använder du aktiviteten **[Målgruppskvalificering](audience-qualification-events.md)**.
 
-* Publiker [som har importerats från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE#import-audience) eller som är resultatet av [dispositionsarbetsflöden](../audience/get-started-audience-orchestration.md) kan väljas i aktiviteten **Läs målgrupp**. Dessa målgrupper är inte tillgängliga i aktiviteten **Målgruppskvalificering**.
+* Publiker [som har importerats från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som är resultatet av [dispositionsarbetsflöden](../audience/get-started-audience-orchestration.md) kan väljas i aktiviteten **Läs målgrupp**. Dessa målgrupper är inte tillgängliga i aktiviteten **Målgruppskvalificering**.
 
 * Concurrent Read Audience Limit per Organization: Varje organisation kan köra upp till fem Read Audience-instanser samtidigt. Detta omfattar både schemalagda körningar och körningar som utlöses av affärshändelser. Gränsen gäller för alla sandlådor och resor. Den här gränsen tillämpas för att säkerställa en rättvis och balanserad resursallokering för alla organisationer.
 
@@ -138,7 +138,7 @@ Guardrutor för aktiviteten **Läs målgrupp** visas på [den här sidan](../sta
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
+>[Garantier för kundprofildata och segmentering i realtid ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
 
 **Nästa:** Ange [läsfrekvens](#profile-entry-and-reading-rate) och [schema](#schedule) och [testa och publicera](#testing-publishing).
 
@@ -357,9 +357,9 @@ Om problemet kvarstår efter dessa kontroller kan du läsa [Timing och datasprid
 
 ### Tidsplanering och dataspridning {#timing-and-data-propagation}
 
-* **Slutförande av batchsegmenteringsjobb**: För batchmålgrupper kontrollerar du att det dagliga batchsegmenteringsjobbet har slutförts och att ögonblicksbilder uppdateras innan resan körs. Batchmålgrupper blir klara att använda cirka **2 timmar** efter att segmenteringsjobbet har slutförts. Läs mer om [metoder för målgruppsutvärdering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE#evaluate-segments){target="_blank"}.
+* **Slutförande av batchsegmenteringsjobb**: För batchmålgrupper kontrollerar du att det dagliga batchsegmenteringsjobbet har slutförts och att ögonblicksbilder uppdateras innan resan körs. Batchmålgrupper blir klara att använda cirka **2 timmar** efter att segmenteringsjobbet har slutförts. Läs mer om [metoder för målgruppsutvärdering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#evaluate-segments){target="_blank"}.
 
-* **Tidsåtgång för datainförsel**: Verifiera att inmatningen av profildata har slutförts innan resan kördes. Om profiler förtärdes kort innan resan påbörjas kanske de ännu inte återspeglas i målgruppen. Läs mer om [dataöverföring i [!DNL Adobe Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+* **Tidsåtgång för datainförsel**: Verifiera att inmatningen av profildata har slutförts innan resan kördes. Om profiler förtärdes kort innan resan påbörjas kanske de ännu inte återspeglas i målgruppen. Läs mer om [dataöverföring i [!DNL Adobe Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 * **Använd alternativet Utlösare efter utvärdering av gruppmålgrupp**: För dagliga schemalagda resor med gruppmålgrupper bör du överväga att aktivera alternativet **[!UICONTROL Trigger after batch audience evaluation]**. Detta garanterar att resan väntar på nya målgruppsdata (upp till 6 timmar) innan den körs. [Läs mer om schemaläggning](#schedule)
 
@@ -367,9 +367,9 @@ Om problemet kvarstår efter dessa kontroller kan du läsa [Timing och datasprid
 
 ### Dataverifiering {#data-validation-and-monitoring}
 
-* **Kontrollera segmenteringsjobbstatus**: Övervaka jobbslutförandetider för gruppsegmentering på [!DNL Adobe Experience Platform] [kontrollpanelen för övervakning](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=sv-SE){target="_blank"}. Använd det för att verifiera när målgruppsdata är klara.
+* **Kontrollera segmenteringsjobbstatus**: Övervaka jobbslutförandetider för gruppsegmentering på [!DNL Adobe Experience Platform] [kontrollpanelen för övervakning](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html){target="_blank"}. Använd det för att verifiera när målgruppsdata är klara.
 
-* **Verifiera sammanfogningsprinciper**: Kontrollera att den sammanfogningsprincip som har konfigurerats för din målgrupp matchar det förväntade beteendet för att kombinera profildata från olika källor. Läs mer om [sammanslagningsprinciper i [!DNL Adobe Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=sv-SE){target="_blank"}.
+* **Verifiera sammanfogningsprinciper**: Kontrollera att den sammanfogningsprincip som har konfigurerats för din målgrupp matchar det förväntade beteendet för att kombinera profildata från olika källor. Läs mer om [sammanslagningsprinciper i [!DNL Adobe Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html){target="_blank"}.
 
 * **Granska segmentdefinitioner**: Bekräfta att segmentdefinitionerna är korrekt konfigurerade och inkludera alla förväntade kvalificeringskriterier. Läs mer om att [bygga målgrupper](../audience/creating-a-segment-definition.md). Var särskilt uppmärksam på:
    * Tidsbaserade villkor som kan exkludera profiler baserade på händelsetidsstämplar
@@ -412,4 +412,4 @@ Om antalet avvikelser eller nollprofilen kvarstår efter att du följt instrukti
 
 Förstå tillämpliga användningsfall för en resa som triggas av läsmålgruppsaktiviteten. Lär dig hur du bygger batchbaserade resor och vilka metodtips som ska användas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430367?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424997?quality=12)

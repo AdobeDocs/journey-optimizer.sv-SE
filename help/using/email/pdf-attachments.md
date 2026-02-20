@@ -45,7 +45,7 @@ Följ stegen nedan för att bifoga en PDF-fil till ett e-postmeddelande.
 
    >[!NOTE]
    >
-   >När du utformar meddelanden får du tillgång till databasen Assets Essentials direkt från Journey Optimizer gränssnitt. Mer information om det inbäddade [!DNL Assets Essentials]-användargränssnittet finns i [dokumentationen för Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=sv-SE){target="_blank"}.
+   >När du utformar meddelanden får du tillgång till databasen Assets Essentials direkt från Journey Optimizer gränssnitt. Mer information om det inbäddade [!DNL Assets Essentials]-användargränssnittet finns i [dokumentationen för Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
 
 1. Använd filtret **[!UICONTROL PDF]** i avsnittet **[!UICONTROL MIME Type]** för att begränsa urvalet till rätt filformat.
 

@@ -126,7 +126,7 @@ Webhooks fungerar som en kommunikationslänk mellan Meta whatsApp Business Platf
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din WhatsApp-webkrok.
 
-1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
+1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
 
    ![](assets/webhook-5.png)
 
@@ -210,6 +210,6 @@ I videon nedan visas hur du konfigurerar WhatsApp-kanalen i Adobe Journey Optimi
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470272/?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470268/?learn=on)
 
 +++
