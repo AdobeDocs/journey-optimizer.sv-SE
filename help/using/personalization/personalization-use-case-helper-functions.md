@@ -9,9 +9,9 @@ role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, hjälpprogram, användningsfall, personalisering
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 6976f2b1b8b95f7dc9bffe65b7a7ddcc5dab5474
+source-git-commit: 58b4acf8cccfc3a5e507a738bdf6755a8decbaca
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1168'
 ht-degree: 1%
 
 ---
@@ -52,31 +52,31 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Skapa en händelse vars schema innehåller arrayen `productListItems`.
 1. Definiera alla fält från den här arrayen som nyttolastfält för den här händelsen.
 
-   Läs mer om datatypen för produktlisteobjektet i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html?lang=sv-SE){target="_blank"}.
+   Läs mer om datatypen för produktlisteobjektet i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}.
 
 1. Skapa en resa som börjar med det här evenemanget.
 1. Lägg till en **e-postaktivitet** på resan.
 
-   ![](assets/personalization-uc-helpers-8.png)
+   ![Researbetsyta med en händelse och en e-postaktivitet i flödet](assets/personalization-uc-helpers-8.png)
 
-## Steg 2: Skapa e-postmeddelandet{#configure-email}
+## Steg 2: Skapa e-postmeddelandet {#configure-email}
 
 1. Klicka på **i aktiviteten** E-post **[!UICONTROL Edit content]** och sedan på **[!UICONTROL Email Designer]**.
 
-   ![](assets/personalization-uc-helpers-1.png)
+   ![E-postaktivitet med alternativen Redigera innehåll och E-posta Designer](assets/personalization-uc-helpers-1.png)
 
 1. Dra och släpp tre strukturkomponenter på meddelandets brödtext från den vänstra paletten på e-post-Designer hemsida.
 
 1. Dra och släpp en HTML-innehållskomponent på varje ny strukturelement.
 
-   ![](assets/personalization-uc-helpers-2.png)
+   ![Skicka e-post till Designer med tre strukturkomponenter och HTML innehållskomponenter i brödtexten](assets/personalization-uc-helpers-2.png)
 
 ## Steg 3: Ange kundens förnamn med versaler {#uppercase-function}
 
 1. Klicka på den HTML-komponent där du vill lägga till kundens förnamn på startsidan för e-post till Designer.
 1. Klicka på **[!UICONTROL Show the source code]** i det sammanhangsberoende verktygsfältet.
 
-   ![](assets/personalization-uc-helpers-3.png)
+   ![Sammanhangsberoende verktygsfält med alternativet Visa källkod](assets/personalization-uc-helpers-3.png)
 
 1. Lägg till strängfunktionen **[!UICONTROL Edit HTML]** i fönstret `upperCase`:
    1. Välj **[!UICONTROL Helper functions]** på den vänstra menyn.
@@ -89,7 +89,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
       {%= upperCase(string) %}
       ```
 
-      ![](assets/personalization-uc-helpers-4.png)
+      ![Uttrycksredigeraren med funktionen upperCase markerad i hjälparfunktioner](assets/personalization-uc-helpers-4.png)
 
 1. Ta bort platshållaren för strängen från uttrycket.
 1. Lägg till token för förnamn:
@@ -103,13 +103,13 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
       {%= upperCase(profile.person.name.firstName) %}
       ```
 
-      ![](assets/personalization-uc-helpers-5.png)
+      ![Uttrycksredigeraren visar upperCase med token för profilens förnamn](assets/personalization-uc-helpers-5.png)
 
-      Läs mer om datatypen för personnamn i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html?lang=sv-SE){target="_blank"}.
+      Läs mer om datatypen för personnamn i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Validate]** och sedan på **[!UICONTROL Save]**.
 
-   ![](assets/personalization-uc-helpers-6.png)
+   ![Redigera HTML-fönster med knapparna Validera och Spara](assets/personalization-uc-helpers-6.png)
 
 1. Spara meddelandet.
 
@@ -122,7 +122,7 @@ I det här steget visas hur du itererar över händelsedata. Mer omfattande exem
 1. På hemsidan för Email Designer klickar du på den HTML-komponent där du vill visa kundvagnens innehåll.
 1. Klicka på **[!UICONTROL Show the source code]** i det sammanhangsberoende verktygsfältet.
 
-   ![](assets/personalization-uc-helpers-3.png)
+   ![Sammanhangsberoende verktygsfält med alternativet Visa källkod](assets/personalization-uc-helpers-3.png)
 
 1. Lägg till hjälpen för **[!UICONTROL Edit HTML]** i fönstret `each`:
    1. Välj **[!UICONTROL Helper functions]** på den vänstra menyn.
@@ -135,7 +135,7 @@ I det här steget visas hur du itererar över händelsedata. Mer omfattande exem
       {{#each someArray as |variable|}} {{/each}}
       ```
 
-      ![](assets/personalization-uc-helpers-9.png)
+      ![Uttrycksredigeraren med varje hjälpmall](assets/personalization-uc-helpers-9.png)
 
 1. Lägg till `productListItems`-arrayen i uttrycket:
 
@@ -158,7 +158,7 @@ I det här steget visas hur du itererar över händelsedata. Mer omfattande exem
 
       I det här exemplet representerar *event_ID* händelsens ID.
 
-      ![](assets/personalization-uc-helpers-10.png)
+      ![Uttrycksredigeraren med productListItems i Sammanhangsberoende attribut](assets/personalization-uc-helpers-10.png)
 
    1. Ändra uttrycket:
       1. Ta bort strängen &quot;.product&quot;.
@@ -170,7 +170,7 @@ I det här steget visas hur du itererar över händelsedata. Mer omfattande exem
       {{#each context.journey.events.event_ID.productListItems as |product|}}
       ```
 
-1. Klistra in koden mellan den inledande `{{#each}}`-taggen och den avslutande `{/each}}`-taggen:
+1. Klistra in koden mellan den inledande `{{#each}}`-taggen och den avslutande `{{/each}}`-taggen:
 
    ```html
    <table>
@@ -212,14 +212,14 @@ I det här steget visas hur du itererar över händelsedata. Mer omfattande exem
 
 1. Klicka på **[!UICONTROL Validate]** och sedan på **[!UICONTROL Save]**.
 
-   ![](assets/personalization-uc-helpers-11.png)
+   ![Uttrycksredigeraren med Validera och Spara efter att varje block har konfigurerats](assets/personalization-uc-helpers-11.png)
 
 ## Steg 5: Infoga en produktspecifik anteckning {#if-helper}
 
 1. Klicka på den HTML-komponent där du vill infoga anteckningen på startsidan för e-postprogrammet för Designer.
 1. Klicka på **[!UICONTROL Show the source code]** i det sammanhangsberoende verktygsfältet.
 
-   ![](assets/personalization-uc-helpers-3.png)
+   ![Sammanhangsberoende verktygsfält med alternativet Visa källkod](assets/personalization-uc-helpers-3.png)
 
 1. Lägg till hjälpen för **[!UICONTROL Edit HTML]** i fönstret `if`:
    1. Välj **[!UICONTROL Helper functions]** på den vänstra menyn.
@@ -235,7 +235,7 @@ I det här steget visas hur du itererar över händelsedata. Mer omfattande exem
       {%/if%}
       ```
 
-      ![](assets/personalization-uc-helpers-12.png)
+      ![Uttrycksredigeraren med if-hjälpmallen](assets/personalization-uc-helpers-12.png)
 
 1. Ta bort det här villkoret från uttrycket:
 
@@ -269,7 +269,7 @@ I det här steget visas hur du itererar över händelsedata. Mer omfattande exem
       {%/if%}
       ```
 
-      ![](assets/personalization-uc-helpers-13.png)
+      ![Uttrycksredigeraren med productListItems-namntoken i if-villkoret](assets/personalization-uc-helpers-13.png)
 
 1. Ändra uttrycket:
    1. Ange produktnamnet efter `name`-token i uttrycksredigeraren.
@@ -303,7 +303,7 @@ I det här steget visas hur du itererar över händelsedata. Mer omfattande exem
    1. Ta bort platshållaren &quot;default_render&quot; från uttrycket.
 1. Klicka på **[!UICONTROL Validate]** och sedan på **[!UICONTROL Save]**.
 
-   ![](assets/personalization-uc-helpers-14.png)
+   ![Redigera HTML-fönster med Validate and Save efter att if-blocket har konfigurerats](assets/personalization-uc-helpers-14.png)
 
 1. Spara meddelandet.
 
@@ -311,19 +311,19 @@ I det här steget visas hur du itererar över händelsedata. Mer omfattande exem
 
 1. Aktivera växlingsknappen **[!UICONTROL Test]** och klicka sedan på **[!UICONTROL Trigger an event]**.
 
-   ![](assets/personalization-uc-helpers-15.png)
+   ![Resa med knappen Testa aktiverad och Utlös en händelseknapp](assets/personalization-uc-helpers-15.png)
 
 1. I fönstret **[!UICONTROL Event configuration]** anger du indatavärdena och klickar sedan på **[!UICONTROL Send]**.
 
    Testläget fungerar bara med testprofiler.
 
-   ![](assets/personalization-uc-helpers-16.png)
+   ![Händelsekonfigurationsfönstret med indatavärden och knappen Skicka](assets/personalization-uc-helpers-16.png)
 
    E-postadressen skickas till testprofilens adress.
 
    I det här exemplet innehåller e-postmeddelandet en anteckning om Juno Jacket eftersom den här produkten finns i varukorgen:
 
-   ![](assets/personalization-uc-helpers-17.png)
+   ![E-postexempel som visar fraktsedeln för Juno Jacket i meddelandetexten](assets/personalization-uc-helpers-17.png)
 
 1. Kontrollera att det inte finns något fel och publicera sedan resan.
 
@@ -342,7 +342,7 @@ I det här steget visas hur du itererar över händelsedata. Mer omfattande exem
 
 * [Personalization med beslutsbaserat erbjudande](../offers/offers-e2e.md)
 
-## Instruktionsvideo{#video}
+## Instruktionsvideo {#video}
 
 Lär dig hur du använder hjälpfunktioner.
 
