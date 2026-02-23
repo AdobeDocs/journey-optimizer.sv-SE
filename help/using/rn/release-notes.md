@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 74a817e01765d2909e9dc3c396c5513b1c9b54b2
+source-git-commit: 86717d6a218fcbaf59321412b74db4941c859333
 workflow-type: tm+mt
-source-wordcount: '1645'
+source-wordcount: '1647'
 ht-degree: 5%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation 26 februari {#feb-26-01-rn}
 
@@ -33,7 +33,7 @@ Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01
 
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 <!--**Release date**: February 17-18, 2026-->
 
@@ -305,7 +305,7 @@ Funktionerna och förbättringarna nedan är planerade att släppas senare i feb
 <li>Möjlighet att lägga till både experimentella och flerspråkiga alternativ i alla funktionsmakron.</li>
 </ul>
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Tillgänglighetsdatum: 20 februari 2026</p>
+<p>Tillgänglighetsdatum: tidig mars 2026</p>
 </td>
 </tr>
 </tbody>
