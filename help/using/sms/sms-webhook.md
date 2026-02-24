@@ -7,14 +7,25 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: a0f3e385-934d-44d6-a487-6035161aef0e
-source-git-commit: 2bd0048c356c668ce2611b923f126e2a4e2c8630
+source-git-commit: 6859847ad700a471dd43b2cb9b0c486e31d91c78
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
 
 # Skapa webkrok {#webhook}
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_sms_webhook_settings_create"
+>title="Skapa en SMS-webkrok"
+>abstract="Du kan konfigurera Webhooks att samla in inkommande svar för hantering av godkännande av anmälan och avanmälan och för att ta emot leveransrapporter inklusive läskvitton där det finns tillgängliga."
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_flow_type"
+>title="Välj webkrostyp"
+>abstract="När du konfigurerar en webkrok väljer du **Inkommande** om du vill samla in medgivandesvar och användarinställningar, eller **[!UICONTROL Feedback]** om du vill spåra leverans- och engagemangshändelser för rapportering och analys."
 
 >[!BEGINSHADEBOX]
 
@@ -178,7 +189,7 @@ När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som 
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din webkrok.
 
-1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort webkroken.
+1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort webkroken.
 
 1. Om du vill ändra den befintliga konfigurationen letar du reda på önskad webbkrok och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
 
