@@ -116,7 +116,7 @@ När du implementerar push-meddelanden i Journey Optimizer kan en enskild profil
 
 Läs [den här felsökningsartikeln](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26738){target="_blank"} om du vill veta mer om hantering av push-token.
 
-Läs mer om push-konfigurationen [ på den här sidan](../push/push-configuration.md).
+Läs mer om push-konfigurationen [&#x200B; på den här sidan](../push/push-configuration.md).
 
 +++
 
@@ -126,7 +126,7 @@ Om push-meddelanden inte omdirigeras till den avsedda webb-URL:en kan det bero p
 
 Läs [den här felsökningsartikeln](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26226){target="_blank"} om du vill veta mer om det här problemet.
 
-Läs mer om push-konfigurationen [ på den här sidan](../push/push-configuration.md).
+Läs mer om push-konfigurationen [&#x200B; på den här sidan](../push/push-configuration.md).
 
 +++
 
@@ -191,7 +191,7 @@ I Adobe Journey Optimizer uppdateras vissa fältvärden eventuellt inte korrekt 
 
 Läs [den här felsökningsartikeln](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26352){target="_blank"} om du vill veta mer om hur du löser det här problemet.
 
-Läs mer om aktiviteten **Uppdatera profil** på resorna [ på den här sidan](../building-journeys/update-profiles.md).
+Läs mer om aktiviteten **Uppdatera profil** på resorna [&#x200B; på den här sidan](../building-journeys/update-profiles.md).
 
 Se även [Adobe Experience Platform-dokumentationen om datainhämtning](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/ingest-batch-data#dataset-activity){target="_blank"}.
 
@@ -224,7 +224,7 @@ Problem med målgruppspopulationen kan uppstå när komponenter eller resurser s
 
 Läs [den här felsökningsartikeln](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26333){target="_blank"} om du vill veta mer om hur du löser det här problemet.
 
-Läs mer om aktiviteten **Uppdatera profil** på resorna [ på den här sidan](../building-journeys/update-profiles.md).
+Läs mer om aktiviteten **Uppdatera profil** på resorna [&#x200B; på den här sidan](../building-journeys/update-profiles.md).
 
 Se även [dokumentationen för Adobe Real-Time CDP-profilen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#profile-detail){target="_blank"}.
 
