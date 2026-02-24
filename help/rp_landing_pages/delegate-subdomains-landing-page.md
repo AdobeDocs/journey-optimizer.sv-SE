@@ -22,7 +22,7 @@ Du kan välja mellan flera konfigurationsmetoder: **fullständig delegering** (A
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med underdomänsdelegering
 
@@ -32,7 +32,7 @@ Lär dig fördelarna, konfigurationsmetoderna och överväganden för att delege
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Delegera en underdomän
 
@@ -42,7 +42,7 @@ Stegvis vägledning för delegering av underdomäner till Adobe, inklusive fulls
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
 
 Konfigurera en anpassad underdomän
 
@@ -52,7 +52,7 @@ Utnyttja din fullständiga ägarskap av dina underdomäner med anpassad delegeri
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Migrera från CNAME till anpassad delegering
 
@@ -62,7 +62,7 @@ Migrera befintliga CNAME-konfigurerade underdomäner till anpassad delegering f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Konfigurera DMARC-poster
 
@@ -72,7 +72,7 @@ Konfigurera DMARC-poster för att förbättra e-postsäkerheten och leveransen f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Lägg till en Google TXT-post
 
@@ -82,7 +82,7 @@ Verifiera underdomäner för Gmail-leverans genom att lägga till Google TXT-pos
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Få åtkomst till och redigera PTR-poster
 
@@ -92,7 +92,7 @@ Hantera PTR-poster för delegerade underdomäner, inklusive redigering och förs
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa IP-pooler
 
