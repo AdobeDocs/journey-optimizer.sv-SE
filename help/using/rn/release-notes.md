@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: f2f1bf9338109102d5ea8378b9ae9474a8c535de
+source-git-commit: b00a24b7d130fb1a464f01b93b9769a7ae10c41a
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1552'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation 26 februari {#feb-26-01-rn}
 
@@ -33,7 +33,7 @@ Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01
 
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 <!--**Release date**: February 17-18, 2026-->
 
@@ -221,7 +221,7 @@ Förbättringar i den här versionen visas nedan.
 
 #### E-postdesigner
 
-* **Textindrag** - Du kan nu använda anpassningsbara vänsterindrag på den första raden med stycken i textkomponenter direkt från egenskapspanelen. <!--The new **Indentation** control lets you define indentation in pixels or percentage via a numeric input or slider, with live preview on the canvas. -->Detta förbättrar läsbarheten för innehåll i lång form, t.ex. redigeringar och artiklar.
+* **Textindrag** - Du kan nu använda anpassningsbara vänsterindrag på den första raden med stycken i textkomponenter direkt från egenskapspanelen. <!--The new **Indentation** control lets you define indentation in pixels or percentage via a numeric input or slider, with live preview on the canvas. -->Detta förbättrar läsbarheten för innehåll i lång form, t.ex. redigeringar och artiklar. [Läs mer](../email/get-started-email-style.md)
 
   Tillgänglighetsdatum: 18 februari 2026.
 

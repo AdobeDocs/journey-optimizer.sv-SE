@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, stil, css, brödtext, struktur
 exl-id: 2e20ecc5-bb58-4dc8-a2bc-ec5a02c16ae8
-source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
+source-git-commit: b00a24b7d130fb1a464f01b93b9769a7ae10c41a
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,21 @@ När du har börjat skapa ditt e-postinnehåll i [!DNL Journey Optimizer] kan du
 
 Du kan antingen tillämpa ändringarna på e-postbrödtexten, på en strukturkomponent eller på en innehållskomponent.
 
-![](assets/email_designer_content_components_styles.png)
+Markera ett element i e-postmeddelandet och klicka på fliken **[!UICONTROL Styles]**. Alla formatalternativ för det markerade elementet visas i den högra rutan.
 
-Följ länkarna nedan om du vill veta hur du justerar vissa formatinställningar i ditt e-postmeddelande.
+![](assets/email_designer_styles.png)
+
+Om du till exempel markerar en textkomponent:
+
+* Du kan justera **[!UICONTROL Background color]** och **[!UICONTROL Font color]** för det stycket;
+* Du kan uppdatera **[!UICONTROL Text]**-parametrar som teckensnittsfamilj, storlek, höjd, justering osv. och hantera mellanrummet före det första tecknet på en rad med inställningen **[!UICONTROL Indentation]** .
+* Du kan också justera alternativ som **[!UICONTROL Border]**, **[!UICONTROL Margin]** och **[!UICONTROL Padding]** för textkomponenten.
+
+Om du använder en [innehållsmall](use-email-templates.md) som standard eller om du tillämpade ett tema i e-postmeddelandet, kan du bara justera ett fåtal formatinställningar så att de matchar det valda temat. [Läs mer om teman](apply-email-themes.md)
+
+![](assets/email_designer_styles_theme.png)
+
+Följ länkarna nedan om du vill veta hur du justerar vissa av de specifika formatinställningarna i ditt e-postmeddelande.
 
 * Lär dig hur du [anpassar din e-postbakgrund](backgrounds.md)
 * Lär dig hur du [hanterar lodrät justering och utfyllnad](alignment-and-padding.md)
