@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: steg, konfiguration, resa, händelser, ström, API
 exl-id: e0144151-6c54-4656-9650-b544d8e7be16
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: bfcc7b1544a0d58af8ac1ac69e777a3ff894bbdf
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '293'
 ht-degree: 2%
 
 ---
@@ -22,6 +22,10 @@ Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming I
 
 1. Hämta URL:en för inlopp från Adobe Experience Platform API:er. Läs mer i [Översikt över API:er för direktuppspelning av inmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv){target="_blank"}.
 1. Kopiera nyttolasten från nyttolastförhandsvisningen på menyn **[!UICONTROL Event]**. Läs mer på [den här sidan](../event/about-creating.md#define-the-payload-fields).
+
+>[!IMPORTANT]
+>
+>Information om händelsekrav och begränsningar (direktuppspelning, frågetjänst, batchförtäring) finns i [Resegarantier - händelser](../start/guardrails.md#events-g).
 
 Sedan måste du konfigurera det datasystem som överför händelser till API:er för direktuppspelning av inmatning med den nyttolast som du kopierade:
 
@@ -90,4 +94,4 @@ Här är ett exempel på en API-händelse för direktuppspelning:
 
 För att underlätta identifieringen av den plats där delen &quot;data&quot; ska klistras in kan du använda ett JSON-visualiseringsverktyg som [JSON-formatering](https://jsonformatter.curiousconcept.com){target="_blank"}.
 
-Information om hur du felsöker API:er för direktuppspelning finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"}.
+Information om hur du felsöker API:er för direktuppspelning finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"}.
