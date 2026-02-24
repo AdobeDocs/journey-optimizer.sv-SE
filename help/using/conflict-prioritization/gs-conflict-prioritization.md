@@ -71,4 +71,4 @@ Med regeluppsättningar kan du **gruppera flera regler** och tillämpa dem på d
 * **[Resebegränsning och skiljeförfarande](journey-capping.md)** - Ange regler för capping på resenivå och skiljeförfarande.
 * **[Frekvensbegränsning per kanal](channel-capping.md)** - Ange frekvensgränser på kanalnivå för att förhindra övermeddelanden.
 * **[Ange tysta timmar](quiet-hours.md)** - Definiera tidsbaserade undantag för meddelandeleverans.
-* **[Självstudiekurser för hantering av konflikter](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Självstudiekurser på video steg för steg.
+* **[Självstudiekurser för hantering av konflikter](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Självstudiekurser på video steg för steg.
