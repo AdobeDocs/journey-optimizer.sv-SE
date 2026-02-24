@@ -27,7 +27,7 @@ ht-degree: 3%
 >id="ajo_mobile_web_setup_validate_assurance"
 >title="Validera med Assurance"
 >abstract="Adobe Experience Platform Assurance är inbäddat i detta arbetsflöde för att hjälpa dig inspektera implementeringen av SDK samt simulera och validera programhändelser."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home" text="Adobe Experience Platform Assurance - översikt"
+>additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/home" text="Adobe Experience Platform Assurance - översikt"
 
 **Guided Channel Setup** är ett smidigt arbetsflöde i Adobe Journey Optimizer som hjälper dig att snabbt konfigurera marknadsföringskanaler för mobiler och webben. Den finns under **Administration** > **Kanaler** > **Kanalkonfiguration** och automatiserar skapandet av viktiga resurser - som taggegenskaper, datastreams och kanalkonfigurationer - i Adobe Experience Platform, Journey Optimizer och Data Collection. I stället för att konfigurera varje komponent manuellt följer ni ett guidat flöde som ställer in allt åt er, så att marknadsföringsteamet kan börja skapa meddelanden i appen, push-meddelanden och webbupplevelser utan dröjsmål.
 
@@ -109,7 +109,7 @@ Observera att för varje plattform som du vill konfigurera måste du skapa en se
 
   +++
 
-* Om du använder konfigurationsalternativet Befintlig kontrollerar du att du använder följande tilläggsversioner för Adobe Experience Platform Mobile SDK. Mer information om SDK-konfigurationen, inklusive nödvändiga beroenden och initieringskod, finns i [följande dokumentation](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks).
+* Om du använder konfigurationsalternativet Befintlig kontrollerar du att du använder följande tilläggsversioner för Adobe Experience Platform Mobile SDK. Mer information om SDK-konfigurationen, inklusive nödvändiga beroenden och initieringskod, finns i [följande dokumentation](https://experienceleague.adobe.com/sv/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks).
 
   För Android
 

@@ -22,7 +22,7 @@ Guided Channel Setup i Adobe Journey Optimizer förenklar arbetet med att konfig
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera mobil- och webbkanaler
 
@@ -32,7 +32,7 @@ Lär dig hur du snabbt konfigurerar mobil- och webbkanaler med Guidad kanalkonfi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och ändra kanalkonfigurationer
 
