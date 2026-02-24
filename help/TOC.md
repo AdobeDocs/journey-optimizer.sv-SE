@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 6c509ef134c4240b243d255fd1ab7ec6bb062bf0
+source-git-commit: f1b2c1ca8c9747547c12d90f24f432f1a761d92a
 workflow-type: tm+mt
-source-wordcount: '3101'
+source-wordcount: '3090'
 ht-degree: 15%
 
 ---
@@ -215,8 +215,7 @@ ht-degree: 15%
          + [Engagera kunderna genom att surfa](using/orchestrated/engage-customers-uc.md)
          + [Meddela användare om produkttillgänglighet](using/orchestrated/product-availability-uc.md)
 + Konflikt och prioritering {#conflict-prioritization}
-   + [Konflikthantering och -prioritering](/help/rp_landing_pages/conflict-prioritization-landing-page.md)
-   + [Kom igång med konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
+   + [Konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
    + [Identifiera potentiella konflikter](using/conflict-prioritization/conflicts.md)
    + [Tilldela prioritetspoäng](using/conflict-prioritization/priority-scores.md)
    + Ange regler för capping av meddelanden och resor {#capping-rules}
@@ -852,7 +851,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
@@ -861,7 +860,6 @@ ht-degree: 15%
    + [Konfigurera kanalkonfigurationer](using/configuration/channel-surfaces.md)
    + [Exportera meddelandeinnehåll](using/configuration/message-export.md)
    + Inställningar för guidad kanal {#guided-setup}
-      + [Inställningar för guidad kanal](/help/rp_landing_pages/guided-setup-landing-page.md)
       + [Kom igång med konfiguration av guidade kanaler](using/configuration/set-mobile-config.md)
       + [Skapa en kanalkonfiguration](using/configuration/create-channel-set-up.md)
    + Delegera e-postunderdomäner {#delegate-subdomains}
@@ -930,7 +928,6 @@ ht-degree: 15%
       + [Kampanj v7/v8-åtgärd på resor](using/action/acc-action.md)
       + [Marketo Engage-åtgärder på resorna](using/action/marketo-engage.md)
    + Hantering av sandlådor {#sandbox}
-      + [Hantering av sandlådor](/help/rp_landing_pages/sandbox-landing-page.md)
       + [Använda och tilldela sandlådor](using/administration/sandboxes.md)
       + [Exportera objekt till en annan sandlåda](using/configuration/copy-objects-to-sandbox.md)
    + [Konfigurera källkopplingen](using/start/get-started-sources.md)
