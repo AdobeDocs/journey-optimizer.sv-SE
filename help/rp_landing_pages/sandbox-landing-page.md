@@ -22,7 +22,7 @@ Sandlådor i Adobe Journey Optimizer är som virtuella arbetsytor som hjälper d
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Hantera och tilldela sandlådor
 
@@ -32,7 +32,7 @@ Lär dig hur du hanterar och tilldelar sandlådor för partitioneringsmiljöer, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Kopiera objekt mellan sandlådor
 
