@@ -22,7 +22,7 @@ Du kan hantera samtycke på tre sätt: **avanmälningspreferenser** för avanmä
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Hantera avanmälan och Personalization-samtycke
 
@@ -32,7 +32,7 @@ Lär dig hur du hanterar avanmälningsinställningar och upprätthåller persona
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Arbeta med profiler för samtycke
 
@@ -42,7 +42,7 @@ Förstå hur ni skapar och tillämpar samtyckesregler för att hantera dataanvä
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Hantera dina kunders inställningar
 
