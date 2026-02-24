@@ -9,20 +9,22 @@ role: Admin, Developer
 level: Experienced
 keywords: sandlådor, virtuella, miljöer, organisation, plattform
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 56faee8badff99ff9a39cfd85a78c1ed272cd2ca
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 12%
+source-wordcount: '396'
+ht-degree: 10%
 
 ---
 
 # Använda och tilldela sandlådor {#sandboxes}
 
+**Sandlådor** är virtuella miljöer som partitionerar din Adobe Journey Optimizer-instans i separata, isolerade arbetsytor för utveckling, testning eller produktion. Du hittar sandlådehantering under **Administration** > **Kanaler** > **Anslut dina system och miljöer** (eller via sandlådeväxlaren i det övre högra hörnet av gränssnittet). Med sandlådor kan du experimentera säkert, tilldela olika behörigheter per roll och ordna innehållet. Den här sidan beskriver hur du använder och tilldelar sandlådor, konfigurerar innehållsåtkomst och - i artikeln [Exportera objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md) - hur du kopierar resor och mallar mellan sandlådor.
+
 ## Använda sandlådor {#using-sandbox}
 
 Med [!DNL Journey Optimizer] kan du partitionera instansen i separata virtuella miljöer som kallas sandlådor. Sandlådor tilldelas via roller i behörigheter. [Lär dig tilldela sandlådor](permissions.md#create-product-profile).
 
-[!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation. Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=sv-SE){target="_blank"}.
+[!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation. Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
 
 Du hittar kontrollen för sandlådeväxlaren högst upp till höger på skärmen, bredvid organisationens namn. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
 
@@ -64,7 +66,7 @@ Om du vill konfigurera innehållets tillgänglighet tilldelar du en delad mapp t
 
 Observera att för att ditt innehåll ska kunna synkroniseras med rätt sandlåda måste du följa samma syntax som sandlådan. Om din sandlåda till exempel kallas för&quot;utveckling&quot; ska din delade mapp ha samma namn.
 
-[Lär dig hantera delade mappar](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/manage-adobe-storage.ug.html){target="_blank"}.
+[Lär dig hantera delade mappar](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-adobe-storage.ug.html){target="_blank"}.
 
 ## Instruktionsvideo{#video}
 
