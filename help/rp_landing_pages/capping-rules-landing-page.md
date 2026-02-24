@@ -22,7 +22,7 @@ Du kan ange gränser för hur ofta meddelanden skickas (frekvensbegränsning), h
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Arbeta med regeluppsättningar
 
@@ -32,7 +32,7 @@ Lär dig hur du skapar, hanterar och aktiverar regeluppsättningar för att styr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Resebegränsning och skiljedom
 
@@ -42,7 +42,7 @@ Upptäck hur ni ställer in resedagång och tidsgränser för samtidighet, prior
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Frekvensbegränsning per kanal
 
@@ -52,7 +52,7 @@ Förstå hur ni skapar och tillämpar kanalspecifika regler för frekvensbegrän
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
 
 Ange tysta timmar
 
