@@ -10,9 +10,9 @@ level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: be05bb72ace2e2084675f4278501a520d592e304
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
    >[!NOTE]
    >
    >**[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** målgruppsdeltagarstatus från [!DNL Adobe Experience Platform].
-   >Se [Dokumentation för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Se [Dokumentation för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan. Som standard är fältet förifyllt med det senast använda namnutrymmet.
 
@@ -104,13 +104,17 @@ När du använder Audience Qualification för en grupppublik bör du tänka på 
 
 Om batchmålgruppen är nyskapad och används omedelbart under en resa kan den första beräkningsgruppen leda till många poster. Planera för den här toppen.
 
+### Tidsinställning för uppdateringar av segmentmedlemskap {#timing-segment-membership}
+
+När du använder ögonblicksbilder av grupper under en resa kan nya segmentmedlemskap endast återspeglas i efterföljande ögonblicksbilder. Om det är nödvändigt med segmenttillägg direkt eller samma dag bör du överväga att segmentera direkt eller verifiera att segmentuppdateringarna hämtas från nästa ögonblicksbild.
+
 ### Direktuppspelade målgrupper {#streamed-speed-segment-qualification}
 
 När man använder sig av Audience Qualification för direktuppspelade målgrupper är risken mindre för höga ingångs- och exittider eftersom utvärderingen är kontinuerlig. Om målgruppsdefinitionen kvalificerar många kunder samtidigt kan det ändå bli en topp.
 
 Undvik att använda öppna och skicka händelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data. Använd affärsregler i stället för skicka-händelser för frekvens- eller undertryckningslogik. [Läs mer](../audience/about-audiences.md)
 
-Se [[!DNL Adobe Experience Platform] dokumentationen för direktuppspelningssegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
+Se [[!DNL Adobe Experience Platform] dokumentationen för direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 
 >[!NOTE]
 >
@@ -122,7 +126,7 @@ När du använder direktuppspelade målgrupper med aktiviteten **Målgruppskvali
 
 * **Profiler som redan finns i målgruppen**: Det är bara profiler som nyligen har kvalificerats för målgruppen efter att resan har publicerats som utlöser inträde. Profiler som redan finns före publiceringen kommer inte att spelas in.
 
-* **Reseaktiveringstid**: När du publicerar en resa tar det upp till **10 minuter** för aktiviteten Målgruppskvalificering att bli aktiv och börja lyssna efter profilposter och utträden. **&#x200B;**&#x200B;[Läs mer om aktivering av resan](#configure-segment-qualification).
+* **Reseaktiveringstid**: När du publicerar en resa tar det upp till **10 minuter** för aktiviteten Målgruppskvalificering att bli aktiv och börja lyssna efter profilposter och utträden. **** [Läs mer om aktivering av resan](#configure-segment-qualification).
 
 * **Snabb avslutas från målgrupp**: Om en profil kvalificerar sig för målgruppen men avslutas innan reseposten aktiveras, kanske profilen inte kommer in på resan.
 
@@ -146,7 +150,7 @@ Här följer några tips för att undvika att överbelasta system som används i
 
   ![Felmeddelande när målgruppen inte hittas i [!DNL Adobe Experience Platform]](assets/segment-error.png)
 
-* Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html?lang=sv-SE){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök använder du en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
+* Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök använder du en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
 
 * Innan målgruppen används i en produktionsresa bör man utvärdera den mängd individer som är kvalificerade för denna målgrupp varje dag. Det gör du genom att kontrollera menyn **[!UICONTROL Audience]**, öppna målgruppen och titta på diagrammet **[!UICONTROL Profiles over time]**.
 
@@ -182,7 +186,7 @@ Följ skyddsutkastet och rekommendationerna nedan för att skapa målgruppskompe
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
+>[Garantier för kundprofildata och segmentering i realtid ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
 
 
 
@@ -190,4 +194,4 @@ Följ skyddsutkastet och rekommendationerna nedan för att skapa målgruppskompe
 
 Lär dig mer om tillämpliga användningsfall för målgruppskvalificeringsresor i den här videon. Lär dig hur du bygger en resa med målgruppskvalifikation och vilka bästa metoder som ska användas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446208?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425028?quality=12)
