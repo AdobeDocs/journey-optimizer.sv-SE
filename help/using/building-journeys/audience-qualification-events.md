@@ -126,7 +126,7 @@ När du använder direktuppspelade målgrupper med aktiviteten **Målgruppskvali
 
 * **Profiler som redan finns i målgruppen**: Det är bara profiler som nyligen har kvalificerats för målgruppen efter att resan har publicerats som utlöser inträde. Profiler som redan finns före publiceringen kommer inte att spelas in.
 
-* **Reseaktiveringstid**: När du publicerar en resa tar det upp till **10 minuter** för aktiviteten Målgruppskvalificering att bli aktiv och börja lyssna efter profilposter och utträden. **** [Läs mer om aktivering av resan](#configure-segment-qualification).
+* **Reseaktiveringstid**: När du publicerar en resa tar det upp till **10 minuter** för aktiviteten Målgruppskvalificering att bli aktiv och börja lyssna efter profilposter och utträden. **&#x200B;**&#x200B;[Läs mer om aktivering av resan](#configure-segment-qualification).
 
 * **Snabb avslutas från målgrupp**: Om en profil kvalificerar sig för målgruppen men avslutas innan reseposten aktiveras, kanske profilen inte kommer in på resan.
 
@@ -186,7 +186,7 @@ Följ skyddsutkastet och rekommendationerna nedan för att skapa målgruppskompe
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
+>[Garantier för kundprofildata och segmentering i realtid &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
 
 
 
