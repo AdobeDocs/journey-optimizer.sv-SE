@@ -8,7 +8,7 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: e96efa67-ee47-40b9-b680-f5119d8c3481
-source-git-commit: 4f13f863a5e08cc0e92c26d782d888f0d6d2fea4
+source-git-commit: 63fb247449dfb989b191254ec6d117a403edd29d
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 3%
@@ -99,7 +99,7 @@ Nedan finns definitioner, vanliga orsaker och felsökningssteg för det vanligas
 
   **Vanliga orsaker**: Dubbletthändelser, hög händelsemängd, begränsningar för systemresurser.
 
-  **Felsökning**: Implementera borttagning av dubbletter, undvik trafiktoppar, optimera resedesignen, kontakta supporten om den är permanent.
+  **Felsökning**: Implementera borttagning av dubbletter, undvik trafiktoppar, optimera resedesignen, [kontakta support](../start/user-interface.md#support-ticket-guidelines) om den är beständig.
 
 * **EVENT_WITH_NO_JOURNEY**: En händelse togs emot men ingen aktiv resa har konfigurerats för att svara på den
 
@@ -118,5 +118,5 @@ Nedan finns definitioner, vanliga orsaker och felsökningssteg för det vanligas
 
 * [Datauppsättningsfrågeexempel - Resestegshändelse](../data/datasets-query-examples.md#journey-step-event).
 * [Exempel på frågor - Händelsebaserade frågor](query-examples.md#event-based-queries).
-* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 

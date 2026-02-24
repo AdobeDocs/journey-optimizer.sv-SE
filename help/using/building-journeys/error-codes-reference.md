@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: fel, koder, felsökning, resa, kampanj, meddelanden
 exl-id: 84924153-1bb5-465a-b91c-797628fc816c
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 63fb247449dfb989b191254ec6d117a403edd29d
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -139,11 +139,7 @@ När du stöter på en felkod ska du följa detta systematiska tillvägagångss�
 
 6. **Försök igen när det är lämpligt**: För 500-seriefel löser ett enkelt försök efter några minuter ofta övergående problem.
 
-7. **Eskalera vid behov**: Om felet kvarstår efter följande lösningssteg kontaktar du Adobe Support med:
-   * Fullständig felkod
-   * ID för begäran (om tillgängligt)
-   * Steg som ska återskapas
-   * Relevant konfigurationsinformation
+7. **Eskalera vid behov**: Om felet kvarstår efter följande lösningssteg, [kontaktar du Adobe Support](../start/user-interface.md#support-ticket-guidelines) med den fullständiga felkoden, ID för begäran (om tillgängligt), steg för att återskapa samt relevant konfigurationsinformation.
 
 ## Bästa tillvägagångssätt för att undvika vanliga fel {#best-practices}
 
@@ -186,15 +182,15 @@ Om du stöter på bestående fel som inte kan åtgärdas med den här guiden:
 
 1. **Samla in information**: Samla in felkoden, begärande-ID, tidsstämplar och steg för att återskapa
 2. **Kontrollera systemstatus**: Besök [Adobe-status](https://status.adobe.com/){target="_blank"} för information om kända tjänstproblem
-3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE){target="_blank"} innehåller lösningar
-4. **Engagemangsgrupp**: Skicka frågor i [[!DNL Adobe Journey Optimizer] community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}
-5. **Kontakta Adobe Support**: Skicka in en supportanmälan med all relevant information
+3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html){target="_blank"} innehåller lösningar
+4. **Engagemangsgrupp**: Skicka frågor i [[!DNL Adobe Journey Optimizer] community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
+5. **Kontakta Adobe Support**: [Skicka in en supportanmälan](../start/user-interface.md#support-ticket-guidelines) med all relevant information
 
 >[!NOTE]
 >
->Den här felkodsreferensen uppdateras kontinuerligt när nya koder identifieras och dokumenteras. Den senaste informationen finns i [[!DNL Adobe Journey Optimizer] Community-bloggarna](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/bg-p/journey-optimizer-blogs?profile.language=sv){target="_blank"} regelbundet.
+>Den här felkodsreferensen uppdateras kontinuerligt när nya koder identifieras och dokumenteras. Den senaste informationen finns i [[!DNL Adobe Journey Optimizer] Community-bloggarna](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/bg-p/journey-optimizer-blogs){target="_blank"} regelbundet.
 
 **Relaterade ämnen**
 
-* [Demystifiera [!DNL Adobe Journey Optimizer] Felkoder: Del 1](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884?profile.language=sv){target="_blank"}
-* [Demystifiera [!DNL Adobe Journey Optimizer] Felkoder: Del 2](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/bc-p/782661?profile.language=sv){target="_blank"}
+* [Demystifiera [!DNL Adobe Journey Optimizer] Felkoder: Del 1](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884){target="_blank"}
+* [Demystifiera [!DNL Adobe Journey Optimizer] Felkoder: Del 2](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/bc-p/782661){target="_blank"}

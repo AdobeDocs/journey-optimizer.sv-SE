@@ -10,7 +10,7 @@ level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: fd670b00-4ebb-4a3b-892f-d4e6f158d29e
 version: Journey Orchestration
-source-git-commit: bae446ea38a0cb97487201f7dcf4df751578ad0a
+source-git-commit: 63fb247449dfb989b191254ec6d117a403edd29d
 workflow-type: tm+mt
 source-wordcount: '1938'
 ht-degree: 13%
@@ -31,7 +31,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resor förlitar sig faktiskt på [!DNL Adobe Experience Platform]s API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [[!DNL Adobe Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resor förlitar sig faktiskt på [!DNL Adobe Experience Platform]s API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [[!DNL Adobe Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
 
@@ -61,12 +61,12 @@ Du kan börja felsöka med frågorna nedan:
 
 * **Händelsen ignorerades - kvalificeringsvillkoret uppfylls inte** - För regelbaserade händelser gäller att om **kvalificeringsvillkoret** inte uppfylls av händelsenyttolasten (till exempel om ett obligatoriskt fält är tomt eller saknas, eller om ett villkor som `isNotEmpty` för ett fält misslyckas) tas händelsen **emot men ignoreras** och resan aktiveras inte. Loggar och Splunk-spår kan visa att händelsen togs emot men ignorerades eftersom den inte uppfyllde kvalificeringsvillkoret, med kasseringskoder som `notSuitableInitialEvent`. Detta är förväntat beteende: om kvalificeringsvillkoret inte uppfylls ignoreras händelsen och resan aktiveras inte för profilen. Kontrollera att händelsens nyttolast innehåller de förväntade fälten och värdena och att regeln i händelsekonfigurationen matchar de data som du skickar. Om händelsen utlöses av en **anpassad åtgärd** från en annan resa, se [Hantera ignorerade händelser och timeout vid inaktivitet](../action/troubleshoot-custom-action.md#handling-discard-events-and-idle-timeouts) i felsökning av anpassade åtgärder.
 
-&#x200B;>>
+>>
 **För målgruppskvalificeringsresor med direktuppspelade målgrupper**: Om du använder en målgruppskompetens som startpunkt för resan måste du vara medveten om att inte alla profiler som kvalificerar sig för målgruppen nödvändigtvis kommer att gå in på resan på grund av timingfaktorer, snabba utträden från målgruppen eller om profiler redan fanns i målgruppen före publiceringen. Läs mer om [bedömning av målgruppskvalifikation för direktuppspelning](audience-qualification-events.md#streaming-entry-caveats).
 
 ### Verifiera händelsens identitet {#verify-event-identity-and-rule-data-types}
 
-När du konfigurerar en händelsebaserad resa måste du bekräfta att nyttolastens identitetsfält matchar det [namnområde som är markerat i händelsen](../event/about-creating.md#select-the-namespace). Om händelsen innehåller fält för profilmatchning kontrollerar du att datatypen **letter** och **3&rbrace; i händelseregmentet stämmer exakt överens med inkommande data.** Om till exempel händelseschemat definierar `roStatus` som en sträng, måste även reseregeln utvärdera den som en sträng. Felmatchade datatyper (till exempel sträng kontra heltal) gör att regelutvärderingen misslyckas och giltiga händelser tas bort. Om händelsen har ett **kvalificeringsvillkor** (ett fält måste till exempel vara icke-tomt), kommer händelser som inte uppfyller villkoret att **ignoreras** och inte utlösa resan. Loggar kan visa discard-koder som `notSuitableInitialEvent`.
+När du konfigurerar en händelsebaserad resa måste du bekräfta att nyttolastens identitetsfält matchar det [namnområde som är markerat i händelsen](../event/about-creating.md#select-the-namespace). Om händelsen innehåller fält för profilmatchning kontrollerar du att datatypen **letter** och **3} i händelseregmentet stämmer exakt överens med inkommande data.** Om till exempel händelseschemat definierar `roStatus` som en sträng, måste även reseregeln utvärdera den som en sträng. Felmatchade datatyper (till exempel sträng kontra heltal) gör att regelutvärderingen misslyckas och giltiga händelser tas bort. Om händelsen har ett **kvalificeringsvillkor** (ett fält måste till exempel vara icke-tomt), kommer händelser som inte uppfyller villkoret att **ignoreras** och inte utlösa resan. Loggar kan visa discard-koder som `notSuitableInitialEvent`.
 
 Använd nyttolastförhandsvisningen i händelsekonfigurationen och kontrollera att typerna och värdena i regeln matchar nyttolaststrukturen om du vill validera ditt händelsevillkor i [!DNL Journey Optimizer]. Lär dig hur du [förhandsgranskar nyttolasten](../event/about-creating.md#preview-the-payload) och [konfigurerar regelbaserade händelser](../event/about-creating.md).
 
@@ -99,7 +99,7 @@ Om du stöter på beständiga övergångsproblem:
 1. Kontrollera att transportens startdatum är aktuellt
 1. Inaktivera och återaktivera testläge
 1. Om problemet kvarstår bör du överväga att duplicera noderna för den berörda resan och koppla dem igen
-1. För olösta fall kontaktar du supporten med reseloggar, profil-ID:n som påverkas och information om övergången till null
+1. För olösta fall kontaktar [support](../start/user-interface.md#support-ticket-guidelines) med reseloggar, profil-ID:n som påverkas och information om övergången till null
 
 >[!NOTE]
 >
@@ -209,4 +209,4 @@ Om mätvärdena som visas på kontrollpanelen **Översikt** inte matchar det fak
 * Kontrollera att du har rätt åtkomstbehörighet för att visa alla resor i organisationen.
 * Det kan ta upp till 30 minuter för mätvärdena att uppdateras efter att du har gjort ändringar i dina resor.
 
-Om diskrepanser kvarstår kontaktar du Adobe Support med skärmbilder av flikarna Översikt och Bläddra för att få hjälp.
+Om avvikelser kvarstår kan [kontakta Adobe Support](../start/user-interface.md#support-ticket-guidelines) med skärmbilder av flikarna Översikt och Bläddra för att få hjälp.

@@ -10,7 +10,7 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 186b061d-0941-48be-8917-bbdfff6dae90
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 63fb247449dfb989b191254ec6d117a403edd29d
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Om du inte ser förväntade data i dina reserapporter bör du tänka på följan
 
 * **Resursstatus**: Rapporteringsdata är bara tillgängliga för publicerade resor eller resor som körs i [Torrkörningsläge](journey-dry-run.md). Utkastresor genererar inga rapportdata.
 
-Kontakta Adobe-administratören eller Adobe support om problemet kvarstår efter att du har verifierat dessa objekt.
+Kontakta Adobe-administratören eller [Adobe support](../start/user-interface.md#support-ticket-guidelines) om problemet kvarstår efter att du har verifierat dessa objekt.
 
 >[!MORELIKETHIS]
 >

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: b48a8fa89605ac18c6db85751bf71d2ccec08f63
+source-git-commit: 63fb247449dfb989b191254ec6d117a403edd29d
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1230'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Om du vill få tillgång till Adobe Journey Optimizer loggar du in på [Adobe Ex
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 >* Dokumentationen uppdateras ofta. Vissa skärmbilder kan skilja sig något från gränssnittet.
 
 ## Snabbdemo {#quick-tour}
@@ -103,7 +103,19 @@ Klicka på ikonen **Hjälp** för att:
 * Kontakta Adobe support
 * Dela feedback
 
+Sammanhangsberoende hjälp visar riktlinjer som är relevanta för den skärm du visar och länkar direkt till motsvarande dokumentation, så att du kan få rätt information utan att behöva lämna arbetsflödet.
+
 ![Exempel på sammanhangsbaserad hjälp](assets/do-not-localize/Context-help.gif)
+
+### Stöd riktlinjer för biljetter {#support-ticket-guidelines}
+
+Ta med följande när du kontaktar Adobe support för att underlätta analys och lösning av rotorsaker:
+
+* **Miljöinformation** - Sandlådans namn, organisations-ID och produktområde (t.ex. Resor, kampanjer, beslut)
+* **Effektnivå** - Felets allvarlighetsgrad (t.ex. blockerad produktion, begränsad funktionalitet, kosmetisk)
+* **Replikeringssteg** - Tydliga stegvisa instruktioner för att återskapa problemet
+* **Loggar eller skärmbilder** - Relevanta felmeddelanden, ID-nummer för begäran eller skärmbilder som illustrerar problemet
+* **Relevanta ID:n** - Resurs-ID, kampanj-ID, målgrupps-ID eller andra objektidentifierare som är relaterade till problemet
 
 ### Meddelanden {#notifications}
 
