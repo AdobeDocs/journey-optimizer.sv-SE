@@ -9,10 +9,10 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 846e0d11-798b-4f3b-80db-848a17d32830
-source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
+source-git-commit: 7cca968a161a26d0af385a028c4404261088f033
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 4%
+source-wordcount: '816'
+ht-degree: 3%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 4%
 >id="ajo_mobile_web_setup_validate_assurance"
 >title="Validera med Assurance"
 >abstract="Adobe Experience Platform Assurance är inbäddat i detta arbetsflöde för att hjälpa dig inspektera implementeringen av SDK samt simulera och validera programhändelser."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/home" text="Adobe Experience Platform Assurance - översikt"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home" text="Adobe Experience Platform Assurance - översikt"
 
-Denna installation underlättar snabb konfigurering av marknadsföringskanaler och säkerställer att alla nödvändiga resurser finns tillgängliga i Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsföringsteamet börja med att skapa kampanjer och resor.
+**Guided Channel Setup** är ett smidigt arbetsflöde i Adobe Journey Optimizer som hjälper dig att snabbt konfigurera marknadsföringskanaler för mobiler och webben. Den finns under **Administration** > **Kanaler** > **Kanalkonfiguration** och automatiserar skapandet av viktiga resurser - som taggegenskaper, datastreams och kanalkonfigurationer - i Adobe Experience Platform, Journey Optimizer och Data Collection. I stället för att konfigurera varje komponent manuellt följer ni ett guidat flöde som ställer in allt åt er, så att marknadsföringsteamet kan börja skapa meddelanden i appen, push-meddelanden och webbupplevelser utan dröjsmål.
 
-Inställningen Guidad kanal har stöd för följande plattformar och kanaler.
+Guided Channel Setup har stöd för följande plattformar och kanaler.
 
 * Plattformar och SDK:
 
@@ -52,7 +52,7 @@ Inställningen Guidad kanal har stöd för följande plattformar och kanaler.
 
 Observera att för varje plattform som du vill konfigurera måste du skapa en separat konfiguration. Det beror på att varje program kräver en unik kanalkonfiguration, vilket ger flexibilitet att avgöra vilka kanaler du vill ha för varje plattform.
 
-## Förhandskrav {#prereq}
+## Förutsättningar {#prereq}
 
 * För att implementera detta effektivt är det viktigt att en medlem i organisationen med behörighet och teknisk möjlighet att ändra webbplats eller mobilkod övervakar konfigurationen.
 
@@ -109,7 +109,7 @@ Observera att för varje plattform som du vill konfigurera måste du skapa en se
 
   +++
 
-* Om du använder konfigurationsalternativet Befintlig kontrollerar du att du använder följande tilläggsversioner för Adobe Experience Platform Mobile SDK. Mer information om SDK-konfigurationen, inklusive nödvändiga beroenden och initieringskod, finns i [följande dokumentation](https://experienceleague.adobe.com/sv/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks).
+* Om du använder konfigurationsalternativet Befintlig kontrollerar du att du använder följande tilläggsversioner för Adobe Experience Platform Mobile SDK. Mer information om SDK-konfigurationen, inklusive nödvändiga beroenden och initieringskod, finns i [följande dokumentation](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks).
 
   För Android
 

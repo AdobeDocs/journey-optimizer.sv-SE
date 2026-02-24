@@ -3,9 +3,11 @@ solution: Journey Optimizer
 product: Journey Optimizer
 title: Inställningar för guidad kanal
 description: Inställningar för guidad kanal
+hide: true
+hidefromtoc: true
 redpen-status: CREATED_||_2025-08-11_21-07-03
 exl-id: fb2185b8-6c92-4c50-8a79-2eb776cf0ac5
-source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
+source-git-commit: 7cca968a161a26d0af385a028c4404261088f033
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
@@ -20,7 +22,7 @@ Guided Channel Setup i Adobe Journey Optimizer förenklar arbetet med att konfig
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera mobil- och webbkanaler
 
@@ -30,7 +32,7 @@ Lär dig hur du snabbt konfigurerar mobil- och webbkanaler med Guidad kanalkonfi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa och ändra kanalkonfigurationer
 
