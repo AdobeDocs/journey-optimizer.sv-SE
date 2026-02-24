@@ -22,7 +22,7 @@ Konflikthantering och -prioritering i Adobe Journey Optimizer hjälper er att le
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med Konflikthantering
 
@@ -32,7 +32,7 @@ Lär dig hur du använder verktyg som konfliktidentifiering, prioritetspoäng oc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Identifiera potentiella konflikter
 
@@ -42,7 +42,7 @@ Upptäck metoder för att upptäcka och lösa kampanjer och resekonflikter, vilk
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Tilldela prioritetspoäng till kampanjer
 
@@ -52,7 +52,7 @@ Lär dig att tilldela numeriska prioriteringspoäng till resor och kampanjer fö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Ange regler för meddelande- och resebegränsning
 
