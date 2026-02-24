@@ -182,15 +182,15 @@ Om du stöter på bestående fel som inte kan åtgärdas med den här guiden:
 
 1. **Samla in information**: Samla in felkoden, begärande-ID, tidsstämplar och steg för att återskapa
 2. **Kontrollera systemstatus**: Besök [Adobe-status](https://status.adobe.com/){target="_blank"} för information om kända tjänstproblem
-3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html){target="_blank"} innehåller lösningar
-4. **Engagemangsgrupp**: Skicka frågor i [[!DNL Adobe Journey Optimizer] community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
+3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE){target="_blank"} innehåller lösningar
+4. **Engagemangsgrupp**: Skicka frågor i [[!DNL Adobe Journey Optimizer] community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}
 5. **Kontakta Adobe Support**: [Skicka in en supportanmälan](../start/user-interface.md#support-ticket-guidelines) med all relevant information
 
 >[!NOTE]
 >
->Den här felkodsreferensen uppdateras kontinuerligt när nya koder identifieras och dokumenteras. Den senaste informationen finns i [[!DNL Adobe Journey Optimizer] Community-bloggarna](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/bg-p/journey-optimizer-blogs){target="_blank"} regelbundet.
+>Den här felkodsreferensen uppdateras kontinuerligt när nya koder identifieras och dokumenteras. Den senaste informationen finns i [[!DNL Adobe Journey Optimizer] Community-bloggarna](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/bg-p/journey-optimizer-blogs?profile.language=sv){target="_blank"} regelbundet.
 
 **Relaterade ämnen**
 
-* [Demystifiera [!DNL Adobe Journey Optimizer] Felkoder: Del 1](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884){target="_blank"}
-* [Demystifiera [!DNL Adobe Journey Optimizer] Felkoder: Del 2](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/bc-p/782661){target="_blank"}
+* [Demystifiera [!DNL Adobe Journey Optimizer] Felkoder: Del 1](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884?profile.language=sv){target="_blank"}
+* [Demystifiera [!DNL Adobe Journey Optimizer] Felkoder: Del 2](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/bc-p/782661?profile.language=sv){target="_blank"}
