@@ -5,9 +5,9 @@ title: Felsökning
 description: Felsökning
 redpen-status: CREATED_||_2025-08-11_20-20-50
 exl-id: bf26ca1f-e239-418e-8ce8-a891f3ba3416
-source-git-commit: 4dfda2a13bfd01c7c556ae3e8eb31916592c569b
+source-git-commit: b8d580eb6928f073934a33ede1d9c166d5370809
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Få tillgång till viktiga rapporter för att övervaka reseprestanda, analysera
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Åtkomst och prenumeration på systemaviseringar
 
@@ -59,7 +59,7 @@ Lär dig hur du får åtkomst till systemvarningar, prenumererar på meddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Referens för felkoder
 
@@ -69,7 +69,7 @@ Förstå vanliga felkoder i Adobe Journey Optimizer och hitta snabba lösningar 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Felsöka fel innan du testar eller publicerar din resa
 
@@ -79,7 +79,7 @@ Identifiera och åtgärda fel som rör hela kundresan, aktivitetsproblem och ang
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Felsökning av körning av Live Journey
 
@@ -89,7 +89,7 @@ Diagnostisera problem med händelsvalidering, profilregistrering, resenavigering
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Felsöka inkommande åtgärder i resor
 
@@ -99,13 +99,23 @@ Felsök problem med inkommande åtgärder, till exempel saknat innehåll eller f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Felsöka anpassade åtgärder
 
 Validera och felsök anpassade åtgärder med funktionen **Skicka testbegäran** för att säkerställa att API-anrop och autentiseringsinställningar är korrekta.
 
 [Validera anpassade åtgärder](../using/action/troubleshoot-custom-action.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/question.svg)
+
+Stöd för riktlinjer för biljetter
+
+Lär dig vad du ska ta med när du kontaktar Adobe support - miljöinformation, effektnivå, replikeringssteg, loggar eller skärmdumpar samt relevanta ID:n - för att snabba upp upplösningen.
+
+[Stöd riktlinjer för biljetter](../using/start/user-interface.md#support-ticket-guidelines)
 :::
 
 ::::
