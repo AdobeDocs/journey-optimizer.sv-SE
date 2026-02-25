@@ -8,13 +8,13 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
-source-git-commit: a7d2557790054e7c6e28ca3ffa937f454c4b004c
+exl-id: defebd53-fa80-4720-acdc-0f41ceb00214
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
 
 ---
-
 
 # Ange tysta timmar {#quiet-hours}
 
@@ -133,7 +133,7 @@ När regeln har sparats och regeluppsättningen har aktiverats kan du använda d
 
 >[!TAB Använd kanalåtgärder för tysta timmar i resor]
 
-1. Öppna din resa, välj en [kanalåtgärd](../building-journeys/journeys-message.md) och redigera innehållet i meddelandet.
+1. Öppna din resa, välj en [kanalåtgärd](../building-journeys/journey-action.md) och redigera innehållet i meddelandet.
 1. Klicka på knappen **[!UICONTROL Add Business Rule]** och markera regeluppsättningen som innehåller regeln Tysta timmar.
 
    ![](assets/quiet-hours-apply.png)
@@ -192,4 +192,4 @@ När din resa eller dina kampanjer har aktiverats och körts kan du visa antalet
 
 Lär dig hur du använder funktionen för tysta timmar i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475856?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3475851?quality=12)

@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '835'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,13 @@ Så här lägger du till en **kodbaserad upplevelse**-aktivitet på en resa:
 
 1. Starta din resa med en [Event](../building-journeys/general-events.md)- eller [Read Audience](../building-journeys/read-audience.md)-aktivitet.
 
-1. Dra och släpp en **[!UICONTROL Code-based experience]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten.
+1. Dra och släpp en **[!UICONTROL Action]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten. Läs mer om [Åtgärdsaktiviteten](../building-journeys/journey-action.md).
+
+   >[!IMPORTANT]
+   >
+   >Alla inbyggda kanaler som nu är tillgängliga via aktiviteten Åtgärd kommer äldre inbyggda kanalaktiviteter att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
+
+1. Välj **[!UICONTROL Code-based experience]** som åtgärdstyp.
 
    ![](assets/code-based-activity-journey.png)
 
@@ -39,9 +45,11 @@ Så här lägger du till en **kodbaserad upplevelse**-aktivitet på en resa:
    >
    >Eftersom **den kodbaserade upplevelsen** är en inkommande upplevelseaktivitet har den en **Wait**-aktivitet på 3 dagar. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
 
-1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för meddelandet.
+1. Ange en **[!UICONTROL Label]** för att identifiera din åtgärd på arbetsytan för resan.
 
-1. Välj eller skapa den kodbaserade upplevelsekonfiguration som ska användas. [Läs mer](code-based-configuration.md)
+1. Klicka på knappen **[!UICONTROL Configure action]**.
+
+1. Du dirigeras till fliken **[!UICONTROL Actions]**. Därifrån väljer eller skapar du den kodbaserade upplevelsekonfiguration som ska användas. [Läs mer](code-based-configuration.md)
 
    ![](assets/code-based-activity-config.png)
 
@@ -53,11 +61,11 @@ Så här lägger du till en **kodbaserad upplevelse**-aktivitet på en resa:
 
    Du kan också använda en befintlig innehållsmall som bas för kodinnehållet. Observera att mallarna som är tillgängliga att välja omfattar antingen HTML eller JSON baserat på den kanalkonfiguration som har valts tidigare. [Lär dig använda innehållsmallar](../content-management/use-content-templates.md)
 
-1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
+1. Du kan lägga till en eller flera inkommande åtgärder i den kodbaserade upplevelsen genom att klicka på knappen **[!UICONTROL Add action]**. [Läs mer](../building-journeys/journey-action.md#multi-action)
 
-1. När den kodbaserade upplevelsen är klar kan du slutföra konfigurationen och publicera resan för att aktivera den. [Läs mer](../building-journeys/publish-journey.md)
+1. Gå tillbaka till arbetsytan. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
-Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
+Mer information om hur du skapar, konfigurerar och publicerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
 >[!TAB Skapa en kodbaserad upplevelsekampanj]
 
@@ -85,7 +93,7 @@ Följ stegen nedan för att börja skapa din **kodbaserade**-upplevelse via en k
 
    <!--![](assets/code-based-campaign-edit-content.png)-->
 
-Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
+Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 ➡️ [Lär dig skapa en kodbaserad upplevelsekampanj i den här videon](#video)
 
@@ -97,7 +105,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_code_based_experience"
 >title="Använda personaliseringsredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
 
 Följ stegen nedan för att redigera innehållet i din kodbaserade upplevelse.
 
@@ -145,4 +153,4 @@ När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för de
 
 I videon nedan visas hur du skapar en kodbaserad upplevelsekampanj, konfigurerar dess egenskaper, testar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449457/?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428868/?quality=12&learn=on)

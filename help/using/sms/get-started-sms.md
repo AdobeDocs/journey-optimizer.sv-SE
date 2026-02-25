@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1027268-0bbe-4e35-a5a6-2aef78083dd3
-source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 1%
@@ -189,7 +189,7 @@ Säkerställ att textmeddelandena följer gällande bestämmelser och sekretessk
 
 Lär dig hur ni kan införliva SMS i era kundresor och kampanjer:
 
-* [Lägg till SMS-meddelanden på resor](../building-journeys/journeys-message.md)
+* [Lägg till SMS-meddelanden på resor](../building-journeys/journey-action.md)
 * [Skapa SMS-kampanjer](../campaigns/create-campaign.md)
 
 +++
@@ -202,7 +202,7 @@ Lär dig hur du konfigurerar, redigerar och inkluderar SMS-meddelanden i dina ku
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3428916?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
 
 +++
 
@@ -212,7 +212,7 @@ Upptäck de omfattande mobilmeddelandefunktionerna som Adobe Journey Optimizer e
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3430381?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426021?quality=12&learn=on)
 
 +++
 
@@ -222,13 +222,13 @@ Lär dig hur du konfigurerar och skickar varumärkesanpassade, interaktiva RCS-m
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3464759?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464755)
 
 +++
 
 **Relaterade ämnen**
 
-* [Lägg till meddelanden under resor](../building-journeys/journeys-message.md)
+* [Lägg till meddelanden under resor](../building-journeys/journey-action.md)
 * [Skapa marknadsföringskampanjer](../campaigns/create-campaign.md)
 * [Skyddsritningar och begränsningar](../start/guardrails.md#sms-guardrails)
-* [Självstudiekurser för SMS och mobilmeddelanden](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/sms-channel/sms-mms-messages-overview){target="_blank"}
+* [Självstudiekurser för SMS och mobilmeddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/sms-channel/sms-mms-messages-overview){target="_blank"}

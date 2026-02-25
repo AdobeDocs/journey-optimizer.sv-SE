@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 71b12ea083d72597c65e8fb2dc3424ffafa77462
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '2087'
 ht-degree: 1%
 
 ---
@@ -31,23 +31,31 @@ Observera att meddelanden i appen inte påverkas av användarens val att välja 
 
 Så här lägger du till ett meddelande i appen under en resa:
 
-1. Öppna din resa och dra och släpp en **[!UICONTROL In-app]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten.
+1. Öppna din [resa](../building-journeys/journey-gs.md) och dra och släpp en **[!UICONTROL Action]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten. Läs mer om [Åtgärdsaktiviteten](../building-journeys/journey-action.md).
 
-   När en profil når slutet av sin resa kommer alla meddelanden i appen som visas för dem automatiskt att upphöra att gälla. Av den anledningen läggs en Wait-aktivitet automatiskt till efter aktiviteten i appen för att säkerställa korrekt timing.
+   >[!IMPORTANT]
+   >
+   >Alla inbyggda kanaler som nu är tillgängliga via aktiviteten Åtgärd kommer äldre inbyggda kanalaktiviteter att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
+
+1. Välj **[!UICONTROL In-app]** som åtgärdstyp.
 
    ![](assets/in_app_journey_1.png)
 
-1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för meddelandet.
+   >[!NOTE]
+   >
+   >När en profil når slutet av sin resa kommer alla meddelanden i appen som visas för dem automatiskt att upphöra att gälla. Av den anledningen läggs en **Wait** -aktivitet automatiskt till efter åtgärden i appen för att säkerställa korrekt timing. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
 
-1. Välj den [konfiguration i appen](inapp-configuration.md#channel-prerequisites) som du vill använda.
+1. Ange en **[!UICONTROL Label]** för att identifiera din åtgärd på arbetsytan för resan.
+
+1. Klicka på knappen **[!UICONTROL Configure action]**.
+
+1. Du dirigeras till fliken **[!UICONTROL Actions]**. Därifrån väljer eller skapar du den konfiguration i appen som ska användas. [Läs mer](inapp-configuration.md#channel-prerequisites)
 
    ![](assets/in_app_journey_2.png)
 
-1. Nu kan du börja designa ditt innehåll med knappen **[!UICONTROL Edit content]**. [Läs mer](design-in-app.md)
+1. Välj knappen **[!UICONTROL Edit content]** och skapa ditt innehåll efter behov. [Läs mer](design-in-app.md)
 
-1. Klicka på **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet. Regelbyggare gör det möjligt för användare att ange villkor och värden som, när de möts, utlöser en uppsättning åtgärder, till exempel att skicka ett meddelande i appen.
-
-   ![](assets/in_app_journey_4.png)
+1. Klicka på **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet. Regelbyggare gör det möjligt för användare att ange villkor och värden som, när de möts, utlöser en uppsättning åtgärder, till exempel att skicka ett meddelande i appen. [Läs mer](design-in-app.md)
 
    1. Klicka på händelselistrutan för att ändra utlösaren om det behövs.
 
@@ -113,11 +121,11 @@ Så här lägger du till ett meddelande i appen under en resa:
       * **[!UICONTROL Show once]**: Det här meddelandet visas bara en gång per användarsession och är synligt i alla fönster eller aktiviteter tills det stängs. Använd anpassad logik med meddelandeombudet för att begränsa den till en viss skärm eller få den att stängas automatiskt.
       * **[!UICONTROL Show until click through]**: Visa det här meddelandet när de händelser som markerats i listrutan **[!UICONTROL Mobile app trigger]** inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
 
-1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
+1. Du kan lägga till en eller flera inkommande åtgärder i meddelandet i appen genom att klicka på knappen **[!UICONTROL Add action]**. [Läs mer](../building-journeys/journey-action.md#multi-action)
 
-1. När ditt meddelande i appen är klart slutför du konfigurationen och publicerar din resa för att aktivera den.
+1. Gå tillbaka till arbetsytan. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
-Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
+Mer information om hur du skapar, konfigurerar och publicerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
 >[!NOTE]
 >
@@ -228,6 +236,8 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
    ![](assets/in_app_create_4.png)
 
+Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
+
 >[!ENDTABS]
 
 ## Instruktionsfilmer{#video}
@@ -236,7 +246,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
   +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3451886?captions=swe&quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
 
   +++
 
@@ -244,7 +254,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
   +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3445292/?captions=swe&learn=on&autoplay=true)
+  >[!VIDEO](https://video.tv.adobe.com/v/3419898/?learn=on&autoplay=true)
 
   +++
 
@@ -252,7 +262,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
   +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3451836/?captions=swe&learn=on&autoplay=true)
+  >[!VIDEO](https://video.tv.adobe.com/v/3423077/?learn=on&autoplay=true)
 
   +++
 

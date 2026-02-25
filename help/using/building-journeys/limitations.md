@@ -10,7 +10,7 @@ level: Intermediate
 keywords: resor, begränsning
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 1%
@@ -51,7 +51,7 @@ Här är begränsningar för användningen av resor.
 
 ## Begränsningar för reaktionshändelser {#reaction-limitations}
 
-* **[!UICONTROL Reaction]** aktiviteter måste placeras omedelbart efter en [kanalåtgärdsaktivitet](../building-journeys/journeys-message.md) på arbetsytan för resan. Placering av en **[!UICONTROL Wait]**-aktivitet eller någon annan aktivitet mellan kanalåtgärden och **[!UICONTROL Reaction]**-aktiviteten stöds inte och kan leda till att åtgärden inte fungerar som förväntat. Läs mer i [det här avsnittet](../building-journeys/reaction-events.md).
+* **[!UICONTROL Reaction]** aktiviteter måste placeras omedelbart efter en [kanalåtgärdsaktivitet](../building-journeys/journey-action.md) på arbetsytan för resan. Placering av en **[!UICONTROL Wait]**-aktivitet eller någon annan aktivitet mellan kanalåtgärden och **[!UICONTROL Reaction]**-aktiviteten stöds inte och kan leda till att åtgärden inte fungerar som förväntat. Läs mer i [det här avsnittet](../building-journeys/reaction-events.md).
 
 ## Begränsningar för datakällor {#data-sources-limitations}
 

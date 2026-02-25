@@ -6,9 +6,9 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1412'
 ht-degree: 1%
 
 ---
@@ -25,13 +25,25 @@ ht-degree: 1%
 
 Så här lägger du till ett innehållskort till en resa:
 
-1. Öppna din resa och dra och släpp en **[!UICONTROL Card]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten.
+1. Öppna din [resa](../building-journeys/journey-gs.md) och dra och släpp en **[!UICONTROL Action]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten. Läs mer om [Åtgärdsaktiviteten](../building-journeys/journey-action.md).
+
+   >[!IMPORTANT]
+   >
+   >Alla inbyggda kanaler som nu är tillgängliga via aktiviteten Åtgärd kommer äldre inbyggda kanalaktiviteter att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
+
+1. Välj **[!UICONTROL Card]** som åtgärdstyp.
 
    ![](assets/content-card-jo-1.png)
 
-1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för meddelandet.
+   >[!NOTE]
+   >
+   >Eftersom **Card** är en inkommande upplevelseaktivitet har det en 3-dagars **Wait**-aktivitet. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
 
-1. Välj den [innehållskortskonfiguration](content-card-configuration.md) som du vill använda.
+1. Ange en **[!UICONTROL Label]** för att identifiera din åtgärd på arbetsytan för resan.
+
+1. Klicka på knappen **[!UICONTROL Configure action]**.
+
+1. Du dirigeras till fliken **[!UICONTROL Actions]**. Välj eller skapa innehållskortskonfigurationen som ska användas därifrån. [Läs mer](content-card-configuration.md)
 
    ![](assets/content-card-jo-2.png)
 
@@ -86,11 +98,11 @@ Så här lägger du till ett innehållskort till en resa:
 
    1. Klicka på **[!UICONTROL Make group]** för att gruppera utlösare.
 
-1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
+1. Du kan lägga till en eller flera inkommande åtgärder på innehållskortet genom att klicka på knappen **[!UICONTROL Add action]**. [Läs mer](../building-journeys/journey-action.md#multi-action)
 
-1. När ditt innehållskort är klart slutför du konfigurationen och publicerar din resa för att aktivera den.
+1. Gå tillbaka till arbetsytan. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
-Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
+Mer information om hur du skapar, konfigurerar och publicerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
 >[!TAB Lägg till innehållskort i en kampanj]
 

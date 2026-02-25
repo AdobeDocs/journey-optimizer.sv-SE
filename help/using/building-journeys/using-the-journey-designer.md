@@ -10,7 +10,7 @@ level: Intermediate
 keywords: design, arbetsyta, resa, gränssnitt, dra, släpp
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Med de andra aktiviteterna kan du lägga till villkor för din resa för att def
 
 Åtgärder är vad du vill ska hända som ett resultat av någon typ av utlösare, som att skicka ett meddelande. Det är den del av resan som kundupplevelsen innebär. Det kan vara ett e-postmeddelande, SMS eller push-meddelande eller en åtgärd från tredje part, som ett Slack-meddelande.
 
-Med kanalåtgärdsaktiviteterna kan du inkludera ett meddelande som är utformat i [!DNL Journey Optimizer]. [Läs mer om kanalåtgärdsaktiviteter](journeys-message.md)
+Med kanalåtgärdsaktiviteterna kan du inkludera ett meddelande som är utformat i [!DNL Journey Optimizer]. [Läs mer om kanalåtgärdsaktiviteter](journey-action.md)
 
 Använd anpassade åtgärder från åtgärdsaktiviteterna för att skicka meddelanden med tredjepartssystem. [Läs mer om anpassade åtgärder](about-journey-activities.md#action-activities).
 

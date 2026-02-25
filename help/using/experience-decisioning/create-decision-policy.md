@@ -7,9 +7,9 @@ role: User
 level: Experienced
 version: Journey Orchestration
 exl-id: e7a89354-28ea-431f-a15d-a8c18946d266
-source-git-commit: 708c67796974e019417efbf086ab60d26dfca866
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2104'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. För att göra detta, följ nedanstående steg:
 
@@ -49,7 +49,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina
 
 ## Lägg till en beslutspolicy {#add}
 
-Om du vill lägga till en beslutsprincip i meddelandet öppnar du en resa eller kampanj och väljer en [kanalåtgärd](../building-journeys/journeys-message.md).
+Öppna en resa eller kampanj, välj en [kanalåtgärd](../building-journeys/journey-action.md) och redigera innehållet i meddelandet.
 
 Redigera innehållet i ditt meddelande och bläddra bland flikarna nedan om du vill ha mer information om hur du lägger till beslutsprincipen baserat på den valda kanalen.
 

@@ -6,7 +6,7 @@ description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
 exl-id: 7962189b-4135-4f88-b91d-40d21cdf6c6d
-source-git-commit: 7cfeabc85b9645be9d61ed6458e57e42ea319619
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 0%
@@ -154,7 +154,7 @@ ht-degree: 0%
 - [Använd åtgärdsreseaktiviteten](help/using/building-journeys/journey-action.md) - 14 okt
 - [Pausa en resa](help/using/building-journeys/journey-pause.md) - 13 oktober
 - [Kom igång med resor](help/using/building-journeys/journey.md) - 27 okt
-- [Lägg till en inbyggd kanalåtgärd för en resa](help/using/building-journeys/journeys-message.md) - 29 oktober
+- [Lägg till en inbyggd kanalåtgärd för en resa](help/using/building-journeys/journey-action.md) - 29 oktober
 - [Optimera aktivitet](help/using/building-journeys/optimize.md) - 22 okt
 - [Använd en målgrupp i en resa](help/using/building-journeys/read-audience.md) - 17 okt
 - [Tidsoptimering för sändning](help/using/building-journeys/send-time-optimization.md) - 28 okt
@@ -180,7 +180,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt

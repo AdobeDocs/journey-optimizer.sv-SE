@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
@@ -24,13 +24,15 @@ ht-degree: 2%
 >title="Inbyggd kanalåtgärd"
 >abstract="Journey Optimizer har inbyggda funktioner för kanalåtgärder. Du kan bara lägga till en meddelandeaktivitet (e-post, SMS/MMS), push, direktreklam) eller en inkommande upplevelse (In-app, webb, kodbaserad upplevelse, innehållskort) och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
 
-[!DNL Journey Optimizer] innehåller inbyggda funktioner för kanalåtgärder som används för att skicka meddelanden: när en profil anger den här aktiviteten skickas ett meddelande till dem.
+[!DNL Journey Optimizer] har inbyggda funktioner för kanalåtgärder som används för att skicka meddelanden. Om du vill lägga till en inbyggd kanalåtgärd till din resa drar och släpper du en kanalaktivitet och definierar dess inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
 
-Om du vill lägga till en inbyggd kanalåtgärd till din resa drar och släpper du en kanalaktivitet och definierar dess inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
+Alla inbyggda kanaler är nu även tillgängliga via aktiviteten **Åtgärd** som rekommenderas för att lägga till en inbyggd kanalåtgärd på din resa. [Läs mer](journey-action.md)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Du kan också konfigurera anpassade åtgärder för att skicka meddelanden i [!DNL Journey Optimizer]. [Läs mer](#recommendation)
+>Gamla inbyggda kanalaktiviteter kommer att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
+
+Du kan också konfigurera anpassade åtgärder för att skicka meddelanden i [!DNL Journey Optimizer]. [Läs mer](#recommendation)
 
 ## Lägg till ett meddelande i en resa  {#add-msg-in-journey}
 

@@ -8,7 +8,7 @@ feature: Push, Overview
 role: Admin
 level: Intermediate
 exl-id: 9718c4b6-2558-4dfd-9d8f-f8845def19ba
-source-git-commit: 5758c9db8b1b12367126f4adb8bd1c0bac766514
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
@@ -82,5 +82,5 @@ I följande bild visas de olika stegen, från början till slut, som används f�
 * [Konfigurera push-kanal](push-configuration.md)
 * [Rapport om push-meddelanden](../reports/journey-global-report-cja-push.md)
 * [Skapa ett push-meddelande](create-push.md)
-* [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
+* [Lägg till ett meddelande i en resa](../building-journeys/journey-action.md)
 * [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)

@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 2dfc9c2db5af1b9b74f7405a68e85563f633a54f
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 1%
+source-wordcount: '1230'
+ht-degree: 2%
 
 ---
 
@@ -38,19 +38,31 @@ Bläddra bland flikarna nedan för att lära dig hur du lägger till ett textmed
 
 >[!TAB Lägg till ett textmeddelande på en resa]
 
-1. Öppna din resa och dra och släpp en SMS-aktivitet från **Åtgärder**-delen av paletten.
+1. Öppna resan och dra och släpp en **[!UICONTROL Action]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten. Läs mer om [Åtgärdsaktiviteten](../building-journeys/journey-action.md).
+
+   >[!IMPORTANT]
+   >
+   >Alla inbyggda kanaler som nu är tillgängliga via aktiviteten Åtgärd kommer äldre inbyggda kanalaktiviteter att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
+
+1. Välj **[!UICONTROL SMS]** som åtgärdstyp.
 
    ![](assets/sms_create_1.png)
 
-1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandekonfiguration som ska användas.
+1. Ange en **[!UICONTROL Label]** för att identifiera din åtgärd på arbetsytan för resan.
+
+1. Klicka på knappen **[!UICONTROL Configure action]**.
+
+1. Du dirigeras till fliken **[!UICONTROL Actions]**. Därifrån väljer eller skapar du den SMS-konfiguration som ska användas. [Läs mer](sms-configuration.md)
 
    ![](assets/sms_create_2.png)
 
-   Mer information om hur du konfigurerar en resa finns på [sidan](../building-journeys/journey-gs.md)
+1. Du kan dessutom tillämpa regler för begränsning av antalet appar i SMS-åtgärden genom att välja en regeluppsättning i listrutan **[!UICONTROL Business rules]**. [Läs mer](../conflict-prioritization/channel-capping.md)
 
-   Fältet **[!UICONTROL configuration]** är som standard förfyllt med den senaste konfigurationen som används av användaren för den kanalen.
+1. Välj knappen **[!UICONTROL Edit content]** och skapa ditt innehåll efter behov. [Läs mer](#sms-content)
 
-Nu kan du börja designa innehållet i SMS-meddelandet med knappen **[!UICONTROL Edit content]**, som beskrivs nedan.
+1. Gå tillbaka till arbetsytan. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
+
+Mer information om hur du skapar, konfigurerar och publicerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
 >[!TAB Lägg till ett textmeddelande i en kampanj]
 
@@ -88,6 +100,8 @@ Nu kan du börja designa innehållet i SMS-meddelandet med knappen **[!UICONTROL
    * Månad
 
 Nu kan du börja designa innehållet i ditt textmeddelande med knappen **[!UICONTROL Edit content]**, som beskrivs nedan.
+
+Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 >[!ENDTABS]
 
@@ -184,5 +198,5 @@ När ni har skickat det kan ni mäta effekten av ert SMS i kampanjrapporten elle
 * [Förhandsgranska, testa och skicka ditt textmeddelande](send-sms.md)
 * [Konfigurera SMS-kanal](sms-configuration.md)
 * [SMS-/MMS-rapporter](../reports/journey-global-report-cja-sms.md)
-* [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
+* [Lägg till ett meddelande i en resa](../building-journeys/journey-action.md)
 * [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)

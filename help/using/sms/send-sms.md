@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
-source-git-commit: d6a46a6db9bcef4def71e915389d725c69d851c3
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 1%
@@ -76,4 +76,4 @@ När textmeddelandet är klart slutför du konfigurationen av din [resa](../buil
 * [Konfigurera SMS-kanal](sms-configuration.md)
 * [SMS-/MMS-rapporter](../reports/journey-global-report-cja-sms.md)
 * [Skapa ett textmeddelande](create-sms.md)
-* [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
+* [Lägg till ett meddelande i en resa](../building-journeys/journey-action.md)

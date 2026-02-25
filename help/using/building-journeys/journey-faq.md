@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 keywords: resa, frågor, svar, felsökning, hjälp, guide, orkestrering
 version: Journey Orchestration
 exl-id: cac9fc24-b78e-48d9-9c0c-f43181246f6f
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '5180'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Hitta svar på vanliga frågor om Journey Orchestration i [!DNL Adobe Journey Optimizer].
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ta upp din fråga. Du kan även ansluta till [[!DNL Adobe Journey Optimizer] communityn](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ta upp din fråga. Du kan även ansluta till [[!DNL Adobe Journey Optimizer] communityn](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 ## Allmänna begrepp
 
@@ -229,7 +229,7 @@ Ja. Journey Optimizer innehåller **inbyggda kanalåtgärder** som gör att du k
 
 För kanaler som inte stöds internt kan du använda **anpassade åtgärder** för att integrera med externa meddelandeplattformar och skicka meddelanden via valfri tredjepartskanal.
 
-Läs mer om [meddelanden under resor](journeys-message.md) och [anpassade åtgärder](using-custom-actions.md).
+Läs mer om [meddelanden under resor](journey-action.md) och [anpassade åtgärder](using-custom-actions.md).
 
 +++
 
@@ -265,7 +265,7 @@ Skapa en **unitär händelseutlöst resa**:
 
 Resan utlöses automatiskt när en köphändelse tas emot och bekräftelsemeddelandet skickas i realtid.
 
-Läs mer om [händelsekonfiguration](../event/about-events.md) och [e-poståtgärder](journeys-message.md).
+Läs mer om [händelsekonfiguration](../event/about-events.md) och [e-poståtgärder](journey-action.md).
 
 +++
 
@@ -300,7 +300,7 @@ Skapa en händelseutlöst resa med en **[!UICONTROL Reaction]**-händelse med en
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Reaction]** händelser måste placeras omedelbart efter [kanalåtgärder](journeys-message.md). Placera inte **[!UICONTROL Wait]** aktiviteter mellan kanalåtgärden och **[!UICONTROL Reaction]**-aktiviteten.
+>**[!UICONTROL Reaction]** händelser måste placeras omedelbart efter [kanalåtgärder](journey-action.md). Placera inte **[!UICONTROL Wait]** aktiviteter mellan kanalåtgärden och **[!UICONTROL Reaction]**-aktiviteten.
 
 Läs mer om [resans användningsfall](jo-use-cases.md) och [reaktionshändelser](reaction-events.md).
 
@@ -606,7 +606,7 @@ Ja. Använd en **[villkorsaktivitet](condition-activity.md)** för att dirigera 
 * Använd [kanalytor](../configuration/channel-surfaces.md) för att hantera kanalkonfigurationer
 * Testa alla sökvägar för att säkerställa korrekt meddelandeleverans
 
-Läs mer om [villkor](condition-activity.md), [meddelandeåtgärder](journeys-message.md) och [kanalval](../channels/gs-channels.md).
+Läs mer om [villkor](condition-activity.md), [meddelandeåtgärder](journey-action.md) och [kanalval](../channels/gs-channels.md).
 
 +++
 
@@ -932,7 +932,7 @@ Läs mer om [resedesign](using-the-journey-designer.md) och [skyddsutkast och be
 * Använd [testläge](testing-the-journey.md) och [torr körning](journey-dry-run.md) för att validera prestanda före publicering
 * Minimera externa API-anrop via [anpassade åtgärder](using-custom-actions.md) för att undvika fördröjning och beroende av system från tredje part
 * Lagra data som används ofta i [!DNL Adobe Experience Platform] med [datasuppslagning](dataset-lookup.md) i stället för att göra externa anrop, när det är möjligt
-* Granska och optimera prestanda för [meddelandeleverans](journeys-message.md)
+* Granska och optimera prestanda för [meddelandeleverans](journey-action.md)
 
 Läs mer om [skyddsutkast och begränsningar](../start/guardrails.md).
 
@@ -946,4 +946,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

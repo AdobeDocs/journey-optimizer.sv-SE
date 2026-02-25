@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd aktiviteten för åtgärdsresan
-description: Lär dig hur du lägger till en generisk Action-aktivitet för att konfigurera enskilda åtgärder och grupper med inkommande åtgärder inom arbetsytan för flera åtgärder.
+title: Använda aktiviteten Åtgärd
+description: Lär dig hur du lägger till en allmän Action-aktivitet för att konfigurera enskilda åtgärder och grupper med inkommande åtgärder för flera åtgärder på arbetsytan för resan, och hur du lägger till inbyggda kanalåtgärder.
 feature: Journeys, Activities, Channels Activity
 topic: Content Management
 role: User
@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
 version: Journey Orchestration
-source-git-commit: 1455489645b208340085a9ea4d4e6e759dbcde9b
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
@@ -22,25 +22,29 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_action_activity"
 >title="Åtgärdsaktivitet"
->abstract="Med den generiska **åtgärden** kan du konfigurera en enskild ursprunglig kanalåtgärd och flera inkommande aktiviteter med möjlighet att lägga till optimering till alla inbyggda kanalåtgärder."
+>abstract="Med aktiviteten **Åtgärd** kan du konfigurera en enskild ursprunglig kanalåtgärd och flera inkommande aktiviteter med möjlighet att lägga till optimering till alla inbyggda kanalåtgärder."
 
 [!DNL Journey Optimizer] innehåller en ny allmän **Åtgärd**-aktivitet som gör att du kan konfigurera en enda inbyggd kanalåtgärd och även flera inkommande aktiviteter.
 
-Det gör det möjligt att
+Åtgärdsaktiviteten erbjuder:
 
 * En förenklad inbyggd åtgärdskonfiguration på arbetsytan för resan.
 * Kapaciteten för att skapa inkommande åtgärdsgrupper med flera åtgärder.
 * Möjlighet att lägga till optimering till alla inbyggda kanalåtgärder.
 
->[!NOTE]
+Använd aktiviteten **Åtgärd** om du vill lägga till en inbyggd kanalåtgärd för din resa. Denna enhetliga aktivitet konsoliderar alla kanalåtgärder (e-post, push, SMS, in-app, webb, kodbaserad upplevelse och innehållskort) till en enda aktivitetstyp som ersätter de tidigare kanalaktiviteterna.
+
+>[!IMPORTANT]
 >
->Alla inbyggda kanaler är nu tillgängliga via aktivitetens reseaktivitet. Gamla inbyggda kanalaktiviteter kommer att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
+>Alla inbyggda kanaler som nu är tillgängliga via aktiviteten Åtgärd kommer äldre inbyggda kanalaktiviteter att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
 
 Du kan också konfigurera anpassade åtgärder för att skicka meddelanden i [!DNL Journey Optimizer]. [Läs mer](#recommendation)
 
-## Lägga till en åtgärd för en resa  {#add-action}
+## Lägg till en inbyggd kanalåtgärd till en resa  {#add-action}
 
-Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
+Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för din resa med aktiviteten **[!UICONTROL Action]**.
+
+Mer information om vilka kanaler som är tillgängliga under resor finns i tabellen i det här avsnittet: [Kanaler under resor och kampanjer](../channels/gs-channels.md#channels).
 
 1. Starta din resa med en [Event](general-events.md)- eller [Read Audience](read-audience.md)-aktivitet.
 
@@ -62,7 +66,92 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
 
 1. Om du har valt en inkommande kanal kan du lägga till flera åtgärder. [Läs mer](#multi-action)
 
-1. Konfigurera aktiviteten enligt den valda kanalen. Lär dig konfigurera inbyggda kanalåtgärder i [det här avsnittet](journeys-message.md).
+1. Konfigurera aktiviteten enligt den valda kanalen. Detaljerade konfigurationsriktlinjer finns på länkarna nedan.
+
+   * Lär dig de detaljerade stegen för att skapa en utgående åtgärd på följande sätt:
+
+     <table style="table-layout:fixed">
+      <tr style="border: 0;">
+      <td>
+      <a href="../email/create-email.md">
+      <img alt="Lead" src="../assets/do-not-localize/email.jpg">
+      </a>
+      <div><a href="../email/create-email.md"><strong>Skapa e-post</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../push/create-push.md">
+      <img alt="Sällan" src="../assets/do-not-localize/push.jpg">
+      </a>
+      <div>
+      <a href="../push/create-push.md"><strong>Skapa push-meddelanden<strong></a>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../sms/create-sms.md">
+      <img alt="Validering" src="../assets/do-not-localize/sms.jpg">
+      </a>
+      <div>
+      <a href="../sms/create-sms.md"><strong>Skapa textmeddelanden (SMS/MMS)</strong></a>
+      </div>
+      <p>
+      </td>
+      </tr>
+      </table>
+
+   * Lär dig de detaljerade stegen för att skapa en inkommande åtgärd på följande sätt:
+
+     <table style="table-layout:fixed">
+      <tr style="border: 0;">
+      <td>
+      <a href="../in-app/create-in-app.md">
+      <img alt="Lead" src="../assets/do-not-localize/in-app.jpg">
+      </a>
+      <div><a href="../in-app/create-in-app.md"><strong>Skapa meddelanden i programmet</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../web/create-web.md">
+      <img alt="Lead" src="../assets/do-not-localize/web-create.jpg">
+      </a>
+      <div><a href="../web/create-web.md"><strong>Skapa webbupplevelser</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../content-card/create-content-card.md">
+      <img alt="Lead" src="../assets/do-not-localize/sms-config.jpg">
+      </a>
+      <div><a href="../content-card/create-content-card.md"><strong>Skapa innehållskort</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../code-based/create-code-based.md">
+      <img alt="Sällan" src="../assets/do-not-localize/web-design.jpg">
+      </a>
+      <div>
+      <a href="../code-based/create-code-based.md"><strong>Skapa kodbaserade upplevelser<strong></a>
+      </div>
+      <p>
+      </td>
+      </tr>
+      </table>
+
+   >[!NOTE]
+   >
+   >* Varje inkommande upplevelseåtgärd levereras med en 3-dagars **Wait**-aktivitet. [Läs mer](wait-activity.md#auto-wait-node)
+   >
+   >* För e-postmeddelanden och push-meddelanden kan du aktivera optimering av sändningstid. [Läs mer](send-time-optimization.md)
+
+1. Beroende på aktiviteten kan du visa avancerade parametrar som är specifika för den valda kanalen och åsidosätta vissa standardvärden, till exempel körningsadressen. [Läs mer](about-journey-activities.md#advanced-parameters)
+
+   >[!NOTE]
+   >
+   >Om de avancerade parametrarna är dolda klickar du på knappen **[!UICONTROL Show read-only fields]** överst i den högra rutan.
 
 1. Använd avsnittet **[!UICONTROL Optimization]** för att köra innehållsexperiment, utnyttja målinriktningsregler eller använda avancerade kombinationer av både experiment och målinriktning.
 
@@ -102,7 +191,7 @@ Snabba leveranser används när fördröjningar i meddelandeleverans är affärs
 
 Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [[!DNL Adobe Journey Optimizer] produktbeskrivningen](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [[!DNL Adobe Journey Optimizer] produktbeskrivningen](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
@@ -178,7 +267,32 @@ Följ stegen nedan för att definiera flera inkommande åtgärder i en enda åtg
 1. Fortsätt på samma sätt om du vill lägga till fler åtgärder. Du kan lägga till upp till 10 inkommande åtgärder i en åtgärdsgrupp för resan.
 
 När resan är [live](publish-journey.md) aktiveras alla åtgärder samtidigt.
-<!--
-## Next steps {#next}
 
-Once your action is configured, you can design its content. [Learn more]-->
+## Uppdatera ett direktinnehåll {#update-live-content}
+
+Ni kan uppdatera innehållet i en inbyggd kanalåtgärd i en direktresa.
+
+Ändringar som görs i innehållet återspeglas inte i resan förrän du sparar åtgärdens egenskaper. [Läs mer](about-journey-activities.md#advanced-parameters)
+
+Det gör du genom att öppna din direktresa, välja kanalaktiviteten och klicka på **Redigera innehåll**.
+
+![Redigera kanalaktivitetsknappen i direktresan](assets/email-action-edit-content.png)
+
+Du kan dock inte ändra de attribut som används i personaliseringen, vare sig det är profilattribut eller kontextuella data (från händelse- eller reseegenskaper).
+
+* Om du ändrade sammanhangsbaserade data visas följande felmeddelande: `ERR_AUTHORING_JOURNEYVERSION_201`
+
+* Om du ändrade profilattribut visas följande felmeddelande: `ERR_AUTHORING_JOURNEYVERSION_202`
+
+Observera att för aktiviteten i appen kan ändringar göras i innehållet medan resan pågår, men utlösare i appen kan inte ändras.
+
+## Skicka med anpassade åtgärder {#recommendation}
+
+I stället för att använda de inbyggda meddelandefunktionerna kan du använda anpassade åtgärder för att konfigurera anslutningen för ett tredjepartssystem för att skicka meddelanden eller API-anrop.
+
+* Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. [Läs mer](../action/action.md)
+
+* Om du arbetar med Adobe Campaign, se följande avsnitt:
+
+   * [[!DNL Journey Optimizer] och Campaign v7/v8](../action/acc-action.md)
+   * [[!DNL Journey Optimizer] och Campaign Standard](../action/acs-action.md)

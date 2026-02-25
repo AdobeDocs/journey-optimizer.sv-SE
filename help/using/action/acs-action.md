@@ -9,7 +9,7 @@ role: Developer, Admin
 level: Intermediate
 keywords: kampanj, standard, integrering, capping, action
 exl-id: 2f0218c9-e1b1-44ba-be51-15824b9fc6d2
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Campaign Standard transaktionsmeddelande och tillhörande händelse måste publi
 
 * Du kan inte använda en Campaign Standard-åtgärd med en publikkvalificering eller en målgruppsaktivitet.
 
-* En resa kan inte använda både [inbyggda kanalåtgärder](../building-journeys/journeys-message.md) och [Campaign Standard-åtgärder](../building-journeys/using-adobe-campaign-standard.md).
+* En resa kan inte använda både [inbyggda kanalåtgärder](../building-journeys/journey-action.md) och [Campaign Standard-åtgärder](../building-journeys/using-adobe-campaign-standard.md).
 
 ## Konfigurera åtgärden {#configure-action}
 

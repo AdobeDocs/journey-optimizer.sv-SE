@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 1455489645b208340085a9ea4d4e6e759dbcde9b
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 2%
+source-wordcount: '1102'
+ht-degree: 3%
 
 ---
 
@@ -31,23 +31,35 @@ Om du vill skapa ett e-postmeddelande i [!DNL Journey Optimizer] lägger du till
 
 >[!TAB Lägg till ett e-postmeddelande till en resa]
 
-1. Öppna din resa och dra och släpp en **[!UICONTROL Email]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten.
+1. Öppna din resa och dra och släpp en **[!UICONTROL Action]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten. Läs mer om [Åtgärdsaktiviteten](../building-journeys/journey-action.md).
 
-   <!--You can also use the **[!UICONTROL Action]** activity to add email to a journey—select the Email channel when configuring the action. The **[!UICONTROL Email]** activity will soon be deprecated. [Learn more about the Action activity](../building-journeys/journey-action.md).-->
+   >[!IMPORTANT]
+   >
+   >Alla inbyggda kanaler som nu är tillgängliga via aktiviteten Åtgärd kommer äldre inbyggda kanalaktiviteter att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
 
-1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori).
-
-1. Välj eller skapa [e-postkonfigurationen](email-settings.md).
+1. Välj **[!UICONTROL Email]** som åtgärdstyp.
 
    ![](assets/email_journey.png)
 
-   Fältet är som standard förifyllt med den senaste konfigurationen som användaren använde för den kanalen.
+1. Ange en **[!UICONTROL Label]** för att identifiera din åtgärd på arbetsytan för resan.
 
->[!NOTE]
->
->Du kan använda alternativet för optimering av sändningstid för att förutsäga den bästa tidpunkten för att skicka meddelandet för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. [Lär dig hur du arbetar med optimering vid sändning](../building-journeys/send-time-optimization.md)
+1. Klicka på knappen **[!UICONTROL Configure action]**.
 
-Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
+1. Du dirigeras till fliken **[!UICONTROL Actions]**. Därifrån väljer eller skapar du den e-postkonfiguration som ska användas. [Läs mer](email-settings.md)
+
+   ![](assets/email-action-config.png)
+
+1. Dessutom:
+
+   * Du kan tillämpa regler för begränsning av tillhörighet i e-poståtgärden genom att välja en regeluppsättning i den nedrullningsbara listan **[!UICONTROL Business rules]**. [Läs mer](../conflict-prioritization/channel-capping.md)
+
+   * Du kan använda alternativet **[!DNL Send time optimization]** för att förutsäga den bästa tiden att skicka meddelandet för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. [Lär dig hur](../building-journeys/send-time-optimization.md)
+
+1. Markera knappen **[!UICONTROL Edit content]** och skapa ditt innehåll med e-post-Designer. [Läs mer](#define-email-content)
+
+1. Gå tillbaka till arbetsytan. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
+
+Mer information om hur du skapar, konfigurerar och publicerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
 >[!TAB Lägg till ett e-postmeddelande till en kampanj]
 
@@ -68,8 +80,7 @@ From the **[!UICONTROL Action]** section, specify if you want to track how your 
 
 ![](assets/email_campaign_tracking.png)
 -->
-
-Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
+Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 >[!ENDTABS]
 
@@ -182,7 +193,7 @@ När din e-post är klar slutför du konfigurationen av din [resa](../building-j
 
 >[!NOTE]
 >
->Om du vill spåra mottagarnas beteende genom att öppna e-post och/eller interaktioner kontrollerar du att de dedikerade alternativen i avsnittet **[!UICONTROL Tracking]** är aktiverade i kundens [e-postaktivitet](../building-journeys/journeys-message.md) eller i e-postkampanjen [kampanjen](../campaigns/create-campaign.md).<!--to move?-->
+>Om du vill spåra mottagarnas beteende genom att öppna e-post och/eller interaktioner kontrollerar du att de dedikerade alternativen i avsnittet **[!UICONTROL Tracking]** är aktiverade i kundens [e-postaktivitet](../building-journeys/journey-action.md) eller i e-postkampanjen [kampanjen](../campaigns/create-campaign.md).<!--to move?-->
 
 <!--
 

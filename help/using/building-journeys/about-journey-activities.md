@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '691'
 ht-degree: 11%
 
 ---
@@ -43,7 +43,7 @@ Orchestration-aktiviteter är villkor som hjälper till att bestämma nästa ste
 
 På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
-<!--* [Optimize](optimize.md)-->
+* [Optimera](optimize.md)
 * [Läs målgrupp](read-audience.md)
 * [Vänta](wait-activity.md)
 * [Innehållsbeslut](content-decision.md)
@@ -57,7 +57,7 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
 På paletten till vänster på skärmen, under **[!UICONTROL Events]** och **[!UICONTROL Orchestration]**, hittar du kategorin **[!UICONTROL Actions]**. Följande åtgärdsaktiviteter är tillgängliga:
 
-* [Inbyggda kanalåtgärder](../building-journeys/journeys-message.md)
+* [Inbyggda kanalåtgärder](../building-journeys/journey-action.md) som är tillgängliga från aktiviteten **Åtgärd**
 * [Anpassade åtgärder](../building-journeys/using-custom-actions.md)
 * [Hoppa](../building-journeys/jump.md)
 
@@ -111,7 +111,7 @@ I vissa specifika sammanhang kan du åsidosätta parametrarnas värden för spec
 
 ### Lägg till en alternativ sökväg
 
-När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
+När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths)
 
 ![Lägg till ett alternativ sökväg i egenskaperna för villkorsaktivitet](assets/journey42.png)
 
@@ -121,4 +121,4 @@ Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och p
 
 Lär dig hur du felsöker fel i aktiviteter och under resan [på den här sidan](troubleshooting.md).
 
-Se även **[Övervakning och felsökning](../../rp_landing_pages/troubleshoot-journey-landing-page.md)**.
+Se även [Övervakning och felsökning](../../rp_landing_pages/troubleshoot-journey-landing-page.md)

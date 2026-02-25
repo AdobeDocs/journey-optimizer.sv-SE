@@ -9,7 +9,7 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 0%
@@ -86,7 +86,7 @@ När en resa pausas beror profilhantering och aktivitetskörning på aktiviteten
 | [Vänta](wait-activity.md) | Samma beteende som i en direktresa |
 | [Villkor](condition-activity.md) | Samma beteende som i en direktresa |
 | [Innehållsbeslut](content-decision.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
-| [Kanalåtgärd](journeys-message.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
+| [Kanalåtgärd](journey-action.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
 | [Anpassad åtgärd](../action/action.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
 | [Uppdatera profil](update-profiles.md) &amp; [Hoppa](jump.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
 | [Externa data, Source](../datasource/external-data-sources.md) | Samma beteende som i en direktresa |
@@ -202,7 +202,7 @@ När du återupptar den här resan:
 
 ## Felsöka uteblivna profiler under pausade resor {#discards-troubleshoot}
 
-Du kan använda [[!DNL Adobe Experience Platform] frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
+Du kan använda [[!DNL Adobe Experience Platform] frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
 
 * Använd följande kod för att ta bort filer som inträffar innan profilen kommer in på resan:
 

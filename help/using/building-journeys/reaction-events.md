@@ -10,7 +10,7 @@ level: Intermediate
 keywords: resa, händelser, reaktion, spårning, plattform
 exl-id: 235384f3-0dce-4797-8f42-1d4d01fa42d9
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 2%
@@ -36,11 +36,11 @@ Du kan använda aktiviteten **[!UICONTROL Reaction]** för att utföra en åtgä
 
 ## Konfigurera reaktionshändelser {#configure}
 
-![Konfiguration av reaktionshändelser med kanalval och händelsetyp &#x200B;](assets/journey45.png)
+![Konfiguration av reaktionshändelser med kanalval och händelsetyp ](assets/journey45.png)
 
 Följ de här stegen för att konfigurera reaktionshändelser:
 
-1. Placera en **[!UICONTROL Reaction]**-aktivitet **omedelbart** efter en [kanalåtgärdsaktivitet](journeys-message.md) på arbetsytan för resan.
+1. Placera en **[!UICONTROL Reaction]**-aktivitet **omedelbart** efter en [kanalåtgärdsaktivitet](journey-action.md) på arbetsytan för resan.
 1. Lägg till en **[!UICONTROL Label]** i svaret. Det här steget är valfritt.
 1. Välj den åtgärd som du vill reagera på i listrutan. Du kan välja vilken åtgärdsaktivitet som helst som placerats i banans tidigare steg.
 1. Beroende på vilken åtgärd du har valt väljer du vad du vill reagera på.
@@ -48,7 +48,7 @@ Följ de här stegen för att konfigurera reaktionshändelser:
 
 ## Skyddsritningar och begränsningar {#guardrails-limitations}
 
-* En **[!UICONTROL Reaction]**-aktivitet måste placeras **omedelbart** efter en [kanalåtgärdsaktivitet](journeys-message.md) på arbetsytan för resan.
+* En **[!UICONTROL Reaction]**-aktivitet måste placeras **omedelbart** efter en [kanalåtgärdsaktivitet](journey-action.md) på arbetsytan för resan.
 * Du kan inte använda en **[!UICONTROL Reaction]**-aktivitet om det inte finns någon kanalåtgärdsaktivitet innan.
 * Placering av en **[!UICONTROL Wait]**-aktivitet eller någon annan aktivitet mellan kanalåtgärden och **[!UICONTROL Reaction]**-aktiviteten stöds inte och kan leda till att åtgärden inte fungerar som förväntat.
 * Reaktionshändelser kan bara spåra meddelanden som skickas inom samma resa. De kan inte spåra meddelanden som äger rum under en annan resa.

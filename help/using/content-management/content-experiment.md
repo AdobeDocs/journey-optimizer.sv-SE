@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 462859568ffcacab644d587e328cf92ce053aa00
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '1827'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
 ## Skapa innehåll {#campaign-experiment}
 
-1. Börja med att skapa och konfigurera din [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journeys-message.md) enligt dina krav.
+1. Börja med att skapa och konfigurera din [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journey-action.md) enligt dina krav.
 
 1. Börja personalisera behandling A från fönstret **[!UICONTROL Edit content]**.
 

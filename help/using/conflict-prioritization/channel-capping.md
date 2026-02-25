@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 80bd5a61-1368-435c-9a9a-dd84b9e4c208
-source-git-commit: f874456748a8bd7fce69c7ad2a7e69380d5336a6
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Genom att utnyttja kanalregeluppsättningar kan ni ange frekvensbegränsning eft
 
 >[!IMPORTANT]
 >
->Se till att du väljer namnutrymmet med högst prioritet när du skapar en kampanj eller resa, så att du kan vara säker på att kanalnivåappningen fungerar som den ska. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+>Se till att du väljer namnutrymmet med högst prioritet när du skapar en kampanj eller resa, så att du kan vara säker på att kanalnivåappningen fungerar som den ska. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
 ## Skapa en regel för kanalbegränsning
 
@@ -72,7 +72,7 @@ Så här skapar du en kanalregeluppsättning:
 
    >[!IMPORTANT]
    >
-   >* För att vara säker på att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}<br/>
+   >* För att vara säker på att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}<br/>
    >
    >* Profilräknarens värde uppdateras när kommunikationen har levererats. Tänk på det här när du skickar stora mängder kommunikation eftersom dataflödet kan resultera i att mottagaren får e-postminuterna eller till och med timmar efter att kommunikationen har startats (om du skickar miljontals meddelanden samtidigt). Detta gäller om en mottagare får två kommunikationer nära ihop. Vi föreslår att kommunikationen ska hållas isär med minst två timmar om det är möjligt, så att mottagaren får tillräckligt med tid för att kunna ta emot kommunikationen och räkningsvärdet för att kunna uppdatera den.
 
@@ -155,7 +155,7 @@ You can combine several message frequency rules, such as described in the exampl
 
 1. Save and [activate](#activate-rule) the rule.
 
-1. [Create a message](../building-journeys/journeys-message.md) for every channel you want to communicate through and select the **[!UICONTROL Marketing]** category for each message. [Learn how to apply a frequency rule](#apply-frequency-rule)
+1. [Create a message](../building-journeys/journey-action.md) for every channel you want to communicate through and select the **[!UICONTROL Marketing]** category for each message. [Learn how to apply a frequency rule](#apply-frequency-rule)
 
    ![](assets/journey-message-category.png)
 
@@ -165,4 +165,4 @@ In this scenario, an individual profile:
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)

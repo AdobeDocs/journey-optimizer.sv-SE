@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: tillåtelselista, lista, säker, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: d236ece92a40a9ad986adfff33cb1b0a53ae57c0
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 2%
@@ -152,7 +152,7 @@ Om du vill fylla tillåtelselista kan du även anropa API:t för inaktivering me
 
 Du kan utföra åtgärderna **Lägg till**, **Ta bort** och **Hämta**.
 
-Läs mer om hur du gör API-anrop i referensdokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html?lang=sv-SE){target="_blank"}.
+Läs mer om hur du gör API-anrop i referensdokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html){target="_blank"}.
 
 ## Ladda ned tillåtelselista {#download-allowed-list}
 
@@ -199,7 +199,7 @@ När tillåtelselista är [active](#enable-allow-list) gäller följande logik:
 
 >[!NOTE]
 >
->Profilerna med statusen **[!UICONTROL Not allowed]** har uteslutits under meddelandeöverföringsprocessen. Det innebär att även om **reserapporterna** visar att de här profilerna har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)) så inkluderas de inte i **e-postrapporterna** i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelanden skickas.
+>Profilerna med statusen **[!UICONTROL Not allowed]** har uteslutits under meddelandeöverföringsprocessen. Det innebär att även om **reserapporterna** visar att de här profilerna har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journey-action.md)) så inkluderas de inte i **e-postrapporterna** i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelanden skickas.
 >
 >Läs mer om [Live-rapporten](../reports/live-report.md) och [Customer Journey Analytics-rapporten](../reports/report-gs-cja.md).
 
@@ -207,7 +207,7 @@ När tillåtelselista är [deaktiverad](#deactivate-allow-list) skickas alla e-p
 
 ## Uteslutningsrapportering {#reporting}
 
-När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Det gör du genom att använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att göra API-anropen nedan.
+När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Det gör du genom att använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att göra API-anropen nedan.
 
 Använd följande fråga om du vill hämta **antalet e-postmeddelanden** som inte skickades eftersom mottagarna inte var i tillåtelselista:
 

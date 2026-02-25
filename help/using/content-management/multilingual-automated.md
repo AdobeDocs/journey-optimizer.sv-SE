@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 0%
@@ -166,7 +166,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
 
    1. Gå till taggegenskaper i Adobe Experience Platform Data Collection.
 
-   1. Öppna menyn **[!UICONTROL Rules]** och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [dokumentationen för datainsamling](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+   1. Öppna menyn **[!UICONTROL Rules]** och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [dokumentationen för datainsamling](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
 
    1. Lägg till en händelse som konfigurerats enligt nedan i regelns **[!UICONTROL IF]**-avsnitt:
 
@@ -224,7 +224,7 @@ Observera att när du har konfigurerat språkinställningarna kan du inte längr
 
 När du har konfigurerat översättningsprojektet och språkinställningarna är du redo att skapa en kampanj eller resa och anpassa innehållet för olika språkområden.
 
-1. Börja med att skapa och konfigurera e-post, SMS eller push-meddelanden [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journeys-message.md) enligt dina krav.
+1. Börja med att skapa och konfigurera e-post, SMS eller push-meddelanden [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journey-action.md) enligt dina krav.
 
 1. När det primära innehållet har skapats klickar du på **[!UICONTROL Save]** och går tillbaka till kampanjkonfigurationsskärmen.
 

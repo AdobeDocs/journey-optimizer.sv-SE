@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: aad4e08a-3369-454d-9e32-974347a3b393
-source-git-commit: 279fd366b14520daec1df7f843ed337348e145a5
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -62,6 +62,6 @@ När ditt push-meddelande är klart slutför du konfigurationen av din [resa](..
 * [Konfigurera push-kanal för webben](push-configuration-web.md)
 * [Rapport om push-meddelanden](../reports/journey-global-report-cja-push.md)
 * [Skapa ett push-meddelande](create-push.md)
-* [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
+* [Lägg till ett meddelande i en resa](../building-journeys/journey-action.md)
 * [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)
 

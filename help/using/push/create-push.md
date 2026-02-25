@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: 279fd366b14520daec1df7f843ed337348e145a5
+source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 1%
+source-wordcount: '914'
+ht-degree: 2%
 
 ---
 
@@ -32,27 +32,43 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
 >[!TAB Lägg till en push i en resa]
 
-1. Öppna resan och dra och släpp en push-aktivitet från funktionsmakroavsnittet på paletten.
+1. Öppna resan och dra och släpp en **[!UICONTROL Action]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten. Läs mer om [Åtgärdsaktiviteten](../building-journeys/journey-action.md).
+
+   >[!IMPORTANT]
+   >
+   >Alla inbyggda kanaler som nu är tillgängliga via aktiviteten Åtgärd kommer äldre inbyggda kanalaktiviteter att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
+
+1. Välj **[!UICONTROL Push]** som åtgärdstyp.
 
    ![](assets/push_create_1.png)
 
-1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandekonfiguration som ska användas.
+1. Ange en **[!UICONTROL Label]** för att identifiera din åtgärd på arbetsytan för resan.
+
+1. Klicka på knappen **[!UICONTROL Configure action]**.
+
+1. Du dirigeras till fliken **[!UICONTROL Actions]**. Därifrån väljer eller skapar du den push-konfiguration som ska användas. [Läs mer](push-configuration.md)
 
    ![](assets/push_create_2.png)
 
+1. Dessutom:
+
+   * Du kan tillämpa regler för att fästa vid din push-åtgärd genom att välja en regeluppsättning i listrutan **[!UICONTROL Business rules]**. [Läs mer](../conflict-prioritization/channel-capping.md)
+
+   * Du kan använda alternativet **[!DNL Send time optimization]** för att förutsäga den bästa tiden att skicka meddelandet för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. [Lär dig hur](../building-journeys/send-time-optimization.md)
+
+1. Använd **[!UICONTROL Rapid delivery mode]** för att skicka push-meddelanden i stora volymer. [Lär dig hur](#rapid-delivery)
+
+1. Välj knappen **[!UICONTROL Edit content]** och skapa ditt innehåll efter behov. [Läs mer](design-push.md)
+
+1. När meddelandeinnehållet har definierats kan du använda testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt för att förhandsgranska innehållet. [Lär dig hur](send-push.md)
+
+1. Gå tillbaka till arbetsytan. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
+
    >[!NOTE]
    >
-   >Om du skickar ett push-meddelande från en resa kan du utnyttja Adobe Journey Optimizer funktion för optimering av sändningstid för att förutsäga den bästa tidpunkten för att skicka meddelandet för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. [Lär dig hur du arbetar med optimering vid sändning](../building-journeys/send-time-optimization.md)
+   >Om du vill spåra mottagarnas beteende genom push-öppningar och/eller interaktioner kontrollerar du att de dedikerade alternativen i spårningsavsnittet är aktiverade i [e-postaktiviteten](../building-journeys/journey-action.md).
 
-   Mer information om hur du konfigurerar en resa finns på [sidan](../building-journeys/journey-gs.md)
-
-1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen för konfiguration av resan för att konfigurera push-innehållet. [Designa ett push-meddelande](design-push.md)
-
-1. När meddelandeinnehållet har definierats kan du använda testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt för att förhandsgranska innehållet.
-
-1. När din push-funktion är klar slutför du konfigurationen av din [resa](../building-journeys/journey-gs.md) för att skicka den.
-
-   Om du vill spåra mottagarnas beteende genom push-öppningar och/eller interaktioner kontrollerar du att de dedikerade alternativen i spårningsavsnittet är aktiverade i [e-postaktiviteten](../building-journeys/journeys-message.md).
+Mer information om hur du skapar, konfigurerar och publicerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
 >[!TAB Lägg till en push-knapp i en kampanj]
 
@@ -89,18 +105,20 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
 1. Klicka på knappen **[!UICONTROL Edit content]** på konfigurationsskärmen för kampanjen för att konfigurera push-innehållet. [Designa ett push-meddelande](design-push.md)
 
-1. När meddelandeinnehållet har definierats kan du använda testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt för att förhandsgranska innehållet.
+1. När meddelandeinnehållet har definierats kan du använda testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt för att förhandsgranska innehållet. [Lär dig hur](send-push.md)
 
 1. Slutför konfigurationen av din [kampanj](../campaigns/create-campaign.md) för att skicka den när din push-funktion är klar.
 
    Om du vill spåra mottagarnas beteende genom push-öppningar och/eller interaktioner kontrollerar du att de dedikerade alternativen i spårningsavsnittet är aktiverade i [kampanjen](../campaigns/create-campaign.md).
+
+Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 >[!ENDTABS]
 
 **Relaterade ämnen**
 
 * [Konfigurera push-kanal](push-gs.md)
-* [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
+* [Lägg till ett meddelande i en resa](../building-journeys/journey-action.md)
 
 ## Snabb leverans {#rapid-delivery}
 
@@ -113,9 +131,9 @@ Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket sn
 
 Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp.
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
-### Förhandskrav {#prerequisites}
+### Förutsättningar {#prerequisites}
 
 Snabba leveransmeddelanden innehåller följande krav:
 
