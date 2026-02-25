@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 3f363a006ed25c07f3ea5b516f5fc306b230d029
+source-git-commit: 1455489645b208340085a9ea4d4e6e759dbcde9b
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 2%
@@ -32,6 +32,8 @@ Om du vill skapa ett e-postmeddelande i [!DNL Journey Optimizer] lägger du till
 >[!TAB Lägg till ett e-postmeddelande till en resa]
 
 1. Öppna din resa och dra och släpp en **[!UICONTROL Email]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten.
+
+   <!--You can also use the **[!UICONTROL Action]** activity to add email to a journey—select the Email channel when configuring the action. The **[!UICONTROL Email]** activity will soon be deprecated. [Learn more about the Action activity](../building-journeys/journey-action.md).-->
 
 1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori).
 
