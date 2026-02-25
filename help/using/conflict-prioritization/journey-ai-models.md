@@ -70,7 +70,7 @@ Följ stegen nedan för att skapa en AI-modell för rankning av resor.
    >
    >Endast datauppsättningar som skapats från scheman som är kopplade till fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** (som tidigare kallades mixin) visas i listrutan.
 
-1. <!--If you are creating a **[!UICONTROL Personalized optimization]** AI model, -->Välj det eller de segment som ska användas för att utbilda AI-modellen.
+1. &#x200B;<!--If you are creating a **[!UICONTROL Personalized optimization]** AI model, -->Välj det eller de segment som ska användas för att utbilda AI-modellen.
 
    >[!NOTE]
    >

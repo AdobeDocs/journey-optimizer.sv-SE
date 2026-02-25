@@ -142,7 +142,7 @@ Tabellen **[!UICONTROL Journey Capping and Conflicts]** innehåller insikter om 
 
 Kolumnen **[!UICONTROL Journey Entries by Rule Set]** visar antalet profiler som passerat resan. Det finns tre typer av ingångar:
 
-* ****[!UICONTROL No conflict]****: Profilen gick in på resan utan konflikter för regeluppsättningar. Inga aktiva regeluppsättningar förhindrade detta inträde, och reseanmälan gjordes oavsett skiljedomsregler.
+* **&#x200B;**&#x200B;[!UICONTROL No conflict]&#x200B;**&#x200B;**: Profilen gick in på resan utan konflikter för regeluppsättningar. Inga aktiva regeluppsättningar förhindrade detta inträde, och reseanmälan gjordes oavsett skiljedomsregler.
 
 * **Högre prioritet**: Profilen gick in på resan på grund av dess högre prioritet än andra konkurrerande resor. Även om det fanns en konflikt (profilen kvalificerad för flera resor) valdes den här resan på grund av dess högre prioriteringspoäng.
 
@@ -156,4 +156,4 @@ Kolumnen **[!UICONTROL Exclusions]** visar antalet profiler som har uteslutits f
 
 +++
 
-➡️ [Läs mer om capping och medling ](../conflict-prioritization/journey-capping.md)
+➡️ [Läs mer om capping och medling &#x200B;](../conflict-prioritization/journey-capping.md)
