@@ -202,7 +202,7 @@ Lär dig hur du konfigurerar, redigerar och inkluderar SMS-meddelanden i dina ku
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428916?captions=swe&learn=on)
 
 +++
 
@@ -212,7 +212,7 @@ Upptäck de omfattande mobilmeddelandefunktionerna som Adobe Journey Optimizer e
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3426021?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3430381?captions=swe&quality=12&learn=on)
 
 +++
 
@@ -222,7 +222,7 @@ Lär dig hur du konfigurerar och skickar varumärkesanpassade, interaktiva RCS-m
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3464755)
+>[!VIDEO](https://video.tv.adobe.com/v/3464759?captions=swe)
 
 +++
 

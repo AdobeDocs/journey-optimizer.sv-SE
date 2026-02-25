@@ -246,7 +246,7 @@ Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns pÃ
 
   +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3451886?captions=swe&quality=12&learn=on)
 
   +++
 
@@ -254,7 +254,7 @@ Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns pÃ
 
   +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3419898/?learn=on&autoplay=true)
+  >[!VIDEO](https://video.tv.adobe.com/v/3445292/?captions=swe&learn=on&autoplay=true)
 
   +++
 
@@ -262,7 +262,7 @@ Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns pÃ
 
   +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3423077/?learn=on&autoplay=true)
+  >[!VIDEO](https://video.tv.adobe.com/v/3451836/?captions=swe&learn=on&autoplay=true)
 
   +++
 
