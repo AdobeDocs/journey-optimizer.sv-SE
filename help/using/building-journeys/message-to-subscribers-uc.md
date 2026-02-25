@@ -33,7 +33,7 @@ Så här konfigurerar du den här resan:
 
    1. Klicka på ikonen **[!UICONTROL Enable parameter override]** till höger om fältet **[!UICONTROL Address]** och klicka sedan på ikonen **[!UICONTROL Edit]** .
 
-      ![Resursflöde med Läs målgrupp för prenumerantlista ](assets/message-to-subscribers-uc-1.png)
+      ![Resursflöde med Läs målgrupp för prenumerantlista &#x200B;](assets/message-to-subscribers-uc-1.png)
 
    1. I uttrycksredigeraren anger du uttrycket för att hämta prenumeranternas e-postadresser. [Läs mer](expression/expressionadvanced.md).
 
