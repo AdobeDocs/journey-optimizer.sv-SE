@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
 version: Journey Orchestration
-source-git-commit: 6c85cfa27002de17f6625447fa0b7eaaceb9f829
+source-git-commit: fe6e8221201ee813251a46c6603d85f0803873c0
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
@@ -129,7 +129,7 @@ Följ stegen nedan för att definiera villkor direkt från gränssnittet.
 
 1. Klicka på **[!UICONTROL Create]** för att slutföra din rankningsformel. Du kan nu markera den i listan för att visa information om den och redigera eller ta bort den. Den är klar att användas i en [urvalsstrategi](../selection-strategies.md) för att rangordna kvalificerade beslutsartiklar.
 
-### Exempel på rangordningsformel
+### Exempel på rangordningsformel {#ranking-formula-example}
 
 Se exemplet nedan:
 
@@ -139,7 +139,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >

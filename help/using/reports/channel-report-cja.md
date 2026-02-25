@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 393f02c0-f54c-4222-b668-0931b67590ce
-source-git-commit: 1af75a0e6bfc2c3b9c565c3190f46d137a68d32e
+source-git-commit: fe6e8221201ee813251a46c6603d85f0803873c0
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,9 @@ Rapportsidan visas med följande flikar:
 * [Resor](#journey)
 * [Kampanjer](#campaign)
 * [Kanaler](#channel)
+* [Regeluppsättningar](#rule-sets)
 
-Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home).
+Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 ## Högdagrar {#highlights}
 
@@ -132,3 +133,27 @@ Tabellen **[!UICONTROL Outbound errors]** ger dig möjlighet att identifiera de 
 ![](assets/cja-channels-outbound-excluded.png)
 
 Tabellen **[!UICONTROL Outbound exclusions]** innehåller en heltäckande vy över de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen, vilket ledde till att meddelandet inte togs emot.
+
+## Resebegränsning och konflikter {#rule-sets}
+
+Tabellen **[!UICONTROL Journey Capping and Conflicts]** innehåller insikter om hur uppsättningar av skiljeregler för resan fungerar, och visar ingångar och uteslutningar för resan baserat på de regler och prioritetspoäng som tillämpas på dina resor.
+
++++ Läs mer om statistik för regeluppsättningar
+
+Kolumnen **[!UICONTROL Journey Entries by Rule Set]** visar antalet profiler som passerat resan. Det finns tre typer av ingångar:
+
+* ****[!UICONTROL No conflict]****: Profilen gick in på resan utan konflikter för regeluppsättningar. Inga aktiva regeluppsättningar förhindrade detta inträde, och reseanmälan gjordes oavsett skiljedomsregler.
+
+* **Högre prioritet**: Profilen gick in på resan på grund av dess högre prioritet än andra konkurrerande resor. Även om det fanns en konflikt (profilen kvalificerad för flera resor) valdes den här resan på grund av dess högre prioriteringspoäng.
+
+* **Tvingad inte**: Profilen pågick resan, men regeluppsättningen var inte aktiv eller tillämpades inte på den här reseposten vid tidpunkten för registreringen.
+
+Kolumnen **[!UICONTROL Exclusions]** visar antalet profiler som har uteslutits från att komma in på resan. Profiler kan uteslutas av två anledningar:
+
+* **Gränsvärdet har nåtts**: Profilen har nått det maximala antalet reseposter eller samtidiga resor som tillåts av begränsningsregeln.
+
+* **Lägre prioritet**: Gränsen har inte nåtts, men andra högprioriterade resor uppfyller begränsningarna. Profilen uteslöts från den här resan och hamnade i en resa med högre prioritet i stället.
+
++++
+
+➡️ [Läs mer om capping och medling ](../conflict-prioritization/journey-capping.md)
