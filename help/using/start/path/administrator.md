@@ -7,10 +7,10 @@ feature: Get Started
 role: Admin
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: 2d699fe8a3320400dad2d5d962028d6e2a5425f8
+source-git-commit: fd10a600cb54b8c35e2d195be7379b0dd120b6a7
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 1%
+source-wordcount: '1030'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Följ de här stegen för att konfigurera åtkomsthantering:
 
 1. **Använd åtkomstkontroll på objektnivå** (valfritt). Använd etiketter på objekt som resor, kampanjer och kanalkonfigurationer för att styra vilka användare som har tillgång till specifika resurser. Läs mer om [Åtkomstkontroll på objektnivå (OLAC)](../../administration/object-based-access.md).
 
-Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html?lang=sv-SE){target="_blank"}.
+Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 När du använder [!DNL Journey Optimizer] för första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 
@@ -50,9 +50,11 @@ Om du vill att [marknadsförare](marketer.md) ska kunna skapa och skicka meddela
 
 Följ de här stegen:
 
-1. **Konfigurera kanalkonfigurationer**. Definiera alla tekniska parametrar som krävs för e-post, SMS, push-meddelanden och andra kanaler:
+1. **Konfigurera kanalkonfigurationer**. Definiera alla tekniska parametrar som krävs för e-post, SMS, push-meddelanden, web push, direktreklam och andra kanaler:
 
    * Definiera **inställningar för push-meddelanden** i både [!DNL Adobe Experience Platform] och Adobe Experience Platform Data Collection. [Läs mer](../../push/push-gs.md)
+
+   * Konfigurera **webb-push-meddelanden** för att leverera meddelanden till webbläsare för mobiler och datorer. [Läs mer](../../push/push-configuration-web.md)
 
    * Skapa **kanalkonfigurationer** för att konfigurera alla tekniska parametrar som krävs för e-post, SMS, push, in-app, webb och andra kanaler. [Läs mer](../../configuration/channel-surfaces.md)
 
@@ -60,7 +62,9 @@ Följ de här stegen:
 
    * Hantera det antal dagar under vilket **återförsök** utförs innan e-postadresser skickas till listan över utelämnanden. [Läs mer](../../configuration/manage-suppression-list.md)
 
-1. **Delegera underdomäner**: För alla nya underdomäner som ska användas i Journey Optimizer är det första steget att delegera den. [Läs mer](../../configuration/about-subdomain-delegation.md)
+   * Aktivera **meddelandeexport** på kanalkonfigurationsnivå för att arkivera skickade e-postmeddelanden och SMS-innehåll vid behov (tilläggserbjudande). [Läs mer](../../configuration/message-export.md)
+
+1. **Delegera underdomäner**: För alla nya underdomäner som ska användas i Journey Optimizer är det första steget att delegera den. [Läs mer](../../configuration/about-subdomain-delegation.md). Du kan migrera underdomäner från CNAME till anpassad delegering vid behov. [Läs mer](../../configuration/custom-subdomain-migration.md)
 
    ![](../assets/subdomain.png)
 
@@ -87,6 +91,8 @@ I takt med att organisationens behov växer bör du tänka på följande avancer
 * **Datastyrningsprinciper**: Använd etiketter och principer för dataanvändning för att styra hur data används i marknadsföringsåtgärder. [Läs mer](../../action/action-privacy.md)
 
 * **IP-värmeringsplaner**: Öka antalet e-postutskick gradvis för att skapa avsändarens anseende hos e-postleverantörer. [Läs mer](../../configuration/ip-warmup-gs.md)
+
+* **Tysta timmar**: Konfigurera regeluppsättningar för tidsbaserade undantag när meddelanden inte ska skickas under specifika perioder. [Läs mer](../../conflict-prioritization/quiet-hours.md)
 
 ## Samarbeta mellan roller
 

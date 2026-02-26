@@ -5,9 +5,9 @@ feature: Get Started
 role: Developer
 level: Experienced
 exl-id: 5053dd4f-d050-415f-bc74-d6d061bdcbe1
-source-git-commit: 2d699fe8a3320400dad2d5d962028d6e2a5425f8
+source-git-commit: fd10a600cb54b8c35e2d195be7379b0dd120b6a7
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1918'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Din [datatekniker](data-engineer.md) hanterar datamodeller, händelsekonfigurati
 
 Den här guiden beskriver de viktigaste tekniska implementeringsstegen för att komma igång med Journey Optimizer. Oavsett om du skapar mobilappar, webbupplevelser eller API-integreringar följer du avsnitten nedan för att konfigurera implementeringen.
 
-## Förhandskrav {#prerequisites}
+## Förutsättningar {#prerequisites}
 
 Innan du börjar implementeringen måste du se till att du har:
 
@@ -81,11 +81,11 @@ För intern mobilappspersonalisering med kodbaserade upplevelser:
 
 För webbaserade implementeringar är Web SDK den primära integrationspunkten:
 
-1. **Installera SDK** för webben: Följ [implementeringshandboken för SDK för webben](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} för att konfigurera SDK på webbplatsen.
+1. **Installera SDK** för webben: Följ [implementeringshandboken för SDK för webben](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} för att konfigurera SDK på webbplatsen.
 
-1. **Konfigurera datastreams**: Skapa och konfigurera ett datastream i [!DNL Adobe Experience Platform Data Collection] med Journey Optimizer aktiverat. Läs mer i [datastreams-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=sv-SE){target="_blank"}.
+1. **Konfigurera datastreams**: Skapa och konfigurera ett datastream i [!DNL Adobe Experience Platform Data Collection] med Journey Optimizer aktiverat. Läs mer i [datastreams-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"}.
 
-1. **Aktivera push-meddelanden på webben** (valfritt): Konfigurera egenskapen [pushNotifications](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications){target="_blank"} i din SDK-webbkonfiguration och använd kommandot [sendPushSubscription](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription){target="_blank"} för att registrera push-prenumerationer.
+1. **Aktivera webb-push-meddelanden** (valfritt): Webb-push-meddelanden är nu allmänt tillgängliga. Konfigurera egenskapen [pushNotifications](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications){target="_blank"} i SDK-webbkonfigurationen och använd kommandot [sendPushSubscription](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription){target="_blank"} för att registrera push-prenumerationer. [Läs om web push-konfiguration](../../push/push-configuration-web.md).
 
 ### Implementera kodbaserade upplevelser (Web SDK)
 
@@ -163,9 +163,11 @@ Med anpassade åtgärder kan resor anropa API:er. Som utvecklare skapar du API-s
 
 1. **Förstå anpassade åtgärdsfunktioner**: Anpassade åtgärder kan ansluta till tredjepartssystem som Epsilon, Slack, Firebase eller dina egna tjänster. Läs mer om [anpassade åtgärder](../../action/action.md).
 
-1. **Arbeta med åtgärdskonfigurationer**: [Administratören](administrator.md) eller [Datateknikern](data-engineer.md) konfigurerar den anpassade åtgärden i Journey Optimizer och definierar API-slutpunkts-URL:en, autentiseringsmetoden och parametrarna. Du kommer att förse dem med din API-specifikation. Läs mer om [konfiguration för anpassad åtgärd](../../action/about-custom-action-configuration.md).
+1. **Arbeta med åtgärdskonfigurationer**: [Administratören](administrator.md) eller [Datateknikern](data-engineer.md) konfigurerar den anpassade åtgärden i Journey Optimizer och definierar API-slutpunkts-URL:en, autentiseringsmetoden och parametrarna. Du kommer att förse dem med din API-specifikation. Läs mer om [konfiguration för anpassad åtgärd](../../action/about-custom-action-configuration.md). Du kan definiera en valfri **felsvarsnyttolast** för djupare reservlogik i timeout/felgrenar.
 
 1. **Returnera användbara data**: Designa ditt API för att returnera data som kan användas i efterföljande steg. Läs mer om [åtgärdssvar](../../action/action-response.md).
+
+1. **Övervaka anpassad åtgärdshälsa**: Använd kontrollpanelen för anpassad åtgärdsövervakning för att spåra slutförda anrop, fel, genomströmning, svarstider och köväntetider. Läs mer om [anpassad åtgärdsrapportering](../../action/reporting.md).
 
 1. **Implementeringsbegränsning**: Kontrollera att slutpunkterna kan hantera den förväntade volymen. Journey Optimizer har en gräns på 5 000 samtal/sekund, men systemet bör vara flexibelt. Läs om [begränsning och begränsning](../../configuration/external-systems.md).
 
@@ -185,9 +187,13 @@ Journey Optimizer erbjuder omfattande REST API:er för programmatisk åtkomst:
 
 1. **API:er för beslutshantering**: Använd specialiserade API:er för erbjudandehantering och beslutsfattande. Läs mer i [API-handboken för beslutshantering](../../offers/api-reference/getting-started.md).
 
+1. **Beslutar migrerings-API:er**: Migrera beslutshanteringsentiteter programmatiskt till beslut med flexibla omfång, automatiserad validering och återställningsstöd. Läs mer i [API-guiden för beslutsmigrering](../../experience-decisioning/decisioning-migration-api.md).
+
+1. **SMS-webbhooks**: Konfigurera inkommande webbhooks för att hämta inkommande meddelanden och feedback-webbhooks för att ta emot leveranskvitton och statusuppdateringar. [Läs mer](../../sms/sms-webhook.md).
+
 ## Testning och felsökning {#testing}
 
-1. **Felsök SDK-implementering**: Använd Adobe Experience Platform Assurance för att inspektera SDK-händelser, validera datainsamling och felsöka integreringsproblem i realtid. [Läs mer om Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=sv-SE){target="_blank"}.
+1. **Felsök SDK-implementering**: Använd Adobe Experience Platform Assurance för att inspektera SDK-händelser, validera datainsamling och felsöka integreringsproblem i realtid. [Läs mer om Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 1. **Testa händelseleverans**: Verifiera att händelser från ditt program tas emot korrekt av Adobe Experience Platform och utlöser resor som förväntat. Övervaka händelseinmatning och validera nyttolaststrukturen.
 
@@ -231,7 +237,7 @@ Implementera policyer för datastyrning och samtycke i era integreringar:
 
 * **Developer Console**: Använd [Adobe Developer Console](https://developer.adobe.com){target="_blank"} för att skapa integreringar och hantera API-autentiseringsuppgifter.
 * **Exempelkod**: Utforska [exempelimplementeringar på GitHub](https://github.com/adobe/alloy-samples/tree/main/ajo){target="_blank"}.
-* **Självstudievideor**: Lär dig med praktiska självstudiekurser på [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}.
+* **Självstudievideor**: Lär dig med praktiska självstudiekurser på [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}.
 * **Developer Community**: Kommunicera med andra utvecklare och få support i Adobe community-forum.
 
 ## Samarbeta mellan roller {#next-steps}

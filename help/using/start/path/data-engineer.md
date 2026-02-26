@@ -7,9 +7,9 @@ feature: Get Started
 role: Developer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: 2d699fe8a3320400dad2d5d962028d6e2a5425f8
+source-git-commit: fd10a600cb54b8c35e2d195be7379b0dd120b6a7
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '932'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Som **dataarkitekt** eller **datatekniker** konfigurerar och underhåller du kun
 
 >[!NOTE]
 >
->Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+>Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 ## Konfigurationssteg för viktiga data
 
@@ -44,6 +44,8 @@ Så här skapar du en grund för Journey Optimizer:
 1. **Skapa testprofiler**. Testprofiler krävs när [testläget](../../building-journeys/testing-the-journey.md) används i en resa och när du [förhandsgranskar och testar meddelanden](../../content-management/preview-test.md) innan du skickar iväg dem. Steg för att skapa testprofiler finns detaljerade [på den här sidan](../../audience/creating-test-profiles.md).
 
 1. **Konfigurera beräknade attribut** (valfritt). Skapa härledda attribut från profildata för att förenkla segmentering och personalisering. Beräknade attribut beräknar automatiskt komplexa mätvärden som&quot;totalt antal inköp under de senaste 90 dagarna&quot; eller&quot;genomsnittligt ordervärde&quot;. Läs mer om [beräknade attribut](../../audience/computed-attributes.md).
+
+1. **Meddelandeexportdata** (valfritt). När meddelandeexport är aktiverad på kanalkonfigurationsnivå exporteras skickat e-post- och SMS-innehåll automatiskt till en dedikerad Experience Platform-datauppsättning för kompatibilitet, arkivering eller analys längre fram i kedjan. Läs mer om [meddelandeexport](../../configuration/message-export.md).
 
 Om du dessutom vill kunna skicka meddelanden under resor måste du konfigurera **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]**. Läs mer [i det här avsnittet](../../configuration/about-data-sources-events-actions.md).
 

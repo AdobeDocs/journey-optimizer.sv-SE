@@ -8,9 +8,9 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
 redpen-status: PASS_||_2025-04-28_15-13-07
-source-git-commit: d3765f66beff13aaf77cd585c5da5f93c44fa1df
+source-git-commit: fd10a600cb54b8c35e2d195be7379b0dd120b6a7
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ En lyckad Journey Optimizer-implementering följer vanligtvis den här sekvensen
    Administratören lägger grunden genom att konfigurera sandlådor, konfigurera åtkomstkontroller och förbereda kanalkonfigurationer. Detta måste ske först för att andra team ska kunna arbeta.
    * Konfigurera sandlådor för utveckling, staging och produktion
    * Ställ in roller, behörigheter och åtkomstkontroll på objektnivå (OLAC)
-   * Konfigurera kanalkonfigurationer (e-post, SMS, push, in-app, webb, innehållskort)
+   * Konfigurera kanalkonfigurationer (e-post, SMS, push, web push, in-app, webb, direktreklam, innehållskort)
    * Delegera underdomäner och konfigurera IP-pooler
    * Konfigurera inaktiveringslistor och medgivandeprinciper
 
@@ -70,9 +70,10 @@ En lyckad Journey Optimizer-implementering följer vanligtvis den här sekvensen
 3. **Utvecklare**: Implementerar tekniska integreringar\
    Utvecklare kopplar program till Journey Optimizer genom att integrera SDK:er, skicka händelser och bygga API-slutpunkter. Dessa implementeringar gör det möjligt att utlösa och genomföra resor.
    * Integrera Mobile SDK (iOS/Android) med inställningar för push-meddelanden
-   * Implementera SDK för webben
+   * Implementera Web SDK för webbupplevelser och push-meddelanden på webben
    * Skicka händelser från program för att utlösa resor
    * Skapa anpassade åtgärdsslutpunkter för integration med externa system
+   * Övervaka anpassade åtgärder, hälsa och prestanda
    * Testa implementeringar med Adobe Experience Platform Assurance
 
 4. **Marknadsförare**: Utformar och kör kundupplevelser\
@@ -95,15 +96,16 @@ Som marknadsförare eller affärsadministratör utformar ni kundresor för att l
 
 **Nyckelfunktioner du kommer att använda:**
 
-* **Journey Orchestration**: Skapa ett-till-ett-kundengagemang i realtid där varje person går igenom i sin egen takt, triggas av beteende eller händelser i olika kanaler
-* **Kampanjsamordning**: Designa och automatisera komplexa flerstegskampanjer i stor skala med en visuell arbetsyta. Perfekt för varumärkesinitierade kampanjer som säsongskampanjer, produktlanseringar och kontobaserad kommunikation. Utnyttja segmentering av flera enheter för att skapa exakta målgrupper genom att koppla kunddata till relaterade enheter (konton, inköp, bokningar)
+* **Journey Orchestration**: Skapa ett-till-ett-kundengagemang i realtid där varje person går igenom i sin egen takt, triggas av beteende eller händelser över flera kanaler. Använd aktiviteten för enhetliga åtgärder för alla kanalaktiviteter, aktiviteten för innehållsbeslut för att integrera erbjudanden i resor och Journey Agent för att skapa resor från naturliga språk
+* **Kampanjsamordning**: Designa och automatisera komplexa flerstegskampanjer i stor skala med en visuell arbetsyta. Perfekt för varumärkesinitierade kampanjer som säsongskampanjer, produktlanseringar och kontobaserad kommunikation. Utnyttja segmentering av flera enheter för att skapa exakta målgrupper genom att koppla kunddata till relaterade enheter (konton, inköp, bokningar). Använd vågsändning för att leverera meddelanden i kontrollerade batchar
 * **Modern Message Designer**: Designa och anpassa e-post och mobilmeddelanden med dra-och-släpp-gränssnitt. Redigera färdiga mallar för att korta time-to-market
-* **Beslutshantering**: Skapa och hantera erbjudanden, berättiganderegler och andra komponenter i ett centraliserat bibliotek som kan bäddas in i e-postmeddelanden och kundkontaktytor
+* **Beslutshantering**: Skapa och hantera erbjudanden, berättiganderegler och andra komponenter i ett centraliserat bibliotek som kan bäddas in i e-postmeddelanden och kundkontaktytor. Använd beslut för push- och SMS-personalisering
 * **Resurshantering**: Få tillgång till Adobe Experience Manager Assets Essentials som är inbäddade i Journey Optimizer för smidig åtkomst och leverans av resurser
 * **Målgruppsdefinition**: Skapa målgrupper på begäran med direktförfining med hjälp av relationsfrågor, med synlighet före sändning för korrekt antal målgrupper
 * **AI/ML-tjänster**: Utnyttja optimering och prediktiva engagemangsmätningar för att rikta sig till värdefulla kunder och minimera risken för bortfall
+* **Leveranskontroll**: Använd tysta timmar (tidsbaserade undantag) och konflikthantering för att ta hänsyn till kundernas önskemål och förhindra överkommunikation
 
-**Börja med:** Använd fallmallar och guider för att enkelt skapa och distribuera nya kundresor.
+**Börja med:** Använd fallmallar och guider för att enkelt skapa och distribuera nya kundresor. Använd Journey Agent för att skapa resor från naturliga språk.
 
 [Kom igång som marknadsförare →](path/marketer.md)
 
@@ -135,8 +137,9 @@ Som administratör konfigurerar du Journey Optimizer-miljön så att dina team k
 * **Användarhantering**: Konfigurera användargrupper och behörigheter för att styra åtkomsten till olika funktioner
 * **Kanalinställning**: Konfigurera leveranskanaler och meddelandeförinställningar för att säkerställa enhetlig märkning av meddelanden och resurser som levereras via Journey Optimizer
 * **Säkerhet och styrning**: Använd åtkomstkontroll på objektnivå (OLAC), konfigurera medgivandeprinciper och implementera datastyrningsprinciper
-* **Leverans**: Delegera underdomäner, skapa IP-pooler och hantera undertryckningslistor och tillåtelselista
+* **Leveransbarhet**: Delegera underdomäner, migrera underdomäner till anpassad delegering vid behov, skapa IP-pooler och hantera undertryckningslistor och tillåtelselista
 * **Resekonfiguration**: Konfigurera reseelement och konfigurationer för dina team
+* **Kanalkonfiguration**: Konfigurera push-meddelanden på webben, direktreklam och meddelandeexport (e-post/SMS) vid behov
 
 **Börja med:** Konfigurera sandlådor och användarbehörigheter och konfigurera sedan dina första kanalkonfigurationer och meddelandeförinställningar.
 
@@ -207,7 +210,7 @@ Framgångsrika Journey Optimizer-implementeringar kräver samarbete i alla rolle
 
 Titta på introduktionsvideon om du vill veta mer om Journey Optimizer nyckelfunktioner och personligheter. Videon går igenom användargränssnittet och markerar viktiga funktioner baserat på rollspecifika arbetsflöden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430318?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
 
 ## Ytterligare resurser
 
@@ -217,7 +220,7 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 >[!TAB Utbildning och dokumentation]
 
-* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"} - Självstudiekurser steg för steg för alla roller
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Självstudiekurser steg för steg för alla roller
 * [Bibliotek för reseanvändningsexempel](../building-journeys/jo-use-cases.md) - Praktiska exempel och implementeringsmönster
 * [AI och intelligenta funktioner](ai-features.md) - Läs mer om AI Assistant, optimering vid sändning och innehållsgenerering
 * [Användargränssnittshandbok](user-interface.md) - Navigera effektivt i Journey Optimizer
@@ -230,7 +233,7 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 >[!TAB Community och support]
 
-* [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"} - Kontakta andra användare och experter
-* [Produktforum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"} - Ställ frågor och dela kunskap
+* [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Kontakta andra användare och experter
+* [Produktforum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Ställ frågor och dela kunskap
 
 >[!ENDTABS]
