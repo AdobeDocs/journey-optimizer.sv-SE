@@ -1,16 +1,16 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Användargränssnitt
-description: Lär dig navigera i Adobe Journey Optimizer gränssnitt
+title: Navigera i gränssnittet
+description: Lär dig navigera i Adobe Journey Optimizer gränssnitt och få tillgång till viktiga funktioner som översta raden, hemsida och vänsternavigering.
 feature: Overview, Get Started
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 63fb247449dfb989b191254ec6d117a403edd29d
+source-git-commit: b2abf39db81887aa6f183eb390a36b9f428f5ca8
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
@@ -21,75 +21,23 @@ Om du vill få tillgång till Adobe Journey Optimizer loggar du in på [Adobe Ex
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 >* Dokumentationen uppdateras ofta. Vissa skärmbilder kan skilja sig något från gränssnittet.
 
 ## Snabbdemo {#quick-tour}
 
 Journey Optimizer gränssnitt består av fyra huvudområden:
 
-![](assets/ajo-home.png)
+![Journey Optimizer hemsida med vänsternavigering, övre raden, huvudarbetsytan och områden på startsidan](assets/ajo-home.png)
 
 1. **Vänster navigering** - Få tillgång till alla funktioner som är ordnade efter funktion
 2. **Övre fältet** - Universell sökning, hjälp, meddelanden och inställningar
 3. **Startsida** - Snabb åtkomst till senaste objekt och användbara resurser
 4. **Huvudarbetsyta** - Där du skapar och hanterar ditt innehåll
 
-## Vänster navigering {#left-nav}
+**Tips!** Nya användare kan börja på sidan **Hem** för att få tillgång till de senaste objekten och användningsexempel, eller använda ikonen **Hjälp** i det övre fältet för sammanhangsbaserad vägledning.
 
-I den vänstra navigeringen ordnas Journey Optimizer-funktioner i funktionskategorier. Vilka menyalternativ som är tillgängliga beror på dina behörigheter och din licens.
-
-### Huvudavsnitt {#main-sections}
-
-**Hem** - Din startpunkt med snabb åtkomst till nyligen skapade objekt och användbara resurser
-
-**Resehantering** - Skapa och hantera kundupplevelser
-* **Kampanjer** - Skapa engångs- eller schemalagda meddelanden till specifika målgrupper. [Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)
-* **Resor** - Bygg flerstegskunderna kundupplevelser i flera kanaler. [Skapa din första resa](../building-journeys/journey-gs.md)
-* **Rapporter** - Analysera prestanda med integrerade Customer Journey Analytics-rapporter. [Visa rapportdokumentation](../reports/campaign-global-report-cja.md)
-
-**Beslutshantering** - Hantera personaliserade erbjudanden. [Läs om beslutshantering](../offers/get-started/starting-offer-decisioning.md)
-* **Erbjudanden** - Skapa och hantera personaliserade erbjudanden
-* **Komponenter** - Konfigurera ersättningar, regler och taggar för erbjudanden
-
-**Innehållshantering** - Skapa och ordna innehåll
-* **Assets** - Centraliserad databas för bilder och media. [Hantera resurser](../integrations/assets.md)
-* **Innehållsmallar** - Återanvändbara meddelandemallar för kampanjer och resor. [Skapa mallar](../content-management/content-templates.md)
-* **Fragment** - Innehållsblock som kan användas i flera meddelanden. [Arbeta med fragment](../content-management/fragments.md)
-* **Landningssidor** - Webbformulär för prenumerationer och inställningar. [Utforma landningssidor](../landing-pages/get-started-lp.md)
-* **Använd fallspelsböcker** - Fördefinierade arbetsflöden för vanliga marknadsföringsscenarier. [Utforska spelböcker](ai-features.md#playbooks)
-
-**Datahantering** - Hantera din datamängd. [Läs om scheman och datauppsättningar](../data/get-started-schemas.md)
-* **Scheman** - Definiera datastruktur
-* **Datauppsättningar** - Lagra och hantera datainsamlingar
-* **Frågor** - Skriv och kör frågor
-* **Övervakning** - Spåra datainmatning
-
-**Anslutningar** - Integrera med andra system
-* **Källor** - Infoga data från externa system. [Konfigurera källor](get-started-sources.md)
-* **Destinationer** - Exportera data till molnlagring. [Konfigurera mål](../data/export-datasets.md)
-
-**Kund** - Hantera målgrupper och profiler
-* **Publiker** - Skapa och hantera kundsegment. [Arbeta med målgrupper](../audience/about-audiences.md)
-* **Prenumerationslistor** - Hantera anmälningslistor. [Hantera prenumerationer](../landing-pages/subscription-list.md)
-* **Profiler** - Visa enhetliga kundprofiler. [Utforska profiler](../audience/get-started-profiles.md)
-* **Identiteter** - Hantera identitetsupplösning. [Lär dig mer om identiteter](../audience/get-started-identity.md)
-
-**Sekretess** - Kontrollera sekretess och efterlevnad. [Sekretessöversikt](../privacy/get-started-privacy.md)
-* **Principer** - Definiera datastyrningsprinciper
-* **Begäranden** - Hantera sekretessförfrågningar (GDPR, CCPA)
-* **Granskning** - Granska aktivitetsloggar. [Visa granskningsloggar](../privacy/audit-logs.md)
-* **Datalifecycle** - Konfigurera datalagring
-
-**Administration** - Konfigurera systeminställningar. [Översikt över åtkomstkontroll](../administration/permissions-overview.md)
-* **Konfigurationer** - Konfigurera händelser, datakällor och åtgärder. [Konfigurera kanaler](../configuration/get-started-configuration.md)
-* **Affärsregler** - Kontrollera meddelandefrekvens och reseinmatning. [Konfigurera affärsregler](../conflict-prioritization/rule-sets.md)
-* **Varningar** - Visa och hantera systemvarningar. [Övervaka aviseringar](../reports/alerts.md)
-* **Sandlådor** - Hantera miljöer och kopiera objekt mellan sandlådor. [Arbeta med sandlådor](../administration/sandboxes.md)
-* **Kanaler** - Konfigurera kanalinställningar och leveransbarhet. [Konfigurera kanalkonfigurationer](../configuration/channel-surfaces.md) | [Kom igång med konfiguration](../configuration/get-started-configuration.md)
-* **Taggar** - Ordna och kategorisera innehåll. [Arbeta med enhetliga taggar](search-filter-categorize.md#tags)
-
-## Funktioner på översta raden {#top-bar}
+## De viktigaste funktionerna {#top-bar}
 
 ### Universell sökning {#search}
 
@@ -98,6 +46,7 @@ Använd sökikonen för att snabbt hitta resor, kampanjer, resurser och andra ob
 ### Hjälp och support {#help}
 
 Klicka på ikonen **Hjälp** för att:
+
 * Sök i hjälpartiklar och videoklipp
 * Använd sammanhangsberoende hjälp för den aktuella sidan
 * Kontakta Adobe support
@@ -107,7 +56,7 @@ Sammanhangsberoende hjälp visar riktlinjer som är relevanta för den skärm du
 
 ![Exempel på sammanhangsbaserad hjälp](assets/do-not-localize/Context-help.gif)
 
-### Stöd riktlinjer för biljetter {#support-ticket-guidelines}
+#### Stöd riktlinjer för biljetter {#support-ticket-guidelines}
 
 Ta med följande när du kontaktar Adobe support för att underlätta analys och lösning av rotorsaker:
 
@@ -117,9 +66,10 @@ Ta med följande när du kontaktar Adobe support för att underlätta analys och
 * **Loggar eller skärmbilder** - Relevanta felmeddelanden, ID-nummer för begäran eller skärmbilder som illustrerar problemet
 * **Relevanta ID:n** - Resurs-ID, kampanj-ID, målgrupps-ID eller andra objektidentifierare som är relaterade till problemet
 
-### Meddelanden {#notifications}
+### Meddelanden {#in-product-uc}
 
 Aktivera meddelanden i produkten och e-postmeddelanden för att hålla dig informerad om:
+
 * **Varningar** - Systemfel och prestandaproblem
 * **Godkännanden** - Begäranden som kräver din granskning
 * **Nya versioner** - Produktuppdateringar och nya funktioner
@@ -138,12 +88,14 @@ Gränssnittet finns på engelska, franska, tyska, italienska, spanska, portugisi
 
 Så här byter du språk:
 
-1. Klicka på **Inställningar** på profilmenyn
+1. Klicka på **[!UICONTROL Preferences]** på profilmenyn
 2. Välj önskat språk
 3. Välj ett andra språk som reservspråk
 4. Klicka på **Spara**
 
-## Hemsida {#home-page}
+Kortkommandon och hjälpmedelsfunktioner är tillgängliga. [Läs mer](accessibility.md)
+
+## Startsida {#home-page}
 
 Hemsidan innehåller följande:
 
@@ -151,7 +103,7 @@ Hemsidan innehåller följande:
 * **Använd fall** - Fördefinierade scenarier som hjälper dig att komma igång snabbt (skapa testprofiler, skicka födelsedagskalendrar osv.)
 * **Resurser** - Länkar till dokumentation, självstudiekurser och support
 
-### Exempel på produktanvändning {#use-cases}
+### Användningsexempel och snabbstartsflöden {#use-cases}
 
 Snabbstarta-arbetsflöden som hjälper dig att utföra vanliga uppgifter:
 
@@ -162,9 +114,83 @@ Snabbstarta-arbetsflöden som hjälper dig att utföra vanliga uppgifter:
 
 Klicka på **[!UICONTROL View details]** om du vill veta mer om varje användningsfall eller på **[!UICONTROL Begin]** om du vill börja.
 
-## AI-assistenten {#ai-assistant}
+## Vänster navigering {#left-nav}
+
+I den vänstra navigeringen ordnas Journey Optimizer-funktioner i funktionskategorier. Vilka menyalternativ som är tillgängliga beror på dina behörigheter och din licens.
+
+| Avsnitt | Syfte |
+|---------|---------|
+| Journey Management | Kampanjer, resor, rapporter |
+| Beslutshantering | Erbjudanden och personalisering |
+| Innehållshantering | Assets, mallar, fragment, landningssidor |
+| Datahantering | Scheman, datauppsättningar, frågor |
+| Anslutningar | Källor och destinationer |
+| Kund | Målgrupper, profiler, identiteter |
+| Sekretess | Profiler, förfrågningar, revision |
+| Administrering | Konfigurationer, kanaler, sandlådor |
+
+### Huvudavsnitt {#main-sections}
+
+**Hem** - Din startpunkt med snabb åtkomst till nyligen skapade objekt och användbara resurser
+
+**Resehantering** - Skapa och hantera kundupplevelser
+
+* **Kampanjer** - Skapa engångs- eller schemalagda meddelanden till specifika målgrupper. [Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)
+* **Resor** - Bygg flerstegskunderna kundupplevelser i flera kanaler. [Skapa din första resa](../building-journeys/journey-gs.md)
+* **Rapporter** - Analysera prestanda med integrerade Customer Journey Analytics-rapporter. [Visa rapportdokumentation](../reports/campaign-global-report-cja.md)
+
+**Beslutshantering** - Hantera personaliserade erbjudanden. [Läs om beslutshantering](../offers/get-started/starting-offer-decisioning.md)
+
+* **Erbjudanden** - Skapa och hantera personaliserade erbjudanden
+* **Komponenter** - Konfigurera ersättningar, regler och taggar för erbjudanden
+
+**Innehållshantering** - Skapa och ordna innehåll
+
+* **Assets** - Centraliserad databas för bilder och media. [Hantera resurser](../integrations/assets.md)
+* **Innehållsmallar** - Återanvändbara meddelandemallar för kampanjer och resor. [Skapa mallar](../content-management/content-templates.md)
+* **Fragment** - Innehållsblock som kan användas i flera meddelanden. [Arbeta med fragment](../content-management/fragments.md)
+* **Landningssidor** - Webbformulär för prenumerationer och inställningar. [Utforma landningssidor](../landing-pages/get-started-lp.md)
+* **Använd fallspelsböcker** - Fördefinierade arbetsflöden för vanliga marknadsföringsscenarier. [Utforska spelböcker](ai-features.md#playbooks)
+
+**Datahantering** - Hantera din datamängd. [Läs om scheman och datauppsättningar](../data/get-started-schemas.md)
+
+* **Scheman** - Definiera datastruktur
+* **Datauppsättningar** - Lagra och hantera datainsamlingar
+* **Frågor** - Skriv och kör frågor
+* **Övervakning** - Spåra datainmatning
+
+**Anslutningar** - Integrera med andra system
+
+* **Källor** - Infoga data från externa system. [Konfigurera källor](get-started-sources.md)
+* **Destinationer** - Exportera data till molnlagring. [Konfigurera mål](../data/export-datasets.md)
+
+**Kund** - Hantera målgrupper och profiler
+
+* **Publiker** - Skapa och hantera kundsegment. [Arbeta med målgrupper](../audience/about-audiences.md)
+* **Prenumerationslistor** - Hantera anmälningslistor. [Hantera prenumerationer](../landing-pages/subscription-list.md)
+* **Profiler** - Visa enhetliga kundprofiler. [Utforska profiler](../audience/get-started-profiles.md)
+* **Identiteter** - Hantera identitetsupplösning. [Lär dig mer om identiteter](../audience/get-started-identity.md)
+
+**Sekretess** - Kontrollera sekretess och efterlevnad. [Sekretessöversikt](../privacy/get-started-privacy.md)
+
+* **Principer** - Definiera datastyrningsprinciper
+* **Begäranden** - Hantera sekretessförfrågningar (GDPR, CCPA)
+* **Granskning** - Granska aktivitetsloggar. [Visa granskningsloggar](../privacy/audit-logs.md)
+* **Datalifecycle** - Konfigurera datalagring
+
+**Administration** - Konfigurera systeminställningar. [Översikt över åtkomstkontroll](../administration/permissions-overview.md)
+
+* **Konfigurationer** - Konfigurera händelser, datakällor och åtgärder. [Konfigurera kanaler](../configuration/get-started-configuration.md)
+* **Affärsregler** - Kontrollera meddelandefrekvens och reseinmatning. [Konfigurera affärsregler](../conflict-prioritization/rule-sets.md)
+* **Varningar** - Visa och hantera systemvarningar. [Övervaka aviseringar](../reports/alerts.md)
+* **Sandlådor** - Hantera miljöer och kopiera objekt mellan sandlådor. [Arbeta med sandlådor](../administration/sandboxes.md)
+* **Kanaler** - Konfigurera kanalinställningar och leveransbarhet. [Konfigurera kanalkonfigurationer](../configuration/channel-surfaces.md) | [Kom igång med konfiguration](../configuration/get-started-configuration.md)
+* **Taggar** - Ordna och kategorisera innehåll. [Arbeta med enhetliga taggar](search-filter-categorize.md#tags)
+
+## AI-assistent {#ai-assistant}
 
 AI Assistant ger omedelbar hjälp och driftsinsikter. Klicka på ikonen AI-assistenten i det övre fältet för att:
+
 * Få svar på produktfunktioner
 * Få operativa insikter om era resor
 * Navigera mellan koncept och metodtips
@@ -219,13 +245,13 @@ AI Assistant ger omedelbar hjälp och driftsinsikter. Klicka på ikonen AI-assis
 
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_jo_camppaign_ovv_1"
+>id="ajo_oc_jo_campaign_ovv_1"
 >title="Guidat användargränssnitt för att skapa och skicka en kampanj"
->abstract="Ange en eller flera åtgärder med en kanal, välj en målgrupp, ange ett innehåll, definiera ett schema så är du redo att skicka"
+>abstract="Ange en eller flera åtgärder med en kanal, välj en målgrupp, ange innehållet, definiera ett schema så är du redo att skicka"
 
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_jo_camppaign_ovv_2"
+>id="ajo_oc_jo_campaign_ovv_2"
 >title="Tillgängliga kanaler"
 >abstract="E-post, SMS, push-meddelanden, In-app, webb, kodbaserade upplevelser"
 
@@ -234,22 +260,22 @@ AI Assistant ger omedelbar hjälp och driftsinsikter. Klicka på ikonen AI-assis
 
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_camppaign_ovv_1"
+>id="ajo_oc_api_campaign_ovv_1"
 >title="Kampanjer utlösta av Transactional API"
 >abstract="Utlösa meddelanden i realtid via API-anrop"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_camppaign_ovv_2"
+>id="ajo_oc_api_campaign_ovv_2"
 >title="Marknadsföringsmeddelanden"
 >abstract="Kampanjinnehåll (kräver deltagande, enligt affärsregler)"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_camppaign_ovv_3"
+>id="ajo_oc_api_campaign_ovv_3"
 >title="Transaktionsmeddelanden"
 >abstract="Tjänstrelaterat innehåll (bekräftelse, varningar, som inte kräver godkännande av marknadsföringen)"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_camppaign_ovv_4"
+>id="ajo_oc_api_campaign_ovv_4"
 >title="Tillgängliga kanaler"
 >abstract="E-post, SMS, push-meddelanden"
 
