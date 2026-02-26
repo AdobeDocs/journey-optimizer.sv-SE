@@ -220,7 +220,7 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 >[!TAB Utbildning och dokumentation]
 
-* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Självstudiekurser steg för steg för alla roller
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"} - Självstudiekurser steg för steg för alla roller
 * [Bibliotek för reseanvändningsexempel](../building-journeys/jo-use-cases.md) - Praktiska exempel och implementeringsmönster
 * [AI och intelligenta funktioner](ai-features.md) - Läs mer om AI Assistant, optimering vid sändning och innehållsgenerering
 * [Användargränssnittshandbok](user-interface.md) - Navigera effektivt i Journey Optimizer
@@ -233,7 +233,7 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 >[!TAB Community och support]
 
-* [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Kontakta andra användare och experter
-* [Produktforum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Ställ frågor och dela kunskap
+* [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"} - Kontakta andra användare och experter
+* [Produktforum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"} - Ställ frågor och dela kunskap
 
 >[!ENDTABS]
