@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: b2abf39db81887aa6f183eb390a36b9f428f5ca8
+source-git-commit: 1d09a7ce6428532822955186973b6a2d9973f522
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1342'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Om du vill få tillgång till Adobe Journey Optimizer loggar du in på [Adobe Ex
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 >* Dokumentationen uppdateras ofta. Vissa skärmbilder kan skilja sig något från gränssnittet.
 
 ## Snabbdemo {#quick-tour}
@@ -41,7 +41,7 @@ Journey Optimizer gränssnitt består av fyra huvudområden:
 
 ### Universell sökning {#search}
 
-Använd sökikonen för att snabbt hitta resor, kampanjer, resurser och andra objekt i Journey Optimizer. Skriv nyckelord för att se relevanta resultat från alla delar av plattformen.
+Använd sökikonen för att snabbt hitta resor, kampanjer, resurser och andra objekt i Journey Optimizer. Skriv nyckelord för att se relevanta resultat från alla delar av plattformen. [Läs mer om universell sökning](search-filter-categorize.md#unified-search).
 
 ### Hjälp och support {#help}
 
