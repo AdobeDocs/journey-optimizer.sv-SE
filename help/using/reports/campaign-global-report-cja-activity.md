@@ -79,7 +79,7 @@ För Transactional campaign visar kampanjrapporten för Live-aktiviteter alla li
 
 Marknadsföringskampanjer använder Live-aktiviteter för sändningsbruk och skickar uppdateringar till flera enheter samtidigt.
 
-För iOS Live-aktiviteter i marknadsföringskampanjer visar rapporten endast **[!UICONTROL Remote Starts]** händelser och **[!UICONTROL Remote starts errors]** vid start. Händelserna **[!UICONTROL Updates]** och **[!UICONTROL Ends]** spåras inte eftersom APN:er distribuerar uppdateringar till alla enheter utan att ge feedback. Använd **[!UICONTROL Updates]** Apple Push Notification-konsol **[!UICONTROL Ends]** om du vill visa [- och ](https://developer.apple.com/notifications/push-notifications-console/)-händelser.
+För iOS Live-aktiviteter i marknadsföringskampanjer visar rapporten endast **[!UICONTROL Remote Starts]** händelser och **[!UICONTROL Remote starts errors]** vid start. Händelserna **[!UICONTROL Updates]** och **[!UICONTROL Ends]** spåras inte eftersom APN:er distribuerar uppdateringar till alla enheter utan att ge feedback. Använd **[!UICONTROL Updates]** Apple Push Notification-konsol **[!UICONTROL Ends]** om du vill visa [- och &#x200B;](https://developer.apple.com/notifications/push-notifications-console/)-händelser.
 
 +++ Läs mer om Live activity lifecycle metrics med marknadsföringskampanjer
 
