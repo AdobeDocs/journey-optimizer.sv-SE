@@ -8,7 +8,7 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 1b0b2b5aa8c5b4ea0a101583ee1132574996bd98
+source-git-commit: 707bc4053ee05c275b562e35227e54836e91fa27
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Som marknadsförare för ett detaljhandelsmärke har du till exempel en 48-timma
 * Mottagare som öppnar 24 timmar senare, se&quot;23 timmar återstår&quot;
 * Mottagare som öppnar efter att försäljningen avslutats ser&quot;Försäljningen är avslutad&quot;
 
-Mer information om hur du skapar dynamiska media i Adobe Experience Manager finns i [det här dokumentet](assets/do-not-localize/Dynamic%20Media%20Templates.pdf).
+Mer information om hur du skapar dynamiska media i Adobe Experience Manager finns i [det här dokumentet](assets/do-not-localize/countdown.pdf).
 
 
 1. I **[!DNL Adobe Experience Manager]** skapar du en dynamisk mediamall och lägger till en nedräkningstimerkomponent i den.
