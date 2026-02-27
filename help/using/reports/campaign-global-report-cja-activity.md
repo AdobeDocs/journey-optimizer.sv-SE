@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kampanjrapport
+title: Aktivitetsrapport för Campaign Live
 description: Lär dig hur du använder Live-aktivitetsdata från Campaign-rapporten
 feature: Reporting
 topic: Content Management
@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 58034ec4-62dc-406c-99c4-d6b7aa107140
-source-git-commit: 2fc4b1ee34b44fb6c5bcddb13f1b2b02f7094ff1
+source-git-commit: 17f86c33f56b9855fa1d0f959aac8740ff2c2c2a
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,11 @@ Tabellen **[!UICONTROL Sending Statistics]** innehåller en detaljerad översikt
 
 * **[!UICONTROL Targeted]**: Antal profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades.
 
-* **[!UICONTROL Sends]**: Totalt antal försök att skicka live-aktiviteter till målprofiler.
+* **[!UICONTROL Sends]**: Totalt antal försök att skicka live-aktivitetshändelser till målprofiler.
 
-* **[!UICONTROL Delivered]**: Antal aktiva aktiviteter som har levererats till enheter i förhållande till det totala antalet försök att skicka.
+* **[!UICONTROL Delivered]**: Antal live-aktivitetshändelser som har levererats till enheter i förhållande till det totala antalet försök att skicka.
 
-* **[!UICONTROL Send errors]**: Totalt antal aktiva aktiviteter som inte kunde skickas på grund av fel (t.ex. ogiltiga token eller anslutningsproblem).
+* **[!UICONTROL Send errors]**: Totalt antal live-aktivitetshändelser som inte kunde skickas på grund av fel (t.ex. ogiltiga token eller anslutningsproblem).
 
 * **[!UICONTROL Send exclusions]**: Antal profiler som inte kan skickas av Adobe Journey Optimizer (till exempel på grund av avanmälningsstatus eller regler för behörighet).
 
@@ -79,7 +79,7 @@ För Transactional campaign visar rapporten för Live-aktivitetskampanjen alla l
 
 Marknadsföringskampanjer använder Live-aktivitet för sändningsbruk och skickar uppdateringar till flera enheter samtidigt.
 
-För iOS Live-aktivitet i marknadsföringskampanjer visas endast **[!UICONTROL Remote Starts]** händelser och **[!UICONTROL Remote starts errors]** vid start i rapporten. Händelserna **[!UICONTROL Updates]** och **[!UICONTROL Ends]** spåras inte eftersom APN:er distribuerar uppdateringar till alla enheter utan att ge feedback. Använd **[!UICONTROL Updates]** Apple Push Notification-konsol **[!UICONTROL Ends]** om du vill visa [- och &#x200B;](https://developer.apple.com/notifications/push-notifications-console/)-händelser.
+För iOS Live-aktivitet i marknadsföringskampanjer visas endast **[!UICONTROL Remote Starts]** händelser och **[!UICONTROL Remote starts errors]** vid start i rapporten. Händelserna **[!UICONTROL Updates]** och **[!UICONTROL Ends]** spåras inte eftersom APN:er distribuerar uppdateringar till alla enheter utan att ge feedback. Använd **[!UICONTROL Updates]** Apple Push Notification-konsol **[!UICONTROL Ends]** om du vill visa [- och ](https://developer.apple.com/notifications/push-notifications-console/)-händelser.
 
 +++ Läs mer om Live activity lifecycle metrics med marknadsföringskampanjer
 
