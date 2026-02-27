@@ -8,25 +8,15 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: bfd36dddb5795cd8b6eeb164f70b6cf3fdcb5750
+exl-id: 9864a136-e129-4279-bb09-081b72f584df
+source-git-commit: 6b4e3a6c32d24861f1ea8df54fc2e4fbb19d0ce7
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 1%
+source-wordcount: '358'
+ht-degree: 0%
 
 ---
 
 # Skapa en Live-aktivitet {#create-mobile-live}
-
->[!BEGINSHADEBOX]
-
-* [Kom igång med Live-aktivitet](get-started-mobile-live.md)
-* [Konfiguration av aktiv aktivitet](mobile-live-configuration.md)
-* [Live Activity-integrering med Adobe Experience Platform Mobile SDK](mobile-live-configuration-sdk.md)
-* **[Skapa en Live-aktivitet](create-mobile-live.md)**
-* [Vanliga frågor och svar](mobile-live-faq.md)
-* [Rapport om aktiv aktivitetskampanj](../reports/campaign-global-report-cja-activity.md)
-
->[!ENDSHADEBOX]
 
 När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK från Adobe Experience Platform kan du börja skapa din Live-aktivitet i Journey Optimizer:
 
@@ -54,7 +44,11 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
-1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[&#x200B; på fliken &#x200B;](../audience/about-audiences.md).
+1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[ på fliken ](../audience/about-audiences.md).
+
+   >[!NOTE]
+   >
+   >För **API-utlösta Marketing**-kampanjer kan du välja en befintlig målgrupp som fungerar som den första segmenteringen innan du kontrollerar APNs channelID-prenumerationen från API-nyttolasten.
 
 1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
@@ -68,9 +62,9 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
    ![](assets/create-live-3.png)
 
-   +++ Exempel på en enskild nyttolast
+   +++ Exempel på en nyttolast för fall av enhetsanvändning (API-utlösta transaktionskampanj)
 
-   Observera att de flesta fält från följande exempel på nyttolast är obligatoriska, men bara `requestId`, `dismissal-date` och `alert` är valfria.
+   Detta exempel på nyttolast är för enskilda kampanjer som använder kampanjtypen **API-utlöst Transactional**. Observera att de flesta fält från följande exempel på nyttolast är obligatoriska, men bara `requestId`, `dismissal-date` och `alert` är valfria.
 
    ```json
    {
@@ -116,4 +110,53 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
    +++
 
+   +++ Exempel på en nyttolast för användningsfall för sändning (API-utlösta marknadsföringskampanjer)
+
+   Detta exempel på nyttolast är för målgruppsbaserade kampanjer som använder kampanjtypen **API-utlöst Marketing**.
+
+   ```json
+   {
+       "requestId": "123400000",
+       "campaignId": "d32e6f6c-56df-4a98-a2c0-6db6008f8f32",
+       "audience": {
+           "id": "508f9416-52d0-4898-ba47-08baaa22e9c7"
+       },
+       "context": {
+           "requestPayload": {
+               "aps": {
+                   "input-push-channel": "V+8UslywEfAAAOq9SbTrLg==",  //apns-channel-id
+                   "content-available": 1,
+                   "timestamp": 1770808339,
+                   "event": "update",   // start | update | end
+   
+                   // Fields from GameScoreLiveActivityAttributes
+                   "content-state": {
+                       "homeTeamScore": 33,
+                       "awayTeamScore": 49,
+                       "statusText": "Wingdom keeps scoring!"
+                   },
+                   "attributes-type": "GameScoreLiveActivityAttributes",
+                   "attributes": {
+                       "liveActivityData": {
+                           "channelID": "V+8UslywEfAAAOq9SbTrLg=="   //apns-channel-id, must match the "input-push-channel" value
+                       }
+                   },
+                   "alert": {
+                       "title": "This is the title for game",
+                       "body": "This is the body for body"
+                   }
+               }
+           }
+       }
+   }
+   ```
+
+   +++
+
 När du har utformat din Live-aktivitet kan du spåra effekten av din Live-aktivitet med [inbyggda rapporter](../reports/campaign-global-report-cja-activity.md).
+
+## Instruktionsvideo
+
+Upptäck hur du konfigurerar iOS Live Activity med Adobe Journey Optimizer för att leverera omfattande uppdateringar i realtid på iPhone Lock Screen och Dynamic Island.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479864)

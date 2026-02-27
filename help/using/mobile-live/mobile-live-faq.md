@@ -8,25 +8,15 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: ce6bfca78d097588b5958c10c721b29b7013b3e2
+exl-id: e7e994ca-aa0c-4e86-8710-c87430b74188
+source-git-commit: 6b4e3a6c32d24861f1ea8df54fc2e4fbb19d0ce7
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1746'
 ht-degree: 0%
 
 ---
 
 # Vanliga frågor och svar {#mobile-live-faq}
-
->[!BEGINSHADEBOX]
-
-* [Kom igång med Live-aktivitet](get-started-mobile-live.md)
-* [Konfiguration av aktiv aktivitet](mobile-live-configuration.md)
-* [Live Activity-integrering med Adobe Experience Platform Mobile SDK](mobile-live-configuration-sdk.md)
-* [Skapa en Live-aktivitet](create-mobile-live.md)
-* **[Frågor och svar](mobile-live-faq.md)**
-* [Rapport om aktiv aktivitetskampanj](../reports/campaign-global-report-cja-activity.md)
-
->[!ENDSHADEBOX]
 
 ## Allmänna frågor
 
@@ -123,6 +113,24 @@ Ja. `ActivityConfiguration` har separata stängningar för Lock Screen-innehåll
 Nej. När du registrerar en Live Activity-typ med `Messaging.registerLiveActivity()`, samlar SDK automatiskt in och hanterar push-tokens åt dig.
 +++
 
++++Finns det begränsningar för fjärrstart av liveaktiviteter?
+
+Ja. Fjärrstarter via `ActivityKit` omfattas av systemtvingande begränsningar. Om du försöker göra flera startsbegäranden i en snabb följd kan iOS avvisa fler starter på grund av begränsningar i Live Activity-kvoter eller budget. Efter cirka 5 efterföljande startförsök misslyckas efterföljande begäranden tills en kort nedladdningsperiod har passerat.
+
++++
+
++++Vilken budget har högprioriterade uppdateringar?
+
+Apple anger ingen exakt numerisk övre gräns för `(priority: 10)`-uppdateringar med hög prioritet. Systemet har en dynamisk intern budget som begränsar hur ofta sådana uppdateringar kan skickas. Om för många högprioriterade uppdateringar utfärdas på kort tid kan iOS begränsa eller fördröja efterföljande uppdateringar.
+
+Så här minimerar du strypningen:
+
+* **Balansera prioritetsnivåer**: Kombinera både `(priority: 5)`- och `(priority: 10)`-standarduppdateringar beroende på prioritet.
+* **Använd hög prioritet sparsamt**: Bevara hög prioritet för tidskritiska uppdateringar, som leveransförlopp, orderstatus eller sportresultat.
+* **Stöd för frekventa uppdateringar**: Inkludera `NSSupportsLiveActivitiesFrequentUpdates` i appens `Info.plist` och ställ in det på **JA** om du behöver uppdateringar ofta.
+
++++
+
 ### Marknadsföringsfrågor
 
 +++Kan jag personalisera Live Activity-innehåll för varje användare i en utsändningskampanj?
@@ -142,7 +150,7 @@ API-anropet utlöser den aktiva aktiviteten omedelbart. Du kan dock schemalägga
 
 +++Vad händer om jag skickar en start-händelse för en liveaktivitet som redan finns?
 
-När du fjärrstartar liveaktiviteter via Adobe körnings-API:er:
+När du fjärrstartar Live-aktiviteter via Adobe körnings-API:er:
 
 * Du kan inkludera ett `x-request-id`-huvud i din begäran. Det bör helst finnas en 1:1-relation mellan varje `liveActivityID` och dess motsvarande `x-request-id`. Detta garanterar att om flera begäranden görs med samma kombination av `x-request-id` och `liveActivityID`, kommer endast en Live-aktivitet att startas på enheten och dubblettbegäranden kommer att ignoreras.
 
@@ -235,6 +243,7 @@ Vanliga orsaker:
 * `content-state` fält matchar inte din `ContentState`-struktur.
 * Den aktiva aktiviteten har redan avslutats.
 * Problem med nätverksanslutningen på enheten.
+* epoktiden som används som tidsstämpel är inte aktuell.
 
 +++
 

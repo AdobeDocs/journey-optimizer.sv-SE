@@ -8,26 +8,15 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: ce6bfca78d097588b5958c10c721b29b7013b3e2
+exl-id: c9766603-df19-4efd-8319-27e9764254b4
+source-git-commit: 6b4e3a6c32d24861f1ea8df54fc2e4fbb19d0ce7
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 1%
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
-
 # Kom igång med Live-aktivitet {#get-started-mobile-live}
-
->[!BEGINSHADEBOX]
-
-* **[Kom igång med Live-aktivitet](get-started-mobile-live.md)**
-* [Konfiguration av aktiv aktivitet](mobile-live-configuration.md)
-* [Live Activity-integrering med Adobe Experience Platform Mobile SDK](mobile-live-configuration-sdk.md)
-* [Skapa en Live-aktivitet](create-mobile-live.md)
-* [Vanliga frågor och svar](mobile-live-faq.md)
-* [Rapport om aktiv aktivitetskampanj](../reports/campaign-global-report-cja-activity.md)
-
->[!ENDSHADEBOX]
 
 >[!AVAILABILITY]
 >
@@ -67,7 +56,3 @@ Följ stegen nedan för att konfigurera och implementera Live-aktiviteter i ditt
 1. **[Spåra kampanjer](../reports/campaign-global-report-cja-activity.md)**
 
    Börja mäta effekten av dina Live-aktiviteter med inbyggda rapporter.
-
-
-
-

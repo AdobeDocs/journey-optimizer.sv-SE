@@ -8,25 +8,15 @@ role: Admin
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: ce6bfca78d097588b5958c10c721b29b7013b3e2
+exl-id: db85a563-9630-4d87-bf10-9f2515fe8a45
+source-git-commit: 6b4e3a6c32d24861f1ea8df54fc2e4fbb19d0ce7
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 2%
+source-wordcount: '467'
+ht-degree: 1%
 
 ---
 
 # Kom igång med Live-aktivitetskonfiguration {#mobile-live-config}
-
->[!BEGINSHADEBOX]
-
-* [Kom igång med Live-aktivitet](get-started-mobile-live.md)
-* **[Konfiguration av aktiv aktivitet](mobile-live-configuration.md)**
-* [Live Activity-integrering med Adobe Experience Platform Mobile SDK](mobile-live-configuration-sdk.md)
-* [Skapa en Live-aktivitet](create-mobile-live.md)
-* [Vanliga frågor och svar](mobile-live-faq.md)
-* [Rapport om aktiv aktivitetskampanj](../reports/campaign-global-report-cja-activity.md)
-
->[!ENDSHADEBOX]
 
 Innan du skickar din Live-aktivitet måste du konfigurera din Adobe Journey Optimizer-miljö. Så här gör du:
 

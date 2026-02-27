@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 58034ec4-62dc-406c-99c4-d6b7aa107140
-source-git-commit: 7983480646eb49f32716cda19001ef7b9a95ba82
+source-git-commit: 6b4e3a6c32d24861f1ea8df54fc2e4fbb19d0ce7
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -49,21 +49,43 @@ Tabellen **[!UICONTROL Sending Statistics]** innehåller en detaljerad översikt
 
 ## Livscykel för aktiv aktivitet {#lifecycle}
 
-![](assets/activity-lifecycle.png)
-
 Tabellen **[!UICONTROL Live activity lifecycle]** innehåller en heltäckande bild av hur dina Live-aktiviteter utvecklas över tid. Det ger insyn i viktiga händelser, som när aktiviteter startas, uppdateras eller avslutas, och hjälper er att förstå användarengagemanget och hela livscykeln för era Live-aktivitetskampanjer.
 
-+++ Läs mer om Live activity lifecycle metrics
+Rapporterna skiljer sig åt beroende på om du använder transaktions- eller marknadsföringskampanjer.
 
-* **[!UICONTROL Remote starts]**: Antal Live-aktiviteter som har initierats på fjärrbasis och som oftast aktiveras av servern eller serverdelen.
+### Transaktionsaktiviteter live
 
-* **[!UICONTROL Local starts]**: Antal Live-aktiviteter som har startats lokalt på en användares enhet, ofta till följd av användarinteraktion eller klientutlösare.
+![](assets/activity-lifecycle.png)
 
-**[!UICONTROL Updates]**: Totalt antal Live-aktivitetsuppdateringar som skickats till enheter. Uppdateringarna kan innehålla statusändringar, nytt innehåll eller statusmeddelanden.
+För Transactional campaign visar kampanjrapporten för Live-aktiviteter alla livscykelhändelser inklusive fjärrstart, lokala starter, uppdateringar och slut.
 
-**[!UICONTROL Ends]**: Antal Live-aktiviteter som har avslutats, antingen automatiskt efter slutförande eller manuellt via en definierad utlösare eller timeout.
++++ Läs mer om Live activity lifecycle metrics med Transactional campaign
 
-**[!UICONTROL Totals count]**: Totalt antal alla Live-aktivitetslivscyklhändelser, inklusive start, uppdateringar och slut, som ger ett fullständigt mått på Live-aktivitetsvolymen.
+* **[!UICONTROL Remote starts]**: Det totala antalet Live-aktiviteter som startar händelser som initieras på fjärrbasis, som oftast aktiveras av servern eller backend-systemen.
+
+* **[!UICONTROL Local starts]**: Totalt antal Live-aktiviteter startar händelser som initierats lokalt på en användares enhet, ofta till följd av användarinteraktion eller klientutlösare.
+
+* **[!UICONTROL Updates]**: Totalt antal Live-aktivitetsuppdateringar som skickats till enheter. Uppdateringarna kan innehålla statusändringar, nytt innehåll eller statusmeddelanden.
+
+* **[!UICONTROL Ends]**: Totalt antal Live-aktiviteter som sluthändelser har skickats till enheter.
+
+* **[!UICONTROL Totals count]**: Totalt antal alla Live-aktivitetslivscyklhändelser, inklusive start, uppdateringar och slut, som ger ett fullständigt mått på Live-aktivitetsvolymen.
+
++++
+
+### Marketing Live-aktiviteter
+
+![](assets/activity-lifecycle-broadcast.png)
+
+Marknadsföringskampanjer använder Live-aktiviteter för sändningsbruk och skickar uppdateringar till flera enheter samtidigt.
+
+För iOS Live-aktiviteter i marknadsföringskampanjer visar rapporten endast **[!UICONTROL Remote Starts]** händelser och **[!UICONTROL Remote starts errors]** vid start. Händelserna **[!UICONTROL Updates]** och **[!UICONTROL Ends]** spåras inte eftersom APN:er distribuerar uppdateringar till alla enheter utan att ge feedback. Använd **[!UICONTROL Updates]** Apple Push Notification-konsol **[!UICONTROL Ends]** om du vill visa [- och ](https://developer.apple.com/notifications/push-notifications-console/)-händelser.
+
++++ Läs mer om Live activity lifecycle metrics med marknadsföringskampanjer
+
+* **[!UICONTROL Remote starts]**: Det totala antalet Live-aktiviteter som startar händelser som initieras på fjärrbasis, som oftast aktiveras av servern eller backend-systemen.
+
+* **[!UICONTROL Remote starts errors]**: Totalt antal fel som uppstod när Live-aktiviteter skulle fjärrstartas (t.ex. ogiltiga token eller anslutningsproblem).
 
 +++
 
