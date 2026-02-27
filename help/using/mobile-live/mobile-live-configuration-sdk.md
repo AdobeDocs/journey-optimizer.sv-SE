@@ -9,17 +9,17 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 02ca7c8e-105a-4e77-9aad-2381904255d0
-source-git-commit: 6b4e3a6c32d24861f1ea8df54fc2e4fbb19d0ce7
+source-git-commit: 2fc4b1ee34b44fb6c5bcddb13f1b2b02f7094ff1
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
 
-# Live Activity-integrering med Adobe Experience Platform Mobile SDK {#mobile-live-config-sdk}
+# Integrering med Adobe Experience Platform Mobile SDK {#mobile-live-config-sdk}
 
 
-Adobe Experience Platform Mobile SDK har inbyggt stöd för Apple Live-aktiviteter. På så sätt kan appen visa dynamiska uppdateringar i realtid direkt på låsskärmen och Dynamic Island utan att öppna appen.
+Adobe Experience Platform Mobile SDK har inbyggt stöd för Apple Live. På så sätt kan appen visa dynamiska uppdateringar i realtid direkt på låsskärmen och Dynamic Island utan att öppna appen.
 
 1. [Importera nödvändiga moduler](#import)
 
@@ -29,7 +29,7 @@ Adobe Experience Platform Mobile SDK har inbyggt stöd för Apple Live-aktivitet
 
    Följ `LiveActivityAttributes`, ta med `LiveActivityData` och ett `ContentState`-attribut.
 
-1. [Registrera Live-aktiviteter](#register)
+1. [Registrera aktivitet live](#register)
 
    Använd `Messaging.registerLiveActivity()` efter SDK-initiering.
 
@@ -39,7 +39,7 @@ Adobe Experience Platform Mobile SDK har inbyggt stöd för Apple Live-aktivitet
 
 1. [Starta en Live-aktivitet lokalt (valfritt)](#local)
 
-   Live-aktiviteter kan initieras via Journey Optimizer eller lokalt i programkoden.
+   Live-aktiviteten kan initieras via Journey Optimizer eller lokalt i programkoden.
 
 1. [Lägg till stöd för felsökning (valfritt)](#debug)
 
@@ -58,6 +58,7 @@ Kontrollera att följande minimiversioner är installerade för att säkerställ
 * **Xcode:** 14.0 eller senare
 * **Swift:** 5.7 eller senare
 * **Beroenden:** AEPCore, AEPMessaging, AEPMessagingLiveActivity, ActivityKit
+* **AEP Mobile SDK version**: iOS Messaging 5.11.0 eller senare
 
 >[!ENDSHADEBOX]
 
@@ -85,7 +86,7 @@ Nyckelkomponenterna är:
 
 * **`ContentState`** som definierar dynamiska data som kan uppdateras under Live-aktivitetens livscykel. Den måste överensstämma med `Codable` och `Hashable`.
 
-* `LiveActivityOrigin`-uppräkningen anger om en aktivitet initierades lokalt i appen eller via fjärråtkomst via ett push-to-start-meddelande, som stöds i iOS 17.2 och senare. Med det här värdet kan SDK skilja mellan lokalt initierade och fjärraktiverade Live-aktiviteter under datainsamling.
+* `LiveActivityOrigin`-uppräkningen anger om en aktivitet initierades lokalt i appen eller via fjärråtkomst via ett push-to-start-meddelande, som stöds i iOS 17.2 och senare. Med det här värdet kan SDK skilja mellan lokalt initierad och fjärraktiverad Live-aktivitet under datainsamling.
 
 **Exempel**
 
@@ -111,15 +112,15 @@ public struct LiveActivityData: Codable {
     /// Unique identifier for broadcast Live activity channels
     public let channelID: String?
      
-    /// Unique identifier for individual Live activities
+    /// Unique identifier for individual Live activity
     public let liveActivityID: String?
      
     /// Indicates local vs remote creation
     public let origin: LiveActivityOrigin?
      
     // Initializers
-    public init(channelID: String)        // For broadcast Live activities
-    public init(liveActivityID: String)   // For individual Live activities
+    public init(channelID: String)        // For broadcast Live activity
+    public init(liveActivityID: String)   // For individual Live activity
 }
 ```
 
@@ -133,7 +134,7 @@ if #available(iOS 16.1, *) {
 }
 ```
 
-## Steg 3: Registrera Live-aktiviteter {#register}
+## Steg 3: Registrera Live-aktivitet {#register}
 
 Registrera dina Live-aktivitetstyper i din `AppDelegate` efter SDK-initiering, vilket gör att du kan:
 
@@ -151,7 +152,7 @@ if #available(iOS 16.1, *) {
 
 ## Steg 4: Skapa Live-aktivitetswidgetar {#widgets}
 
-Live-aktiviteter visas via widgetar, du måste skapa ett widgetpaket och en konfiguration:
+Live-aktiviteten visas via widgetar, du måste skapa ett widgetpaket och en konfiguration:
 
 **Exempel på en live-aktivitet för matleveranser:**
 
@@ -190,7 +191,7 @@ struct FoodDeliveryLiveActivityWidget: Widget {
 
 ## Steg 5: Starta en Live-aktivitet lokalt (valfritt) {#local}
 
-Journey Optimizer kan fjärrstarta Live-aktiviteter, men du kan också starta dem lokalt:
+Journey Optimizer kan fjärrstarta Live-aktiviteten, men du kan även starta den lokalt:
 
 **Exempel på en live-aktivitet för matleveranser:**
 

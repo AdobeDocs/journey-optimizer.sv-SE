@@ -2,16 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera aktivitetskanalen Live
-description: Lär dig hur du konfigurerar miljön för att skicka Live-aktiviteter med Journey Optimizer
+description: Lär dig hur du konfigurerar miljön för att skicka Live-aktivitet med Journey Optimizer
 feature: Channel Configuration
 role: Admin
 level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: db85a563-9630-4d87-bf10-9f2515fe8a45
-source-git-commit: 6b4e3a6c32d24861f1ea8df54fc2e4fbb19d0ce7
+source-git-commit: 2fc4b1ee34b44fb6c5bcddb13f1b2b02f7094ff1
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '468'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Innan du skickar din Live-aktivitet måste du konfigurera din Adobe Journey Opti
 
 Registrering av push-autentiseringsuppgifter krävs för mobilappen för att godkänna att Adobe skickar push-meddelanden åt dig.
 
-Steg 1 är valfritt om dina push-autentiseringsuppgifter redan har konfigurerats, eftersom de kan återanvändas för kanalkonfigurationen för Live Activity. Om inga autentiseringsuppgifter har definierats måste du skapa nya push-autentiseringsuppgifter för din app. Se stegen nedan:
+Steg 1 är valfritt om dina push-autentiseringsuppgifter redan har konfigurerats, eftersom de kan återanvändas för konfigurationen av Live-aktivitetskanalen. Om inga autentiseringsuppgifter har definierats måste du skapa nya push-autentiseringsuppgifter för din app. Se stegen nedan:
 
 1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]**-menyn.
 
@@ -56,7 +56,7 @@ Steg 1 är valfritt om dina push-autentiseringsuppgifter redan har konfigurerats
 
    ![](assets/config-1.png)
 
-1. Ange ett namn och en beskrivning (valfritt) för konfigurationen och välj sedan WhatsApp-kanalen.
+1. Ange ett namn och en beskrivning (valfritt) för konfigurationen och välj sedan Live-aktivitetskanalen.
 
    >[!NOTE]
    >

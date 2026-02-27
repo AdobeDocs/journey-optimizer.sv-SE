@@ -9,7 +9,7 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 9864a136-e129-4279-bb09-081b72f584df
-source-git-commit: 6b4e3a6c32d24861f1ea8df54fc2e4fbb19d0ce7
+source-git-commit: 2fc4b1ee34b44fb6c5bcddb13f1b2b02f7094ff1
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -44,7 +44,7 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
-1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[&#x200B; på fliken &#x200B;](../audience/about-audiences.md).
+1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[ på fliken ](../audience/about-audiences.md).
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
 1. När konfigurationen är klar klickar du på **[!UICONTROL Review to activate]** och sedan på **[!UICONTROL Activate]**.
 
-1. När kampanjen har aktiverats använder du den angivna **cURL-begäran** som en mall för att aktivera start-, uppdatering- eller sluthändelser för Live-aktiviteten. Uppdatera exempelnyttolasten med dina specifika data före körning.
+1. När kampanjen har aktiverats använder du den angivna **cURL-begäran** som en mall för att utlösa Live-aktivitetens start-, uppdaterings- eller sluthändelser. Uppdatera exempelnyttolasten med dina specifika data före körning.
 
    Kontrollera att du även kopierar identifierarna **[!UICONTROL Campaign ID]** som ska ingå i din nyttolast.
 
@@ -157,6 +157,6 @@ När du har utformat din Live-aktivitet kan du spåra effekten av din Live-aktiv
 
 ## Instruktionsvideo
 
-Upptäck hur du konfigurerar iOS Live Activity med Adobe Journey Optimizer för att leverera omfattande uppdateringar i realtid på iPhone Lock Screen och Dynamic Island.
+Upptäck hur du konfigurerar iOS Live-aktiviteten med Adobe Journey Optimizer för att leverera omfattande uppdateringar i realtid på iPhone Lock Screen och Dynamic Island.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479868?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3479864)
