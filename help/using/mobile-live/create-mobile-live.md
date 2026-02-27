@@ -44,7 +44,7 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
-1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[ på fliken ](../audience/about-audiences.md).
+1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[&#x200B; på fliken &#x200B;](../audience/about-audiences.md).
 
    >[!NOTE]
    >
