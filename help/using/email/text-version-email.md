@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Skapa textversionen av ett e-postmeddelande
+title: Hantera textversionen av ett e-postmeddelande
 description: Lär dig hur du skapar textversionen av ett e-postmeddelande
 feature: Email Design
 topic: Content Management
@@ -9,36 +9,44 @@ role: User
 level: Intermediate
 keywords: text, e-post, version, normal, redigerare
 exl-id: 4bb36810-65fb-4a9b-9bea-e56ed2c1eea3
-source-git-commit: 30241f4504ad82bf8ef9f6b58d3bb9482f572dae
+source-git-commit: 1a5ce1bf2d98a5de31f1245dee96d24984cb28d9
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
 
-# Skapa textversionen av ett e-postmeddelande {#text-version-email}
+# Hantera textversionen av ett e-postmeddelande {#text-version-email}
 
 Vi rekommenderar att du skapar en textversion av e-postbrödtexten, som används när HTML-innehåll inte kan visas.
 
+Av säkerhetsskäl är det viktigt att erbjuda en oformaterad textversion eftersom HTML e-post kan medföra risker som skadliga skript, spåra pixlar eller nätfiskeförsök som kräver omfattande formatering och länkar. Oformaterad text minskar attackytan och föredras ofta av säkerhetsmedvetna mottagare eller e-postsystem som begränsar eller rensar HTML. Genom att tillhandahålla båda versionerna kan mottagarna välja det format som passar deras säkerhets- och integritetskrav.
+
+## Åtkomst till standardtextversionen {#plain-text-default}
+
 Som standard skapar e-post-Designer en **[!UICONTROL Plain text]**-version av ditt e-postmeddelande, inklusive anpassningsfält. Den här versionen genereras och synkroniseras automatiskt med HTML-versionen av ditt innehåll.
+
+Om du vill komma åt standardtextversionen väljer du ikonen **[!UICONTROL Plain text]** från ditt e-postinnehåll.
+
+![](assets/text_version_3.png)
+
+## Använda en anpassad textversion {#plain-text-default-custom}
 
 Om du föredrar att använda ett annat innehåll för den oformaterade textversionen följer du stegen nedan:
 
 1. Välj ikonen **[!UICONTROL Plain text]** i ditt e-postmeddelande.
 
-   ![](assets/text_version_3.png)
-
 1. Använd växlingsknappen **[!UICONTROL Sync with HTML]** för att inaktivera synkronisering. Bekräfta ditt val genom att klicka på bockmarkeringen.
 
    ![](assets/text_version_2.png)
 
-1. Du kan sedan redigera den oformaterade textversionen efter behov.
+1. Du kan sedan redigera den anpassade versionen med oformaterad text efter behov.
 
 >[!CAUTION]
 >
 > * När synkronisering är inaktiverat återspeglas inte ändringar som görs i vyn **[!UICONTROL Plain text]** i HTML-vyn.
 >
->* Om du återaktiverar alternativet **[!UICONTROL Sync with HTML]** efter att ha uppdaterat ditt oformaterade textinnehåll, kommer dina ändringar att gå förlorade och ersättas med textinnehåll som genererats från HTML-versionen.
+> * Om du återaktiverar alternativet **[!UICONTROL Sync with HTML]** efter att ha uppdaterat ditt oformaterade textinnehåll, kommer dina ändringar att gå förlorade och ersättas med textinnehåll som genererats från HTML-versionen.
 
 ## När anpassade rena textversioner ska användas {#when-to-use}
 
