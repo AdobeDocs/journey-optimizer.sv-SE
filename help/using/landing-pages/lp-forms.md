@@ -10,9 +10,9 @@ level: Beginner
 keywords: landning, landningssida, skapande, sida, formulär
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: c688ac5e-eb09-445b-a3f0-1627b40cddc8
-source-git-commit: 13ef8ae4fa988537db192eca0b906940e51eeb28
+source-git-commit: 58565932ccd2ecf95bafece71bf182fa9082cec6
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1550'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor 
 >id="ajo_lp_form_connection"
 >title="Markera den slutpunkt som ska användas"
 >abstract="Definiera slutpunkten för direktuppspelning där data skickas när formuläret skickas."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_dataset"
@@ -69,7 +69,7 @@ Följ stegen nedan för att skapa en formulärförinställning.
 
 1. Välj **[!UICONTROL Streaming connection]** som ska användas för det formuläret. Det här är slutpunkten för direktuppspelning där data skickas när formuläret skickas.
 
-   Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
+   Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
 
    >[!IMPORTANT]
    >
@@ -78,13 +78,13 @@ Följ stegen nedan för att skapa en formulärförinställning.
    >* **Datatypen** måste anges till **XDM** (inte Raw-data)
    >* **Autentisering** måste vara **inaktiverad** (icke-autentiserad anslutning)
    >
-   >Om din direktuppspelningsanslutning inte visas i listan kontrollerar du att båda villkoren är uppfyllda. <!--Learn how to [create a non-authenticated connection with XDM data type](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http#create-a-streaming-connection){target="_blank"}.-->
+   >Om din direktuppspelningsanslutning inte visas i listan kontrollerar du att båda villkoren är uppfyllda. <!--Learn how to [create a non-authenticated connection with XDM data type](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http#create-a-streaming-connection){target="_blank"}.-->
 
 1. Välj en **[!UICONTROL Dataset]** att länka till formuläret. Här lagras och speglas formulärsvaren. Du kan skriva för att söka efter en viss datauppsättning eller välja den i listan.
 
    >[!NOTE]
    >
-   >För närvarande är bara [!DNL Adobe Experience Platform] datauppsättningar tillgängliga för val. En datauppsättning kan väljas åt gången. [Läs mer om datauppsättningar](../data/get-started-datasets.md)
+   >För närvarande är bara **profilaktiverade** - och **icke-profilaktiverade** [!DNL Adobe Experience Platform]-datauppsättningar tillgängliga för urval. En datauppsättning kan väljas åt gången. Systemdatauppsättningar kan inte användas för att spara formulärdata. [Läs mer om datauppsättningar](../data/get-started-datasets.md)
 
 1. Klicka på **[!UICONTROL Publish]**. Din förinställning kan nu användas i ett formulär.
 
@@ -102,7 +102,7 @@ Alla befintliga formulär visas. Du kan filtrera formulär baserat på deras sta
 >id="ajo_lp_form_preset"
 >title="Välj en förinställning"
 >abstract="Välj en fördefinierad förinställning som innehåller anslutningen som ska användas och en fördefinierad datauppsättning för formuläret."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
 
 Följ stegen nedan när du vill skapa ett formulär.
 
