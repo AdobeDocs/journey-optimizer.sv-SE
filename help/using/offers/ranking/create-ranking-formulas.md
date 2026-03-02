@@ -11,9 +11,9 @@ level: Intermediate
 mini-toc-levels: 1
 exl-id: 8bc808da-4796-4767-9433-71f1f2f0a432
 version: Journey Orchestration
-source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
+source-git-commit: 8dcac6e63f6a38874b3aff4996fc317e3606cb9b
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,9 @@ ht-degree: 0%
 
 **Rankningsformler** gör att du kan definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att ta hänsyn till offertens prioritetspoäng.
 
-Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
+
+I beslutsprocessen stöds endast en deluppsättning av funktioner i rankningsformler. Listan finns i [Funktioner som stöds i uttrycksredigeraren](../personalization-editor-supported-functions.md).
 
 När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Mer information finns i [Konfigurera erbjudandeval i beslut](../offer-activities/configure-offer-selection.md).
 

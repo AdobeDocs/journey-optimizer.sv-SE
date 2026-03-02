@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 4576362dc6e5cd75fa19a8d4e9403db8f1e025af
+source-git-commit: 8dcac6e63f6a38874b3aff4996fc317e3606cb9b
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3123'
 ht-degree: 15%
 
 ---
@@ -695,6 +695,7 @@ ht-degree: 15%
          + [Kom igång med beslutshantering](/help/rp_landing_pages/get-started-decision-landing-page.md)
          + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
          + [Garantier och begränsningar för beslutshantering](using/offers/decision-management-guardrails.md)
+         + [Funktioner som stöds i uttrycksredigeraren](using/offers/personalization-editor-supported-functions.md)
          + [Användargränssnitt](using/offers/get-started/user-interface.md)
          + [Viktiga steg för att skapa och hantera erbjudanden](using/offers/offer-library/key-steps.md)
          + [Utnyttja anpassade uppladdningsmålgrupper för beslut](using/offers/custom-upload-decisioning.md)
@@ -857,7 +858,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
