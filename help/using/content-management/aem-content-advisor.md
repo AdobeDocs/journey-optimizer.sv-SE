@@ -80,7 +80,7 @@ Adobe Experience Manager Content Advisor innehåller följande resursfunktioner:
 
    * **Scene7**: Tillgängligt för publicerade resurser (utom Video och PDF). [Läs mer om modifierare i Dynamic Media Scene7](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-modifiers.html){target="_blank"}
 
-   * **OpenAPI**: Tillgängligt för godkända resurser (utom video). [Läs mer om Dynamic Media med OpenAPI-modifierare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html){target="_blank"}
+   * **OpenAPI**: Tillgängligt för godkända resurser (utom video). [Läs mer om Dynamic Media med OpenAPI-modifierare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=sv-SE){target="_blank"}
 
    * **Både Scene7 och OpenAPI**: Tillgängligt när båda konfigurationerna finns och resursen uppfyller villkoren.
 
