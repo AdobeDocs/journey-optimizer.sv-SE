@@ -23,7 +23,7 @@ Välj rätt modell för dina behov:
 - **[!UICONTROL Partner model]**, som drivs av Gemini 2.5 Flash, erbjuder specialfunktioner för specifika användningsområden.
 - **[!UICONTROL Custom models]** är varumärkesspecifika modeller som har utbildats på dina egna resurser och lagts till av din organisation.
 
-  Läs mer om **[!UICONTROL Custom models]** i [Adobe Firefly-dokumentationen](https://helpx.adobe.com/firefly/web/work-with-enterprise-features/train-custom-models/custom-models-overview.html)
+  Läs mer om **[!UICONTROL Custom models]** i [Adobe Firefly-dokumentationen](https://helpx.adobe.com/se/firefly/web/work-with-enterprise-features/train-custom-models/custom-models-overview.html)
 
 När konfigurationen är klar kan du välja någon av dina generativa modeller när du skapar bilder i innehållet. [Läs mer om att generera bilder](generative-image.md).
 
@@ -61,7 +61,7 @@ Anpassade Firefly-modeller är varumärkesspecifika AI-modeller som är utbildad
 
 Genom att skapa anpassade leverantörer av Firefly-modeller kan ni utöka era AI-funktioner utöver standardmodellerna och säkerställa att det genererade innehållet konsekvent återspeglar varumärkets unika estetik och krav.
 
-➡️ [Lär dig att träna din anpassade modell](https://helpx.adobe.com/firefly/web/work-with-enterprise-features/train-custom-models/train-firefly-custom-models.html)
+➡️ [Lär dig att träna din anpassade modell](https://helpx.adobe.com/se/firefly/web/work-with-enterprise-features/train-custom-models/train-firefly-custom-models.html)
 
 1. Gå till fliken **[!UICONTROL Brands]** på menyn **[!UICONTROL Generative Models]** och klicka på **[!UICONTROL Add model]**.
 
@@ -71,7 +71,7 @@ Genom att skapa anpassade leverantörer av Firefly-modeller kan ni utöka era AI
 
 1. Ange din **[!UICONTROL Model ID]**.
 
-   Om du vill hitta ditt Firefly modell-ID går du till Firefly webbplats och navigerar till dina utbildade modeller. Den unika identifieraren är tillgänglig i modellens hanteringsavsnitt när den har publicerats. Mer information finns i [dokumentationen för anpassade Firefly-modeller](https://helpx.adobe.com/firefly/web/work-with-enterprise-features/train-custom-models/manage-custom-models.html).
+   Om du vill hitta ditt Firefly modell-ID går du till Firefly webbplats och navigerar till dina utbildade modeller. Den unika identifieraren är tillgänglig i modellens hanteringsavsnitt när den har publicerats. Mer information finns i [dokumentationen för anpassade Firefly-modeller](https://helpx.adobe.com/se/firefly/web/work-with-enterprise-features/train-custom-models/manage-custom-models.html).
 
    ![](assets/gen-model-manage-5.png){zoomable="yes"}
 
