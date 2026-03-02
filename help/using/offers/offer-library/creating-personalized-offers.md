@@ -10,7 +10,7 @@ role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
 version: Journey Orchestration
-source-git-commit: 8dcac6e63f6a38874b3aff4996fc317e3606cb9b
+source-git-commit: b90e3af955496d4fcae54b109cb1e86a8a21be43
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 3%
@@ -83,7 +83,9 @@ Så här skapar du ett **erbjudande**:
 
    ![](../assets/offer_manage-access.png)
 
-1. Lägg till representationer för att definiera var ditt erbjudande ska visas i meddelandet. [Läs mer](add-representations.md) När du anpassar representationsinnehåll stöds endast vissa funktioner. Se [Funktioner som stöds i uttrycksredigeraren](../personalization-editor-supported-functions.md).
+1. Lägg till representationer för att definiera var ditt erbjudande ska visas i meddelandet. [Läs mer](add-representations.md)
+
+   När du anpassar representationsinnehåll stöds endast vissa funktioner. Se [Funktioner som stöds i uttrycksredigeraren](../personalization-editor-supported-functions.md).
 
    ![](../assets/channel-placement.png)
 
@@ -168,7 +170,7 @@ När ett erbjudande har skapats kan du klicka på dess namn i listan.
 
 ![](../assets/offer_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar &#x200B;](../get-started/user-interface.md#changes-logs) som har gjorts i erbjudandet.
+På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar ](../get-started/user-interface.md#changes-logs) som har gjorts i erbjudandet.
 
 ![](../assets/offer_information.png)
 
