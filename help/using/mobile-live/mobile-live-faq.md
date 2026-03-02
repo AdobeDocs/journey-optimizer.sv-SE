@@ -9,9 +9,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: e7e994ca-aa0c-4e86-8710-c87430b74188
-source-git-commit: 2fc4b1ee34b44fb6c5bcddb13f1b2b02f7094ff1
+source-git-commit: 5bb1a76ac0797f5fdea36e8b7164cb139ebd40dd
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1802'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,12 @@ Nej. Live-aktiviteten kan startas, uppdateras och avslutas på fjärrbasis, äve
 +++Hur länge kan en Live-aktivitet vara aktiv?
 
 Apple begränsar Live-aktiviteten till **8 timmars aktiv uppdatering**. Efter det avslutar systemet automatiskt aktiviteten, men den kan vara synlig i ett statiskt tillstånd i upp till **12 timmar till** innan den tas bort. Du kan också avsluta en Live-aktivitet tidigare genom att ange en `dismissalDate` eller genom att anropa `activity.end()` explicit i din app.
+
++++
+
++++ Vilka är rabattgränserna?
+
+Kampanjer har en standardtaxegräns på 500 transaktionsmeddelanden per sekund i alla kanaler, inklusive iOS Live-aktiviteter. Den här begränsningen gäller alla kanaler tillsammans och det finns ingen särskild avgiftsgräns för iOS Live-aktiviteter.
 
 +++
 
