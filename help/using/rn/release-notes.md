@@ -7,10 +7,10 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 82bfb8309c31b015755e592b95c4f8d54cf28235
+source-git-commit: 57916f631c0154113699ca941a635678813561fe
 workflow-type: tm+mt
-source-wordcount: '1606'
-ht-degree: 6%
+source-wordcount: '1637'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,28 @@ ht-degree: 6%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
+
+## Uppdatering 26 mars {#march-26-rn}
+
+<table>
+<thead>
+<tr>
+<th><strong>Integrering av anpassade Firefly-modeller och tredjepartsmodeller för bildgenerering</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Möjliggör smidig integrering av standardmodeller och anpassade Firefly-modeller, tillsammans med godkända bildmodeller från tredje part, för att ge större flexibilitet, kontroll och varumärkesanpassning vid generering av bilder.</p>
+<p>Välj rätt modell för dina behov:</p>
+<ul><li> <strong>Adobe-modell</strong> (från Firefly Image Model 4) för omedelbar bildgenerering utan ytterligare konfiguration</li><li> <strong>Partnermodell</strong> (från Gemini 2.5 Flash) för specialfunktioner</li><li><strong>Anpassade modeller</strong> (varumärkesspecifika modeller som utbildats utifrån dina egna resurser) för varumärkesgenerering som exakt överensstämmer med din varumärkesidentitet, stil och visuella riktlinjer.</li></ul>
+<p>Mer information finns i den <a href="../content-management/generative-models.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 2 mars 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Versionsinformation 26 februari {#feb-26-01-rn}
 
@@ -33,12 +54,11 @@ Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01
 
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 <!--**Release date**: February 17-18, 2026-->
 
 ### Nya funktioner {#feb-26-01-features}
-
 
 <!--
 <table>
@@ -340,6 +360,3 @@ Funktionerna och förbättringarna nedan är planerade att släppas senare i feb
 
   Tillgänglighetsdatum: 18 februari 2026
 
-* **Integrering av anpassade Firefly-modeller och tredjepartsmodeller för bildgenerering** - Möjliggör smidig integrering av Firefly-modeller och egna, tillsammans med godkända tredjepartsmodeller (t.ex. NanoBanana), för att ge större flexibilitet, kontroll och varumärkesjustering när bilder genereras. På så sätt kan du välja den bästa modellen för varje användningsfall: standardmodell för Firefly för allmänna behov, anpassad Firefly för varumärkesgenerering eller godkända tredjepartsmodeller för specialiserade eller experimentella scenarier.
-
-  Tillgänglighetsdatum: tidig mars 2026.

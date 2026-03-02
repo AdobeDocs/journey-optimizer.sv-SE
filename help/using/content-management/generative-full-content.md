@@ -7,10 +7,11 @@ feature: Content Assistant
 topic: Artificial Intelligence
 role: User
 level: Beginner
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+exl-id: 9f395b3d-8414-4e88-b849-6d9af9640b32
+source-git-commit: 57916f631c0154113699ca941a635678813561fe
 workflow-type: tm+mt
-source-wordcount: '1699'
-ht-degree: 1%
+source-wordcount: '1763'
+ht-degree: 2%
 
 ---
 
@@ -62,17 +63,18 @@ Med AI Assistant öppen kan du nu konfigurera genereringsinställningarna för a
    * **[!UICONTROL Languages]**: Välj språk för det genererade innehållet.
    * **[!UICONTROL Tone]**: Tonen bör återges med din målgrupp. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
 
-     ![Panelen Textinställningar som visar Kommunikationsstrategi, Språk och Tonalternativ &#x200B;](assets/full-email-4.png){zoomable="yes"}
+     ![Panelen Textinställningar som visar Kommunikationsstrategi, Språk och Tonalternativ ](assets/full-email-4.png){zoomable="yes"}
 
 1. Välj din **[!UICONTROL Image settings]**:
 
+   * **[!UICONTROL Generative model]**: Välj bland tillgängliga inbyggda modeller, anpassade Firefly-modeller som är utbildade i ert varumärke eller tredjepartsleverantörer av bildgenerering för att skapa bilder som passar just era behov och varumärkeskrav. [Läs mer](generative-models.md)
    * **[!UICONTROL Content type]**: Detta kategoriserar det visuella elementets karaktär och skiljer mellan olika former av visuell representation, t.ex. foton, grafik eller grafik.
    * **[!UICONTROL Visual intensity]**: Du kan styra bildens effekt genom att justera dess intensitet. En lägre inställning (2) ger ett mjukare och mer återhållsam utseende, medan en högre inställning (10) gör bilden mer levande och visuellt kraftfull.
    * **[!UICONTROL Color & tone]**: Det övergripande utseendet på färgerna i en bild och stämningen eller atmosfären som den förmedlar.
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-     ![Panelen Bildinställningar med alternativen Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition &#x200B;](assets/full-email-6.png){zoomable="yes"}
+     ![Panelen Bildinställningar med alternativen Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition ](assets/full-email-6.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Reference content]** på menyn **[!UICONTROL Upload file]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -172,6 +174,7 @@ När du har använt AI Assistant för push-meddelanden kan du konfigurera genere
 
 1. Välj din **[!UICONTROL Image settings]**:
 
+   * **[!UICONTROL Generative model]**: Välj bland tillgängliga inbyggda modeller, anpassade Firefly-modeller som är utbildade i ert varumärke eller tredjepartsleverantörer av bildgenerering för att skapa bilder som passar just era behov och varumärkeskrav. [Läs mer](generative-models.md)
    * **[!UICONTROL Content type]**: Detta kategoriserar det visuella elementets karaktär och skiljer mellan olika former av visuell representation, t.ex. foton, grafik eller grafik.
    * **[!UICONTROL Visual intensity]**: Du kan styra bildens effekt genom att justera dess intensitet. En lägre inställning (2) ger ett mjukare och mer återhållsam utseende, medan en högre inställning (10) gör bilden mer levande och visuellt kraftfull.
    * **[!UICONTROL Color & tone]**: Det övergripande utseendet på färgerna i en bild och stämningen eller atmosfären som den förmedlar.

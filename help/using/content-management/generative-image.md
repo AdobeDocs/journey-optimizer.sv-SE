@@ -7,9 +7,10 @@ feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+exl-id: f0585411-c862-45f2-9a10-d8a72497c533
+source-git-commit: 57916f631c0154113699ca941a635678813561fe
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1352'
 ht-degree: 2%
 
 ---
@@ -60,6 +61,7 @@ Lär dig skapa effektiva uppmaningar och konfigurera bildinställningar för att
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Image settings]**:
 
+   * **[!UICONTROL Generative model]**: Välj bland färdiga **[!UICONTROL Adobe model]**, **[!UICONTROL Partner model]** för specialfunktioner eller **[!UICONTROL Custom models]** som är anpassade efter varumärkesresurser. [Läs mer](generative-models.md)
    * **[!UICONTROL Aspect ratio]**: Detta avgör resursens bredd och höjd. Du kan välja bland vanliga proportioner som 16:9, 4:3, 3:2 eller 1:1, eller så kan du ange en anpassad storlek.
    * **[!UICONTROL Content type]**: Detta kategoriserar det visuella elementets karaktär och skiljer mellan olika former av visuell representation, t.ex. foton, grafik eller grafik.
    * **[!UICONTROL Visual intensity]**: Du kan styra bildens effekt genom att justera dess intensitet. En lägre inställning (2) ger ett mjukare och mer återhållsam utseende, medan en högre inställning (10) gör bilden mer levande och visuellt kraftfull.
@@ -147,6 +149,7 @@ När du har öppnat AI Assistant kan du justera genereringsinställningarna för
 
 1. Välj din **[!UICONTROL Image settings]**:
 
+   * **[!UICONTROL Generative model]**: Välj bland färdiga **[!UICONTROL Adobe model]**, **[!UICONTROL Partner model]** för specialfunktioner eller **[!UICONTROL Custom models]** som är anpassade efter varumärkesresurser. [Läs mer](generative-models.md)
    * **[!UICONTROL Content type]**: Detta kategoriserar det visuella elementets karaktär och skiljer mellan olika former av visuell representation, t.ex. foton, grafik eller grafik.
    * **[!UICONTROL Visual intensity]**: Du kan styra bildens effekt genom att justera dess intensitet. En lägre inställning (2) ger ett mjukare och mer återhållsam utseende, medan en högre inställning (10) gör bilden mer levande och visuellt kraftfull.
    * **[!UICONTROL Color & tone]**: Det övergripande utseendet på färgerna i en bild och stämningen eller atmosfären som den förmedlar.
@@ -182,4 +185,3 @@ När du har genererat bildvariationer för dina push-meddelanden kan du finjuste
    Du kan också göra det möjligt att experimentera med ditt innehåll. [Läs mer](generative-experimentation.md)
 
 När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo att förbereda er push-kampanj. [Läs mer](../campaigns/review-activate-campaign.md)
-
