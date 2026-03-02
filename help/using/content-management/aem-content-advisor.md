@@ -3,13 +3,11 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Öppna Adobe Experience Manager Content Advisor
 description: Lär dig hur du får tillgång till och använder Adobe Experience Manager Content Advisor för att identifiera resurser och innehållsfragment med hjälp av AI-baserad semantisk sökning i Adobe Journey Optimizer.
-feature: Content Management
-topic: Content Management
 role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 4576362dc6e5cd75fa19a8d4e9403db8f1e025af
+source-git-commit: 58b6300dd00cc4475397d117a705fe88deab1796
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -31,7 +29,7 @@ Adobe Experience Manager Content Advisor ersätter deterministisk upptäckt med 
 
 Adobe Experience Manager Content Advisor innehåller följande resursfunktioner:
 
-* &#x200B;
+* 
   +++ AI-semantisk sökning
 
   Sök efter resurser på ett naturligt språk i stället för med exakta nyckelord eller filnamn. Beskriv vad du behöver på ett enkelt språk, till exempel&quot;kaffe i bergen&quot;, så hittar AI sammanhangsberoende resurser baserat på innebörd och innehåll, inte bara textmatchningar.
@@ -40,7 +38,7 @@ Adobe Experience Manager Content Advisor innehåller följande resursfunktioner:
 
   +++
 
-* &#x200B;
+* 
   +++ Historik för senaste sökningar
 
   Kom åt dina senaste sökningar och återanvänd nyckelord och kontexter. Detta sparar tid när ni arbetar med liknande kampanjer eller behöver förfina tidigare sökningar.
@@ -49,7 +47,7 @@ Adobe Experience Manager Content Advisor innehåller följande resursfunktioner:
 
   +++ 
 
-* &#x200B;
+* 
   +++ Överför i korthet
 
   Ladda upp ett kort marknadsföringsdokument för att automatiskt visa resurser som är anpassade till ert kampanjsammanhang. AI analyserar sammanfattningen och föreslår relevanta resurser baserat på innehållet och kraven som beskrivs i dokumentet.
@@ -58,7 +56,7 @@ Adobe Experience Manager Content Advisor innehåller följande resursfunktioner:
 
   +++
 
-* &#x200B;
+* 
   +++ Panelen Resursinformation
 
   Visa detaljerade metadata och egenskaper för alla resurser med hjälp av ikonen **Info** . Detta inkluderar resursdimensioner, filstorlek, datum när de skapades, taggar och annan relevant information som hjälper dig att fatta välgrundade beslut.
@@ -67,7 +65,7 @@ Adobe Experience Manager Content Advisor innehåller följande resursfunktioner:
 
   +++
 
-* &#x200B;
+* 
   +++ Panelen Dynamiska media
 
   Få tillgång till dynamiska renderingar, smarta beskärningar och snabba ändringar baserat på databaskonfigurationen.
@@ -82,7 +80,7 @@ Adobe Experience Manager Content Advisor innehåller följande resursfunktioner:
 
    * **Scene7**: Tillgängligt för publicerade resurser (utom Video och PDF). [Läs mer om modifierare i Dynamic Media Scene7](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-modifiers.html){target="_blank"}
 
-   * **OpenAPI**: Tillgängligt för godkända resurser (utom video). [Läs mer om Dynamic Media med OpenAPI-modifierare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=sv-SE){target="_blank"}
+   * **OpenAPI**: Tillgängligt för godkända resurser (utom video). [Läs mer om Dynamic Media med OpenAPI-modifierare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html){target="_blank"}
 
    * **Både Scene7 och OpenAPI**: Tillgängligt när båda konfigurationerna finns och resursen uppfyller villkoren.
 
@@ -99,7 +97,7 @@ Adobe Experience Manager Content Advisor innehåller följande resursfunktioner:
 
 Adobe Experience Manager Content Advisor innehåller följande funktioner för innehållsfragment:
 
-* &#x200B;
+* 
   +++ Mallvylista 
 
   Växla mellan miniatyr- och tabellvyer för att bläddra bland innehållsfragment i det format som passar ditt arbetsflöde bäst. Miniatyrbildsvyn ger visuell kontext medan tabellvyn visar detaljerad information i ett strukturerat format.
@@ -108,7 +106,7 @@ Adobe Experience Manager Content Advisor innehåller följande funktioner för i
 
   +++
 
-* &#x200B;
+* 
   +++ Informationspanelen 
 
   Klicka på ikonen **[!UICONTROL Info]** för att öppna en högerpanel med fragmentvariationer, egenskaper och **[!UICONTROL Referenced By]** information. Avsnittet **[!UICONTROL Referenced By]** visar alla Adobe Experience Manager-entiteter där fragmentet används, med länkar för att visa dessa referenser direkt i Adobe Experience Manager.
@@ -117,7 +115,7 @@ Adobe Experience Manager Content Advisor innehåller följande funktioner för i
 
   +++
 
-* &#x200B;
+* 
   +++ Öppna i Adobe Experience Manager
 
   Öppna snabbt ett innehållsfragment direkt i Adobe Experience Manager för redigering med ikonen bredvid titeln. Denna smidiga integrering gör att du kan växla mellan Journey Optimizer och Adobe Experience Manager utan att tappa sitt sammanhang.
@@ -126,7 +124,7 @@ Adobe Experience Manager Content Advisor innehåller följande funktioner för i
 
   +++
 
-* &#x200B;
+* 
   +++ JSON-förhandsgranskning
 
   Förhandsgranska JSON-strukturen för innehållsfragment i ett rent, organiserat tabellformat. Detta hjälper er att förstå fragmentets datastruktur och verifiera innehåll innan ni använder det i era kampanjer.
