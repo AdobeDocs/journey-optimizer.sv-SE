@@ -10,9 +10,9 @@ role: User
 level: Intermediate
 exl-id: e375fd3a-b10d-45f4-a95b-ceb48116e841
 version: Journey Orchestration
-source-git-commit: 8dcac6e63f6a38874b3aff4996fc317e3606cb9b
+source-git-commit: 9d85361c6f177e451149baf4e2677dce56c6130c
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '360'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 
 ## Skapa och hantera erbjudanden {#create-and-manage-offers}
 
-1. [Skapa erbjudanden](creating-personalized-offers.md) och konfigurera deras innehåll och egenskaper. När du personaliserar erbjudandeinnehåll (representationer) stöds endast vissa uttrycksfunktioner. Se [Funktioner som stöds i uttrycksredigeraren](../personalization-editor-supported-functions.md).
+1. [Skapa erbjudanden](creating-personalized-offers.md) och konfigurera deras innehåll och egenskaper. När du personaliserar erbjudandeinnehåll (representationer) stöds endast vissa funktioner. Se [Funktioner som stöds i personaliseringsredigeraren](personalization-editor-supported-functions.md).
 
 1. [Skapa reserverbjudanden](creating-fallback-offers.md), som är det sista erbjudandet som visas om kunderna inte är berättigade till något av de valda erbjudandena.
 
