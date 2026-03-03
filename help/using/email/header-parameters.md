@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: e1556c25-9c79-4362-a5a9-0a46425fa8d9
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 5b804de873124b8ff53d55c943b3c95649dd9a7c
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ När du konfigurerar en ny [e-postkanalskonfiguration](email-settings.md) anger 
 >[!NOTE]
 >
 >Om du vill ha större kontroll över e-postinställningarna kan du anpassa rubrikparametrarna. [Läs mer](../email/surface-personalization.md#personalize-header)
+>
+>När du [redigerar en e-postkonfiguration](../configuration/channel-surfaces.md#edit-channel-surface) kan du inte lägga till nya [profilattribut](../personalization/personalization-build-expressions.md#sources) i rubrikparametrar. Du måste skapa en ny kanalkonfiguration.
 
 * **[!UICONTROL From name]**: Avsändarens namn, till exempel ditt varumärkes namn.
 * **[!UICONTROL From email prefix]**: Den e-postadress som du vill använda för din kommunikation.

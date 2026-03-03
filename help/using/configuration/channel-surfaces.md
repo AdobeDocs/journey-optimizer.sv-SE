@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 4188d0e321f3da79932b648e3bdf8ffcf6efa22b
+source-git-commit: 5b804de873124b8ff53d55c943b3c95649dd9a7c
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1810'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,8 @@ Om du vill redigera en kanalkonfiguration följer du stegen nedan.
 >[!NOTE]
 >
 >Du kan inte redigera **[!UICONTROL Push notification settings]**. Om en kanalkonfiguration bara är konfigurerad för push-meddelandekanalen går det inte att redigera den.
+>
+>När du redigerar en e-postkonfiguration kan du inte lägga till nya [profilattribut](../personalization/personalization-build-expressions.md#sources) i rubrikparametrar. Du måste skapa en [ny kanalkonfiguration](#create-channel-surface).
 
 1. Klicka på ett kanalkonfigurationsnamn i listan för att öppna den.
 
@@ -183,7 +185,7 @@ Om du vill redigera en kanalkonfiguration följer du stegen nedan.
    >
    >Du kan också spara kanalkonfigurationen som utkast och återuppta uppdateringen senare.
 
-När ändringarna har skickats går kanalkonfigurationen igenom en valideringscykel som liknar den som fanns när [en kanalkonfiguration &#x200B;](#create-channel-surface) skapades. Versionens bearbetningstid kan ta upp till **3 timmar**.
+När ändringarna har skickats går kanalkonfigurationen igenom en valideringscykel som liknar den som fanns när [en kanalkonfiguration ](#create-channel-surface) skapades. Versionens bearbetningstid kan ta upp till **3 timmar**.
 
 >[!NOTE]
 >

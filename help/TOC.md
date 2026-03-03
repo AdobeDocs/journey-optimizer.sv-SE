@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c15bae97ea52243d65aa59fdd4e924dc4e1852d8
+source-git-commit: 5b804de873124b8ff53d55c943b3c95649dd9a7c
 workflow-type: tm+mt
-source-wordcount: '3123'
-ht-degree: 15%
+source-wordcount: '3130'
+ht-degree: 14%
 
 ---
 
@@ -858,7 +858,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
@@ -894,7 +894,8 @@ ht-degree: 15%
       + [Försök igen](using/configuration/retries.md)
       + [Tillåtelselista](using/configuration/allow-list.md)
    + [Använd dirigerade listor](using/configuration/seed-lists.md)
-   + [Stöd för arkivering](using/configuration/archiving-support.md)
+   + [Stöd för e-postarkivering](using/configuration/archiving-support.md)
+   + [Lägg till ett CC-fält i e-postmeddelanden](using/configuration/cc-email-field.md)
    + [Hantera körningsfält](using/configuration/primary-email-addresses.md)
    + [Skapa feedback-webbhotell](using/configuration/feedback-webhooks.md)
 + Resekonfiguration {#configure-journeys}

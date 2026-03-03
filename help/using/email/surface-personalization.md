@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 5b804de873124b8ff53d55c943b3c95649dd9a7c
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1159'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,10 @@ När du har lagt till en eller flera dynamiska underdomäner i en konfiguration 
 ## Anpassa sidhuvudet {#personalize-header}
 
 Du kan också använda personalisering för alla huvudparametrar som definieras i en konfiguration.
+
+>[!NOTE]
+>
+>När du [redigerar en e-postkonfiguration](../configuration/channel-surfaces.md#edit-channel-surface) kan du inte lägga till nya [profilattribut](../personalization/personalization-build-expressions.md#sources) i rubrikparametrar. Du måste skapa en ny kanalkonfiguration.
 
 Om du till exempel har flera varumärken kan du skapa en enda konfiguration och använda anpassade värden för dina e-posthuvuden. På så sätt kan du se till att alla e-postmeddelanden som skickas från dina olika varumärken adresseras till var och en av dina kunder med rätt **From**-namn och e-postmeddelanden. När mottagarna trycker på knappen **Svara** i e-postklientprogramvaran vill du på liknande sätt att **Svara på** namn och e-post motsvarar rätt varumärke för rätt användare.
 
