@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4576362dc6e5cd75fa19a8d4e9403db8f1e025af
+source-git-commit: 21bab54492aec0715ec5fa9c0a1061f7b6539274
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1713'
 ht-degree: 7%
 
 ---
@@ -25,9 +25,11 @@ ht-degree: 7%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Uppdateringar 26 mars {#march-26-rn}
+
+### Nya funktioner {#march-26-features}
 
 <!--
 <table>
@@ -68,13 +70,22 @@ På grund av den här modellen uppdateras versionsinformationen mellan månadsve
 </tbody>
 </table>
 
+### Förbättringar {#march-26-improv}
+
+#### Konfiguration
+
+* **Förändring i händelsedatauppsättningen för sekundär mottagarfeedback för AJO** - AJO e-post-BCC-feedbackhändelsedatauppsättning byter namn till AJO sekundära mottagarfeedbackhändelsedatauppsättning.
+   * **Befintliga användare**: Endast visningsnamnet ändras. Det underliggande tabellnamnet ändras inte.
+   * **Nya användare och nya sandlådor**: Både visningsnamnet och tabellnamnet använder det nya namnet.
+   * **Befintliga användare/organisationer med nya sandlådor**: Både visningsnamnet och tabellnamnet ändras till det nya namnet.
+
 ## Versionsinformation 26 februari {#feb-26-01-rn}
 
 Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01-improv) omfattar funktioner som redan är tillgängliga. Avsnittet [Kommer snart](#coming-soon) innehåller funktioner och förbättringar som är planerade att släppas senare i februari.
 
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 <!--**Release date**: February 17-18, 2026-->
 
