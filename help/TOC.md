@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 8dcac6e63f6a38874b3aff4996fc317e3606cb9b
+source-git-commit: c15bae97ea52243d65aa59fdd4e924dc4e1852d8
 workflow-type: tm+mt
 source-wordcount: '3123'
 ht-degree: 15%
@@ -695,7 +695,6 @@ ht-degree: 15%
          + [Kom igång med beslutshantering](/help/rp_landing_pages/get-started-decision-landing-page.md)
          + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
          + [Garantier och begränsningar för beslutshantering](using/offers/decision-management-guardrails.md)
-         + [Funktioner som stöds i uttrycksredigeraren](using/offers/personalization-editor-supported-functions.md)
          + [Användargränssnitt](using/offers/get-started/user-interface.md)
          + [Viktiga steg för att skapa och hantera erbjudanden](using/offers/offer-library/key-steps.md)
          + [Utnyttja anpassade uppladdningsmålgrupper för beslut](using/offers/custom-upload-decisioning.md)
@@ -721,6 +720,7 @@ ht-degree: 15%
             + [Konfigurera erbjudanden](/help/rp_landing_pages/configure-offers-landing-page.md)
             + [Skapa personaliserade erbjudanden](using/offers/offer-library/creating-personalized-offers.md)
             + [Lägg till representationer](using/offers/offer-library/add-representations.md)
+            + [Funktioner som stöds i personaliseringsredigeraren](using/offers/offer-library/personalization-editor-supported-functions.md)
             + [Lägg till begränsningar](using/offers/offer-library/add-constraints.md)
          + [Skapa reserverbjudanden](using/offers/offer-library/creating-fallback-offers.md)
          + [Skapa samlingar](using/offers/offer-library/creating-collections.md)
@@ -858,7 +858,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

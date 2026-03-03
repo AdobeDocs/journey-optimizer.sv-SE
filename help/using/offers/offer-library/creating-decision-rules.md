@@ -10,9 +10,9 @@ role: User
 level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
 version: Journey Orchestration
-source-git-commit: 8dcac6e63f6a38874b3aff4996fc317e3606cb9b
+source-git-commit: c15bae97ea52243d65aa59fdd4e924dc4e1852d8
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '414'
 ht-degree: 4%
 
 ---
@@ -37,10 +37,6 @@ Här följer en lista över begränsningar som ska vara kända när man arbetar 
 * När du skapar en beslutsregel stöds inte möjligheten att gå tillbaka till en tidigare tidsperiod. Om du till exempel anger en upplevelsehändelse som inträffade under den sista månaden som en komponent i regeln. Alla försök att inkludera en uppslagsperiod när regler skapas kommer att utlösa ett fel när den sparas.
   <!--* Decision requests that use the hub profile will look at the last 100 experience events on the profile to evaluate rules that reference historical experience events.-->
 
->[!NOTE]
->
->I beslutshanteringen stöds bara en delmängd av uttrycksfunktioner. När din regel använder uttryck eller profilattribut finns en lista över funktioner som stöds i [Funktioner som stöds i uttrycksredigeraren](../personalization-editor-supported-functions.md).
-
 ## Skapa en beslutsregel {#create}
 
 Listan med skapade beslutsregler finns på menyn **[!UICONTROL Components]**.
@@ -63,7 +59,7 @@ Så här skapar du en beslutsregel:
 
    >[!NOTE]
    >
-   >Segment Builder som har tillhandahållits för att skapa beslutsregler har vissa egenskaper jämfört med den som används med tjänsten **[!UICONTROL Segmentation]**. Den globala processen som beskrivs i [Segment Builder](../../audience/creating-a-segment-definition.md) -dokumentationen är dock fortfarande giltig för att skapa beslutsregler för erbjudanden. Läs mer i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=sv-SE).
+   >Segment Builder som har tillhandahållits för att skapa beslutsregler har vissa egenskaper jämfört med den som används med tjänsten **[!UICONTROL Segmentation]**. Den globala processen som beskrivs i [Segment Builder](../../audience/creating-a-segment-definition.md) -dokumentationen är dock fortfarande giltig för att skapa beslutsregler för erbjudanden. Läs mer i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
 
 1. När du lägger till och konfigurerar nya fält på arbetsytan visas information om de beräknade profilerna som tillhör målgruppen i rutan **[!UICONTROL Audience properties]**. Klicka på **[!UICONTROL Refresh estimate]** för att uppdatera data.
 
@@ -81,7 +77,7 @@ Så här skapar du en beslutsregel:
 
 >[!CAUTION]
 >
->Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=sv-SE#events){target="_blank"} kan du inte utnyttja den i ett erbjudande.
+>Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} kan du inte utnyttja den i ett erbjudande.
 
 ## Självstudievideo {#video}
 

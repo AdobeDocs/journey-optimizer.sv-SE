@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 exl-id: bd950410-691b-49d8-8851-8c6c448c00fd
 version: Journey Orchestration
-source-git-commit: 8dcac6e63f6a38874b3aff4996fc317e3606cb9b
+source-git-commit: c15bae97ea52243d65aa59fdd4e924dc4e1852d8
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Data från anpassade uppladdningsgrupper kan utnyttjas i Beslutshantering för:
 Mer information om anpassade uppladdningsgrupper finns i avsnitten:
 
 * [Kom igång med målgrupper och Journey Optimizer](../audience/about-audiences.md)
-* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
+* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
 
 ## Måste läsas {#must-read}
 
@@ -77,6 +77,6 @@ Om ni vill utnyttja en anpassad uppladdningspåbileys attribut för personaliser
 
 När målgruppen har lagts till som en begränsning kan du använda dess attribut för att anpassa återgivningsinnehållet. Om du vill göra det går du till fliken **Profilattribut** och söker efter den anpassade uppladdningsmålgruppen. Välj relevanta attribut från målgruppen för att anpassa erbjudandeinnehållet.
 
-I beslutshanteringen stöds endast vissa funktioner när innehåll anpassas. Se [Funktioner som stöds i uttrycksredigeraren](personalization-editor-supported-functions.md).
+I Beslutshantering stöds endast vissa funktioner när du anpassar innehåll. Se [Funktioner som stöds i personaliseringsredigeraren](offer-library/personalization-editor-supported-functions.md).
 
 ![Anpassningsgränssnitt för profilattribut](assets/csv-perso.png)

@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 exl-id: c9e14d4d-f2e2-43f9-b1c5-4b005ce858ad
 version: Journey Orchestration
-source-git-commit: 8dcac6e63f6a38874b3aff4996fc317e3606cb9b
+source-git-commit: c15bae97ea52243d65aa59fdd4e924dc4e1852d8
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Om du vill gå vidare kan du även använda kontextdata i **rankningsformler** e
 
 * [Rankningsformler - Öka erbjudanden baserat på kontextdata](../offers/ranking/create-ranking-formulas.md#context-data)
 * [Anpassa representationer baserat på kontextdata](../offers/offer-library/add-representations.md#context-data)
-* [Funktioner som stöds i uttrycksredigeraren](personalization-editor-supported-functions.md) (när uttryck skapas i beslutshantering)
+* [Funktioner som stöds i personaliseringsredigeraren](offer-library/personalization-editor-supported-functions.md) (vid personalisering av erbjudandeinnehåll i beslutshantering)
 
 >[!ENDSHADEBOX]
 
@@ -55,13 +55,13 @@ Till skillnad från när kontext skickas i ett kostnadsfritt format med hjälp a
 
    I det här exemplet har fältgruppen&quot;Erbjudandekontext&quot; två egenskaper: language och deviceType. Dessa egenskaper kommer att användas i reglerna för rankning och behörighet.
 
-   ![XDM-schema som visar fältgruppen Erbjudandekontext med egenskaperna language och deviceType &#x200B;](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
+   ![XDM-schema som visar fältgruppen Erbjudandekontext med egenskaperna language och deviceType ](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
 
-   Lär dig hur du arbetar med scheman i guiden [!DNL Adobe Experience Platform] [Experience Data Model (XDM)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home){target="_blank"}
+   Lär dig hur du arbetar med scheman i guiden [!DNL Adobe Experience Platform] [Experience Data Model (XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home){target="_blank"}
 
 1. Skapa en datauppsättning (här&quot;Erbjudandekontext&quot;) och se till att den är aktiverad för profilen.
 
-1. Skapa en ny datastream från menyn **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]**. Lär dig hur du skapar och konfigurerar dataström i [!DNL Adobe Experience Platform] [Datastreams-guiden](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure){target="_blank"}
+1. Skapa en ny datastream från menyn **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]**. Lär dig hur du skapar och konfigurerar dataström i [!DNL Adobe Experience Platform] [Datastreams-guiden](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure){target="_blank"}
 
    Här har vi skapat en datastam för&quot;Erbjudandekontext&quot; med händelseschemat&quot;Erbjudandeinnehåll&quot; markerat.
 

@@ -1,0 +1,227 @@
+---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
+title: Funktioner som stöds i personaliseringsredigeraren
+description: Läs om vilka funktioner för personalisering som stöds vid personalisering av erbjudandeinnehåll i beslutshantering (Offer Decisioning).
+badge: label="Äldre" type="Informative"
+feature: Decision Management
+topic: Integrations
+role: User
+level: Intermediate
+version: Journey Orchestration
+exl-id: c4df41a2-d740-437c-acc3-957508c4a1c0
+source-git-commit: c15bae97ea52243d65aa59fdd4e924dc4e1852d8
+workflow-type: tm+mt
+source-wordcount: '635'
+ht-degree: 5%
+
+---
+
+# Funktioner som stöds i personaliseringsredigeraren {#personalization-editor-supported-functions}
+
+I beslutshanteringen använder du **anpassningsredigeraren** när du [lägger till representationer](add-representations.md) och anpassar **erbjudandeinnehåll** (bilder, text, länkar i dina erbjudanden).
+
+Offer Decisioning backend stöder endast en **delmängd** av de funktioner som är tillgängliga i personaliseringsredigeraren när innehållet personaliseras. På den här sidan visas alla funktioner som du kan använda säkert i redigeraren för att erbjuda innehåll. Expandera varje avsnitt för att se vilka operatorer, hjälpprogram och funktioner som stöds.
+
+>[!NOTE]
+>
+>Den här funktionslistan gäller **endast för personalisering av erbjudandeinnehåll** (representationer). Beslutsregler och rankningsformler använder olika redigerare och är inte begränsade till denna delmängd.
+
+## Lista över funktioner som stöds {#supported-functions-list}
+
++++ Operatorer
+
+* Aritmetisk: `+` `-` `*` `/` `%`
+* Logiskt: `and` `or` `!`
+* Jämförelse: `=` `!=` `>` `>=` `<` `<=`
+
++++
+
++++ Hjälpmedel
+
+* Varje
+* Med
+* If
+* Om
+* Låt
+* Standardreservvärde
+* fragment
+* datasetLookup
+* externalDataLookup (Alpha)
+* Textbunden
+* URL
+* Körningsmetadata
+* valueAtPath
+
++++
+
++++ Strängfunktioner
+
+| Visningsnamn | Internt namn |
+|--------------|---------------|
+| Gemener | lowerCase |
+| Versaler | upperCase |
+| Kamerafodral | camelCase |
+| Inledande versal | titleCase |
+| Rensa | trim |
+| Vänster trimning | leftTrim |
+| Höger trimning | rightTrim |
+| Är tom | isEmpty |
+| Lika med Ignorera skiftläge | equalsIgnoreCase |
+| Inte lika med Ignorera skiftläge | notEqualWithIgnoreCase |
+| Ersätt | ersätta |
+| Ersätt alla | replaceAll |
+| Concat | concat |
+| Dela | dela |
+| Encode64 | encode64 |
+| Längd | längd |
+| MD5 | md5 |
+| SHA256 | sha256 |
+| Gilla | gilla |
+| Börjar med | beginWith |
+| Börjar inte med | doesNotStartWith |
+| Slutar med | endsWith |
+| Slutar inte med | doesNotEndWith |
+| Innehåller | innehåller |
+| Innehåller inte | doesNotContain |
+| Lika med | är lika med |
+| Inte lika med | notEqualTo |
+| Matchar | matchar |
+| Grupp för reguljära uttryck | regexGroup |
+| Sträng till tal | stringToNumber |
+| Sträng till datum | stringToDate |
+| Till datum och tid | toDateTime |
+| Endast till datum och tid | toDateTimeOnly |
+| Extrahera e-postdomän | extractEmailDomain |
+| Extrahera e-postanvändarnamn | extractEmailUsername |
+| Är inte tom | isNotEmpty |
+| index för | indexOf |
+| Senaste index för | lastIndexOf |
+| Delsträng | substr |
+| Till boolesk | toBool |
+| Sträng till heltal | string_to_integer |
+| Mask | mask |
+| Hämta formatvaluta | formatCurrency |
+| Hämta Unicode-värde för tecken | charCodeAt |
+| Hämta QR-kod för all text | qrCode |
+
++++
+
++++ Array-, list- och set-funktioner
+
+| Visningsnamn | Internt namn |
+|--------------|---------------|
+| Distinkt | distinct |
+| I | in |
+| Inte i | notIn |
+| Överlappningar | korsar |
+| Delmängd av | subsetOf |
+| Supermängd till | supersetOf |
+| Inkluderar | inkluderar |
+| Sortera och hämta första N i en array | topN |
+| Sortera och hämta sista N i en array | bottomN |
+| Första objektet | head |
+| Antal | count |
+| Summa | sum |
+| Genomsnittlig | medel |
+| Minimum | min |
+| Maximal | max |
+
++++
+
++++ Kartfunktioner
+
+| Visningsnamn | Internt namn |
+|--------------|---------------|
+| Hämta | get |
+| Tangenter | tangenter |
+| Värden | values |
+
++++
+
++++ Objektfunktioner
+
+| Visningsnamn | Internt namn |
+|--------------|---------------|
+| Är null | isNull |
+| Är inte null | isNotNull |
+
++++
+
++++ Matematiska funktioner
+
+| Visningsnamn | Internt namn |
+|--------------|---------------|
+| Till procent | toPercentage |
+| Avrunda uppåt | roundUp |
+| Avrunda nedåt | roundDown |
+| Till precision | toPrecision |
+| Absolut | absolut |
+| Slumpmässig | random |
+| Till hexadecimal | toHexString |
+| Hämta nummer till språkområde | formatNumber |
+| Till sträng | toString |
+| Till int | toInt |
+| Till lång | toLong |
+
++++
+
++++ Funktioner för datum och tid
+
+| Visningsnamn | Internt namn |
+|--------------|---------------|
+| Nu | now |
+| Hämta CurrentZonedDateTime | getCurrentZonedDateTime |
+| Till-datum | toDate |
+| Till tid | toTime |
+| Till datum och tid | toDateTime |
+| Endast till datum och tid | toDateTimeOnly |
+| Endast till-datum | toDateOnly |
+| Endast till tid | toTimeOnly |
+| Till tidszon | toTimeZone |
+| Formateringsdatum | formatDate |
+| Formatera datum och tid | formatDateTime |
+| Formatera tid | formatTime |
+| Tolkningsdatum | parseDate |
+| Tolka datum/tid | parseDateTime |
+| Tolkningstid | parseTime |
+| Lägg till dagar | addDays |
+| Lägg till månader | addMonths |
+| Lägg till år | addYears |
+| Lägg till timmar | addHours |
+| Lägg till minuter | addMinutes |
+| Lägg till sekunder | addSeconds |
+| Subtrahera dagar | subtractDays |
+| Subtrahera månader | subtractMonths |
+| Subtrahera år | subtractYears |
+| Subtrahera timmar | subtractHours |
+| Ta bort minuter | subtractMinutes |
+| Subtrahera sekunder | subtractSeconds |
+| Differens i dagar | diffDays |
+| Skillnad i månader | diffMonths |
+| Skillnad i år | diffYears |
+| Skillnad i timmar | diffHours |
+| Differens i minuter | diffMinutes |
+| Differens i sekunder | diffSeconds |
+| Dagens början | startOfDay |
+| Dagens slut | endOfDay |
+| Är före | isBefore |
+| Är efter | isAfter |
+
++++
+
++++ URL-funktioner
+
+| Visningsnamn | Internt namn |
+|--------------|---------------|
+| Koda URL | encodeUrl |
+| Avkodnings-URL | decodeUrl |
+| Hämta URL-frågeparameter | getUrlQueryParam |
+| Hämta URL-protokoll | getUrlProtocol |
+| Hämta URL-värd | getUrlHost |
+
++++
+
+>[!NOTE]
+>
+>Om du använder en funktion som inte finns med i listan ovan när du anpassar erbjudandeinnehåll kan uttrycket misslyckas vid körning eller ge oväntade resultat. Mer information om alla funktioner som är tillgängliga i [!DNL Journey Optimizer]-personalisering finns i [Hjälpfunktionslista](../../personalization/functions/functions.md). Det är bara den delmängd som finns på den här sidan som stöds för att anpassa innehåll i Offer Decisioning.
