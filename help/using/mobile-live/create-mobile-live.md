@@ -6,10 +6,8 @@ description: Lär dig skapa en Live-aktivitet i Journey Optimizer
 topic: Content Management
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
 exl-id: 9864a136-e129-4279-bb09-081b72f584df
-source-git-commit: 2fc4b1ee34b44fb6c5bcddb13f1b2b02f7094ff1
+source-git-commit: 9cdd115c66c8a26a59bfb45f0f20b6c96ddb5d5d
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -44,7 +42,7 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
-1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[&#x200B; på fliken &#x200B;](../audience/about-audiences.md).
+1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[ på fliken ](../audience/about-audiences.md).
 
    >[!NOTE]
    >
@@ -159,4 +157,4 @@ När du har utformat din Live-aktivitet kan du spåra effekten av din Live-aktiv
 
 Upptäck hur du konfigurerar iOS Live-aktiviteten med Adobe Journey Optimizer för att leverera omfattande uppdateringar i realtid på iPhone Lock Screen och Dynamic Island.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479868?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3479864)

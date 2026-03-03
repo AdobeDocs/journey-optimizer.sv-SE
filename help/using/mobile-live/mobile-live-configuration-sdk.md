@@ -6,10 +6,8 @@ description: Lär dig hur du konfigurerar din integrering med Adobe Experience P
 feature: Channel Configuration
 role: Admin
 level: Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 02ca7c8e-105a-4e77-9aad-2381904255d0
-source-git-commit: 8af635a27bc37005c63050f95089a5ab65edd0e2
+source-git-commit: 9cdd115c66c8a26a59bfb45f0f20b6c96ddb5d5d
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
