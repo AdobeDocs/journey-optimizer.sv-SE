@@ -11,7 +11,8 @@ hide: true
 hidefromtoc: true
 keywords: CC, kopia, e-post, kanalkonfiguration, e-posthuvuden, BCC
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 5b804de873124b8ff53d55c943b3c95649dd9a7c
+exl-id: 9649cc07-3183-4510-b5d9-b1e33eff43e9
+source-git-commit: 780a9259ee081336d1efb3e38c2a8eee4e97b7e3
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
