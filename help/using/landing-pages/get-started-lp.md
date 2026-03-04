@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, start, komma igång
 exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
-source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
+source-git-commit: 90b7d9bfe40e6d68e22a9f1aa8ef6d302a1035d9
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '449'
 ht-degree: 2%
 
 ---
@@ -23,6 +23,34 @@ En landningssida är en fristående webbsida som en användare dirigeras till ef
 Med [!DNL Journey Optimizer] kan du skapa och utforma landningssidor för att dirigera dina användare till onlineformulär där de kan välja att inte ta emot meddelanden eller prenumerera på en viss tjänst, till exempel ett nyhetsbrev.
 
 ➡️ [Läs mer om hur du konfigurerar prenumerationer och skapar landningssidor i den här videon](#video)
+
+## När landningssidor ska användas {#when-to-use}
+
+Använd landningssidor när du vill:
+
+* Låt kunderna **välja att inte ta del av eller avanmäla** för marknadsföringskommunikation från en länk i ett e-postmeddelande eller en kampanj
+* Tillåt kunder att **prenumerera eller avbryta prenumeration** på en viss tjänst eller ett nyhetsbrev
+* **Samla in samtycke** innan du skickar kommunikation och bekräfta åtgärden med ett automatiskt e-postmeddelande
+* Omdirigera användare till ett **dedikerat webbformulär** utan att skapa en extern sida utanför [!DNL Journey Optimizer]
+
+## Innan du börjar {#prerequisites}
+
+Innan du skapar en landningssida utför du följande steg:
+
+1. **Konfigurera en underdomän** - Konfigurera en underdomän som är dedikerad till att vara värd för dina landningssidor. [Konfigurera underdomäner för landningssidor](lp-subdomains.md)
+1. **Skapa en förinställning för landningssida** - En förinställning definierar underdomänen och andra inställningar som tillämpas på dina landningssidor. [Skapa en förinställning](lp-presets.md#lp-create-preset)
+1. **Skapa en prenumerationslista** (för prenumerationsanvändning) - Krävs om du vill att kunderna ska prenumerera på eller avbryta prenumerationen på en viss tjänst. [Skapa en prenumerationslista](subscription-list.md)
+
+## Så fungerar det {#how-it-works}
+
+När du skapar och distribuerar en landningssida följer du den här sekvensen:
+
+1. **Skapa och konfigurera** din landningssida - Välj en förinställning, konfigurera den primära sidan och lägg till eventuella underordnade sidor. [Skapa en landningssida](create-lp.md)
+1. **Designa sidan** - Bygg sidinnehållet och formuläret med hjälp av dra-och-släpp-redigeraren i [!DNL Journey Optimizer]. [Designa en landningssida](design-lp.md)
+1. **Testa och publicera** - Förhandsgranska sidan, testa formulärbeteendet och publicera den så att den blir offentlig. [Hantera dina landningssidor](manage-lp.md)
+1. **Länk i ett meddelande eller en resa** - Lägg till landningssidans URL i ett e-postmeddelande, en kampanj eller en reseåtgärd så att kunderna kan nå den.
+
+## Viktiga funktioner {#capabilities}
 
 * Utnyttja funktionerna för [!DNL Journey Optimizer]-innehållsdesign för att enkelt bygga **responsiva landningssidor**.
 * Konfigurera **anmälnings- och avanmälningsflöden** snabbt och smidigt.

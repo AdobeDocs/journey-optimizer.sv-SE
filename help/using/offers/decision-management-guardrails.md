@@ -9,20 +9,22 @@ role: User
 level: Intermediate
 exl-id: d2872bd3-42f8-4744-bb5b-41c49340098a
 version: Journey Orchestration
-source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
+source-git-commit: 90b7d9bfe40e6d68e22a9f1aa8ef6d302a1035d9
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 5%
+source-wordcount: '400'
+ht-degree: 4%
 
 ---
 
 # Garantier och begränsningar för beslutshantering {#decision-management-guardrails}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../experience-decisioning/gs-experience-decisioning.md)
+>Den här sidan innehåller skyddsförslag för den äldre funktionen **Beslutshantering**. Om du använder **Beslutsfattandet** — [!DNL Adobe Journey Optimizer] är den nuvarande beslutsfunktionen tillgänglig via kodbaserad upplevelse och e-postkanaler - se [Beslutsfattare och begränsningar](../experience-decisioning/decisioning-guardrails.md) i stället.
+>
+>Vet du inte vilken funktion du använder? [Läs om beslut](../experience-decisioning/gs-experience-decisioning.md).
 
-För att säkerställa en optimal användning av beslutsprocessen bör du tänka på följande säkerhetsförslag och begränsningar.
+Den här sidan gäller användare som fortfarande arbetar med det äldre beslutssystemet. För att säkerställa optimal användning bör du tänka på följande skyddsräcken och begränsningar.
 
 Den fullständiga listan med [!DNL Journey Optimizer] skyddsutkast och begränsningar finns i [det här avsnittet](../start/guardrails.md).
 
