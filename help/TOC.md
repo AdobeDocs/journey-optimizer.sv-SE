@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 5b804de873124b8ff53d55c943b3c95649dd9a7c
+source-git-commit: 74102069afa519898149de33f890568950571f26
 workflow-type: tm+mt
-source-wordcount: '3130'
+source-wordcount: '3136'
 ht-degree: 14%
 
 ---
@@ -461,8 +461,9 @@ ht-degree: 14%
       + [Kom igång med innehållsmallar](using/content-management/content-templates.md)
       + [Få åtkomst till och hantera mallar](using/content-management/access-content-templates.md)
       + [Skapa innehållsmallar](using/content-management/create-content-templates.md)
-      + [Konvertera bilder till HTML-mallar](using/content-management/image-to-html.md)
+      + [Konvertera bilder till e-postmallar](using/content-management/image-to-html.md)
       + [Lås innehåll i e-postmallar](using/content-management/content-locking.md)
+      + [Redigera e-postmallar i expertläge](using/content-management/email-template-expert-mode.md)
       + [Testa innehållsmallar](using/content-management/test-content-templates.md)
       + [Använda innehållsmallar](using/content-management/use-content-templates.md)
    + Återanvändbara innehållsfragment {#fragments}
@@ -858,7 +859,7 @@ ht-degree: 14%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
