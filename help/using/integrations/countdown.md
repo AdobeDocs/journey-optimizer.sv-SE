@@ -8,9 +8,10 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 707bc4053ee05c275b562e35227e54836e91fa27
+exl-id: 4c1d39c4-3154-4bec-ac3c-c2ead7164d69
+source-git-commit: c9856234149c0f377e625a789c96f1f1f0453000
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ Som marknadsförare för ett detaljhandelsmärke har du till exempel en 48-timma
 * Mottagare som öppnar 24 timmar senare, se&quot;23 timmar återstår&quot;
 * Mottagare som öppnar efter att försäljningen avslutats ser&quot;Försäljningen är avslutad&quot;
 
-Mer information om hur du skapar dynamiska media i Adobe Experience Manager finns i [det här dokumentet](assets/do-not-localize/countdown.pdf).
+Mer information om hur du lägger till nedräkningstimer i mallen för dynamiska media i Adobe Experience Manager finns i [det här dokumentet](assets/do-not-localize/countdown.pdf).
 
 
 1. I **[!DNL Adobe Experience Manager]** skapar du en dynamisk mediamall och lägger till en nedräkningstimerkomponent i den.
@@ -34,9 +35,9 @@ Mer information om hur du skapar dynamiska media i Adobe Experience Manager finn
 
 1. I **[!DNL Journey Optimizer]** skapar du en ny kampanj eller öppnar en befintlig kampanj och öppnar sedan e-post-Designer.
 
-1. Dra och släpp en **[!UICONTROL HTML component]** i ditt e-postinnehåll.
+1. Dra och släpp en **HTML** - eller **Asset** -komponent i ditt e-postinnehåll.
 
-1. Välj **[!UICONTROL Show the source code]** om du vill redigera HTML direkt.
+1. Håll pekaren över komponenten och klicka på **[!UICONTROL Show the source code]** (för HTML-komponenter) eller **[!UICONTROL Browse]** (för Asset-komponenter).
 
    ![](assets/timer-2.png)
 
@@ -50,9 +51,10 @@ Mer information om hur du skapar dynamiska media i Adobe Experience Manager finn
 
    ![](assets/timer-4.png)
 
-1. Markera resursen i e-post-Designer och gå sedan till menyn **[!UICONTROL Styles]**.
+1. Markera resursen i e-post-Designer och gå sedan till menyn **[!UICONTROL Settings]**.
 
-   Konfigurera följande inställningar:
+   Konfigurera följande:
+
    * **Banderolltext**: Den text som visas med timern
    * **Sluttid**: Det datum och den tidpunkt då nedräkningen upphör att gälla. Ange bara tiden i GMT (Greenwich Mean Time). Systemet accepterar inte andra tidszoner.
    * **Reservtext**: Meddelandet visas när timern är slut
@@ -62,4 +64,3 @@ Mer information om hur du skapar dynamiska media i Adobe Experience Manager finn
 1. Klicka på **[!UICONTROL Preview]** om du vill visa timern med nedräkningsuppdateringar i realtid och verifiera konfigurationen.
 
 När mottagarna öppnar e-postmeddelandet ser de exakt hur lång tid som återstår för din Flash-försäljning. Om de öppnar e-postmeddelandet igen senare uppdateras nedräkningen automatiskt med den återstående tiden. Efter slutdatumet visas standardmeddelandet automatiskt.
-
