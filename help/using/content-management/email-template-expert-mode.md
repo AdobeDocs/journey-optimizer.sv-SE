@@ -9,7 +9,8 @@ role: User
 hidefromtoc: true
 hide: true
 level: Experienced
-source-git-commit: 74102069afa519898149de33f890568950571f26
+exl-id: 0c586565-0c65-435f-986d-cd08b59de159
+source-git-commit: 1ab21ba3a656f59de748ee90f360b99c0dc2f7a5
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 1%
@@ -60,7 +61,7 @@ När du använder den avancerade HTML-redigeraren finns det följande skyddsmeka
    >
    >Den här varningen visas endast första gången du öppnar den avancerade HTML-redigeraren och återställer den varje månad.
 
-   ![](assets/email-template-expert-mode-warning.png)
+   ![](assets/email-template-expert-mode-warning.png){zoomable="yes"}
 
 1. Den avancerade HTML-redigeraren visas.
 
@@ -74,7 +75,7 @@ När du använder den avancerade HTML-redigeraren finns det följande skyddsmeka
 
 1. Det går inte att spara i den avancerade vyn i HTML. Växla tillbaka till skrivbordsvyn för att spara ändringarna.
 
-   &lt;![](assets/email-template-expert-mode-save.png)
+   ![](assets/email-template-expert-mode-save.png){zoomable="yes"}
 
    >[!NOTE]
    >
