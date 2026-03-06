@@ -145,7 +145,7 @@ Följ stegen nedan för att göra detta.
 
 Om du vill fylla tillåtelselista kan du även anropa API:t för inaktivering med värdet `ALLOWED` för attributet `listType`. Exempel:
 
-![Exempel-API-anrop för att lägga till en post i tillåtelselista med API:t för inaktivering ](assets/allow-list-api.png)
+![Exempel-API-anrop för att lägga till en post i tillåtelselista med API:t för inaktivering &#x200B;](assets/allow-list-api.png)
 
 Du kan utföra åtgärderna **Lägg till**, **Ta bort** och **Hämta**.
 
