@@ -4,12 +4,11 @@ product: journey optimizer
 title: Konfigurera en tillåtelselista
 description: Lär dig hur du konfigurerar och hanterar en tillåtelselista i Journey Optimizer för att begränsa e-postutskick till betrodda adresser och domäner på sandlådenivå.
 feature: Deliverability
-topic: Deliverability
 role: Admin
 level: Intermediate
 keywords: tillåtelselista, säker lista, e-post, slutbarhet, sandlåda, domäner, undertryckning, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: e5a15a4f8bc81fb23e75edb9364f09ae6b7082ea
+source-git-commit: 56d0d176385dfbb74222fd33115c01553f50d107
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 2%
@@ -146,11 +145,11 @@ Följ stegen nedan för att göra detta.
 
 Om du vill fylla tillåtelselista kan du även anropa API:t för inaktivering med värdet `ALLOWED` för attributet `listType`. Exempel:
 
-![Exempel-API-anrop för att lägga till en post i tillåtelselista med API:t för inaktivering &#x200B;](assets/allow-list-api.png)
+![Exempel-API-anrop för att lägga till en post i tillåtelselista med API:t för inaktivering ](assets/allow-list-api.png)
 
 Du kan utföra åtgärderna **Lägg till**, **Ta bort** och **Hämta**.
 
-Läs mer om hur du gör API-anrop i referensdokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html?lang=sv-SE){target="_blank"}.
+Läs mer om hur du gör API-anrop i referensdokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html){target="_blank"}.
 
 ## Ladda ned tillåtelselista {#download-allowed-list}
 
@@ -205,7 +204,7 @@ När tillåtelselista är [deaktiverad](#deactivate-allow-list) skickas alla e-p
 
 ## Uteslutningsrapportering {#reporting}
 
-När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Det gör du genom att använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att göra API-anropen nedan.
+När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Det gör du genom att använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att göra API-anropen nedan.
 
 Använd följande fråga om du vill hämta **antalet e-postmeddelanden** som inte skickades eftersom mottagarna inte var i tillåtelselista:
 
