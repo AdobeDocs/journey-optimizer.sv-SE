@@ -10,9 +10,9 @@ hidefromtoc: true
 hide: true
 level: Experienced
 exl-id: 0c586565-0c65-435f-986d-cd08b59de159
-source-git-commit: 1ab21ba3a656f59de748ee90f360b99c0dc2f7a5
+source-git-commit: 76bb202375cdfe1c8abacc1670ba6e794175215d
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '487'
 ht-degree: 1%
 
 ---
@@ -80,3 +80,8 @@ När du använder den avancerade HTML-redigeraren finns det följande skyddsmeka
    >[!NOTE]
    >
    >Innehåll kan bara sparas i skrivbordsvyn av kompatibilitetsskäl. Dina redigeringar bevaras när du byter vy.
+
+1. Simulering av innehåll är inte tillgängligt i den avancerade vyn i HTML. Om du vill simulera ditt innehåll växlar du till skrivbordsvyn.
+
+   ![](assets/email-template-expert-mode-simulate.png){zoomable="yes"}
+
