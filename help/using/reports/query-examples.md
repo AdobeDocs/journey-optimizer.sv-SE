@@ -8,9 +8,9 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 4a15ee3ac4805880ce80f788e4619b501afb3d8b
+source-git-commit: d2f32e0572b78db55c61cf087eb308d6fc0e2d4d
 workflow-type: tm+mt
-source-wordcount: '3337'
+source-wordcount: '3542'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,32 @@ ht-degree: 1%
 # Exempel på frågor{#query-examples}
 
 I det här avsnittet finns exempel som används ofta för att ställa frågor om händelser i resesteg i datasjön. Innan man går in på specifika användningsfall är det viktigt att förstå de nyckelidentifierare som används i data om resehändelser.
+
+## Förutsättningar {#prerequisites}
+
+Kontrollera följande innan du kör någon fråga på den här sidan:
+
+* **Åtkomst till Adobe Experience Platform Query Service** - Du måste ha åtkomst till [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv){target="_blank"} i din Adobe Experience Platform-sandlåda.
+* **Tillgänglig datauppsättning** - Frågor har datauppsättningen `journey_step_events` som mål. Kontrollera att datauppsättningen finns och innehåller data i din sandlåda via **Experience Platform > Datauppsättningar**.
+* **Korrekt ID för reseversion** - De flesta frågor kräver `journeyVersionID`. Hitta det i Journey Optimizer under **Resor > [din resa] > Egenskaper**, eller använd `journeyVersionName` för att först hitta det i datauppsättningen.
+* **Schemafältvärden** - Kontrollera att fälten som används i dina frågor har associerade värden i motsvarande schema. Tomma fält returnerar inga resultat utan fel.
+
+>[!TIP]
+>
+>**Har du inte använt frågetjänsten tidigare?** Öppna [Adobe Experience Platform](https://experience.adobe.com/), navigera till **frågetjänsten > Frågor**, klistra in ett exempel nedan, ersätt platshållarvärdena (t.ex. `<journeyVersionID>`, `<last x hours>`) och välj **Kör**.
+
+## Hitta rätt fråga {#find-query}
+
+| Jag vill.. | Gå till |
+|---|---|
+| Räkna profiler som har registrerat en resa | [Grundläggande användningsexempel](#common-queries) |
+| Felsöka en viss profils resa | [Profilbaserade frågor](#profile-based-queries) |
+| Undersök exekvering eller fel av Läs publik | [Läs målgruppsfrågor](#read-segment-queries) |
+| Felsöka meddelande- eller åtgärdsfel | [Meddelande- och åtgärdsfel](#message-action-errors) |
+| Analysera ignorering av kvalificering för målgrupp | [Målgruppskvalificeringsfrågor](#segment-qualification-queries) |
+| Felsöka externa händelser eller affärshändelser | [Händelsebaserade frågor](#event-based-queries) |
+| Övervaka prestanda för anpassad åtgärdsslutpunkt | [Frågor om anpassade åtgärder](#query-custom-action) |
+| Spåra engagerande profiler och licensanvändning | [Aktiveringsbara profilfrågor](#engageable-profiles-queries) |
 
 Se till att fälten som används i dina frågor har associerade värden i motsvarande schema.
 

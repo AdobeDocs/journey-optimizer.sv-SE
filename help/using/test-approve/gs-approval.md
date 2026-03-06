@@ -5,10 +5,10 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: 92d1439e-5cac-4e7d-85f8-ebf432e9ef7c
-source-git-commit: 692b539f2c7623a14192558c3eba55d90c54f22d
+source-git-commit: e6cac6aff79b30a308be480319902f478436391d
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
+source-wordcount: '857'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ Godkännandeprofiler inför ett strukturerat arbetsflöde direkt i användargrä
 
 Dessutom ger den här funktionen bättre kontroll över publiceringen av era resor och kampanjer: Med godkännandeprocessen inbäddad i Journey Optimizer förblir kampanjer och resor i ett &quot;låst&quot; läge under granskningen, vilket säkerställer att inga ändringar eller oavsiktliga aktiveringar sker innan alla nödvändiga godkännanden har införts.
 
-## Förhandskrav {#prerequisites}
+## Förutsättningar {#prerequisites}
 
 Innan du startar kontrollerar du att behörigheterna nedan har konfigurerats.
 
@@ -50,7 +50,7 @@ Alla användare som redan har tilldelats den här rollen får sina behörigheter
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
 
-1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt instansen.
 
@@ -83,6 +83,32 @@ Den globala godkännandeprocessen är följande:
 Du kan övervaka alla begäranden om godkännande och ändring som har skickats in för en viss resa eller kampanj. Det gör du genom att klicka på ikonen **[!UICONTROL Show Audit Trail]** som finns i det övre högra avsnittet på arbetsytan för resan eller på granskningsskärmen för kampanjer.
 
 ![Granskningsspårning begärs för godkännande](assets/monitor-requests.png)
+
+## Vanliga frågor och svar {#faq}
+
++++Måste jag skapa en policy för godkännande för varje kampanj eller resa?
+
+Nej. Godkännandepolicyer är villkorliga. Du behöver bara skapa en policy om du vill genomdriva granskning för en viss uppsättning kampanjer eller resor (t.ex. alla schemalagda kampanjer som skapats av ett visst team). Om ingen policy gäller för en kampanj eller resa kan skaparen publicera direkt utan att begära godkännande.
+
++++
+
++++Vad händer om godkännaren inte är tillgänglig?
+
+Begäran fortsätter att vara under granskning tills en godkännare agerar på den. Du kan avbryta begäran (returnera objektet till&quot;Utkast&quot;) och skicka om när rätt godkännare är tillgänglig. Administratörer kan även uppdatera godkännandeprincipen för att lägga till ytterligare godkännare.
+
++++
+
++++Kan jag redigera en kampanj eller resa medan den väntar på godkännande?
+
+Nej. När kampanjen eller resan har skickats in för godkännande är den i ett låst&quot;Granskningstillstånd&quot;. För att kunna göra ändringar måste skaparen eller godkännaren först avbryta begäran. Objektet återgår till&quot;Utkast&quot; och kan redigeras innan det skickas igen.
+
++++
+
++++Jag ser inte behörigheten Godkänn och publicera i listrutan - vad ska jag kontrollera?
+
+Se till att du lägger till rätt resurs först. Behörigheten **Godkänn och publicera kampanjer** kräver att resursen **Kampanjer** läggs till i rollen, och **Godkänn och publicera resor** kräver resursen **Resurser**. Båda måste läggas till separat. [Lär dig hur du tilldelar godkännanderelaterade behörigheter](#prerequisites)
+
++++
 
 ## Ytterligare resurser
 

@@ -7,14 +7,22 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: ef6110c4-1aa6-4835-b0b0-b3c4fe0e7024
-source-git-commit: a9f2eae6398f92a40accb62b1d4544bda031559c
+source-git-commit: 9fc43f2e17c256d33f73f21b6b30c4b593087a28
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '794'
 ht-degree: 0%
 
 ---
 
 # Få åtkomst till och hantera innehållsmallar {#access-manage-templates}
+
+## Förutsättningar {#prerequisites}
+
+Gör så här för att få åtkomst till och hantera innehållsmallar:
+
+* **Behörighet för innehållsmallar** - Din roll måste innehålla behörigheten **[!UICONTROL Manage content templates]** (under resursen **Innehållshantering**). Utan den visas inte menyn **Innehållsmallar** i den vänstra navigeringen. [Lär dig hantera behörigheter](../administration/permissions.md)
+* **Sandlådeomfång** - Innehållsmallar är sandlådespecifika. Mallar som skapas i en sandlåda är inte tillgängliga i andra. Kontrollera att du är i rätt sandlåda innan du söker efter en mall.
+* **HTML-mallar (borttagna)** - Från och med mars 2025 används inte HTML-mallar. Befintliga HTML-mallar är fortfarande tillgängliga, men det går inte att skapa nya.
 
 ## Åtkomst till innehållsmallar {#access}
 
@@ -108,6 +116,26 @@ Välj läget **[!UICONTROL Grid view]** om du vill visa varje mall som en miniat
 >Korrekta miniatyrbilder kan bara skapas för e-postmallar av HTML-typ.
 
 När du uppdaterar innehåll väntar du några sekunder på att ändringarna ska visas i miniatyrbilden.
+
+## Felsökning {#troubleshooting}
+
++++Jag kan inte se menyn Innehållsmallar i den vänstra navigeringen
+
+Din roll saknar behörigheten **Hantera innehållsmallar**. Be administratören lägga till resursen **Innehållshantering** med behörigheten **Hantera innehållsmallar** i din roll. [Läs mer](../administration/permissions.md)
+
++++
+
++++En mall som jag har skapat visas inte i listan
+
+Kontrollera att du använder rätt sandlåda - mallarna är sandlådespecifika. Kontrollera också om en mapp är markerad i den vänstra rutan. När en mapp är markerad visas bara mallar i den mappen. Klicka på **[!UICONTROL All content templates]** om du vill visa alla mallar oavsett mapp.
+
++++
+
++++Jag redigerade en mall men min kampanj eller resa uppdaterades inte
+
+När du redigerar eller tar bort en mall uppdateras inte kampanjer eller resor som har skapats med den retroaktivt. Innehållet kopieras när det används. Om du vill uppdatera befintligt innehåll redigerar du kampanjen eller resan direkt.
+
++++
 
 ## Exportera innehållsmallar till en annan sandlåda {#export}
 

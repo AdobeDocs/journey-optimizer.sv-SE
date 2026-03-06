@@ -7,10 +7,11 @@ role: Developer
 level: Experienced
 keywords: konvertering, funktioner, uttryck, resa, typ, skiftning
 version: Journey Orchestration
-source-git-commit: 451a9e1e5d5e6e1408849e8d1c5c9644a95359da
+exl-id: f1267c9e-200c-43ae-8b98-3c5951a2f2d7
+source-git-commit: 57da5ea1cae21ed370b1cc58d953ba740b7ac2c6
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 2%
+source-wordcount: '1249'
+ht-degree: 3%
 
 ---
 
@@ -28,6 +29,30 @@ Använd konverteringsfunktioner när du behöver:
 * Bearbeta data från externa källor som kan ha olika typformat
 
 Varje konverteringsfunktion hanterar typspecifika regler och kantfall automatiskt, vilket gör dataomvandlingen mer tillförlitlig och förutsägbar i reseuttrycken.
+
+## Snabbreferens {#quick-reference}
+
+| Mål | Funktion |
+|------|----------|
+| Konvertera en sträng eller epok till ett datum **med** som tidszon | [toDateTime](#toDateTime) |
+| Konvertera en sträng eller ett datum till en datetime **utan**-tidszon | [toDateTimeOnly](#toDateTimeOnly) |
+| Extrahera endast ett datum (år-månad-dag, ingen tid) | [toDateOnly](#toDateOnly) |
+| Konvertera till ett heltal | [toInteger](#toInteger) |
+| Konvertera till ett decimaltal | [toDecimal](#toDecimal) |
+| Konvertera till sant/falskt | [toBool](#toBool) |
+| Konvertera valfritt värde till en sträng | [toString](#toString) |
+| Konvertera till en varaktighet (ISO-8601, t.ex. PT10H) | [toDuration](#toDuration) |
+
+>[!TIP]
+>
+>**toDateTime vs. toDateTimeOnly:** Använd `toDateTime` när tidszon är viktig (t.ex. schemaläggning av meddelanden, jämförelse av tidsstämplar för händelser mellan regioner). Använd `toDateTimeOnly` när endast lokal tid är relevant och tidszonen kan ignoreras (t.ex. när kalenderdatum jämförs i ett villkor).
+
+## Vanliga fallgropar {#pitfalls}
+
+* **Tidszonen måste vara en strängkonstant** - Tidszonsargumentet i `toDateTime` kan inte vara en fältreferens eller ett dynamiskt uttryck. Skicka alltid en litteral sträng som `"UTC"` eller `"Europe/Paris"`.
+* **ISO-8601-format krävs för strängindata** - Kontrollera att strängen följer ISO-8601-format (t.ex. `toDateTime`) när du skickar en sträng till `toDateTimeOnly` eller `"2023-08-18T23:17:59.123Z"`. Felaktiga strängar returnerar null utan ett fel.
+* **Epoch-värden är i millisekunder** - `toDateTime(1560762190189)` förväntar millisekunder. Om källan innehåller Unix-tidsstämplar i sekunder multiplicerar du med 1000 först (t.ex. `toDateTime(myField * 1000)`).
+* **toBool med oväntade strängar** — `toBool` returnerar bara `true` om strängvärdet är exakt `"true"`. Alla andra strängar (inklusive `"1"`, `"yes"`, `"TRUE"`) returnerar `false`.
 
 ## toBool {#toBool}
 
@@ -430,4 +455,3 @@ Returnerar strängbeteckningen för angivet dateOnly-fält (XDM-datumfält), til
 Returnerar &quot;PT1.52S&quot;.
 
 +++
-
