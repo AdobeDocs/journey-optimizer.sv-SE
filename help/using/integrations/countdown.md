@@ -9,9 +9,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 4c1d39c4-3154-4bec-ac3c-c2ead7164d69
-source-git-commit: c9856234149c0f377e625a789c96f1f1f0453000
+source-git-commit: f212a2178e83283d4755da5483d7c11ba4df183f
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Som marknadsförare för ett detaljhandelsmärke har du till exempel en 48-timma
 
 * Mottagare som öppnar omedelbart ser &quot;47 timmar återstår&quot;
 * Mottagare som öppnar 24 timmar senare, se&quot;23 timmar återstår&quot;
-* Mottagare som öppnar efter att försäljningen avslutats ser&quot;Försäljningen är avslutad&quot;
+* Mottagare som öppnar när försäljningen är slut ser &quot;Tiden är ute!&quot;
 
 Mer information om hur du lägger till nedräkningstimer i mallen för dynamiska media i Adobe Experience Manager finns i [det här dokumentet](assets/do-not-localize/countdown.pdf).
 
@@ -45,13 +45,17 @@ Mer information om hur du lägger till nedräkningstimer i mallen för dynamiska
 
    ![](assets/timer-3.png)
 
+1. Aktivera pilleupplevelsen genom att växla Pills till On. Detta förbättrar läsbarheten genom att långa attributsökvägar döljs.
+
+   ![](assets/timer-6.png)
+
 1. Konfigurera de anpassningsbara URL-parametrarna som behövs för mallen på menyn **[!UICONTROL Custom attributes]**.
 
    Klicka på **[!UICONTROL Save]** när du är klar.
 
    ![](assets/timer-4.png)
 
-1. Markera resursen i e-post-Designer och gå sedan till menyn **[!UICONTROL Settings]**.
+1. Du kan också komma åt parametrarna för mallen Dynamic Media genom att markera resursen i e-post-Designer och sedan gå till **[!UICONTROL Settings]**-menyn.
 
    Konfigurera följande:
 
