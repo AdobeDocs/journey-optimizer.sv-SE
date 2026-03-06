@@ -1,42 +1,40 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Tillåtelselista
-description: Lär dig använda tillåtelselista
+title: Konfigurera en tillåtelselista
+description: Lär dig hur du konfigurerar och hanterar en tillåtelselista i Journey Optimizer för att begränsa e-postutskick till betrodda adresser och domäner på sandlådenivå.
 feature: Deliverability
-topic: Content Management
+topic: Deliverability
 role: Admin
-level: Experienced
-keywords: tillåtelselista, lista, säker, konfiguration
+level: Intermediate
+keywords: tillåtelselista, säker lista, e-post, slutbarhet, sandlåda, domäner, undertryckning, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
+source-git-commit: e5a15a4f8bc81fb23e75edb9364f09ae6b7082ea
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1267'
 ht-degree: 2%
 
 ---
 
 # Konfigurera en tillåtelselista {#allow-list}
 
-Det går att definiera en specifik sändningssäker lista på nivån [sandbox](../administration/sandboxes.md).
-
-Med det här tillåtelselista kan du ange enskilda e-postadresser eller domäner som ska vara de enda mottagarna eller domänerna som har behörighet att ta emot e-postmeddelanden som du skickar från en viss sandlåda.
+Tillåtelselista är en sändningssäker lista som du kan definiera på nivån [sandbox](../administration/sandboxes.md). Det begränsar e-postutskick till specifika adresser eller domäner och ser till att endast uttryckligen angivna mottagare kan ta emot meddelanden från en viss sandlåda.
 
 >[!CAUTION]
 >
 >Den här funktionen gäller endast för e-postkanalen. Den är tillgänglig i sandlådor för produktion och icke-produktion.
 
-På en icke-produktionsinstans, där fel kan uppstå, ser tillåtelselista till att du inte löper någon risk att skicka ut oönskade meddelanden till riktiga kundadresser, och tillhandahåller därför en säker miljö för testningsändamål.
+På icke-produktionssandlådor, där oavsiktliga utskick kan ske, förhindrar tillåtelselista oönskade meddelanden från att nå verkliga kundadresser, vilket ger en säker miljö för testning.
 
-När tillåtelselista är aktivt men tomt går ingen post ut. Om du råkar ut för något större problem kan du använda den här funktionen för att stoppa all utgående kommunikation från [!DNL Journey Optimizer] tills du åtgärdar problemet. Läs mer om [tillåtelselista-logiken](#logic).
+När tillåtelselista är aktivt men tomt skickas inga e-postmeddelanden. Detta gör det till en användbar nödbroms: om ett kritiskt problem uppstår kan du aktivera ett tomt tillåtelselista för att stoppa all utgående kommunikation från [!DNL Journey Optimizer] tills problemet är löst. Läs mer om [tillåtelselista-logiken](#logic).
 
-Dessutom kan du använda Journey Optimizer **Suppression REST API** för att styra dina utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
+Du kan också använda Journey Optimizer **Suppression REST API** för att hantera utgående meddelanden programmatiskt via suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
 ## Gå till tillåtelselista {#access-allowed-list}
 
 Om du vill få tillgång till en detaljerad lista över tillåtna e-postadresser och domäner går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** och väljer **[!UICONTROL Allowed list]**.
 
-![](assets/allow-list-access.png)
+![Tillåtelselista-sida med en lista över tillåtna e-postadresser och domäner](assets/allow-list-access.png)
 
 >[!CAUTION]
 >
@@ -48,21 +46,21 @@ Använd knappen **[!UICONTROL Delete]** om du vill ta bort en post permanent.
 
 Du kan söka efter e-postadresser eller domäner och filtrera på **[!UICONTROL Address type]**. När du har valt det här alternativet kan du rensa filtret som visas högst upp i listan.
 
-![](assets/allowed-list-filtering-example.png)
+![Tillåtelselista filtrerad efter adresstyp](assets/allowed-list-filtering-example.png)
 
 ## Aktivera tillåtelselista {#enable-allow-list}
 
 Följ stegen nedan för att aktivera tillåtelselista.
 
-1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]**.
+1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]**-menyn.
 
 1. Markera växlingsknappen.
 
-   ![](assets/allow-list-edit.png)
+   ![Växla knapp för att aktivera tillåtelselista](assets/allow-list-edit.png)
 
 1. Välj **[!UICONTROL Activate allowed list]**.  Tillåtelselista är nu aktivt.
 
-   ![](assets/allow-list-enable.png)
+   ![Bekräftelse på att tillåtelselista nu är aktivt](assets/allow-list-enable.png)
 
    >[!NOTE]
    >
@@ -78,15 +76,15 @@ Logiken i tillåtelselista gäller när funktionen är aktiv. Läs mer i [det h�
 
 Följ stegen nedan för att inaktivera tillåtelselista.
 
-1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]**.
+1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]**-menyn.
 
 1. Markera växlingsknappen.
 
-   ![](assets/allow-list-edit-active.png)
+   ![Växla knapp för att inaktivera tillåtelselista](assets/allow-list-edit-active.png)
 
 1. Välj **[!UICONTROL Deactivate allowed list]**.  Tillåtelselista är inte längre aktivt.
 
-   ![](assets/allow-list-deactivate.png)
+   ![Bekräftelse på att tillåtelselista nu är inaktivt](assets/allow-list-deactivate.png)
 
    >[!NOTE]
    >
@@ -124,7 +122,7 @@ Följ stegen nedan för att göra detta.
 
 1. Markera knappen **[!UICONTROL Add email or domain]**.
 
-   ![](assets/allowed-list-add-email.png)
+   ![Lägg till e-post eller domän-knapp på tillåtelselista-sidan](assets/allowed-list-add-email.png)
 
 1. Välj adresstypen: **[!UICONTROL Email address]** eller **[!UICONTROL Domain address]**.
 
@@ -136,11 +134,11 @@ Följ stegen nedan för att göra detta.
 
 1. Ange en orsak om det behövs.
 
-   ![](assets/allowed-list-add-email-address.png)
+   ![Formulär för att lägga till en e-postadress eller domän i tillåtelselista, med ett valfritt orsaksfält](assets/allowed-list-add-email-address.png)
 
    >[!NOTE]
    >
-   >Alla ASCII-tecken mellan 32 och 126 tillåts i fältet **[!UICONTROL Reason]**. Den fullständiga listan finns till exempel på [den här sidan](https://en.wikipedia.org/wiki/ASCII#Printable_characters){target="_blank"}.
+   >Alla ASCII-tecken i intervallet 32 till 126 tillåts i fältet **[!UICONTROL Reason]**. Den fullständiga listan finns till exempel på [den här sidan](https://en.wikipedia.org/wiki/ASCII#Printable_characters){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Submit]**.
 
@@ -148,11 +146,11 @@ Följ stegen nedan för att göra detta.
 
 Om du vill fylla tillåtelselista kan du även anropa API:t för inaktivering med värdet `ALLOWED` för attributet `listType`. Exempel:
 
-![](assets/allow-list-api.png)
+![Exempel-API-anrop för att lägga till en post i tillåtelselista med API:t för inaktivering ](assets/allow-list-api.png)
 
 Du kan utföra åtgärderna **Lägg till**, **Ta bort** och **Hämta**.
 
-Läs mer om hur du gör API-anrop i referensdokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html?lang=sv-SE){target="_blank"}.
+Läs mer om hur du gör API-anrop i referensdokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html){target="_blank"}.
 
 ## Ladda ned tillåtelselista {#download-allowed-list}
 
@@ -160,11 +158,11 @@ Om du vill exportera tillåtelselista som en CSV-fil följer du stegen nedan:
 
 1. Markera knappen **[!UICONTROL Download CSV]**.
 
-   ![](assets/allowed-list-download-csv.png)
+   ![Knappen Hämta CSV på tillåtelselista-sidan](assets/allowed-list-download-csv.png)
 
 1. Vänta tills filen har skapats.
 
-   ![](assets/allowed-list-download-generate.png)
+   ![Meddelande om att CSV-filen genereras](assets/allowed-list-download-generate.png)
 
    >[!NOTE]
    >
@@ -176,7 +174,7 @@ Om du vill exportera tillåtelselista som en CSV-fil följer du stegen nedan:
 
 1. Klicka på själva meddelandet för att hämta filen.
 
-   ![](assets/allowed-list-download-notification.png)
+   ![Meddelande med en nedladdningslänk för den genererade CSV-filen](assets/allowed-list-download-notification.png)
 
    >[!NOTE]
    >
@@ -207,7 +205,7 @@ När tillåtelselista är [deaktiverad](#deactivate-allow-list) skickas alla e-p
 
 ## Uteslutningsrapportering {#reporting}
 
-När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Det gör du genom att använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att göra API-anropen nedan.
+När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Det gör du genom att använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att göra API-anropen nedan.
 
 Använd följande fråga om du vill hämta **antalet e-postmeddelanden** som inte skickades eftersom mottagarna inte var i tillåtelselista:
 
