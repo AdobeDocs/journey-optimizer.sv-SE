@@ -20,7 +20,7 @@ Med Adobe Journey Optimizer Content Management-funktioner kan ni skapa, personal
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Lägg till Personalization
 
@@ -30,7 +30,7 @@ Lär dig hur du implementerar och optimerar personaliseringsfunktioner för att 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa landningssidor
 
@@ -40,7 +40,7 @@ Upptäck verktyg och självstudiekurser för att skapa, hantera och optimera lan
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Innehållsmallar
 
@@ -50,7 +50,7 @@ Effektivisera framtagningen av innehåll med återanvändbara mallar för effekt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Återanvändbara innehållsfragment
 
@@ -60,7 +60,7 @@ Lär dig hur du skapar och hanterar återanvändbara innehållsfragment för per
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Skapa dynamiskt innehåll
 
@@ -70,7 +70,7 @@ Använd villkorsregler för att skapa dynamiskt, personaliserat innehåll för e
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Användningsexempel för flera lösningar
 
