@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 60907756a261c1f672944eccefbfe2ee90d0d017
+source-git-commit: 170bdaaa13fe78ad4c47a6e091c8090156fde8f6
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    * Välj **[!UICONTROL External link]** om du vill infoga en länk till en extern URL.
 
-   * Välj **[!UICONTROL Landing page]** om du vill infoga en länk till en landningssida. [Läs mer](../landing-pages/get-started-lp.md)
+   * Välj **[!UICONTROL Landing page]** om du vill infoga en länk till en landningssida. [Läs mer](../landing-pages/create-lp.md)
 
    * Välj **[!UICONTROL One click Opt-out]** om du vill infoga en länk så att användare snabbt kan avbryta prenumerationen på dina meddelanden utan att behöva bekräfta att de vill avanmäla sig. [Läs mer](email-opt-out.md#one-click-opt-out).
 
