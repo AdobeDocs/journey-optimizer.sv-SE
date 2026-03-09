@@ -5,7 +5,7 @@ title: Innehållshantering
 description: Innehållshantering
 redpen-status: CREATED_||_2025-08-12_00-44-43
 exl-id: 159ae1bf-e1bd-48c7-b91b-2ac8bdfffaf2
-source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
+source-git-commit: e5e4acf5c83c036b5ff72c8022750f9827bd98d3
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Med Adobe Journey Optimizer Content Management-funktioner kan ni skapa, personal
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Lägg till Personalization
 
@@ -30,17 +30,17 @@ Lär dig hur du implementerar och optimerar personaliseringsfunktioner för att 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa landningssidor
 
 Upptäck verktyg och självstudiekurser för att skapa, hantera och optimera landningssidor för marknadsföringskampanjer.
 
-[Läs mer om landningssidor](landing-pages-landing-page.md)
+[Läs mer om landningssidor](../using/landing-pages/get-started-lp.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Innehållsmallar
 
@@ -50,7 +50,7 @@ Effektivisera framtagningen av innehåll med återanvändbara mallar för effekt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Återanvändbara innehållsfragment
 
@@ -60,7 +60,7 @@ Lär dig hur du skapar och hanterar återanvändbara innehållsfragment för per
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Skapa dynamiskt innehåll
 
@@ -70,7 +70,7 @@ Använd villkorsregler för att skapa dynamiskt, personaliserat innehåll för e
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Användningsexempel för flera lösningar
 
