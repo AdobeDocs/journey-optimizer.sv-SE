@@ -8,9 +8,10 @@ version: Journey Orchestration
 badge: label="Begränsad tillgänglighet" type="Informative"
 hide: true
 hidefromtoc: true
-source-git-commit: fe6e8221201ee813251a46c6603d85f0803873c0
+exl-id: 3e7c3069-b022-4709-936d-acaad56b5882
+source-git-commit: afc09bbcb76d53404574bb53c0a896109cd7f1da
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -23,15 +24,14 @@ ht-degree: 0%
 
 [!DNL Adobe Journey Optimizer] hjälper dig att kontrollera vilka resor en profil kan registrera när de kvalificerar sig för mer än vad systemet tillåter. Om du vill göra det kan du använda [regeluppsättningar](rule-sets.md) för att definiera ändpunkter för resepost eller samtidighet. När en profil är berättigad till fler resor än vad som är tillåtet enligt begränsningen, avgör prioriteringen för varje resa vilka resor som väljs.
 
-I stället för att använda prioritets- eller rankningsformler kan du använda **AI-modeller** för att dynamiskt rangordna resor baserat på tränade modellpoäng. Du kan skapa AI-modeller från avsnittet **[!UICONTROL Orchestration ranking]** i användargränssnittet och använda dem i regeluppsättningar för att tillämpa dem på resor.
-
-En översikt över AI-modelltyper i [!DNL Journey Optimizer] finns i [Kom igång med AI-modeller](../experience-decisioning/ranking/ai-models.md#ai-model-types) i avsnittet Beslut.
+I stället för att använda prioritet kan du använda **AI-modeller** i dina rankningsformler för att dynamiskt rangordna resor baserat på tränade modellpoäng.
 
 ## Skapa en AI-modell {#create-ai-model}
 
+<!--Do you need specific permissions to create AI models?
 >[!CAUTION]
 >
->Om du vill skapa, redigera eller ta bort AI-modeller måste du ha behörigheten **Hantera rankningsstrategier**. [Läs mer](../administration/high-low-permissions.md#manage-ranking-strategies)
+>To create, edit, or delete AI models, you must have the **Manage Ranking Strategies** permission. [Learn more](../administration/high-low-permissions.md#manage-ranking-strategies)-->
 
 Följ stegen nedan för att skapa en AI-modell för rankning av resor.
 
@@ -55,12 +55,16 @@ Följ stegen nedan för att skapa en AI-modell för rankning av resor.
     * **[!UICONTROL Auto-optimization]** optimizes based on past performance. [Learn more](../experience-decisioning/ranking/auto-optimization-model.md)
     * **[!UICONTROL Personalized optimization]** optimizes and personalizes based on audiences and performance. [Learn more](../experience-decisioning/ranking/personalized-optimization-model.md)-->
 
-1. Avsnittet **[!UICONTROL Optimization metric]** innehåller information om konverteringshändelsen som används av AI-modellen. [!DNL Journey Optimizer] rangordnas baserat på **konverteringsgrad** (konverteringsgrad = totalt antal konverteringshändelser/totalt antal inställningshändelser). Konverteringsgraden beräknas med hjälp av:
+1. I **[!UICONTROL Optimization metric]** visas alla mätvärden från din standarddatavy [!DNL Customer Journey Analytics] [](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target="_blank"} i listan. Välj det mätvärde som du vill optimera modellen på.
+
+   ![Informationsfönster för AI-modell med namn- och beskrivningsfält](assets/journey-model-metrics.png){width="80%"}
+
+   [!DNL Journey Optimizer] rangordnas baserat på **konverteringsgrad** (konverteringsgrad = totalt antal konverteringshändelser/totalt antal inställningshändelser). Konverteringsgraden beräknas med hjälp av:
 
    * **Impression-händelser** (objekt som visas)
    * **Konverteringshändelser** (objekt som resulterar i klick eller konverteringar)
 
-   Dessa händelser spelas in automatiskt med Web SDK eller Mobile SDK. Läs mer i översikten för [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE).
+   Dessa händelser spelas in automatiskt med Web SDK eller Mobile SDK. Läs mer i översikten för [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
 
 1. Välj den eller de datauppsättningar där konverterings- och inställningshändelser samlas in. Lär dig hur du skapar sådana datauppsättningar i [det här avsnittet](../experience-decisioning/data-collection/create-dataset.md).
 
@@ -70,21 +74,35 @@ Följ stegen nedan för att skapa en AI-modell för rankning av resor.
    >
    >Endast datauppsättningar som skapats från scheman som är kopplade till fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** (som tidigare kallades mixin) visas i listrutan.
 
-1. &#x200B;<!--If you are creating a **[!UICONTROL Personalized optimization]** AI model, -->Välj det eller de segment som ska användas för att utbilda AI-modellen.
+1. <!--If you are creating a **[!UICONTROL Personalized optimization]** AI model, -->Välj det eller de segment som ska användas för att utbilda AI-modellen.
 
    >[!NOTE]
    >
-   >Du kan välja upp till fem målgrupper.
+   >Du kan välja upp till 50 målgrupper.
 
 1. Spara och aktivera AI-modellen.
 
-AI-modellen är nu tillgänglig när du konfigurerar en regeluppsättning.
+AI-modellen kan nu väljas när du skapar en rankningsformel.
+
+## Välj en AI-modell för en rankningsformel {#select-ai-model-for-ranking-formula}
+
+Nu kan du ange AI-modellen som en referens för att skapa en rankningsformel. Följ stegen nedan.
+
+1. Skapa en rankningsformel. [Lär dig hur](journey-ranking-formulas.md#create-journey-ranking-formula)
+
+1. Använd knappen **[!UICONTROL Select AI model]** för att välja den AI-modell som du vill använda.
+
+   ![Rankningsformelinformationsruta med val av AI-modell](assets/journey-formula-ai-model.png){width="80%"}
+
+1. Definiera ett villkor i minst ett av **[!UICONTROL Criterion]**-avsnitten och välj **[!UICONTROL AI model score]** som rangordningsmetod. Om resan till exempel har taggen&quot;Promo&quot; är rankningspoängen AI-modellpoängen.
+
+   ![Rankningsformel: Promo-taggen använder AI-modellpoäng](assets/journey-formula-ex-2.png){width="60%"}
+
+1. Klicka på **[!UICONTROL Create]** för att slutföra din rankningsformel.
 
 ## Tilldela AI-modellen till en regeluppsättning {#assign-ai-model-to-ruleset}
 
-Om du vill använda en AI-modell för att rangordna dina resor måste du använda den i en formel och tilldela den här formeln till en regeluppsättning.
-
-1. Skapa en rankningsformel med den AI-modell du skapade. [Lär dig hur](journey-ranking-formulas.md#create-journey-ranking-formula)
+Om du vill använda en AI-modell för att rangordna dina resor måste du tilldela formeln som refererar till den här AI-modellen till en regeluppsättning.
 
 1. På menyn **[!UICONTROL Business rules]** skapar du en regeluppsättning som du vill använda för skiljeväggar för resan. [Lär dig hur](rule-sets.md#Create)
 
@@ -92,7 +110,7 @@ Om du vill använda en AI-modell för att rangordna dina resor måste du använd
 
 1. I regeluppsättningsegenskaperna anger du **[!UICONTROL Ranking method]** till **[!UICONTROL Formula]** (i stället för **[!UICONTROL Priority]**).
 
-1. Välj den formel som använder den AI-modell som du skapade i listrutan.
+1. Välj formeln som använder den AI-modell som du skapade i listrutan.
 
 1. Skapa de regler för capping för resan som du vill lägga till i regeluppsättningen. [Lär dig hur](journey-capping.md#create-rule)
 
