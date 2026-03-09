@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 exl-id: bd950410-691b-49d8-8851-8c6c448c00fd
 version: Journey Orchestration
-source-git-commit: c15bae97ea52243d65aa59fdd4e924dc4e1852d8
+source-git-commit: 13ac469c33d2a580ba499bb463ac9fc63bef733c
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Data från anpassade uppladdningsgrupper kan utnyttjas i Beslutshantering för:
 Mer information om anpassade uppladdningsgrupper finns i avsnitten:
 
 * [Kom igång med målgrupper och Journey Optimizer](../audience/about-audiences.md)
-* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
+* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
 
 ## Måste läsas {#must-read}
 
-* **Endast beslutshantering** - Den här funktionen stöds endast i beslutshantering, inte i beslut (kallades tidigare Experience Decision).
+* **Endast beslutshantering** - Den här funktionen stöds endast i beslutshantering, inte i beslut.
 * **API för beslut (Hub) endast** - Det är tillgängligt exklusivt via Hub-begäranden (Decisioning API) och stöds inte av Edge Decisioning API eller gruppbeslut.
 * **Nödvändig API-flagga för anrikningsdata** - Om du använder en CSV-målgrupp (Custom Upload) och vill hämta anrikningsdata i svaret på erbjudandet måste du inkludera `"xdm:enrichedAudience": true` i nyttolasten för din API-begäran. Utan den här flaggan returneras inte anrikningsattribut från den överförda CSV-målgruppen. [Läs mer om besluts-API](api-reference/offer-delivery-api/decisioning-api.md)
 

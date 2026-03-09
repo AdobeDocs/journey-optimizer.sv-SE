@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: 279fd366b14520daec1df7f843ed337348e145a5
+source-git-commit: 13ac469c33d2a580ba499bb463ac9fc63bef733c
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1877'
 ht-degree: 3%
 
 ---
@@ -173,9 +173,9 @@ Använd avsnittet **[!UICONTROL Custom data]** för att lägga till nyckelvärde
 
 I avsnittet **[!UICONTROL Custom data]** kan du lägga till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration. Mer information om hur du ställer in push-meddelanden i Adobe Experience Platform finns i [det här avsnittet](push-gs.md)
 
-## Personalisera med Experience Decision {#decisioning-push}
+## Anpassa med beslut {#decisioning-push}
 
-Du kan anpassa och optimera innehållet i dina push-meddelanden med **Experience Decision**. Med den här funktionen kan ni använda prioriteringspoäng, formler eller AI-modeller för att dynamiskt välja och visa det bästa innehållet för era kunder.
+Du kan anpassa och optimera innehållet i dina push-meddelanden med **beslutande**. Med den här funktionen kan ni använda prioriteringspoäng, formler eller AI-modeller för att dynamiskt välja och visa det bästa innehållet för era kunder.
 
 Mer information om hur du skapar och använder beslutsprinciper i push-meddelanden finns i [det här avsnittet](../experience-decisioning/create-decision.md).
 

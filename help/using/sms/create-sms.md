@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
+source-git-commit: 13ac469c33d2a580ba499bb463ac9fc63bef733c
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1228'
 ht-degree: 2%
 
 ---
@@ -151,9 +151,9 @@ Följ stegen nedan för att konfigurera meddelandeinnehållet. Inställningarna 
 
 1. Klicka på **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Du kan nu testa och kontrollera meddelandeinnehållet enligt beskrivningen i [det här avsnittet](#sms-mms-test).
 
-## Personalisera med Experience Decision {#decisioning-sms}
+## Anpassa med beslut {#decisioning-sms}
 
-Du kan anpassa och optimera innehållet i dina SMS-meddelanden med **Experience Decision**. Med den här funktionen kan ni använda prioriteringspoäng, formler eller AI-modeller för att dynamiskt välja och visa det bästa innehållet för era kunder.
+Du kan anpassa och optimera innehållet i dina SMS-meddelanden med **Beslutsfattning**. Med den här funktionen kan ni använda prioriteringspoäng, formler eller AI-modeller för att dynamiskt välja och visa det bästa innehållet för era kunder.
 
 Mer information om hur du skapar och använder beslutsprinciper i SMS-meddelanden finns i [det här avsnittet](../experience-decisioning/create-decision.md).
 

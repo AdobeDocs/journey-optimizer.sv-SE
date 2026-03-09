@@ -6,9 +6,9 @@ description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
 exl-id: 7962189b-4135-4f88-b91d-40d21cdf6c6d
-source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
+source-git-commit: 13ac469c33d2a580ba499bb463ac9fc63bef733c
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 0%
 - [Skapa och hantera beslutsartikelsamlingar](help/using/experience-decisioning/collections.md) - 7 nov
 - [Kontextdata](help/using/experience-decisioning/context-data.md) - 7 nov
 - [Kom igång med beslutsprinciper](help/using/experience-decisioning/create-decision.md) - 7 nov
-- [Kom igång med Experience Decision](help/using/experience-decisioning/gs-experience-decisioning.md) - Nov 7
+- [Kom igång med beslut](help/using/experience-decisioning/gs-experience-decisioning.md) - 7 nov
 - [Beslutsobjekt](help/using/experience-decisioning/items.md) - 7 nov
 - [Bestämmer rangordningsmetoder](help/using/experience-decisioning/ranking/ranking.md) - 7 nov
 - [Skapa regler](help/using/experience-decisioning/rules.md) - 7 nov
@@ -180,7 +180,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
