@@ -31,7 +31,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resor förlitar sig faktiskt på [!DNL Adobe Experience Platform]s API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [[!DNL Adobe Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resor förlitar sig faktiskt på [!DNL Adobe Experience Platform]s API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [[!DNL Adobe Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
 
