@@ -10,9 +10,9 @@ hidefromtoc: true
 hide: true
 level: Experienced
 exl-id: 0c586565-0c65-435f-986d-cd08b59de159
-source-git-commit: 76bb202375cdfe1c8abacc1670ba6e794175215d
+source-git-commit: 9d3dd2f0a9ae5200dd3ed332420bbb08e8e9f498
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '468'
 ht-degree: 1%
 
 ---
@@ -73,15 +73,14 @@ När du använder den avancerade HTML-redigeraren finns det följande skyddsmeka
    >
    >Ange korrekt HTML- och CSS-kod eftersom det inte finns någon syntaxverifieringsprocess och [!DNL Adobe] saknar stöd. [Läs mer](#guardrails)
 
-1. Det går inte att spara i den avancerade vyn i HTML. Växla tillbaka till skrivbordsvyn för att spara ändringarna.
+1. Simulering och sparande av innehåll är inte tillgängligt i avancerad HTML-vy av kompatibilitetsskäl. Växla tillbaka till skrivbordsvyn för att förhandsgranska innehållet och spara ändringarna.
 
    ![](assets/email-template-expert-mode-save.png){zoomable="yes"}
 
    >[!NOTE]
    >
-   >Innehåll kan bara sparas i skrivbordsvyn av kompatibilitetsskäl. Dina redigeringar bevaras när du byter vy.
+   ><!--Content can only be saved in Desktop view for content compatibility reasons. -->Dina redigeringar bevaras när du byter vy.
+<!--
+1. Content simulation is not available in advanced HTML view. To preview your content, switch to Desktop view.
 
-1. Simulering av innehåll är inte tillgängligt i den avancerade vyn i HTML. Om du vill simulera ditt innehåll växlar du till skrivbordsvyn.
-
-   ![](assets/email-template-expert-mode-simulate.png){zoomable="yes"}
-
+    ![](assets/email-template-expert-mode-simulate.png){zoomable="yes"}-->
