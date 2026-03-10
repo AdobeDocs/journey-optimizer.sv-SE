@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: e329c221fa714747d50495e466d02e75bed2967c
+source-git-commit: c1a2e098b31769945221701a075b7f9f688b274f
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3142'
 ht-degree: 14%
 
 ---
@@ -405,6 +405,7 @@ ht-degree: 14%
    + Live-aktivitet {#live-activity}
       + [Kom igång med Live-aktivitet](using/mobile-live/get-started-mobile-live.md)
       + [Skapa en Live-aktivitet](using/mobile-live/create-mobile-live.md)
+      + [Felsöka Live-aktivitet](using/mobile-live/troubleshoot-mobile-live.md)
       + [Vanliga frågor och svar](using/mobile-live/mobile-live-faq.md)
       + Konfigurera innehållskortskanal {#configure}
          + [Konfigurera Live-aktivitet i Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
@@ -859,7 +860,7 @@ ht-degree: 14%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

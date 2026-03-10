@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 9864a136-e129-4279-bb09-081b72f584df
-source-git-commit: 9cdd115c66c8a26a59bfb45f0f20b6c96ddb5d5d
+source-git-commit: c1a2e098b31769945221701a075b7f9f688b274f
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
-1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[&#x200B; på fliken &#x200B;](../audience/about-audiences.md).
+1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[ på fliken ](../audience/about-audiences.md).
 
    >[!NOTE]
    >
@@ -153,8 +153,12 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
 När du har utformat din Live-aktivitet kan du spåra effekten av din Live-aktivitet med [inbyggda rapporter](../reports/campaign-global-report-cja-activity.md).
 
+>[!TIP]
+>
+>Om din Live-aktivitet inte visas eller uppdateras som förväntat finns mer information i [Felsöka live-aktiviteter](troubleshoot-mobile-live.md) för stegvis felsökningsvägledning.
+
 ## Instruktionsvideo
 
 Upptäck hur du konfigurerar iOS Live-aktiviteten med Adobe Journey Optimizer för att leverera omfattande uppdateringar i realtid på iPhone Lock Screen och Dynamic Island.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479868?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3479864)

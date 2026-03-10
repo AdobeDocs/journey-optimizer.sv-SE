@@ -7,9 +7,9 @@ feature: Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: db85a563-9630-4d87-bf10-9f2515fe8a45
-source-git-commit: 9cdd115c66c8a26a59bfb45f0f20b6c96ddb5d5d
+source-git-commit: c1a2e098b31769945221701a075b7f9f688b274f
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---
@@ -85,3 +85,7 @@ Steg 1 är valfritt om dina push-autentiseringsuppgifter redan har konfigurerats
 Nu kan du börja integrera med Adobe Experience Platform Mobile SDK för att aktivera dynamiska uppdateringar i realtid på låsskärmen och Dynamic Island.
 
 ➡️ [Läs mer om Adobe Experience Platform Mobile SDK-integrering](mobile-live-configuration-sdk.md)
+
+>[!TIP]
+>
+>Om du stöter på problem med konfigurationen eller leveransen av Live-aktiviteten läser du [Felsöka Live-aktiviteter](troubleshoot-mobile-live.md) för felsökningssteg.
