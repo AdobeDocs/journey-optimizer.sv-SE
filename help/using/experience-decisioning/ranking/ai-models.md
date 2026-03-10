@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 exl-id: 07679823-2288-4528-b09a-12fd76a69482
 version: Journey Orchestration
-source-git-commit: 1735324b5fd330ecfc9261a54d0317b71d57ff4f
+source-git-commit: e329c221fa714747d50495e466d02e75bed2967c
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 3%
+source-wordcount: '313'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ Med den här funktionen kan du skapa olika **AI-modeller** utifrån dina affärs
 >id="ajo_exd_ai_model_type"
 >title="Välj modelltyp"
 >abstract="Välj den typ av AI-modell som du vill skapa: **Automatisk optimering** optimerar erbjudanden baserat på tidigare erbjudanden, medan **Anpassad optimering** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjudandeprestanda."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
 
 Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
 
@@ -57,3 +57,5 @@ De viktigaste stegen för att skapa och använda AI-modeller är följande:
    >Rankningsmodeller kräver att feedback-händelser skickas in som upplevelsehändelser för att samlas in. [Läs mer om att bestämma datainsamling](../data-collection/data-collection.md)
 
 1. Tilldela AI-modellen till en urvalsstrategi för att rangordna kvalificerade erbjudanden. [Läs mer](../selection-strategies.md#select-ranking-method)
+
+1. Övervaka AI-modellens utbildningsstatus och prestanda. [Läs mer](ai-model-observability.md)

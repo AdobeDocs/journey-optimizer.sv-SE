@@ -8,9 +8,9 @@ role: User
 level: Experienced
 exl-id: 1c7bcffe-5a25-444f-8a95-057b7a07f252
 version: Journey Orchestration
-source-git-commit: 1735324b5fd330ecfc9261a54d0317b71d57ff4f
+source-git-commit: e329c221fa714747d50495e466d02e75bed2967c
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -80,4 +80,4 @@ Problem med kallstart uppstår när det inte finns tillräckligt med data för a
 
 ## Omskolning {#re-training}
 
-Modellerna kommer att omutbildas för att lära sig de senaste funktionsinteraktionerna och minska prestandaförsämringen varje vecka.
+Modellerna kommer att omutbildas för att lära sig de senaste funktionsinteraktionerna och minska prestandaförsämringen varje vecka. Mer information om övervakning av utbildningsstatus och modellprestanda finns i [AI-modellövervakning](ai-model-observability.md).
