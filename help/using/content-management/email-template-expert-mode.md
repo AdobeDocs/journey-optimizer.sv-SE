@@ -10,10 +10,10 @@ hidefromtoc: true
 hide: true
 level: Experienced
 exl-id: 0c586565-0c65-435f-986d-cd08b59de159
-source-git-commit: 9d3dd2f0a9ae5200dd3ed332420bbb08e8e9f498
+source-git-commit: 2240a4bf85d3f5f41a12d128afdc15431dbab75b
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 1%
+source-wordcount: '531'
+ht-degree: 2%
 
 ---
 
@@ -33,39 +33,43 @@ Med den här funktionen kan du infoga avancerade uttryck - till exempel villkor 
 
 ## Skyddsräcken {#guardrails}
 
-När du använder den avancerade HTML-redigeraren finns det följande skyddsmekanismer för att skydda innehållets kompatibilitet och ställa in förväntningar.
+När du använder den avancerade HTML-redigeraren skyddar följande skyddsutkast innehållets kompatibilitet och ställer in förväntningar.
 
-* Det finns för närvarande **ingen valideringsprocess** i den avancerade HTML-redigeraren. Syntaxfel och trasiga layouter kontrolleras inte. Granska innehållet noggrant innan du sparar.
+* Den avancerade HTML-redigeraren **validerar inte** din kod. Syntaxfel och trasiga layouter kontrolleras inte. Granska innehållet noggrant innan du sparar.
 
-* Framtida systemuppdateringar kan återställa ändringar som gjorts i standardkoden. Observera att **dina ändringar kan skrivas över**.
+* Framtida systemuppdateringar kan skriva över ändringar som du gör i standardkoden. **Ändringarna kanske inte kvarstår**.
 
-* Problem som orsakas av anpassad kod och manuella ändringar **kan inte felsökas** eller lösas av [!DNL Adobe]-supportteamet. Se till att du har en säkerhetskopia av ditt innehåll om du skulle behöva gå tillbaka till en tidigare version.
+* [!DNL Adobe]-supportteamet **kan inte felsöka eller lösa**-problem som orsakas av anpassad kod och manuella ändringar. Spara en säkerhetskopia av innehållet ifall du skulle behöva återställa det.
 
-* **Spara är inte tillgängligt** i den avancerade HTML-vyn för att säkerställa innehållskompatibiliteten. När du är redo att spara ändringarna måste du växla tillbaka till skrivbordsvyn.
+* Du kan inte simulera innehåll i avancerad HTML-vy. Växla till skrivbordsvyn om du vill förhandsgranska innehållet.
+
+* **Du kan inte spara** i den avancerade HTML-vyn för att säkerställa innehållskompatibiliteten. Växla tillbaka till skrivbordsvyn när du är redo att spara ändringarna.
 
 >[!WARNING]
 >
 >Den avancerade HTML-redigeraren i innehållsmallen är inte samma läge som **[!UICONTROL Code your own]** i Designer för e-post. I [!UICONTROL Code your own]-läget kan du inte växla tillbaka till den visuella redigeraren. När du väl har valt den sökvägen förblir du i redigering med endast kod. Med den avancerade HTML-redigeraren kan du växla mellan HTML-vyn och skrivbordsvyn när du vill. [Läs mer om kodredigeraren](../email/code-content.md)
 
-## Växla till avancerad HTML-vy {#switch-to-desktop-view}
+## Växla till avancerad HTML-vy {#switch-to-html-view}
+
+Följ de här stegen för att öppna den avancerade HTML-redigeraren och redigera mallkällan.
 
 1. Öppna eller skapa en [e-postmall](../content-management/create-content-templates.md) och öppna [Skicka e-post till Designer](../email/get-started-email-design.md) för att redigera innehållet.
 
 1. Klicka på knappen **[!UICONTROL HTML]** i skärmens övre högra hörn.
 
-   ![](assets/email-template-expert-mode-button.png)
+   ![Plats för HTML-knappen i e-postverktygsfältet i Designer](assets/email-template-expert-mode-button.png)
 
 1. Första gången du öppnar den avancerade HTML-redigeraren visas ett varningsmeddelande. Granska det noggrant och klicka på **[!UICONTROL OK]** för att fortsätta. [Läs mer](#guardrails)
+
+   ![Varningsdialogruta när den avancerade HTML-redigeraren öppnas för första gången](assets/email-template-expert-mode-warning.png){zoomable="yes"}
 
    >[!NOTE]
    >
    >Den här varningen visas endast första gången du öppnar den avancerade HTML-redigeraren och återställer den varje månad.
 
-   ![](assets/email-template-expert-mode-warning.png){zoomable="yes"}
-
 1. Den avancerade HTML-redigeraren visas.
 
-   ![](assets/email-template-expert-mode.png)
+   ![Avancerat HTML-redigeringsgränssnitt som visar källkod för e-postmallar](assets/email-template-expert-mode.png)
 
 1. Lägg till önskade ändringar i e-postinnehållet.
 
@@ -75,12 +79,18 @@ När du använder den avancerade HTML-redigeraren finns det följande skyddsmeka
 
 1. Simulering och sparande av innehåll är inte tillgängligt i avancerad HTML-vy av kompatibilitetsskäl. Växla tillbaka till skrivbordsvyn för att förhandsgranska innehållet och spara ändringarna.
 
-   ![](assets/email-template-expert-mode-save.png){zoomable="yes"}
+   ![Växla tillbaka till skrivbordsvyn för att spara ändringarna](assets/email-template-expert-mode-save.png){zoomable="yes"}
 
    >[!NOTE]
    >
-   ><!--Content can only be saved in Desktop view for content compatibility reasons. -->Dina redigeringar bevaras när du byter vy.
-<!--
-1. Content simulation is not available in advanced HTML view. To preview your content, switch to Desktop view.
+   >Dina redigeringar bevaras när du byter vy.
 
+<!--
     ![](assets/email-template-expert-mode-simulate.png){zoomable="yes"}-->
+
+## Relaterade ämnen
+
+* [Koda eget e-postinnehåll](../email/code-content.md)
+* [Skapa innehållsmallar](create-content-templates.md)
+* [Komma igång med e-postdesignern](../email/get-started-email-design.md)
+

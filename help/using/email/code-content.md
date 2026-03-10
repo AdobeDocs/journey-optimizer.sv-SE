@@ -9,24 +9,30 @@ role: User
 level: Intermediate, Experienced
 keywords: kod, HTML, redigerare
 exl-id: 5fb79300-08c6-4c06-a77c-d0420aafca31
-source-git-commit: 48b3ef3d2e041ea49d1b0c91cc72ea04237a5e33
+source-git-commit: 2240a4bf85d3f5f41a12d128afdc15431dbab75b
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 2%
+source-wordcount: '473'
+ht-degree: 1%
 
 ---
 
 # Koda eget innehåll {#code-content}
 
-Använd läget **[!UICONTROL Code your own]** för att importera råformaterat HTML och/eller koda ditt e-postinnehåll. Den här metoden kräver HTML kunskaper.
+Med **[!UICONTROL Code your own]** kan du skriva eller klistra in raw HTML för att skapa e-postinnehåll direkt i [!DNL Journey Optimizer] Email Designer. Använd det här läget när du behöver ha fullständig kontroll över markeringar eller när du importerar befintliga HTML.
+
+Du måste ha kunskaper i HTML, och när du väl har valt det här läget kan du inte växla till den visuella redigeraren.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
->[!CAUTION]
+>[!NOTE]
 >
-> Det går inte att referera till bilder från [Adobe Experience Manager Assets](../integrations/assets.md) när den här metoden används. De bilder som refereras i din HTML-kod måste lagras på en offentlig plats.
+>**[!UICONTROL Code your own]** är inte samma sak som den avancerade HTML-redigeraren i innehållsmallar. Med den avancerade HTML-redigeraren kan du växla mellan HTML-vyn och den visuella vyn (Skrivbord) när du vill - inte kodredigeraren. [Läs mer om den avancerade HTML-redigeraren](../content-management/email-template-expert-mode.md).
 
-1. Välj **[!UICONTROL Code your own]** på startsidan för e-post till Designer.
+## Använda kodredigeraren {#use-code-editor}
+
+Följ de här stegen för att skapa eller redigera e-postinnehåll med kodredigeraren.
+
+1. På hemsidan [E-posta Designer](get-started-email-design.md) väljer du **[!UICONTROL Code your own]**.
 
    ![](assets/code-your-own.png)
 
@@ -55,6 +61,10 @@ Använd läget **[!UICONTROL Code your own]** för att importera råformaterat H
 1. När koden är klar klickar du på **[!UICONTROL Save]** och går sedan tillbaka till skärmen för att skapa meddelandet för att slutföra meddelandet.
 
    ![](assets/code-editor-save.png)
+
+>[!CAUTION]
+>
+>Det går inte att referera till bilder från [Adobe Experience Manager Assets](../integrations/assets.md) när du använder din egen kodmetod. Lagra bilder som refereras i din HTML-kod på en offentlig plats.
 
 ## Funktionsbegränsningar för datum och tid {#date-time-limitations}
 
@@ -90,4 +100,4 @@ Om du behöver utföra datumberäkningar i ditt e-postinnehåll:
 
 * **Använd beräknade attribut** - Skapa [beräknade attribut](../audience/computed-attributes.md) som utför komplexa datumberäkningar och gör resultaten tillgängliga som profilattribut.
 
-Läs mer om [Funktioner för datum och tid i personalisering](../personalization/functions/dates.md).
+En fullständig lista över funktioner som stöds finns i [Datum- och tidsfunktioner](../personalization/functions/dates.md).
