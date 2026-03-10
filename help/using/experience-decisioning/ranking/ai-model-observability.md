@@ -165,7 +165,7 @@ If no model has been successfully deployed yet, the "currently deployed model" s
 
 Lär dig övervaka dina AI-rankningsmodeller och tolka utbildningsstatus och prestanda i [!DNL Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3479849?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479853?captions=swe&quality=12)
 
 ## Relaterad dokumentation {#related}
 
