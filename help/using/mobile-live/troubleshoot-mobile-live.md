@@ -28,7 +28,7 @@ En vanlig utmaning med Live Activity är när API-anropet för att utlösa eller
 
 Innan du felsöker bör du kontrollera att du har:
 
-* 
+* &#x200B;
   +++ Konfigurera en Assurance-session
 
   Konfigurera en **Assurance-session** för att hämta SDK-händelser och inspektera leveransflödet. Assurance ger synlighet i
@@ -44,7 +44,7 @@ Innan du felsöker bör du kontrollera att du har:
 
   +++
 
-* 
+* &#x200B;
   +++ Samla in API-utlöst kampanjinformation
 
   Navigera till API Triggered Campaign i Journey Optimizer och hämta:
@@ -56,7 +56,7 @@ Innan du felsöker bör du kontrollera att du har:
 
   +++
 
-* 
+* &#x200B;
   +++ Samla in API-begärandeinformation
 
   Spara följande när du gör ett API-anrop för att aktivera den aktiva aktiviteten:
@@ -68,7 +68,7 @@ Innan du felsöker bör du kontrollera att du har:
 
   +++
 
-* 
+* &#x200B;
   +++ Identifiera testprofilen
 
   Hämta följande från din API-begäran:
@@ -80,7 +80,7 @@ Innan du felsöker bör du kontrollera att du har:
 
   +++
 
-* 
+* &#x200B;
   +++ Enhet- och appinformation
 
   Samla följande från din testenhet:
@@ -119,7 +119,7 @@ API:t returnerar HTTP 200, men den aktiva aktiviteten visas inte. Vanliga orsake
 
 #### Felsökningssteg
 
-1. 
+1. &#x200B;
    +++ Verifiera att profilen finns i Adobe Experience Platform
 
    1. I Journey Optimizer går du till **Kund** `>` **Profiler**.
@@ -129,7 +129,7 @@ API:t returnerar HTTP 200, men den aktiva aktiviteten visas inte. Vanliga orsake
 
       +++
 
-1. 
+1. &#x200B;
    +++ Kontrollera om push-token för aktiv aktivitet har synkroniserats
 
    Du kan använda Assurance för att verifiera tokenregistrering:
@@ -149,7 +149,7 @@ API:t returnerar HTTP 200, men den aktiva aktiviteten visas inte. Vanliga orsake
 
    +++
 
-1. 
+1. &#x200B;
    +++ Validera tokeninformation i profil
 
    1. Gå till fliken **Attribut** från din **profil**.
@@ -207,7 +207,7 @@ Profilen finns med giltiga tokens, men Live Activity (Aktivitet) visas inte. Det
 
 #### Felsökningssteg
 
-1. 
+1. &#x200B;
    +++ Verifiera konfiguration av kampanjyta
 
    1. Öppna din **kampanj** i Journey Optimizer och gå till **Åtgärder** -menyn.
@@ -216,7 +216,7 @@ Profilen finns med giltiga tokens, men Live Activity (Aktivitet) visas inte. Det
 
       +++
 
-1. 
+1. &#x200B;
    +++Validera API-nyttolaststruktur
 
    Kontrollera att nyttolasten följer rätt struktur när kampanjen körs via API.
@@ -280,7 +280,7 @@ Profilen finns med giltiga tokens, men Live Activity (Aktivitet) visas inte. Det
 
      +++
 
-1. 
+1. &#x200B;
    +++ Justera nyttolast med iOS-implementering
 
    Kontrollera att API-nyttolasten matchar implementeringen av iOS-appen `ActivityAttributes`. Adobe SDK `LiveActivityAttributes`-protokollet utökar iOS `ActivityAttributes` och kräver en `liveActivityData`-egenskap.
@@ -354,7 +354,7 @@ Profilen finns med giltiga tokens, men Live Activity (Aktivitet) visas inte. Det
 
    +++
 
-1. 
+1. &#x200B;
    +++ Testa med Assurance
 
    Verifiera API-körning och nyttolast med Assurance:
@@ -401,7 +401,7 @@ Men den aktiva aktiviteten visas, uppdateras eller avslutas fortfarande inte som
 
 #### Felsökningssteg
 
-1. 
+1. &#x200B;
    +++ Kontrollera kampanjrapporter
 
    1. Navigera till din **Live Activity Campaign**.
@@ -440,7 +440,7 @@ Men den aktiva aktiviteten visas, uppdateras eller avslutas fortfarande inte som
 
    +++
 
-1. 
+1. &#x200B;
    +++ Kontrollera meddelandefeedbackhändelser i profilen
 
    1. Navigera till **Kund** > **Profiler** i Journey Optimizer.
@@ -467,7 +467,7 @@ Men den aktiva aktiviteten visas, uppdateras eller avslutas fortfarande inte som
 
       +++
 
-1. 
+1. &#x200B;
    +++ Verifiera direktaktivitetsleverans till APN:er i Assurance
 
    1. Öppna din Assurance-session. Den måste vara aktiv under API-anropet.
@@ -490,7 +490,7 @@ Men den aktiva aktiviteten visas, uppdateras eller avslutas fortfarande inte som
 
       +++
 
-1. 
+1. &#x200B;
    +++ Fortsätt till ytterligare diagnostiska kontroller
 
    1. Kontrollera Live Activity Lifecycle-statistik i Campaign Report.
@@ -516,7 +516,7 @@ Men den aktiva aktiviteten visas, uppdateras eller avslutas fortfarande inte som
 
       +++
 
-1. 
+1. &#x200B;
    +++ Eskalering till Adobe Support
 
    Om du har slutfört alla steg och problemet inte är löst kontaktar du Adobe kundtjänst med:
@@ -568,7 +568,7 @@ För att update- och end-händelser ska fungera måste följande inträffa:
 
 #### Felsökningssteg
 
-1. 
+1. &#x200B;
    +++ Verifiera synkronisering av uppdateringstoken i Assurance
 
    1. Öppna din Assurance-session.
@@ -591,7 +591,7 @@ För att update- och end-händelser ska fungera måste följande inträffa:
 
       +++
 
-2. 
+2. &#x200B;
    +++ Verifiera uppdateringstoken i profilhändelser
 
    1. Navigera till **Kund** > **Profiler** i Journey Optimizer.
@@ -614,7 +614,7 @@ För att update- och end-händelser ska fungera måste följande inträffa:
 
       +++
 
-3. 
+3. &#x200B;
    +++ Kontrollera liveaktivitetens leveranshändelser i Assurance
 
    1. Kör ett uppdaterings- eller avslutnings-API-anrop i din Assurance-session.
@@ -653,7 +653,7 @@ Det här felsökningsscenariot gäller för alla live-aktivitetshändelser i uts
 
 #### Felsökningssteg
 
-1. 
+1. &#x200B;
    +++ Verifiera konfiguration av kampanjmålgrupp
 
    1. Öppna din **API-utlösta marknadsföringskampanj** i Journey Optimizer.
@@ -668,7 +668,7 @@ Det här felsökningsscenariot gäller för alla live-aktivitetshändelser i uts
 
       +++
 
-1. 
+1. &#x200B;
    +++ Validera nyttolaststrukturen för broadcast API
 
    Nyttolaststrukturen för utsändning skiljer sig från enhetskampanjer. Kontrollera att nyttolasten följer rätt sändningsformat.
@@ -740,7 +740,7 @@ Det här felsökningsscenariot gäller för alla live-aktivitetshändelser i uts
 
    +++
 
-1. 
+1. &#x200B;
    +++ Justera innehållsläge, attribut och input-push-channel med iOS-implementering
 
    Kontrollera att nyttolastfälten matchar iOS-appens `ActivityAttributes`-implementering och att `input-push-channel` matchar `channelID` i `liveActivityData`.
@@ -821,7 +821,7 @@ Det här felsökningsscenariot gäller för alla live-aktivitetshändelser i uts
 
    +++
 
-1. 
+1. &#x200B;
    +++ Testa med Assurance
 
    Verifiera API-körning och nyttolast med Assurance:
@@ -868,7 +868,7 @@ Adobe Experience Platform använder olika metoder för målgruppsutvärdering so
 
 #### Felsökningssteg
 
-1. 
+1. &#x200B;
    +++ Verifiera att profilen finns i målgruppen
 
    Bekräfta först om den profil som ska ta emot den aktiva aktiviteten faktiskt är en del av målgruppen.
@@ -886,7 +886,7 @@ Adobe Experience Platform använder olika metoder för målgruppsutvärdering so
 
       +++
 
-2. 
+2. &#x200B;
    +++ Kontrollera utvärderingstyp och schema för målgruppen
 
    Identifiera om publiken använder utvärdering av batch- eller direktuppspelning, eftersom detta avgör datans aktualitet.
