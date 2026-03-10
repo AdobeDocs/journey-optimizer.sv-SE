@@ -38,7 +38,7 @@ Innan du felsöker bör du kontrollera att du har:
    * Push-tokenregistrering
    * Livscykelhändelser för aktiv aktivitet
 
-  Lär dig hur du konfigurerar Assurance i [Adobe Experience Platform Assurance-dokumentationen](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/assurance).
+  Lär dig hur du konfigurerar Assurance i [Adobe Experience Platform Assurance-dokumentationen](https://experienceleague.adobe.com/sv/docs/platform-learn/implement-mobile-sdk/app-implementation/assurance).
 
   **Obs!** För iOS Live Activity kontrollerar du att appen körs på en fysisk iOS-enhet (iOS 16.1 eller senare) eller en Xcode-simulator (iOS 16.1 eller senare).
 
