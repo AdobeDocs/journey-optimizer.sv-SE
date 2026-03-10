@@ -55,7 +55,7 @@ Följ stegen nedan för att skapa en AI-modell för rankning av resor.
     * **[!UICONTROL Auto-optimization]** optimizes based on past performance. [Learn more](../experience-decisioning/ranking/auto-optimization-model.md)
     * **[!UICONTROL Personalized optimization]** optimizes and personalizes based on audiences and performance. [Learn more](../experience-decisioning/ranking/personalized-optimization-model.md)-->
 
-1. I avsnittet **[!UICONTROL Optimization metric]** visas alla mätvärden från din standarddatavy [!DNL Customer Journey Analytics] [](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target="_blank"} i listan. Välj det mätvärde som du vill optimera modellen på.
+1. I avsnittet **[!UICONTROL Optimization metric]** visas alla mätvärden från din standarddatavy [!DNL Customer Journey Analytics] [&#128279;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target="_blank"} i listan. Välj det mätvärde som du vill optimera modellen på.
 
    ![Listruta med optimeringsmått för Customer Journey Analytics-mått för AI-modellen](assets/journey-model-metrics.png){width="70%"}
 
@@ -74,7 +74,7 @@ Följ stegen nedan för att skapa en AI-modell för rankning av resor.
    >
    >Endast datauppsättningar som skapats från scheman som är kopplade till fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** visas i listrutan. Du kan välja upp till fem datauppsättningar.
 
-1. <!--If you are creating a **[!UICONTROL Personalized optimization]** AI model, -->Välj det eller de segment som ska användas för att utbilda AI-modellen.
+1. &#x200B;<!--If you are creating a **[!UICONTROL Personalized optimization]** AI model, -->Välj det eller de segment som ska användas för att utbilda AI-modellen.
 
    >[!NOTE]
    >
