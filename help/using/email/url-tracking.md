@@ -9,10 +9,10 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 5a12280c-b937-4cd9-a1ef-563bab48e42e
-source-git-commit: d336684656c75af682a72b0acab071df15a79004
+source-git-commit: 719bd2fca82a25c356ed708819a6e7684ffbff9b
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '477'
+ht-degree: 1%
 
 ---
 
@@ -53,6 +53,10 @@ Följande fördefinierade värden är tillgängliga via personaliseringsredigera
 * **Erbjudande-ID**: ID för erbjudandet som används i e-postmeddelandet.
 
 * **Source åtgärds-ID**: ID för e-poståtgärden som har lagts till i resan eller kampanjen.
+
+  >[!NOTE]
+  >
+  >Resor som stängts eller inte publicerats om efter en produktändring kan misslyckas med att fylla i `context.system.source.actionId` i spårnings-URL:er, vilket resulterar i tomma platshållare (till exempel `cid=em-acou-adob{}`). [Publicera om den berörda resan](../building-journeys/publish-journey.md#journey-create-new-version) eller ta bort referensen till det här kontextfältet för stängda resor för att säkerställa att spårningsparametrarna är korrekt ifyllda. Läs mer i [Felsök körningen av din direktresa](../building-journeys/troubleshooting-execution.md#tracking-parameters-closed-journeys).
 
 * **Source-åtgärdsnamn**: namnet på e-poståtgärden som har lagts till i resan eller kampanjen.
 
