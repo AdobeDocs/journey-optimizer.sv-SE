@@ -46,7 +46,7 @@ Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två p
 
 >[!TIP]
 >
->Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning &#x200B;](#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## Skapa och konfigurera en extern datakälla {#create-ext-data-sources}
 
@@ -112,7 +112,7 @@ Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fäl
 {"id":{"param":"identifier"}}
 ```
 
-![Panelen Fältgruppskonfiguration med fält för dynamiska värden och svarsnyttolast &#x200B;](assets/journey29.png)
+![Panelen Fältgruppskonfiguration med fält för dynamiska värden och svarsnyttolast ](assets/journey29.png)
 
 
 När dina ändringar har sparats är datakällan konfigurerad och klar att användas i dina resor, till exempel under dina förhållanden eller för att anpassa ett e-postmeddelande. Om temperaturen är över 30 °C kan du välja att skicka ett visst meddelande.
