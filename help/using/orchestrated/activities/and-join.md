@@ -5,9 +5,9 @@ title: Använda aktiviteten OCH-join
 description: Lär dig använda AND-join-aktiviteten i en orkestrerad kampanj
 exl-id: 1b99313e-f131-44f7-a129-f85e1977fb05
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: a6dd5e7e4bb55c9cfb094682254d940280de0815
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,11 @@ ht-degree: 0%
 >id="ajo_orchestration_and-join"
 >title="AND-join activity"
 >abstract="Med aktiviteten **And-join** kan du synkronisera flera körningsgrenar för en Orchestrated-kampanj. Den aktiveras när alla föregående aktiviteter har slutförts. På så sätt kan du se till att vissa aktiviteter är slutförda innan du fortsätter att köra den Orchestrated-kampanjen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_join"
+>title="Anslut aktivitet"
+>abstract="Platshållare för kopplingsaktivitet."
 
 Aktiviteten **[!UICONTROL And-join]** är en **[!UICONTROL Flow control]**-aktivitet. Med den kan ni synkronisera flera körningsgrenar för en orchestrerad-kampanj.
 
