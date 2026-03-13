@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: 13ac469c33d2a580ba499bb463ac9fc63bef733c
+source-git-commit: 9425192fac4699778f81ce57c31979155dd38b18
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1952'
 ht-degree: 3%
 
 ---
@@ -48,6 +48,11 @@ Konfigurera den åtgärd som ska utföras när mottagarna trycker på texten i p
 * **[!UICONTROL Open app]**: Startar programmet som är associerat med meddelandet. Appen anges i din [kanalkonfiguration](../configuration/channel-surfaces.md) (d.v.s. meddelandeförinställning).
 * **[!UICONTROL Deeplink]**: dirigerar användare till specifikt innehåll i din app, till exempel en viss vy, ett visst sidavsnitt eller en viss flik. Ange URL-adressen för överordnad länk i fältet.
 * **[!UICONTROL Web URL]**: dirigerar användare till en extern webbsida. Ange mål-URL i det angivna fältet.
+
+  >[!NOTE]
+  >
+  >Om ditt push-meddelande innehåller en URL som har konfigurerats som en universell länk i iOS, kommer push-åtgärden att öppna den associerade appen om den är installerad, oavsett vilken **[!UICONTROL Web URL]**-åtgärd du har valt. Om du vill tvinga en webbläsare att öppnas använder du en domän som inte är konfigurerad för universella länkar, eller tar bort registrering för universella länkar för domänen.
+  >Mer information om hur Adobe SDK hanterar djuplänkar och universallänkar finns i [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/push-notifications/){target="_blank"}.
 
 ## Lägg till media {#add-media-push}
 
