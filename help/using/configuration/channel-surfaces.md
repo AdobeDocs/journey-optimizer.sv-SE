@@ -292,4 +292,4 @@ Du kan inte redigera en inaktiverad kanalkonfiguration direkt. Du kan dock dupli
 
 Lär dig vilka kanalkonfigurationer som är och hur de används i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433124/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3480455/?captions=swe&learn=on)
