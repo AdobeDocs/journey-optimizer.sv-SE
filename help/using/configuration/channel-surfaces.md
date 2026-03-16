@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 5b804de873124b8ff53d55c943b3c95649dd9a7c
+source-git-commit: a06360239996b21f2bd71b1ff61d759a85564c5c
 workflow-type: tm+mt
-source-wordcount: '1810'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -177,19 +177,13 @@ Om du vill redigera en kanalkonfiguration följer du stegen nedan.
 
    >[!NOTE]
    >
-   >Om en kanalkonfiguration har statusen **[!UICONTROL Active]** är fälten **[!UICONTROL Name]**, **[!UICONTROL Select channel]** och **[!UICONTROL Subdomain]** nedtonade och kan inte redigeras.
+   >* När konfigurationen har statusen **[!UICONTROL Active]** är fälten **[!UICONTROL Name]**, **[!UICONTROL Select channel]** och **[!UICONTROL Subdomain]** skrivskyddade och kan inte ändras.
+   >* Du kan spara ändringarna som ett utkast när som helst och återuppta uppdateringen senare.
+   >* Redigeringar som är begränsade till fälten **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** börjar gälla omedelbart, utan någon bearbetningsfördröjning.
 
 1. Klicka på **[!UICONTROL Submit]** för att bekräfta ändringarna.
 
-   >[!NOTE]
-   >
-   >Du kan också spara kanalkonfigurationen som utkast och återuppta uppdateringen senare.
-
-När ändringarna har skickats går kanalkonfigurationen igenom en valideringscykel som liknar den som fanns när [en kanalkonfiguration &#x200B;](#create-channel-surface) skapades. Versionens bearbetningstid kan ta upp till **3 timmar**.
-
->[!NOTE]
->
->Om du bara redigerar fälten **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** uppdateras uppdateringen omedelbart.
+När ändringarna har skickats går kanalkonfigurationen igenom en valideringscykel som liknar den som fanns när [en kanalkonfiguration ](#create-channel-surface) skapades. Versionens bearbetningstid kan ta upp till **3 timmar**.
 
 ### Uppdatera information {#update-details}
 
@@ -298,4 +292,4 @@ Du kan inte redigera en inaktiverad kanalkonfiguration direkt. Du kan dock dupli
 
 Lär dig vilka kanalkonfigurationer som är och hur de används i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480455/?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3433124/?learn=on)

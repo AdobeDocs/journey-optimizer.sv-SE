@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
 exl-id: f9e217f8-5aa8-4d3a-96fc-65defcb5d340
-source-git-commit: b3716265282599604de629be540ca68971daa343
+source-git-commit: a06360239996b21f2bd71b1ff61d759a85564c5c
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 0%
@@ -146,13 +146,10 @@ Om du vill låta Adobe hantera DMARC-posten åt dig väljer du alternativet **[!
 
 >[!NOTE]
 >
->Om den hämtas av [!DNL Journey Optimizer] kan du använda samma värden som markeras i gränssnittet, eller ändra dem efter behov.
+>* Om den hämtas av [!DNL Journey Optimizer] kan du använda samma värden som markeras i gränssnittet, eller ändra dem efter behov.
+>* Om du inte lägger till några värden används de förfyllda standardvärdena.
 
 ![](assets/dmarc-record-with-adobe-ex.png){width="80%"}
-
->[!NOTE]
->
->Om du inte lägger till några värden används de förfyllda standardvärdena.
 
 1. Definiera åtgärden som mottagarservern ska utföra om DMARC misslyckas. Beroende på vilken [DMARC-princip](#dmarc-policies) du vill tillämpa väljer du något av följande tre alternativ:
 
@@ -168,16 +165,13 @@ Om du vill låta Adobe hantera DMARC-posten åt dig väljer du alternativet **[!
 
    >[!NOTE]
    >
-   >Kontrollera att du har en äkta inkorg (inte Adobe) där du kan ta emot rapporterna.
+   >* Kontrollera att du har en äkta inkorg (inte Adobe) där du kan ta emot rapporterna.
+   >* Dessa mycket tekniska rapporter ger en översikt över e-postmeddelanden som försöker förfalskas och som är bäst att läsa med hjälp av ett verktyg från tredje part.
 
    Det finns två olika rapporter som genereras av Internet-leverantörer och som avsändare kan få via RUA/RUF-taggarna i sin DMARC-policy:
 
    * **Aggregerade rapporter** (RUA): De innehåller inga PII-filer (personligt identifierbar information) som kan vara GDPR-känsliga.
    * **Rapporter om tekniska fel** (RUF): De innehåller GDPR-känsliga e-postadresser. Innan du använder programmet bör du kontrollera internt hur man hanterar information som måste vara GDPR-kompatibel.
-
-   >[!NOTE]
-   >
-   >Dessa mycket tekniska rapporter ger en översikt över e-postmeddelanden som försöker förfalskas. De smälter bäst in via ett verktyg från tredje part.
 
 1. Välj den **tillämpliga procentandelen** av e-postmeddelanden för DMARC.
 

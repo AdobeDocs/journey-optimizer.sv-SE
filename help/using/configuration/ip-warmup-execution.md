@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
+source-git-commit: a06360239996b21f2bd71b1ff61d759a85564c5c
 workflow-type: tm+mt
-source-wordcount: '2637'
+source-wordcount: '2613'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Varje fas består av flera körningar, som ni tilldelar en enda kampanj till.
 >id="ajo_admin_ip_warmup_domains_excluded"
 >title="Uteslut domängrupper"
 >abstract="Välj de domäner som du vill utesluta från den aktuella fasen. Domänundantag kräver en icke-körd fas, så du kan behöva dela en pågående fas för att lägga till undantag."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-execution.html?lang=sv-SE#split-phase" text="Dela en fas"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-execution.html#split-phase" text="Dela en fas"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_phases"
@@ -50,37 +50,25 @@ Om du vill definiera faserna i din IP-värmeringsplan måste du välja en kampan
 
 1. Välj den kampanj som du vill associera med den första fasen i IP-värmningsplanen.
 
-   >[!NOTE]
-   >
-   >Du kan inte välja en kampanj som redan används i en annan IP-uppvärmningsplan. Men samma kampanj kan användas i en eller flera faser i samma IP-värpportplan.
-
    ![](assets/ip-warmup-plan-select-campaign.png)
 
    >[!IMPORTANT]
    >
-   >* Det är bara kampanjer med alternativet **[!UICONTROL IP warmup plan activation]** aktiverat som kan väljas. [Läs mer](#create-ip-warmup-campaign)
-   >
+   >* Endast kampanjer med alternativet **[!UICONTROL IP warmup plan activation]** aktiverat kan väljas. [Läs mer](#create-ip-warmup-campaign)
    >* Det går bara att välja kampanjer som använder samma konfiguration som den valda IP-warmup-planen.
+   >* Det går inte att välja en kampanj som redan används i en annan IP-uppvärmningsplan. Samma kampanj kan användas i flera faser av samma plan.
 
-1. När en kampanj har valts för den aktuella fasen visas avsnitten för att utesluta profiler, kampanjmålgrupper och domängrupper.
-
-   >[!NOTE]
-   >
-   >När en körning har aktiverats kan undantag inte ändras längre om du inte [delar körningen](#split-phase) till en ny fas.
+1. När en kampanj har valts för den aktuella fasen visas avsnitten för att utesluta profiler, kampanjmålgrupper och domängrupper. Observera att när en körning har aktiverats kan undantag inte ändras längre om du inte [delar körningen](#split-phase) till en ny fas.
 
    1. I avsnittet **[!UICONTROL Domain groups excluded]** väljer du de domäner du vill utesluta från den fasen.
 
       >[!NOTE]
       >
-      >Domänundantag kräver en fas som inte har körts, så du kan behöva [dela en pågående fas](#split-phase) för att lägga till undantag.
+      >Domänundantag kräver en fas som inte har körts, så du kan behöva [dela en pågående fas](#split-phase) för att lägga till undantag. Du kan dessutom bara utesluta en anpassad domängrupp som har lagts till i mallen [för IP-värdskapsplan](ip-warmup-plan.md#prepare-file) - om inte, uppdatera mallen med den anpassade domängruppen och [överföra planen igen](#re-upload-plan).
 
       ![](assets/ip-warmup-plan-exclude-domains.png)
 
       När du har kört IP-värmning i några dagar inser du att ditt ISP-rykte med en domän (till exempel Adobe) inte är bra och du vill lösa det utan att stoppa IP-värmningsplanen. I så fall kan du utesluta Adobe domängrupp.
-
-      >[!NOTE]
-      >
-      >Du kan bara utesluta en anpassad domängrupp som har lagts till i mallen [för IP-värmerappen](ip-warmup-plan.md#prepare-file). Om så inte är fallet uppdaterar du mallen med den anpassade domängruppen som du vill utesluta och [överför planen](#re-upload-plan) igen.
 
       >[!CAUTION]
       >
@@ -90,7 +78,7 @@ Om du vill definiera faserna i din IP-värmeringsplan måste du välja en kampan
 
       ![](assets/ip-warmup-plan-exclude-campaigns.png)
 
-      När fas 1 kördes var du till exempel tvungen att [dela &#x200B;](#split-phase) av någon anledning. Därför kan ni utesluta kampanjen som används i fas 1 så att de tidigare kontaktade profilerna från fas 1 inte inkluderas i fas 2. Du kan även utesluta kampanjer från andra IP-värmeringsplaner.
+      När fas 1 kördes var du till exempel tvungen att [dela ](#split-phase) av någon anledning. Därför kan ni utesluta kampanjen som används i fas 1 så att de tidigare kontaktade profilerna från fas 1 inte inkluderas i fas 2. Du kan även utesluta kampanjer från andra IP-värmeringsplaner.
 
    1. I avsnittet **[!UICONTROL Journeys for exclusion of profiles]** väljer du resor med de målgrupper som du vill utesluta från den aktuella fasen.
 
@@ -103,11 +91,7 @@ Om du vill definiera faserna i din IP-värmeringsplan måste du välja en kampan
       1. Välj **AJO Message Feedback Event Schema** på menyn **Scheman** och gå till fältet **_messageID**. Välj **Lägg till relation** och välj **AJO Entity Record Schema** som **Reference schema** och det namnområde du skapade tidigare som **Reference Identity namespace**.
       +++
 
-   1. I avsnittet **[!UICONTROL Profiles targeted in previous runs]** ser du att profilerna från de tidigare körningarna av den fasen alltid är exkluderade. Om en profil i Kör 1 till exempel täcks av de första 4 800 målpersonerna, ser systemet automatiskt till att samma profil inte får e-postmeddelandet i Kör 2.
-
-      >[!NOTE]
-      >
-      >Det här avsnittet kan inte redigeras.
+   1. I avsnittet **[!UICONTROL Profiles targeted in previous runs]** ser du att profilerna från tidigare körningar av den fasen alltid är exkluderade (det här avsnittet är skrivskyddat). Om en profil i Kör 1 till exempel täcks av de första 4 800 målpersonerna, ser systemet automatiskt till att samma profil inte får e-postmeddelandet i Kör 2.
 
 1. Om det behövs kan du ersätta kampanjen med knappen **[!UICONTROL Replace]**. Du kan också **[!UICONTROL Clear]** den valda kampanjen med knappen **[!UICONTROL Clear]**. Den här åtgärden rensar inte bara kampanjen utan även andra fasnivåegenskaper (domängrupper exkluderar, Campaign, Resursundantag med flera). När ni har rensat kan ni välja en ny kampanj antingen direkt eller vid ett senare tillfälle.
 
@@ -125,13 +109,9 @@ Om du vill definiera faserna i din IP-värmeringsplan måste du välja en kampan
 
    >[!CAUTION]
    >
-   >Du kan inte ångra åtgärden **[!UICONTROL Delete phase]**.
+   >Du kan inte ångra åtgärden **[!UICONTROL Delete phase]**. Om du tar bort alla faser bör du överföra planen igen. [Läs mer](#re-upload-plan)
 
    ![](assets/ip-warmup-plan-delete-phase.png)
-
-   >[!NOTE]
-   >
-   >Om du tar bort alla faser från IP-beredskapsplanen rekommenderar vi att du överför en plan igen. [Läs mer](#re-upload-plan)
 
 ## Definiera körningarna {#define-runs}
 
@@ -166,31 +146,23 @@ När du har definierat faserna i din IP-värdplan måste du konfigurera enskilda
 
    ![](assets/ip-warmup-plan-send-time.png)
 
-1. Du kan också definiera ett tidsfönster under vilket IP-warmup-kampanjen kan köras om det uppstår några förseningar i [målgruppsutvärderingen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE#how-segmentation-works){target="_blank"}. Om du vill göra det klickar du på egenskapsikonen uppe till vänster bredvid namnet på planen och använder listrutan **[!UICONTROL Retry run time]** för att välja en varaktighet, upp till 240 minuter (4 timmar).
+1. Du kan också definiera ett tidsfönster under vilket IP-warmup-kampanjen kan köras om det uppstår några förseningar i [målgruppsutvärderingen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"}. Om du vill göra det klickar du på egenskapsikonen uppe till vänster bredvid namnet på planen och använder listrutan **[!UICONTROL Retry run time]** för att välja en varaktighet, upp till 240 minuter (4 timmar).
 
    >[!NOTE]
    >
-   >Försök görs var 30:e minut till slutet av det definierade tidsfönstret.
+   >Försök görs var 30:e minut till slutet av det definierade tidsfönstret. Om inget tidsfönster anges görs ett försök att köra vid sändningstiden och detta misslyckas om målgruppsutvärderingen inte slutförs.
 
    ![](assets/ip-warmup-plan-retry-run-time.png)
 
    Om du t.ex. anger en sändningstid på en viss dag kl. 9.00 och väljer 120 minuter som körningstid för nya försök, kan du använda detta för att skapa ett fönster med en tidsrymd på 2 timmar (9.00-11.00) så att körningen kan utföras vid oväntade fördröjningar i målgruppsutvärderingen.
 
-   >[!NOTE]
-   >
-   >Om inget tidsfönster anges görs ett försök att köra vid sändningstiden och detta misslyckas om målgruppsutvärderingen inte slutförs.
-
 1. Välj **[!UICONTROL Edit run]** från ikonen Fler åtgärder om det behövs. Där kan du uppdatera antalet adresser i varje kolumn. Du kan även uppdatera fältet **[!UICONTROL Last engaged]** så att det endast är avsett för användare som har varit engagerade med ditt varumärke under de senaste 20 dagarna.
 
    >[!NOTE]
    >
-   >Vi rekommenderar att du ändrar numren i samråd med din produktexpert.
+   >Vi rekommenderar att du ändrar numren i samråd med din produktexpert. Om du vill inaktivera förlovningsperioden för en körning anger du 0 i fältet **[!UICONTROL Last engaged]**.
 
    ![](assets/ip-warmup-plan-edit-run.png)
-
-   >[!NOTE]
-   >
-   >Om du inte vill använda någon åtagandeperiod för en körning anger du 0 i fältet **[!UICONTROL Last engaged]**.
 
 1. Välj alternativet **[!UICONTROL Cancel activated runs in case of errors]** om du vill avbryta en körning om de kvalificerade profilerna är mindre än målprofilerna när målgruppen har utvärderats för den körningen.
 
@@ -224,7 +196,7 @@ Om du vill aktivera en körning väljer du knappen **[!UICONTROL Activate]**. Se
 
 När du kör flera IP-värdskapsplaner samtidigt, som alla har samma IP-pool och domäner som mål, är det viktigt att förutse de potentiella konsekvenserna. Om en Internet-leverantör till exempel har en daglig gräns på 100 e-postmeddelanden, kan detta tröskelvärde överskridas om flera planer för samma domäner körs.
 
-Se till att du har schemalagt tillräckligt med tid för att [målgruppsutvärderingen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE#how-segmentation-works){target="_blank"} ska kunna köras.
+Se till att du har schemalagt tillräckligt med tid för att [målgruppsutvärderingen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"} ska kunna köras.
 
 ![](assets/ip-warmup-plan-activate.png)
 
@@ -236,7 +208,7 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
 
 * Om du aktiverar den första körningen av en fas:
 
-   * En [målgrupp](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=sv-SE){target="_blank"} skapas för de uteslutna kampanjmålgrupperna (om det finns någon), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Audience Exclusion`.
+   * En [målgrupp](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} skapas för de uteslutna kampanjmålgrupperna (om det finns någon), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Audience Exclusion`.
 
    * En målgrupp skapas för de domängrupper som har uteslutits (om sådana finns), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Domain Exclusion`.
 
@@ -258,7 +230,7 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
      >
      >Systemet skapar inte en ny målgrupp om det inte sker någon förändring i det senaste interaktionsfiltret för efterföljande faser.
 
-   * En [målgruppskomposition](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html?lang=sv-SE){target="_blank"} skapas som motsvarar målgruppen som kampanjen skickas till, med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Run<runNo>`.
+   * En [målgruppskomposition](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"} skapas som motsvarar målgruppen som kampanjen skickas till, med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Run<runNo>`.
 
      >[!NOTE]
      >
@@ -325,7 +297,7 @@ En ny fas skapas för de återstående körningarna i den aktuella fasen.
 
 Om du t.ex. väljer det här alternativet för Kör #4 flyttas körningarna #4 till #8 till en ny fas precis efter den aktuella fasen.
 
-Följ stegen [&#x200B; ovan](#define-phases) för att definiera den nya fasen.
+Följ stegen [ ovan](#define-phases) för att definiera den nya fasen.
 
 * Du kan använda alternativen **[!UICONTROL Replace]** eller **[!UICONTROL Clear]** för den nya fasen.
 
@@ -345,7 +317,7 @@ Om din IP-warmup-plan inte fungerar som förväntat (till exempel om du observer
 
 Alla tidigare körningar är skrivskyddade. Den nya planen visas under den första planen.
 
-Följ stegen [&#x200B; ovan](#define-phases) för att definiera faserna från den nya planen.
+Följ stegen [ ovan](#define-phases) för att definiera faserna från den nya planen.
 
 >[!NOTE]
 >

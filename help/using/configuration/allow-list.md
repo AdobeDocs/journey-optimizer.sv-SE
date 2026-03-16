@@ -8,9 +8,9 @@ role: Admin
 level: Intermediate
 keywords: tillåtelselista, säker lista, e-post, slutbarhet, sandlåda, domäner, undertryckning, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: 56d0d176385dfbb74222fd33115c01553f50d107
+source-git-commit: a06360239996b21f2bd71b1ff61d759a85564c5c
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1263'
 ht-degree: 2%
 
 ---
@@ -63,13 +63,10 @@ Följ stegen nedan för att aktivera tillåtelselista.
 
    >[!NOTE]
    >
-   >När du har aktiverat tillåtelselista sker en 10-minuters fördröjning innan det börjar gälla under era resor och kampanjer. På samma sätt kan uppdateringar av både tillåtelselista och suppressionslistan ta upp till 10 minuter att reflektera.
+   >* Efter aktiveringen sker en 10 minuters fördröjning innan tillåtelselista börjar genomföra resor och kampanjer. Uppdateringar av både tillåtelselista och suppressionslistan kan ta upp till 10 minuter att reflektera.
+   >* När tillåtelselista är aktivt används det inte bara i direktresor, utan även när meddelanden testas med [korrektur](../content-management/proofs.md) och resor i [testläge](../building-journeys/testing-the-journey.md).
 
 Logiken i tillåtelselista gäller när funktionen är aktiv. Läs mer i [det här avsnittet](#logic).
-
->[!NOTE]
->
->När funktionen tillåtelselista är aktiverad respekteras den när resor körs, men också när meddelanden testas med [korrektur](../content-management/proofs.md) och resor testas med [testläge](../building-journeys/testing-the-journey.md).
 
 ## Inaktivera tillåtelselista {#deactivate-allow-list}
 
@@ -145,11 +142,11 @@ Följ stegen nedan för att göra detta.
 
 Om du vill fylla tillåtelselista kan du även anropa API:t för inaktivering med värdet `ALLOWED` för attributet `listType`. Exempel:
 
-![Exempel-API-anrop för att lägga till en post i tillåtelselista med API:t för inaktivering &#x200B;](assets/allow-list-api.png)
+![Exempel-API-anrop för att lägga till en post i tillåtelselista med API:t för inaktivering ](assets/allow-list-api.png)
 
 Du kan utföra åtgärderna **Lägg till**, **Ta bort** och **Hämta**.
 
-Läs mer om hur du gör API-anrop i referensdokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html?lang=sv-SE){target="_blank"}.
+Läs mer om hur du gör API-anrop i referensdokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html){target="_blank"}.
 
 ## Ladda ned tillåtelselista {#download-allowed-list}
 
@@ -204,7 +201,7 @@ När tillåtelselista är [deaktiverad](#deactivate-allow-list) skickas alla e-p
 
 ## Uteslutningsrapportering {#reporting}
 
-När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Det gör du genom att använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att göra API-anropen nedan.
+När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Det gör du genom att använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att göra API-anropen nedan.
 
 Använd följande fråga om du vill hämta **antalet e-postmeddelanden** som inte skickades eftersom mottagarna inte var i tillåtelselista:
 

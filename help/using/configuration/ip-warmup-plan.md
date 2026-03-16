@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: a06360239996b21f2bd71b1ff61d759a85564c5c
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 0%
@@ -123,9 +123,7 @@ Om du till exempel lägger till den anpassade domänen Roadrunner vill du att f�
 
 ![](assets/ip-warmup-sample-file-custom.png)
 
->[!NOTE]
->
->Om du inte behöver anpassade domäner lämnar du fliken **[!UICONTROL Custom Domain Group]** tom.
+Om du inte behöver anpassade domäner lämnar du fliken **[!UICONTROL Custom Domain Group]** tom.
 
 ### Fliken OTB-domängrupper {#ootb-domain-groups-tab}
 
@@ -251,15 +249,12 @@ Varje domän visas nu i en egen kolumn på samma rad.
 
 1. Om du vill ta bort en IP-värdplan markerar du ikonen **[!UICONTROL Delete]** bredvid namnet på en plan och bekräftar borttagningen.
 
-   >[!NOTE]
-   >
-   >Endast planer med statusen **Inte startad** kan tas bort.
-
-   ![](assets/ip-warmup-delete-plan.png)
-
    >[!CAUTION]
    >
-   >Den valda IP-warmup-planen tas bort permanent.
+   >* Endast planer med statusen **Inte startad** kan tas bort.
+   >* Den valda IP-warmup-planen tas bort permanent.
+
+   ![](assets/ip-warmup-delete-plan.png)
 
 ## Skapa en IP-värmeringsplan {#create-ip-warmup-plan}
 
@@ -267,14 +262,14 @@ Varje domän visas nu i en egen kolumn på samma rad.
 >id="ajo_admin_ip_warmup_upload"
 >title="Ange din IP-värmerammanslutning"
 >abstract="Fyll i Excel-mallen med alla data som kommer att mata din plan, som IP-värmersfaser och målantal profiler, och överför den här."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-plan.html?lang=sv-SE#prepare-file" text="Förbered filen för IP-warmup-planen"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-plan.html#prepare-file" text="Förbered filen för IP-warmup-planen"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_surface"
 >title="Välj en marknadsföringskonfiguration"
 >abstract="Du måste välja samma konfiguration som den som valts i kampanjen som du vill koppla till din IP-värmeringsplan."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html?lang=sv-SE" text="Konfigurera kanalkonfigurationer"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html?lang=sv-SE" text="Skapa IP-värmningskampanjer"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Konfigurera kanalkonfigurationer"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Skapa IP-värmningskampanjer"
 
 Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 

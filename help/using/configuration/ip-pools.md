@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: a44b68e99ec4c55b8ed27b244fcb9e76bdb97760
+source-git-commit: a06360239996b21f2bd71b1ff61d759a85564c5c
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,9 @@ Så här skapar du en IP-pool:
    >
    >Namnet måste börja med en bokstav (A-Z) och endast innehålla alfanumeriska tecken eller specialtecken ( _, ., - ).
 
-1. Välj de IP-adresser som ska ingå i poolen i listrutan och klicka sedan på **[!UICONTROL Submit]**.
+1. Välj de IP-adresser som ska ingå i poolen i listrutan och klicka sedan på **[!UICONTROL Submit]**. Alla IP-adresser som har etablerats med din instans är tillgängliga i listan.
 
    ![](assets/ip-pool-config.png)
-
-   >[!NOTE]
-   >
-   >Alla IP-adresser som har etablerats med din instans är tillgängliga i listan.
 
 När du väljer IP-adresser kan du se de PTR-poster som är associerade med IP-adresserna i listan. På så sätt kan du verifiera varumärkesinformationen för varje IP-adress när du skapar en IP-pool och välja IP-adresser med samma varumärkesinformation, till exempel. [Läs mer om PTR-poster](ptr-records.md)
 
@@ -82,11 +78,7 @@ Om du vill redigera en IP-pool följer du stegen nedan.
 
 1. Öppna IP-poolnamnet genom att klicka på det i listan.
 
-1. Redigera egenskaperna efter behov. Du kan ändra beskrivningen och lägga till eller ta bort IP-adresser.
-
-   >[!NOTE]
-   >
-   >IP-poolnamnet kan inte redigeras. Om du vill ändra den måste du ta bort IP-poolen och skapa en annan med valfritt namn.
+1. Redigera egenskaperna efter behov. Du kan ändra beskrivningen och lägga till eller ta bort IP-adresser. Observera att IP-poolnamnet inte går att redigera - du kan byta namn på den genom att ta bort poolen och skapa en ny.
 
    ![](assets/ip-pool-edit.png)
 
@@ -103,18 +95,12 @@ Uppdateringen träder i kraft omedelbart eller asynkront, beroende på om IP-poo
 
 >[!NOTE]
 >
->När [skapar en kanalkonfiguration](channel-surfaces.md#create-channel-surface) och du väljer en IP-pool som är under utgåva (**[!UICONTROL Processing]** status) och aldrig har associerats med den underdomän som valts för den konfigurationen, kan du inte fortsätta med att skapa en konfiguration. [Läs mer](channel-surfaces.md#create-channel-surface)
+>* När [skapar en kanalkonfiguration](channel-surfaces.md#create-channel-surface) och du väljer en IP-pool med statusen **[!UICONTROL Processing]** som aldrig har associerats med den valda underdomänen, kan du inte fortsätta med att skapa konfigurationen. [Läs mer](channel-surfaces.md#create-channel-surface)
+>* När en IP-pool har uppdaterats kan det ta några minuter innan den börjar gälla för meddelanden i realtid eller vänta tills nästa batchjobb för batchmeddelanden.
 
 Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på knappen **[!UICONTROL More actions]** och väljer **[!UICONTROL Recent updates]**.
 
 ![](assets/ip-pool-recent-update.png)
-
->[!NOTE]
->
->När en IP-pool har uppdaterats kan du behöva vänta:
->
->* några minuter innan det konsumeras av enhetsmeddelanden,
->* till nästa batch för att IP-poolen ska börja gälla i batchmeddelanden.
 
 Du kan också använda knappen **[!UICONTROL Delete]** för att ta bort en IP-pool. Observera att du inte kan ta bort en IP-pool som har kopplats till en kanalkonfiguration.
 

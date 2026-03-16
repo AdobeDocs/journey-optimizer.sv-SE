@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, PTR, poster, DNS, domän, post
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: a06360239996b21f2bd71b1ff61d759a85564c5c
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Om du vill redigera en PTR-post med en underdomän som är [helt delegerad](dele
 
    ![](assets/ptr-record-select.png)
 
-1. Välj en underdomän [som har delegerats &#x200B;](delegate-subdomain.md#set-up-subdomain) till Adobe i listan.
+1. Välj en underdomän [som har delegerats ](delegate-subdomain.md#set-up-subdomain) till Adobe i listan.
 
    ![](assets/ptr-record-subdomain.png)
 
@@ -102,11 +102,7 @@ Om du vill redigera en PTR-post med en underdomän som har delegerats till Adobe
    >   * Kontrollera DNS-providern om den vidarebefordrade DNS-posten har skapats.
    >   * Poster i hela DNS kanske inte synkroniseras omedelbart. Vänta några minuter och försök igen.
 
-1. Klicka på **[!UICONTROL Save]** för att bekräfta ändringarna.
-
->[!NOTE]
->
->Du kan inte ändra fälten **[!UICONTROL IP]** och **[!UICONTROL PTR record]**.
+1. Klicka på **[!UICONTROL Save]** för att bekräfta ändringarna. Observera att fälten **[!UICONTROL IP]** och **[!UICONTROL PTR record]** inte kan ändras.
 
 ## Kontrollera uppdateringsinformation för PTR-post {#check-ptr-record-update}
 
