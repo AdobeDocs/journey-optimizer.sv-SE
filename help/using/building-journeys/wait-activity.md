@@ -10,9 +10,9 @@ level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
 version: Journey Orchestration
-source-git-commit: 58cabac978facef373c6cadee0c8fc0963785df8
+source-git-commit: 2895554bfa00ed1b4cfe2d036568ed5a112689f8
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '873'
 ht-degree: 2%
 
 ---
@@ -90,13 +90,16 @@ Det bästa sättet är att använda anpassade datum som är specifika för dina 
 
 >[!CAUTION]
 >
->Du kan utnyttja ett `dateTimeOnly`-uttryck eller använda en funktion för att konvertera till en `dateTimeOnly`. Till exempel: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})`, fältet i händelsen har formatet 2023-08-12T09:46:06Z. **Tidszonen** förväntas i egenskaperna för din resa, så det är inte möjligt från användargränssnittet att direkt peka på en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2023-08-12T09:46:06.982-05. [Läs mer](../building-journeys/timezone-management.md).
+>Tänk på följande när du arbetar med `dateTimeOnly`-uttryck:
 >
->När du skapar ett anpassat vänteuttryck med `toDateTimeOnly()` bör du undvika att lägga till Z eller någon tidszonsförskjutning (t.ex. -05:00) i resultatet. Uttrycket måste använda en giltig ISO-syntax för datum/tid som refererar till kundens konfigurerade tidszon utan uttryckliga tidszonsdesigners. I annat fall kan profilerna fastna i vänteaktiviteten.
+>* Du kan använda ett `dateTimeOnly`-uttryck direkt eller konvertera till det med en funktion, till exempel: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})` där fältvärdet finns i formuläret `2023-08-12T09:46:06Z`.
+>* **Tidszonen** definieras i resans egenskaper. Därför är det inte möjligt från användargränssnittet att peka på en fullständig ISO-8601-tidsstämpel som blandar tid- och tidszonsförskjutning, till exempel `2023-08-12T09:46:06.982-05`. [Läs mer](../building-journeys/timezone-management.md)
+>* När du skapar ett anpassat vänteuttryck med `toDateTimeOnly()` ska du **inte** lägga till `Z` eller en tidszonsförskjutning (t.ex. `-05:00`). Uttrycket måste referera till resans konfigurerade tidszon utan uttryckliga tidszonsdesigners - annars kan profiler fastna i vänteaktiviteten.
 >
->**Korrekt exempel:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00"))`
->
->**Felaktigt exempel:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00Z"))` ❌ (innehåller &#39;Z&#39;)
+>| | Exempel |
+>|---|---|
+>| **Korrigera** | `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00"))` |
+>| **Felaktig** | `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00Z"))` ❌ (innehåller `Z`) |
 
 Om du vill verifiera att vänteaktiviteten fungerar som förväntat kan du använda steghändelser. [Läs mer](../reports/query-examples.md#common-queries).
 
