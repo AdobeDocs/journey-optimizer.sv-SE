@@ -183,7 +183,7 @@ Om du vill redigera en kanalkonfiguration följer du stegen nedan.
 
 1. Klicka på **[!UICONTROL Submit]** för att bekräfta ändringarna.
 
-När ändringarna har skickats går kanalkonfigurationen igenom en valideringscykel som liknar den som fanns när [en kanalkonfiguration ](#create-channel-surface) skapades. Versionens bearbetningstid kan ta upp till **3 timmar**.
+När ändringarna har skickats går kanalkonfigurationen igenom en valideringscykel som liknar den som fanns när [en kanalkonfiguration &#x200B;](#create-channel-surface) skapades. Versionens bearbetningstid kan ta upp till **3 timmar**.
 
 ### Uppdatera information {#update-details}
 

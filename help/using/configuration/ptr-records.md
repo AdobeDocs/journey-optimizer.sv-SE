@@ -70,7 +70,7 @@ Om du vill redigera en PTR-post med en underdomän som är [helt delegerad](dele
 
    ![](assets/ptr-record-select.png)
 
-1. Välj en underdomän [som har delegerats ](delegate-subdomain.md#set-up-subdomain) till Adobe i listan.
+1. Välj en underdomän [som har delegerats &#x200B;](delegate-subdomain.md#set-up-subdomain) till Adobe i listan.
 
    ![](assets/ptr-record-subdomain.png)
 
