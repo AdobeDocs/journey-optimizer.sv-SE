@@ -10,9 +10,9 @@ level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 58cabac978facef373c6cadee0c8fc0963785df8
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -88,21 +88,15 @@ Uttrycket i redigeraren ska ha formatet `dateTimeOnly`. Se [den här sidan](expr
 Det bästa sättet är att använda anpassade datum som är specifika för dina profiler och undvika att använda samma datum för alla. Definiera till exempel inte `toDateTimeOnly('2024-01-01T01:11:00Z')` utan `toDateTimeOnly(@event{Event.productDeliveryDate})` som är specifik för varje profil. Tänk på att användning av fasta datum kan orsaka problem vid körningen av din resa. Läs mer om hur vänteaktiviteter påverkar bearbetningshastigheten för resan i [det här avsnittet](entry-management.md#wait-activities-impact).
 
 
->[!NOTE]
->
->Du kan utnyttja ett `dateTimeOnly`-uttryck eller använda en funktion för att konvertera till en `dateTimeOnly`. Till exempel: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})`, fältet i händelsen har formatet 2023-08-12T09:46:06Z.
->
->**Tidszonen** förväntas i egenskaperna för din resa. Därför är det inte möjligt att direkt peka från användargränssnittet vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2023-08-12T09:46:06.982-05. [Läs mer](../building-journeys/timezone-management.md).
-
 >[!CAUTION]
 >
->När du skapar ett anpassat vänteuttryck med `toDateTimeOnly()` ska du undvika att lägga till Z eller någon tidszonsförskjutning (t.ex. -05:00) i uttrycksresultatet. Uttrycket måste använda en giltig ISO-syntax för datum/tid som refererar till kundens konfigurerade tidszon utan explicita tidszonsdesigners.
+>Du kan utnyttja ett `dateTimeOnly`-uttryck eller använda en funktion för att konvertera till en `dateTimeOnly`. Till exempel: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})`, fältet i händelsen har formatet 2023-08-12T09:46:06Z. **Tidszonen** förväntas i egenskaperna för din resa, så det är inte möjligt från användargränssnittet att direkt peka på en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2023-08-12T09:46:06.982-05. [Läs mer](../building-journeys/timezone-management.md).
+>
+>När du skapar ett anpassat vänteuttryck med `toDateTimeOnly()` bör du undvika att lägga till Z eller någon tidszonsförskjutning (t.ex. -05:00) i resultatet. Uttrycket måste använda en giltig ISO-syntax för datum/tid som refererar till kundens konfigurerade tidszon utan uttryckliga tidszonsdesigners. I annat fall kan profilerna fastna i vänteaktiviteten.
 >
 >**Korrekt exempel:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00"))`
 >
 >**Felaktigt exempel:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00Z"))` ❌ (innehåller &#39;Z&#39;)
->
->Om tidszonsdesigners som inte stöds används kan det leda till att profiler fastnar i vänteaktiviteten i stället för att utvecklas som förväntat.
 
 Om du vill verifiera att vänteaktiviteten fungerar som förväntat kan du använda steghändelser. [Läs mer](../reports/query-examples.md#common-queries).
 
