@@ -26,7 +26,7 @@ Oavsett om du använder befintliga domäner eller nya inställningar hjälper de
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera och hantera underdomäner för landningssidor
 
@@ -36,7 +36,7 @@ Lär dig hur du konfigurerar och hanterar underdomäner för värdtjänster för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Definiera förinställningar för landningssidor
 

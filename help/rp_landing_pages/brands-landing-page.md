@@ -20,7 +20,7 @@ I Adobe Journey Optimizer ger funktionen&quot;Varumärke&quot; er möjlighet att
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa och hantera varumärkesriktlinjer
 
@@ -30,7 +30,7 @@ Lär dig definiera, anpassa och underhålla varumärkesriktlinjer för enhetlig 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Utvärdera er poäng för varumärkesjustering
 
@@ -40,7 +40,7 @@ Förstå och utnyttja funktionen för varumärkesjustering för att validera att
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Anpassa era varumärken
 
@@ -50,7 +50,7 @@ Lär dig hur du anger standardinställningar för varumärken och skräddarsy ri
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa och hantera generativa modeller
 

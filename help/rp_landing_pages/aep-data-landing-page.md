@@ -20,7 +20,7 @@ Adobe Journey Optimizer ger er möjlighet att fatta smartare och snabbare beslut
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Utnyttja kontextdata i beslut
 
@@ -30,7 +30,7 @@ Lär dig integrera kontextdata från Adobe Experience Platform i Adobe Journey O
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Använda Adobe Experience Platform Data för beslut
 

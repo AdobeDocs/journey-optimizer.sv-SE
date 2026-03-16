@@ -25,7 +25,7 @@ Använd händelsedata för beslutshantering och XDM-schemat DecisioningEvents f�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Arbeta med beslutsledningshändelser
 
@@ -35,7 +35,7 @@ Lär dig hur du använder händelseuppsättningar för beslutshantering för rap
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Få åtkomst till och utforska beslutshändelser, XDM-fält
 

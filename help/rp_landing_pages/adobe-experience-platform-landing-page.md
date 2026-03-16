@@ -20,7 +20,7 @@ Adobe Experience Platform är grunden för att leverera verkligt personaliserade
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda funktionen inAudience
 
@@ -30,7 +30,7 @@ Lär dig hur du använder funktionen inAudience för att utvärdera målgruppsme
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Använd Adobe Experience Platform Data för Personalization
 
@@ -40,7 +40,7 @@ Upptäck hur du får åtkomst till och använder Adobe Experience Platform profi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
 
 Använd Adobe Experience Platform-data i resor
 
