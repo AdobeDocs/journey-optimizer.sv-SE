@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: b8c2eced0f517e917021e9f42a8943b4a5e4f287
+source-git-commit: ee9055c75ff122adcdeb8b9580701db8cd778d61
 workflow-type: tm+mt
-source-wordcount: '1645'
+source-wordcount: '1636'
 ht-degree: 7%
 
 ---
@@ -94,15 +94,13 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
    >[!NOTE]
    >
-   >Kontrollera att du har lagt till fältgruppen &quot;orchestration&quot; i XDM-schemat för systemgenererade händelser. Detta garanterar att schemat innehåller all nödvändig information som kan användas med [!DNL Journey Optimizer].
+   >För systemgenererade händelser:
+   >* Se till att du har lagt till fältgruppen `orchestration` i XDM-schemat. Detta garanterar att schemat innehåller all information som krävs för att arbeta med [!DNL Journey Optimizer].
+   >* Fältet **[!UICONTROL eventID]** läggs automatiskt till i listan med markerade fält så att [!DNL Journey Optimizer] kan identifiera händelsen. Det system som skickar händelsen ska inte generera något ID. Använd det som finns i nyttolastförhandsvisningen i stället. [Läs mer](../event/about-creating.md#preview-the-payload)
 
    ![](assets/journey9.png)
 
 1. Markera de fält som du förväntar dig att ta emot från händelsen. Det här är de områden som affärsanvändaren kommer att utnyttja under resan. De måste även innehålla den nyckel som ska användas för att identifiera den person som är associerad med händelsen (se [det här avsnittet](../event/about-creating.md#define-the-event-key)).
-
-   >[!NOTE]
-   >
-   >För systemgenererade händelser läggs fältet **[!UICONTROL eventID]** automatiskt till i listan med markerade fält så att [!DNL Journey Optimizer] kan identifiera händelsen. Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. Se [det här avsnittet](../event/about-creating.md#preview-the-payload).
 
 1. När du är klar med att markera de fält som behövs klickar du på **[!UICONTROL Ok]** eller trycker på **[!UICONTROL Enter]**.
 

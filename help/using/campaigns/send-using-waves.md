@@ -8,10 +8,11 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: vågor, batchar, schema, kampanj, resa, leveransbarhet
-source-git-commit: 7df05e41b086c60724576328c5bcfee47cab65ca
+exl-id: 6d53d817-78f6-4d00-8ff0-8a848c618435
+source-git-commit: 55181db4fd8c1e6ee0f0f865dd61201be3c2df39
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 0%
+source-wordcount: '763'
+ht-degree: 1%
 
 ---
 
@@ -73,17 +74,13 @@ Välj alternativet **[!UICONTROL Custom distribution]** om du vill definiera sto
 
 ![](assets/campaign-wave-percentage.png){width="80%"}
 
->[!NOTE]
->
->Summan för alla vågor måste vara 100 %. Om så inte är fallet visas ett varningsmeddelande.<!--are the waves actually sent or does the system prevent user from saving the campaign?-->
-
 Välj **[!UICONTROL Numbers]** om du vill definiera storleken på varje våg som ett absolut antal profiler (till exempel 10 000; 50 000).
 
 ![](assets/campaign-wave-numbers.png){width="80%"}
 
 >[!NOTE]
->
->När du använder siffror validerar systemet inte att summan täcker hela målgruppen. Du måste se till att vågstorlekarna täcker den målgrupp du tänker skicka till. Läs mer i [Vanliga frågor](#faq).
+>* När du använder procentvärden måste alla vågor vara totalt 100 %. En varning visas om så inte är fallet.
+>* När du använder siffror validerar systemet inte täckning - kontrollera att vågstorlekarna täcker den avsedda publiken. [Läs mer](#faq)
 
 ### Anpassat schema {#custom-schedule}
 

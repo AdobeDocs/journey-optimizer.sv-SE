@@ -6,7 +6,7 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
-source-git-commit: 74a817e01765d2909e9dc3c396c5513b1c9b54b2
+source-git-commit: ee9055c75ff122adcdeb8b9580701db8cd778d61
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 1%
@@ -234,17 +234,14 @@ Med den här funktionen kan ni lägga till sammanhangsbaserad information till a
 
 >[!NOTE]
 >
->Funktionen för körningsmetadata stöds inte av [anpassade åtgärder](../../action/action.md).
+>* Funktionen för körningsmetadata stöds inte av [anpassade åtgärder](../../action/action.md).
+>* Funktionen Metadata för körning visas inte när själva innehållet visas.
 
 Du kan till exempel använda hjälpen för metadata för körning för att lägga till ett specifikt ID för varje leverans som skickas till varje profil. Den här informationen genereras under körningen och de inbyggda körningsmetadata som sedan kan exporteras för avstämning i efterföljande led med en extern rapporteringsplattform.
 
 **Så här fungerar det**
 
 Välj ett element från ditt kanalinnehåll i en kampanj eller resa och lägg till `executionMetadata`-hjälpen i det här elementet med hjälp av anpassningsredigeraren.
-
->[!NOTE]
->
->Funktionen Metadata för körning visas inte när själva innehållet visas.
 
 
 Vid körning läggs metadatavärdet till i befintliga **[!UICONTROL Message Feedback Event Dataset]** med följande schemaläggning:
