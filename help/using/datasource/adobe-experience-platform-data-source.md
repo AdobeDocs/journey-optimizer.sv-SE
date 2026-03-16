@@ -9,10 +9,10 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: inbyggd, källa, data, plattform, integrering
 exl-id: 9083e355-15e3-4d1f-91ae-03095e08ad16
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: 43a4b85adb74e24c7c57fa74177795d014b88774
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 9%
+source-wordcount: '410'
+ht-degree: 8%
 
 ---
 
@@ -29,11 +29,9 @@ För att tillåta anslutningen till kundprofiltjänsten i realtid måste vi anv�
 
 Du kan redigera den förkonfigurerade fältgruppen med namnet &quot;ProfileFieldGroup&quot;, lägga till nya och ta bort de som inte används i utkast- eller direktresor. [Läs mer](../datasource/configure-data-sources.md#define-field-groups).
 
-
 >[!CAUTION]
 >
 >Det finns inte stöd för att använda upplevelsehändelser i uttryck/villkor för resan. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder. [Läs mer](../building-journeys/exp-event-lookup.md)
-
 
 De viktigaste stegen för att lägga till fältgrupper i den inbyggda datakällan beskrivs nedan:
 
@@ -48,8 +46,12 @@ De viktigaste stegen för att lägga till fältgrupper i den inbyggda datakälla
    ![](assets/journey24.png)
 
 1. Välj ett schema i listrutan **[!UICONTROL Schema]**. Scheman skapas i Adobe Experience Platform, men inte i Adobe Journey Optimizer.
-1. Markera de fält som ska användas och spara ändringarna.
 
+   >[!NOTE]
+   >
+   >Endast XDM-enskilda profilbaserade scheman stöds i Source-konfigurationen för [!DNL Journey Optimizer]. Mer information finns i [klassen XDM Individual Profile](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/individual-profile){target="_blank"}.
+
+1. Markera de fält som ska användas och spara ändringarna.
 
 >[!TIP]
 >
