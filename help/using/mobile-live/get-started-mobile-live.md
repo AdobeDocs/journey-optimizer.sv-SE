@@ -59,4 +59,4 @@ Följ stegen nedan för att konfigurera och implementera Live-aktivitet i ditt p
 
 Upptäck hur du konfigurerar iOS Live Activity med Adobe Journey Optimizer för att leverera omfattande uppdateringar i realtid på iPhone Lock Screen och Dynamic Island.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479864/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3479868/?captions=swe&learn=on)
