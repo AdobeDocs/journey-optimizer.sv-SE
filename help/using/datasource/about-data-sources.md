@@ -9,10 +9,10 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: data, källa, resa, plattform
 exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: 302db58525a7b2648bb9c44bc9b42da787ca9c43
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 56%
+source-wordcount: '615'
+ht-degree: 31%
 
 ---
 
@@ -49,7 +49,40 @@ För varje datakälla definierar du den information som ska hämtas med fältgru
 >
 >Schemarelationer stöds inte för datakällor.
 
-Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html?lang=sv-SE){target="_blank"} för att få mer information om hur du konfigurerar en datakälla i Adobe Experience Platform och en extern datakälla samt hur du hittar och använder data i en resa.
+## Välj en strategi för dataåtkomst {#data-access-strategy}
+
+Innan du konfigurerar en datakälla bör du tänka på vilken metod som passar bäst för ditt användningssätt. Det finns tre alternativ, var och en med olika kompromisser vad gäller beständighet, profilberikning och återanvändbarhet. Mer information om de här alternativen finns i [Bästa tillvägagångssätt för avancerade resor i Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
+
+**Alternativ 1 - få åtkomst till externa data via anpassade åtgärder (ingen datasjön)**
+
+Anslut direkt till ett externt API vid körning utan beständiga data i Experience Platform Data Lake. Passar bäst när:
+
+* Data är bara användbara i resans sammanhang och behövs inte någon annanstans.
+* Det externa systemet är tillgängligt via en API-slutpunkt som returnerar de attribut som behövs.
+
+Läs mer om [anpassade åtgärder](../action/action.md) och [anpassade åtgärdssvar](../action/action-response.md).
+
+**Alternativ 2 - Datauppsättning i datasjön, inte aktiverad för profil**
+
+Infoga data i en datauppsättning för att utlösa och personalisera resor baserat på kontextuella händelsedata, utan att bidra till kundprofilen i realtid. Passar bäst när:
+
+* Posterna innehåller ett identitetsfält som kan användas för att komma åt profiler som redan lagrats i Experience Platform.
+* Data behövs inte för att skapa målgrupper eller för att sätta ihop identiteter utanför Journey Optimizer.
+
+**Alternativ 3 - Profilaktiverad datauppsättning i datasjön**
+
+Infoga data i en profilaktiverad datauppsättning för att skapa målgrupper, förbättra identitetsdiagram och utnyttja data över flera resor och RT-CDP-destinationer. Passar bäst när:
+
+* Data är användbara för målgruppsdefinitioner som används i kanaler utanför Journey Optimizer.
+* Data innehåller flera identiteter som bidrar till mer detaljerade, sammanfogade profilfragment.
+
+| | Data bevaras i datasjön | Datauppsättning aktiverad för profil |
+| --- | --- | --- |
+| **Alternativ 1** - Externa data via anpassade åtgärder | Nej | Nej |
+| **Alternativ 2** - Datauppsättningen har inte aktiverats för profilen | Ja | Nej |
+| **Alternativ 3** - Profilaktiverad datauppsättning | Ja | Ja |
+
+Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html){target="_blank"} för att få mer information om hur du konfigurerar en datakälla i Adobe Experience Platform och en extern datakälla samt hur du hittar och använder data i en resa.
 
 ## Instruktionsvideo {#video}
 

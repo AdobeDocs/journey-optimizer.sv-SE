@@ -9,10 +9,10 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 3d6b12903d4c43fec2fd4e0046a5d1f90ecd6d64
+source-git-commit: 302db58525a7b2648bb9c44bc9b42da787ca9c43
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 37%
+source-wordcount: '1718'
+ht-degree: 36%
 
 ---
 
@@ -31,7 +31,7 @@ Med externa datakällor kan du definiera en anslutning till tredjepartssystem, t
 >
 >* Garantier visas på [den här sidan](../configuration/external-systems.md) när du arbetar med externa system.
 >
->* Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [svar på anpassade åtgärder](../action/action-response.md)
+>* Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [anpassade åtgärdssvar](../action/action-response.md). Anpassade åtgärder utan Data Lake-beständighet är det rätta alternativet när data bara är användbara under resan och det externa systemet är tillgängligt via en API-slutpunkt. En jämförelse av alla dataåtkomstalternativ finns i [Välja dataåtkomststrategi](../datasource/about-data-sources.md#data-access-strategy).
 
 Stöd finns för REST API:er som använder POST eller GET och returnerar JSON. API-nyckel samt grundläggande och anpassade autentiseringslägen stöds.
 
@@ -46,7 +46,7 @@ Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två p
 
 >[!TIP]
 >
->Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning &#x200B;](#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## Skapa och konfigurera en extern datakälla {#create-ext-data-sources}
 
@@ -112,7 +112,7 @@ Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fäl
 {"id":{"param":"identifier"}}
 ```
 
-![Panelen Fältgruppskonfiguration med fält för dynamiska värden och svarsnyttolast &#x200B;](assets/journey29.png)
+![Panelen Fältgruppskonfiguration med fält för dynamiska värden och svarsnyttolast ](assets/journey29.png)
 
 
 När dina ändringar har sparats är datakällan konfigurerad och klar att användas i dina resor, till exempel under dina förhållanden eller för att anpassa ett e-postmeddelande. Om temperaturen är över 30 °C kan du välja att skicka ett visst meddelande.

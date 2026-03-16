@@ -10,10 +10,10 @@ level: Intermediate
 keywords: hopp, aktivitet, resa, dela, dela upp
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 302db58525a7b2648bb9c44bc9b42da787ca9c43
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 2%
+source-wordcount: '1095'
+ht-degree: 1%
 
 ---
 
@@ -73,6 +73,28 @@ Använd de här riktlinjerna om du vill att beteendet för hoppaktivitet ska var
 
 * När aktiviteten **[!UICONTROL Jump]** körs aktiveras den senaste versionen av målresan.
 * En unik individ kan bara vara närvarande en gång under samma resa. Om den person som har skjutits ut från ursprungsresan redan befinner sig på målresan, kommer den personen alltså inte att ta sig in på målresan. Inget fel kommer att rapporteras för aktiviteten **[!UICONTROL Jump]** eftersom detta är ett normalt beteende.
+
+## Designstrategi: delresor i bitstorlek {#jump-strategy}
+
+Komplexa kundresor kan snabbt bli svåra att bygga och underhålla, särskilt i takt med att ytterligare kanaler eller kontaktytor införs. Även en resa med en handfull milstolpar kan visa 20 eller fler unika vägar en kund kan ta, och komplexiteten ökar exponentiellt med varje tillägg.
+
+Ett praktiskt sätt att hantera detta är att dela upp stora resor i mindre, fokuserade delresor - en per affärsfas eller milstolpe - och koppla samman dem med aktiviteten **[!UICONTROL Jump]**. Detta gör att varje resa blir läsbar, testbar och kan underhållas oberoende av varandra.
+
+**Steg 1 - Visualisera hela resan**
+
+Kartlägg hela kundresan och identifiera dess högnivåfaser. En kundtjänstresa kan till exempel omfatta tre olika faser: hämta mobilappen, göra en första transaktion och göra en andra transaktion.
+
+**Steg 2 - Anteckna faser och definiera delresor**
+
+Markera gränserna för varje fas och definiera dess affärsmål. Varje fas blir en delresa för sökande med ett tydligt villkor och mål för deltagande.
+
+**Steg 3 - Bygg och anslut delresor**
+
+Bygg varje fas som en separat resa i Journey Optimizer och använd sedan **[!UICONTROL Jump]**-aktiviteter för att skicka profiler från en delresa till nästa. Resultatet är en uppsättning enkla, återanvändbara resor som tillsammans ger en komplett upplevelse - med mindre risk för fel.
+
+>[!TIP]
+>
+>En detaljerad genomgång av den här metoden finns i [Bästa tillvägagångssätt för avancerade resor i Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
 
 ## Konfigurera hoppaktiviteten {#jump-configure}
 
