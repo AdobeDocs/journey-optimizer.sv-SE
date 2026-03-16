@@ -10,18 +10,14 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: vågor, batchar, schema, resa, läsare, slutprodukt
 exl-id: 1aaff17f-aa08-4f10-903c-8335a86ac6eb
-source-git-commit: d0bc5eff31a076b78660088d48a81d74b2391466
+source-git-commit: 62982a0bef06ffc84c254577ca1bb676a180e541
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
 
 # Skicka med vågor på resor {#send-using-waves-journeys}
-
->[!AVAILABILITY]
->
->Den här funktionen är begränsad. Kontakta din Adobe-representant för att få åtkomst.
 
 Du kan leverera utgående meddelanden från en resa i grupper (vågor) över tiden i stället för alla samtidigt. Vågutsändning hjälper till att balansera belastningen, undvika överväldigande system längre fram i kedjan (t.ex. callcenters eller landningssidor) och supporttjänster som levereras och avsändarens anseende - särskilt för stora läsares resor.
 
