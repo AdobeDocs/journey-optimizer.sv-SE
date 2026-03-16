@@ -2,12 +2,12 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Adobe Experience Platform
-description: Adobe Experience Platform
+description: Lär dig använda Adobe Experience Platform data och målgruppsfunktioner på Journey Optimizer resor, inklusive funktionen inAudience.
 redpen-status: CREATED_||_2025-08-11_20-11-06
-source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
+source-git-commit: 627b1a99cb9a7f59208e7d1339e8f1d136c07065
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 8%
+source-wordcount: '187'
+ht-degree: 3%
 
 ---
 
@@ -20,13 +20,33 @@ Adobe Experience Platform är grunden för att leverera verkligt personaliserade
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda funktionen inAudience
 
 Lär dig hur du använder funktionen inAudience för att utvärdera målgruppsmedlemskap i Adobe Journey Optimizer.
 
 [Utforska funktionen inAudience](../using/building-journeys/functions/functioninaudience.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+Använd Adobe Experience Platform Data för Personalization
+
+Upptäck hur du får åtkomst till och använder Adobe Experience Platform profilattribut och datauppsättningar för att personalisera meddelanden och resevillkor.
+
+[Använd AEP-data för personalisering](../using/personalization/aep-data-perso.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
+
+Använd Adobe Experience Platform-data i resor
+
+Lär dig söka efter Adobe Experience Platform-data direkt under resan, i handling och i uttryck.
+
+[Använd AEP-data under resor](../using/data/lookup-aep-data.md)
 :::
 
 ::::

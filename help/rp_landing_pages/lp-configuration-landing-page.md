@@ -2,13 +2,13 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Konfigurera landningssidor
-description: Konfigurera landningssidor
+description: Lär dig konfigurera underdomäner och förinställningar för landningssidor i Journey Optimizer så att de kan hantera, varumärkesskydda och hantera dina landningssidor på ett enhetligt sätt.
 redpen-status: CREATED_||_2025-08-12_00-37-08
 exl-id: 599d9f7b-3e41-4926-95b6-f5f58255d91d
-source-git-commit: 170bdaaa13fe78ad4c47a6e091c8090156fde8f6
+source-git-commit: 1eafa4cef02c13c8498ac9ac2df502a8a7d926d2
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 5%
+source-wordcount: '179'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ Oavsett om du använder befintliga domäner eller nya inställningar hjälper de
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera och hantera underdomäner för landningssidor
 
@@ -36,7 +36,7 @@ Lär dig hur du konfigurerar och hanterar underdomäner för värdtjänster för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Definiera förinställningar för landningssidor
 

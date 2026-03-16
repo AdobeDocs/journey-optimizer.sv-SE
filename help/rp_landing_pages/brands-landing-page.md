@@ -2,12 +2,12 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Varumärken
-description: Varumärken
+description: Lär dig att skapa, hantera och personalisera varumärkesriktlinjer i Journey Optimizer för att säkerställa enhetligt varumärkesanpassat innehåll i alla era kampanjer.
 redpen-status: CREATED_||_2025-08-12_00-41-41
 exl-id: f1e3cb9d-83a8-48af-9121-4ebc56dce251
-source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
+source-git-commit: c8c07cf68cba20d6c6f4185bb3e8da0236f7acb5
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ I Adobe Journey Optimizer ger funktionen&quot;Varumärke&quot; er möjlighet att
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa och hantera varumärkesriktlinjer
 
@@ -30,13 +30,33 @@ Lär dig definiera, anpassa och underhålla varumärkesriktlinjer för enhetlig 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Utvärdera er poäng för varumärkesjustering
 
 Förstå och utnyttja funktionen för varumärkesjustering för att validera att innehållet följer varumärkesriktlinjerna och förbättra enhetligheten.
 
 [Lär dig mer om varumärkesjustering](../using/content-management/brands-score.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+Anpassa era varumärken
+
+Lär dig hur du anger standardinställningar för varumärken och skräddarsy riktlinjer för varumärken för smidig integrering med AI-genererat innehåll.
+
+[Anpassa era varumärken](../using/content-management/brands-personalize.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+
+Skapa och hantera generativa modeller
+
+Upptäck hur ni skapar och hanterar anpassade generativa AI-modeller som är utbildade i era varumärkesriktlinjer för enhetlig innehållsgenerering.
+
+[Hantera generativa modeller](../using/content-management/generative-models.md)
 :::
 
 ::::

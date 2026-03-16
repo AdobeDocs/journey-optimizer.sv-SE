@@ -2,13 +2,13 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Skapa rapporter om beslutshantering
-description: Skapa rapporter om beslutshantering
+description: Lär dig att skapa beslutsrapporter med hjälp av händelsedatamängder och XDM-schemat DecisioningEvents för att analysera erbjudandenas prestanda och beslutsresultat.
 redpen-status: CREATED_||_2025-08-11_21-02-56
 badge: label="Äldre" type="Informative"
 exl-id: 96be492d-5003-4954-94cb-467ec5a725bd
-source-git-commit: 0ab80fd627eb44df6a581547bb0467514d146b49
+source-git-commit: 8d0d9c3e6048e4ef6f9455d77b73c04ec22728b5
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '144'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 1%
 >
 >Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../using/experience-decisioning/gs-experience-decisioning.md)
 
-Genom att skapa beslutsrapporter i Adobe Journey Optimizer kan ni få värdefulla insikter om hur era personaliserade erbjudanden och beslut fungerar i verkliga scenarier. Genom att arbeta med händelsedata och scheman kan ni utforska vilka erbjudanden som har valts ut, reservscenarier och positioneringseffektivitet - allt för att förfina kundupplevelserna. I det här avsnittet får du hjälp med att förstå händelsedatamängderna, komma åt och tolka DecisioningEvents-XDM-schemat och utnyttja dessa verktyg för åtgärdbar rapportering. Vare sig du är datatekniker eller marknadsförare får du klarhet i hur du analyserar och optimerar beslutsprocesser utan problem.
+Använd händelsedata för beslutshantering och XDM-schemat DecisioningEvents för att skapa anpassade rapporter i Adobe Journey Optimizer. I det här avsnittet beskrivs hur du arbetar med händelsedatamängder och kommer åt de XDM-fält som behövs för att analysera erbjudandeval, reservanvändning och placeringseffektivitet.
 
 ## Skapa rapporter om beslutshantering
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Arbeta med beslutsledningshändelser
 
@@ -35,7 +35,7 @@ Lär dig hur du använder händelseuppsättningar för beslutshantering för rap
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Få åtkomst till och utforska beslutshändelser, XDM-fält
 

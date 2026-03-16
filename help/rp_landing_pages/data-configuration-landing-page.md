@@ -2,12 +2,12 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Datakonfiguration
-description: Datakonfiguration
+description: Lär dig konfigurera relationsscheman, datauppsättningar, målgruppsmått och kanalinställningar för att driva samordnade kampanjer i Journey Optimizer.
 redpen-status: CREATED_||_2025-08-11_20-24-01
 exl-id: e1c20d14-4d0e-4ef9-9745-ca8ffe706f0b
-source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
+source-git-commit: 487dac21011f951bedc6f9f71c39faf549859d79
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Datakonfigurationen i Adobe Journey Optimizer handlar om att lägga grunden för
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Hantera relationsscheman och datauppsättningar
 
@@ -30,13 +30,23 @@ Lär dig hur du skapar och hanterar relationsscheman, konfigurerar datauppsättn
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Konfigurera en måldimension
 
 Stegvisa anvisningar för att mappa relationsscheman till kundprofiler och konfigurera kanaler för riktad kommunikation i samordnade kampanjer.
 
 [Lär dig konfigurera måldimensioner](../using/orchestrated/target-dimension.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+Konfigurera en kanalkonfiguration
+
+Lär dig hur du konfigurerar och konfigurerar kanalkonfigurationer för användning i samordnade kampanjer, inklusive e-post och andra kanaler som stöds.
+
+[Konfigurera en kanal](../using/orchestrated/channel-config.md)
 :::
 
 ::::

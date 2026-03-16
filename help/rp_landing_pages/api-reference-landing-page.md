@@ -2,14 +2,14 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: API-referens
-description: API-referens
+description: Lär dig att använda API:erna i erbjudandebiblioteket och leveransgränssnitten för att integrera beslutsprocessen i era arbetsflöden och leverera personaliserade erbjudanden i stor skala.
 redpen-status: CREATED_||_2025-08-11_21-04-46
 badge: label="Äldre" type="Informative"
 exl-id: 0b5e61d7-14a1-446e-8cb0-8861295d6e94
-source-git-commit: 0ab80fd627eb44df6a581547bb0467514d146b49
+source-git-commit: 50667ff13e16344bbcc12d78e5ac31f3f8545f08
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 1%
+source-wordcount: '233'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ I API-referensavsnittet i Adobe Journey Optimizer frigörs de verktyg ni behöve
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med erbjudandebiblioteks-API
 
@@ -35,13 +35,23 @@ Lär dig hur du integrerar Offer Library API för beslutshantering, med guider o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Leverera erbjudanden med Adobe Journey Optimizer API:er
 
 Utforska omfattande resurser för implementering av API:er för beslutsfattande, Edge-beslut och gruppbeslut för att leverera personaliserade erbjudanden.
 
-[Utforska avsnittet](offer-delivery-api-landing-page.md)
+[Utforska leverans-API:er](offer-delivery-api-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Skapa och hantera erbjudanden med API:er
+
+Använd API-referenser för hantering av praktik, beslutsregler, samlingskvalificerare, personaliserade erbjudanden, samlingar, reserverbjudanden och beslut.
+
+[Bläddra i erbjudandebiblioteks-API:t](../using/offers/api-reference/getting-started.md)
 :::
 
 ::::
