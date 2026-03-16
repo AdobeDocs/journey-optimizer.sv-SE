@@ -9,9 +9,10 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 keywords: vågor, batchar, schema, resa, läsare, slutprodukt
-source-git-commit: 6c509ef134c4240b243d255fd1ab7ec6bb062bf0
+exl-id: 1aaff17f-aa08-4f10-903c-8335a86ac6eb
+source-git-commit: d0bc5eff31a076b78660088d48a81d74b2391466
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -78,17 +79,13 @@ Välj alternativet **[!UICONTROL Custom distribution]** om du vill definiera sto
 
 ![](assets/journey-wave-percentage.png){width="70%"}
 
->[!NOTE]
->
->Summan för alla vågor måste vara 100 %. Om så inte är fallet visas ett varningsmeddelande.<!--are the waves actually sent or does the system prevent user from saving the journey?-->
-
 Välj **[!UICONTROL Numbers]** om du vill definiera storleken på varje våg som ett absolut antal profiler (till exempel 10 000; 50 000).
 
 ![](assets/journey-wave-numbers.png){width="70%"}
 
 >[!NOTE]
->
->När du använder siffror validerar systemet inte att summan täcker hela målgruppen. Du måste se till att vågstorlekarna täcker den målgrupp du tänker skicka till. Läs mer i [Vanliga frågor](#faq).
+>* När du använder procentvärden måste alla vågor vara totalt 100 %. En varning visas om så inte är fallet.
+>* När du använder siffror validerar systemet inte täckning - kontrollera att vågstorlekarna täcker den avsedda publiken. [Läs mer](#faq)
 
 ### Anpassat schema {#custom-schedule}
 
