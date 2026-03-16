@@ -49,7 +49,7 @@ De viktigaste stegen för att lägga till fältgrupper i den inbyggda datakälla
 
    >[!NOTE]
    >
-   >Endast XDM-enskilda profilbaserade scheman stöds i Source-konfigurationen för [!DNL Journey Optimizer]. Mer information finns i [klassen XDM Individual Profile](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/individual-profile){target="_blank"}.
+   >Endast XDM-enskilda profilbaserade scheman stöds i Source-konfigurationen för [!DNL Journey Optimizer]. Mer information finns i [klassen XDM Individual Profile](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/classes/individual-profile){target="_blank"}.
 
 1. Markera de fält som ska användas och spara ändringarna.
 
