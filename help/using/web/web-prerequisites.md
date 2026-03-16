@@ -58,7 +58,7 @@ Två typer av implementeringar stöds för att skapa och leverera webbkanalskamp
 
 <!--In order to rapidly author and preview your web experiences, the Adobe Experience Cloud Visual Editing Helper browser extension for Google Chrome lets you load websites reliably within the Adobe [!DNL Journey Optimizer] web designer.-->
 
-Om du vill kunna öppna, redigera och förhandsgranska dina webbsidor i webbdesignern [!DNL Journey Optimizer] måste du ha webbläsartillägget [ Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} installerat i webbläsaren.
+Om du vill kunna öppna, redigera och förhandsgranska dina webbsidor i webbdesignern [!DNL Journey Optimizer] måste du ha webbläsartillägget [&#x200B; Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} installerat i webbläsaren.
 
 >[!CAUTION]
 >
