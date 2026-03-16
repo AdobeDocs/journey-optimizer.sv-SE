@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: e1556c25-9c79-4362-a5a9-0a46425fa8d9
-source-git-commit: 5b804de873124b8ff53d55c943b3c95649dd9a7c
+source-git-commit: ef7820b0f223865dbbc85cfea2387d97d1dd717d
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -86,12 +86,9 @@ Du måste ange:
 
 >[!NOTE]
 >
->Det får bara finnas en e-postadress per underdomän. Om flera konfigurationer använder samma underdomän, måste därför samma e-postadress för vidarebefordran användas för alla.
+>* Det kan bara finnas en framåtriktad e-postadress per underdomän - om flera konfigurationer använder samma underdomän måste samma framåtriktade e-postadress användas för alla.
+>* Om vidarebefordran inte är aktiverat ignoreras e-postmeddelanden som skickas direkt till adressen **Från e-post** som standard.
 
 Vidarebefordra e-postadressen har konfigurerats av Adobe. Detta kan ta 3 till 4 dagar.
 
 När du är klar vidarebefordras alla meddelanden som tas emot på **[!UICONTROL Reply to email]**- och **fele-postadresserna** samt alla e-postmeddelanden som skickas till **Från-e-postadressen** till den angivna e-postadressen.
-
->[!NOTE]
->
->Om vidarebefordran inte är aktiverat ignoreras e-postmeddelanden som skickas direkt till **Från-e-postadressen**.
