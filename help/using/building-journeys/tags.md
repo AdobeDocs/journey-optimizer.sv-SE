@@ -64,7 +64,7 @@ Du kan lägga till eller ta bort taggar från alla typer av resor (live, draft, 
 
 ## Hantera taggar
 
-Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **Taggar** under **ADMINISTRATION**. Läs den här [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html).
+Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **Taggar** under **ADMINISTRATION**. Läs den här [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html?lang=sv-SE).
 
 >[!NOTE]
 >
@@ -92,4 +92,4 @@ Behåll kundens namn fokuserat på den milstolpe som den kör (t.ex. *Första lo
 
 >[!TIP]
 >
->Mer information om detta tillvägagångssätt och dess fördelar i stor skala finns i [Bästa tillvägagångssätt för avancerade resor i Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
+>Mer information om detta tillvägagångssätt och dess fördelar i stor skala finns i [Bästa tillvägagångssätt för avancerade resor i Journey Optimizer](https://experienceleague.adobe.com/sv/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.

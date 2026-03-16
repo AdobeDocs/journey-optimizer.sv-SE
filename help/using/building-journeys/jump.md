@@ -94,7 +94,7 @@ Bygg varje fas som en separat resa i Journey Optimizer och använd sedan **[!UIC
 
 >[!TIP]
 >
->En detaljerad genomgång av den här metoden finns i [Bästa tillvägagångssätt för avancerade resor i Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
+>En detaljerad genomgång av den här metoden finns i [Bästa tillvägagångssätt för avancerade resor i Journey Optimizer](https://experienceleague.adobe.com/sv/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
 
 ## Konfigurera hoppaktiviteten {#jump-configure}
 
