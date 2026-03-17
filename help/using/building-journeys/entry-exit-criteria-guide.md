@@ -9,9 +9,9 @@ level: Intermediate
 keywords: inträde, utförsel, kriterier, resa, profil, återinträde, bästa praxis
 version: Journey Orchestration
 exl-id: e879a0f6-b969-4de0-a733-f2880d58d59b
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 8c778ff99d7d32819630d704c42199a5bfbec0f1
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Samla in insikter om kundnöjdhet och produktresultat genom att begära feedback
 
 * **[Händelsebaserade utlösare](../event/about-events.md)**: Använd händelser som&quot;profilskapande&quot;,&quot;transaktionen slutförd&quot; eller anpassade händelser för att starta en resa. [Konfigurera händelser](../event/about-creating.md) i **[!UICONTROL Administration]** > **[!UICONTROL Events]** och definiera [händelseschema och fält](../event/experience-event-schema.md). Lägg sedan till händelsen från paletten **[!UICONTROL Events]** i [resedesignern](using-the-journey-designer.md).
 
-* **[Målgruppsbaserad post](read-audience.md)**: Målsöker profiler som tillhör en viss målgrupp, antingen som en engångsbatch eller som ett återkommande schema. [Skapa målgrupper](../audience/creating-a-segment-definition.md) på menyn **[!UICONTROL Audiences]**, lägg till en **[!UICONTROL Read Audience]**-aktivitet och [konfigurera schemat](journey-properties.md#schedule).
+* **[Målgruppsbaserad post](read-audience.md)**: Målsöker profiler som tillhör en viss målgrupp, antingen som en engångsbatch eller som ett återkommande schema. [Skapa målgrupper](../audience/creating-a-segment-definition.md) på menyn **[!UICONTROL Audiences]**, lägg till en **[!UICONTROL Read Audience]**-aktivitet och [konfigurera schemat](journey-properties.md#schedule). Efter inmatning använder du villkor för att [segmentera, exkludera eller sammanfoga grenar](read-audience.md#audience-targeting-in-journeys).
 
 * **[Publikkvalificeringspost](audience-qualification-events.md)**: Utlös resor när profiler kvalificerar sig för eller lämnar vissa målgrupper i realtid. Definiera [direktuppspelade målgrupper](../audience/about-audiences.md), lägg till en **[!UICONTROL Audience Qualification]**-händelse från paletten **[!UICONTROL Events]** och välj utlösartyp.
 
@@ -132,11 +132,11 @@ Samla in insikter om kundnöjdhet och produktresultat genom att begära feedback
 
 Använd följande dokumenterade användningsexempel för stegvis implementeringsvägledning med fullständig teknisk information:
 
-* **[Kundintroduktionsresa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)** - Skapa personliga välkomstupplevelser med målgruppskvalificering, tidsgräns för evenemang och målbaserade avslutningar
+* **[Kundintroduktionsresa](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)** - Skapa personliga välkomstupplevelser med målgruppskvalificering, tidsgräns för evenemang och målbaserade avslutningar
 
-* **[Återvinning av övergiven kundvagn](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)** - Återställa förlorad försäljning med händelseutlösta resor, spelböcker och kanalroutning
+* **[Återvinning av övergiven kundvagn](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)** - Återställa förlorad försäljning med händelseutlösta resor, spelböcker och kanalroutning
 
-* **[Återengagemangskampanjer](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)** - Återvänd till inaktiva kunder med beteendeanpassning och aktivering av betalda medier
+* **[Återengagemangskampanjer](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)** - Återvänd till inaktiva kunder med beteendeanpassning och aktivering av betalda medier
 
 * **[Skicka meddelanden till prenumeranter](message-to-subscribers-uc.md)** - Målprenumerationslistor med Läs publik och personaliserat innehåll
 
@@ -204,12 +204,12 @@ Börja med att tydligt kartlägga kundens triggers och exitpunkter, testa noggra
 
 **Teknisk dokumentation**
 
-[Profilingångshantering](entry-management.md) | [&#x200B; Reseegenskaper och avslutningskriterier &#x200B;](journey-properties.md) | [Hur resorna avslutas](end-journey.md) | [Ytterligare identifierare](supplemental-identifier.md) | [Resedesigner](using-the-journey-designer.md)
+[Profilingångshantering](entry-management.md) | [ Reseegenskaper och avslutningskriterier ](journey-properties.md) | [Hur resorna avslutas](end-journey.md) | [Ytterligare identifierare](supplemental-identifier.md) | [Resedesigner](using-the-journey-designer.md)
 
 **Självstudiekurser och exempel**
 
-[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo &#x200B;](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958?profile.language=sv)
+[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo ](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
 
 **Relaterade funktioner**
 
-[Publikkvalificeringshändelser](audience-qualification-events.md) | [Resultatstatistik och mål &#x200B;](success-metrics.md) | [Konflikthantering](../conflict-prioritization/conflicts.md) | [Frekvensbegränsning](../conflict-prioritization/rule-sets.md) | [Testa resor](testing-the-journey.md) | [Villkorsaktivitet](condition-activity.md) | [Reaktionshändelser](reaction-events.md) | [Vänteaktivitet](wait-activity.md)
+[Publikkvalificeringshändelser](audience-qualification-events.md) | [Resultatstatistik och mål ](success-metrics.md) | [Konflikthantering](../conflict-prioritization/conflicts.md) | [Frekvensbegränsning](../conflict-prioritization/rule-sets.md) | [Testa resor](testing-the-journey.md) | [Villkorsaktivitet](condition-activity.md) | [Reaktionshändelser](reaction-events.md) | [Vänteaktivitet](wait-activity.md)

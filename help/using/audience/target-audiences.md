@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 78b95ccd-bc28-46cd-937a-f68e3f34cc1e
-source-git-commit: 1d32db0103fd4f2afcd021cff5e8491515c86d65
+source-git-commit: 8c778ff99d7d32819630d704c42199a5bfbec0f1
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,8 @@ Du kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 * Välj en målgrupp för en **kampanj**, där meddelandet skickas till alla personer som tillhör den valda målgruppen. [Lär dig definiera målgruppen för en kampanj](../campaigns/create-campaign.md#define-the-audience-audience).
 
 * Använd en **Läs målgruppsorganisation** i en resa för att få alla personer i målgruppen att komma in på resan och ta emot de meddelanden som ingår i din resa. Säg att ni har en&quot;silverkund&quot; som målgrupp. Med den här aktiviteten kan ni få alla silverkunder att ta sig in på en resa. Du kan sedan skicka en serie personaliserade meddelanden till dem. [Lär dig konfigurera en målgruppsaktivitet för läsning](../building-journeys/read-audience.md#configuring-segment-trigger-activity).
+
+  Efter registrering använder du **Villkor**-aktiviteter för att [segmentera efter attribut eller beteende, exkludera en del av populationen eller sammanfoga grenar](../building-journeys/read-audience.md#audience-targeting-in-journeys).
 
   För resor där målgrupper från målgruppssammansättning eller anpassad uppladdning används är profilattributen lika färska som den senaste grupputvärderingen vid registrering på resan. Efter en **Wait**-aktivitet uppdaterar resan profilattribut från UPS (Unified Profile Service) och hämtar de senaste tillgängliga data, vilket innebär att profilattributen kan ändras under körningen. [Läs mer om profiluppdatering efter en Wait-aktivitet](../building-journeys/wait-activity.md#profile-refresh)
 
