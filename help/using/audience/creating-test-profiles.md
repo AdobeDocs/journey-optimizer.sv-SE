@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: e6395120223a0e87ef3557c9f5d7e2af84462968
+source-git-commit: 389e44b967a0eb72884615621a8cb7a254ca64ba
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 1%
+source-wordcount: '1284'
+ht-degree: 0%
 
 ---
 
@@ -25,13 +25,13 @@ Testprofiler krävs när [testläget](../building-journeys/testing-the-journey.m
 
 Du kan skapa testprofiler genom att [överföra en CSV-fil](#create-test-profiles-csv) eller använda [API-anrop](#create-test-profiles-api). [!DNL Adobe Journey Optimizer] innehåller också ett specifikt [användningsfall i produkten](#use-case-1) som underlättar skapandet av testprofiler.
 
-Du kan överföra en JSON-fil till en befintlig datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=sv-SE#add-data-to-dataset){target="_blank"}.
+Du kan överföra en JSON-fil till en befintlig datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target="_blank"}.
 
 Observera att det liknar att skapa en testprofil att skapa vanliga profiler i [!DNL Adobe Experience Platform]. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
 ➡️ [Lär dig skapa testprofiler i den här videon](#video)
 
-## Förhandskrav {#test-profile-prerequisites}
+## Förutsättningar {#test-profile-prerequisites}
 
 Om du vill skapa profiler måste du först skapa ett schema och en datauppsättning i Adobe [!DNL Journey Optimizer].
 
@@ -67,7 +67,16 @@ När du är klar klickar du på **[!UICONTROL Add field groups]**: listan med f�
 
 >[!NOTE]
 >
->Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#prerequisites){target="_blank"}.
+>Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target="_blank"}.
+
+>[!IMPORTANT]
+>
+>När du skapar eller ersätter en datauppsättning för att testa profilåtkomsten måste du se till att rätt identitetsbeskrivning används för det primära identitetsfältet (t.ex. `/personID`) för det avsedda namnutrymmet. Om identitetsbeskrivningen saknas eller är felaktigt konfigurerad kan profiler som är inkapslade i den här datauppsättningen inte flaggas som testprofiler (`testProfile = true`), även om importen har slutförts.
+>
+>Om testprofilerna inte flaggas korrekt efter intag:
+>1. Granska schemat som är kopplat till din datauppsättning.
+>1. Bekräfta att det primära identitetsfältet har rätt identitetsbeskrivning för namnutrymmet (se steg 6-7 ovan).
+>1. Om beskrivningsfilen saknas uppdaterar du schemat för att lägga till identitetsbeskrivningsfilen och importera dina data igen.
 
 ### Skapa en datauppsättning
 
@@ -86,7 +95,7 @@ Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. F�
 
 >[!NOTE]
 >
-> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=sv-SE#getting-started){target="_blank"}.
+> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target="_blank"}.
 
 ## Exempel på användning i produkten{#use-case-1}
 
@@ -183,7 +192,7 @@ Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det 
 
 >[!NOTE]
 >
->Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=sv-SE#tutorials){target="_blank"}.
+>Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
 
 ## Skapa testprofiler med API-anrop{#create-test-profiles-api}
 
