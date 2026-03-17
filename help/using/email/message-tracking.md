@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: df3ae62439882bd4b1f5f00e9c24d341f83b8df9
+source-git-commit: 4a78734dc7f9fafd1e8c64aab310cb130ffd928f
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1454'
 ht-degree: 1%
 
 ---
@@ -49,11 +49,11 @@ När det här alternativet är aktiverat spåras beteendet hos mottagarna av din
 * Måttet **[!UICONTROL Email opens]** kontrollerar hur många meddelanden som har öppnats.
 * Måttet **[!UICONTROL Click on email]** beräknar antalet klick på länkar i ett e-postmeddelande.
 
-## Infoga länkar {#insert-links}
+### Spåra flera e-postmeddelanden {#track-across-multiple-emails}
 
-När [spårning är aktiverat](#enable-tracking) spåras alla länkar som ingår i meddelandeinnehållet.
+En unik spårnings-ID (urlID) genereras bara när både **URL** och **label** är unika. Länkar som delar samma URL och har samma effektiva etikett (inklusive när etiketten är tom) återanvänder samma urlID, vilket betyder att du inte kan avgöra vilken länk som klickades.
 
-En unik spårnings-ID (urlID) genereras bara när både **URL** och **label** är unika. Länkar som delar samma URL och har samma effektiva etikett (inklusive när etiketten är tom) återanvänder samma urlID, vilket betyder att du inte kan avgöra vilken länk som klickades. Om du vill spåra samma URL över flera e-postmeddelanden (eller flera gånger i ett e-postmeddelande) använder du en unik etikett för varje liknande URL. Annars kan [!DNL Journey Optimizer] inte spåra vilken länk som klickades. Du kan ange distinkta etiketter i e-post-Designer eller, för HTML, via attributet `data-label`.
+Om du vill spåra samma URL över flera e-postmeddelanden (eller flera gånger i ett e-postmeddelande) använder du en unik etikett för varje liknande URL. Annars kan [!DNL Journey Optimizer] inte spåra vilken länk som klickades. Du kan ange distinkta etiketter i e-post-Designer eller, för HTML, via attributet `data-label`.
 
 | URL | Tagg | Etikett | urlID, beteende |
 |-----|-----|-------|----------------|
@@ -61,6 +61,10 @@ En unik spårnings-ID (urlID) genereras bara när både **URL** och **label** ä
 | www.example.com | Andra | (tom) | Återanvänder urlID A - det går inte att avgöra vilken länk som klickades |
 | www.example.com | Tredje | Första etikett | Hämtar ett urlID (t.ex. B) |
 | www.example.com | Fjärde | Andra etiketten | Hämtar ett urlID (t.ex. C) |
+
+## Infoga länkar {#insert-links}
+
+När [spårning är aktiverat](#enable-tracking) spåras alla länkar som ingår i meddelandeinnehållet.
 
 >[!NOTE]
 >
