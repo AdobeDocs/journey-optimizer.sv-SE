@@ -88,7 +88,7 @@ Du anger: **Målgrupp** (obligatoriskt), **Namnområde** (obligatoriskt), **Läs
 
    Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
 
-   ![Gränssnitt för målgruppsval som visar tillgängliga [!DNL Adobe Experience Platform] målgrupper ](assets/read-segment-selection.png)
+   ![Gränssnitt för målgruppsval som visar tillgängliga [!DNL Adobe Experience Platform] målgrupper &#x200B;](assets/read-segment-selection.png)
 
    När målgruppen har lagts till kan du med knappen **[!UICONTROL Copy]** kopiera dess namn och ID:
 
@@ -138,7 +138,7 @@ Guardrutor för aktiviteten **Läs målgrupp** visas på [den här sidan](../sta
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
+>[Garantier för kundprofildata och segmentering i realtid &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
 
 **Nästa:** Ange [läsfrekvens](#profile-entry-and-reading-rate) och [schema](#schedule) och [testa och publicera](#testing-publishing).
 
