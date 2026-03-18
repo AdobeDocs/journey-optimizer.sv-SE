@@ -10,10 +10,10 @@ level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
 version: Journey Orchestration
-source-git-commit: 0b003420fd0bf466f81f5377ef58f17695283259
+source-git-commit: c54237bba0597ecc0d4ebb6084063834e0d2ab70
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 38%
+source-wordcount: '504'
+ht-degree: 36%
 
 ---
 
@@ -49,7 +49,7 @@ Systemet identifierar två typer av problem: **fel** och **varningar**. Fel bloc
 
 <!--Most of the time, errors detected by the system are linked to errors visible on the activities but they can also relate to other issues. In all cases, check alerts and resolve the issue using to the error description. If you cannot identify the issue, use the **[!UICONTROL Copy details]** button to store the alerts, and send them to your administrator.-->
 
-Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas därefter per aktivitetsordning eller när de dyker upp i resan från vänster till höger. Längst ned i listan med varningar kan du med knappen **[!UICONTROL Copy details]** kopiera teknisk information om resan som är användbar för att felsöka problemen.
+Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas därefter per aktivitetsordning eller när de dyker upp i resan från vänster till höger. Längst ned i listan med varningar kan du med knappen **[!UICONTROL Copy details]** kopiera teknisk information om resan som är användbar för att felsöka problemen. En lista över kopierade fält (inklusive information om att pausa och återuppta) finns i [Kopiera teknisk information](journey-properties.md#access-properties) i resans egenskaper.
 
 ## Lägg till en alternativ sökväg {#canvas-add-path}
 

@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: bfcc7b1544a0d58af8ac1ac69e777a3ff894bbdf
+source-git-commit: 04f6ad6d75c182c6c29744810c0461ccc947b5e5
 workflow-type: tm+mt
-source-wordcount: '3961'
+source-wordcount: '4025'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 Nedan hittar du skyddsförslag och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 >[!CAUTION]
 >
->* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
+>* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
 >
->* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails){target="_blank"}
+>* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
 ## System och plattform {#system-platform}
 
@@ -100,7 +100,7 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
   Journey Optimizer inkommande kanaler har nya profiler som kanske inte har varit engagerade tidigare i andra kanaler som mål. Detta kommer att öka det totala antalet [aktiveringsbara profiler](../audience/license-usage.md), vilket kan påverka kostnaderna om det avtalsenliga antalet aktiveringsbara profiler som du har köpt överskrids.
 
-  Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet aktiveringsbara profiler på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
+  Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet aktiveringsbara profiler på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
 
 * Journey Optimizer stöder maximalt 500 aktiva inkommande åtgärder när som helst. Dessa inkommande åtgärder räknas om de är en del av en live-kampanj eller om de är en nod som används i en direktresa. När du har nått det här numret måste du inaktivera äldre kampanjer eller resor som använder inkommande åtgärder innan du kan starta nya.
 
@@ -108,13 +108,13 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
 [!DNL Journey Optimizer] inkommande kanaler kan ha pseudonyma profiler som mål, vilket innebär profiler som inte är autentiserade eller okända än eftersom de inte har varit engagerade tidigare i andra kanaler. Detta är till exempel fallet när man riktar sig till alla besökare eller målgrupper baserat på tillfälliga ID:n som ECID.
 
-Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet profiler som kan användas på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
+Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet profiler som kan användas på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
 
 För att hålla dina engagerande profiler inom rimliga gränser rekommenderar Adobe att du ställer in en TTL (Time-To-Live) som automatiskt tar bort pseudonyma profiler från kundprofilen i realtid om de inte har setts eller engagerats inom ett visst tidsfönster.
 
 >[!NOTE]
 >
->Lär dig hur du konfigurerar förfallodatum för pseudonyma profiler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
+>Lär dig hur du konfigurerar förfallodatum för pseudonyma profiler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
 
 Adobe rekommenderar att TTL-värdet ställs in på 14 dagar för att matcha den aktuella Edge-profilen TTL.
 
@@ -365,15 +365,17 @@ Följande skyddsutkast gäller för [Läs målgruppsaktiviteten](../building-jou
 
 * Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
 * Vid registrering på resan använder profiler attributvärden från ögonblicksbilden av gruppmålgruppen. När en profil når en **Wait**-aktivitet uppdaterar resan automatiskt profilattributen genom att hämta de senaste data från UPS (Unified Profile Service). Detta innebär att profilattribut kan ändras under körning av resan.
-* För resor som använder en **Läs målgrupp**-aktivitet finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Återförsök kommer att utföras av systemet men undvik att ha fler än fem resor (med **Läs målgrupp**, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tid genom att sprida dem över tiden, t.ex. mellan 5 och 10 minuter. Läs mer om hastigheter för resebearbetning i [det här avsnittet](../building-journeys/entry-management.md#journey-processing-rate).
 * Det går inte att använda aktiviteten **Läs målgrupp** med Adobe Campaign-aktiviteter.
-* Aktiviteten **Läs målgrupp** kan bara användas som en första aktivitet i en resa, efter en affärshändelseaktivitet.
+* Aktiviteten **Läs målgrupp** kan bara användas som en första aktivitet i en resa eller efter en aktivitet i en affärshändelse.
 * En resa kan bara ha en **Läs målgrupp**-aktivitet.
-* Se även rekommendationer om hur du använder aktiviteten **Läs målgrupp** på [den här sidan](../building-journeys/read-audience.md).
+* Aktiviteten **Läs målgrupp** kan bara ha en målgrupp per resa som mål. Om det krävs flera målgrupper sammanfogar du dem till en enda målgrupp först. [Lär dig kombinera målgrupper med hjälp av kompositionsarbetsflöden](../audience/get-started-audience-orchestration.md).
+* Varje organisation kan köra upp till fem **Read Audience**-instanser samtidigt (schemalagda eller affärshändelser utlösta) i alla sandlådor och resor. Undvik att ha fler än fem resor med **Läs målgrupp** som börjar exakt samtidigt. Sprid dem från 5 till 10 minuter. Läs mer om hastigheter för resebearbetning i [det här avsnittet](../building-journeys/entry-management.md#journey-processing-rate).
+* Sandlådegenomströmning: Systemet hanterar bearbetning per sandlåda med högst 20 000 profiler per sekund som delas av alla **Läs målgrupper** -aktiviteter. Enskilda aktiviteter kan konfigureras från 500 till 20 000 profiler per sekund. Om sandlådegränserna nås kan jobb ställas i kö.
+* Tidsgräns för jobbbearbetning: **Läs målgrupp**-jobb som inte kan bearbetas inom 12 timmar rensas automatiskt och körs inte.
 * Återförsök används som standard på målgruppsinlösta resor (med början från en **Läs målgrupp** eller en **affärshändelse**) när exportjobbet hämtas. Om ett fel inträffar när exportjobbet skapas görs nya försök var 10:e minut (max 1 timme). Efter det kommer vi att betrakta det som ett misslyckande. Dessa typer av resor kan därför utföras upp till en timme efter den schemalagda tiden.
 * För resor som använder extra ID:n är läsfrekvensen för läsmålgruppsaktiviteten för varje reseinstans begränsad till högst 500 profiler per sekund.
 
-Se även [den här sidan](../building-journeys/read-audience.md#must-read).
+Se även [rekommendationer och konfiguration](../building-journeys/read-audience.md#must-read) för aktiviteten Läs målgrupp.
 
 #### Uppdatera profilaktivitet {#update-profile-g}
 

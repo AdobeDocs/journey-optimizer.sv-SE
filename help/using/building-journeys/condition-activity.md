@@ -10,7 +10,7 @@ level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 02de069c-3009-4105-aa98-c49959d3efda
 version: Journey Orchestration
-source-git-commit: 8c778ff99d7d32819630d704c42199a5bfbec0f1
+source-git-commit: 8e6d69fb1d6eb7d29261dd0fafdb779e57be26c7
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 4%
@@ -40,15 +40,15 @@ Följande typer av villkor är tillgängliga:
 * [Datumvillkor](#date_condition)
 * [Profilände](#profile_cap)
 
-Ni kan också använda målgrupper direkt under resan. Se:
+Ni kan också basera ett villkor på målgruppsmedlemskap. Se följande avsnitt:
 
-* [Använda en målgrupp i ett villkor](#using-a-segment) - filtrera vilka profiler som tar en given sökväg baserat på målgruppsmedlemskap
-* [Bygg och hantera målgrupper](../audience/about-audiences.md) - lär dig hur du skapar, utvärderar och målgrupper i [!DNL Adobe Experience Platform]
-* [Målgruppsmönster i resor](read-audience.md#audience-targeting-in-journeys) - segmentera, exkludera eller slå samman målgruppsgrenar efter en Read Audience-post
+* [Använd en målgrupp i ett villkor](#using-a-segment) - Lägg till sökvägar baserat på om profiler tillhör en målgrupp.
+* [Bygg och inrikta er på målgrupper](../audience/about-audiences.md) - Skapa och hantera målgrupper på menyn Publiker.
+* [Målgruppsanpassning på resor](read-audience.md#audience-targeting-in-journeys) - Efter aktiviteten Läs målgrupp, segmentera, exkludera eller sammanfoga grenar med villkor.
 
 >[!NOTE]
 >
->Villkorsutvärderingen misslyckas för profiler som innehåller fler än två enhetsidentiteter i [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv-SE#profile-data-store){target="_blank"}.
+>Villkorsutvärderingen misslyckas för profiler som innehåller fler än två enhetsidentiteter i [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
 
 ## Lägga till och hantera villkorssökvägar {#about_condition}
 
@@ -78,7 +78,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![Uttrycksredigeraren visar fältval och logiska operatorer OCH ELLER](assets/journey64.png)
 
-Om du använder [[!DNL Adobe Experience Platform] segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment). Mer information om hur du skapar och målgruppsanpassar i Journey Optimizer finns i [det här avsnittet](../audience/about-audiences.md).
+Om du använder [[!DNL Adobe Experience Platform] segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment). Mer information om hur du skapar och målgruppsanpassar i Journey Optimizer finns i [det här avsnittet](../audience/about-audiences.md).
 
 
 >[!NOTE]
@@ -194,4 +194,4 @@ Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 78b95ccd-bc28-46cd-937a-f68e3f34cc1e
-source-git-commit: 8c778ff99d7d32819630d704c42199a5bfbec0f1
+source-git-commit: 04f6ad6d75c182c6c29744810c0461ccc947b5e5
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Du kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
 * Välj en målgrupp för en **kampanj**, där meddelandet skickas till alla personer som tillhör den valda målgruppen. [Lär dig definiera målgruppen för en kampanj](../campaigns/create-campaign.md#define-the-audience-audience).
 
-* Använd en **Läs målgruppsorganisation** i en resa för att få alla personer i målgruppen att komma in på resan och ta emot de meddelanden som ingår i din resa. Säg att ni har en&quot;silverkund&quot; som målgrupp. Med den här aktiviteten kan ni få alla silverkunder att ta sig in på en resa. Du kan sedan skicka en serie personaliserade meddelanden till dem. [Lär dig konfigurera en målgruppsaktivitet för läsning](../building-journeys/read-audience.md#configuring-segment-trigger-activity).
+* Använd en **Läs målgruppsorganisation** i en resa för att få alla personer i målgruppen att komma in på resan och ta emot de meddelanden som ingår i din resa. Säg att ni har en&quot;silverkund&quot; som målgrupp. Med den här aktiviteten kan ni få alla silverkunder att ta sig in på en resa. Du kan sedan skicka en serie personaliserade meddelanden till dem. [Lär dig konfigurera en målgruppsaktivitet för läsning](../building-journeys/read-audience.md#configuring-segment-trigger-activity). Om du vill segmentera, exkludera eller sammanfoga grenar efter att de har öppnats läser du [Målgruppsanpassning under resor](../building-journeys/read-audience.md#audience-targeting-in-journeys).
 
   Efter registrering använder du **Villkor**-aktiviteter för att [segmentera efter attribut eller beteende, exkludera en del av populationen eller sammanfoga grenar](../building-journeys/read-audience.md#audience-targeting-in-journeys).
 

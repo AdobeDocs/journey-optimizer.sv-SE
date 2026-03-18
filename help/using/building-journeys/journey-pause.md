@@ -9,9 +9,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
-source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
+source-git-commit: c54237bba0597ecc0d4ebb6084063834e0d2ab70
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2626'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,15 @@ Så här återupptar du en pausad resa och börjar lyssna på resehändelser ige
 
 I listan över dina resor kan du återuppta en eller flera **Pausade** resor. Om du vill återuppta en grupp av resor (_massåteruppta_) markerar du dem och klickar på knappen **Återuppta** i det blå fältet längst ned på skärmen. Observera att knappen **Återuppta** endast är tillgänglig när **Pausade** resor har valts.
 
+## Visa när en resa pausades eller återupptogs {#view-pause-resume-info}
+
+Om du vill se när en resa senast pausades eller återupptogs, och av vem, öppnar du resan och går till dess **egenskaper** (klicka på pennikonen bredvid resans namn). Använd knappen **Kopiera teknisk information** för att kopiera teknisk information som innehåller:
+
+* Datum och tid för den senaste pausningen och återställningen
+* Visningsnamnet och identifieraren för den användare som utförde den senaste pausen och det senaste återupptagandet
+* Inställningar för pausad resa (pausbeteende, maximal varaktighet för paus, automatiskt återupptagningstillstånd, paus-ID)
+
+Den här informationen är användbar för felsökning, granskning och delning med support. En fullständig lista över kopierade fält finns i [Åtkomst till egenskaperna för en resa](journey-properties.md#access-properties).
 
 ## Använda ett utträdesvillkor i en pausad resa {#journey-exit-criteria}
 
@@ -202,7 +211,7 @@ När du återupptar den här resan:
 
 ## Felsöka uteblivna profiler under pausade resor {#discards-troubleshoot}
 
-Du kan använda [[!DNL Adobe Experience Platform] frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
+Du kan använda [[!DNL Adobe Experience Platform] frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
 
 * Använd följande kod för att ta bort filer som inträffar innan profilen kommer in på resan:
 
