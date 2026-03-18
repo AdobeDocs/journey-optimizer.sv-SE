@@ -48,7 +48,7 @@ Ni kan också basera ett villkor på målgruppsmedlemskap. Se följande avsnitt:
 
 >[!NOTE]
 >
->Villkorsutvärderingen misslyckas för profiler som innehåller fler än två enhetsidentiteter i [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
+>Villkorsutvärderingen misslyckas för profiler som innehåller fler än två enhetsidentiteter i [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv-SE#profile-data-store){target="_blank"}.
 
 ## Lägga till och hantera villkorssökvägar {#about_condition}
 
@@ -78,7 +78,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![Uttrycksredigeraren visar fältval och logiska operatorer OCH ELLER](assets/journey64.png)
 
-Om du använder [[!DNL Adobe Experience Platform] segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment). Mer information om hur du skapar och målgruppsanpassar i Journey Optimizer finns i [det här avsnittet](../audience/about-audiences.md).
+Om du använder [[!DNL Adobe Experience Platform] segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment). Mer information om hur du skapar och målgruppsanpassar i Journey Optimizer finns i [det här avsnittet](../audience/about-audiences.md).
 
 
 >[!NOTE]
@@ -194,4 +194,4 @@ Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
