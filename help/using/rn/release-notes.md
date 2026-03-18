@@ -7,10 +7,10 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ba89ad814b81e6194832cdc0619b7ac6322c797c
+source-git-commit: 720cff6feca34f89851a28e1c2e6866ab2e51e2e
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 7%
+source-wordcount: '1971'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 7%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Uppdateringar 26 mars {#march-26-rn}
 
@@ -80,7 +80,7 @@ På grund av den här modellen uppdateras versionsinformationen mellan månadsve
 <td>
 <p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
 <p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html?lang=sv-SE">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 4 mars 2026</p>
 </td>
 </tr>
@@ -154,7 +154,7 @@ Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01
 
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 <!--**Release date**: February 17-18, 2026-->
 
@@ -400,13 +400,14 @@ Förbättringar i den här versionen visas nedan.
 
   Tillgänglighetsdatum: 2 februari 2026.
 
-## Kommer snart {#coming-soon}
+<!--## Coming soon {#coming-soon}
 
-Funktionerna och förbättringarna nedan är planerade att släppas senare i februari. Releasedatum och omfång kan ändras utan föregående meddelande.
+The features and improvements below are planned for release later in February. Release dates and scope may change without prior notice.
 
-### Förbättringar {#coming-soon-improv}
+### Improvements {#coming-soon-improv}
 
-* **Förhandsgranskning av beslut i den kodbaserade upplevelsekanalen** - Du kan nu förhandsgranska beslutsobjekt när du konfigurerar beslut med den kodbaserade upplevelsekanalen. Förhandsgranskningen är tillgänglig direkt i redigeringsgränssnittet innan den publiceras.
+* **Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
 
-  Tillgänglighetsdatum: 18 februari 2026
+  Availability date: February 18, 2026
+-->
 
