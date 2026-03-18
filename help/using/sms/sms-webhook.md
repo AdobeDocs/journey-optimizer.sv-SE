@@ -7,7 +7,7 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: a0f3e385-934d-44d6-a487-6035161aef0e
-source-git-commit: cfe6fa417c81e7488a3f2f1313b08f346f1aeb03
+source-git-commit: f91abf82dff8f9cc9e16d769bdfb65725f5e2983
 workflow-type: tm+mt
 source-wordcount: '2579'
 ht-degree: 0%
@@ -104,7 +104,7 @@ För Sinch och Sinch Conversational skapar du en enda webkrok som hanterar både
 
 1. Välj en nyckelordskategori i listrutan **[!UICONTROL Inbound Keyword Category]** för att konfigurera:
 
-   * &#x200B;
+   * 
      +++ Anmäl dig
 
       * Aktivera nyckelord som avanmäler användare med deras samtycke. När en användares meddelande matchar ett konfigurerat nyckelord väljs användarens telefonnummer in för att ta emot SMS-meddelanden.
@@ -113,9 +113,9 @@ För Sinch och Sinch Conversational skapar du en enda webkrok som hanterar både
 
       * Använd fältet **[!UICONTROL Reply Message]** för att skapa ett meddelande som skickas automatiskt när en användares inkommande meddelande matchar ett Opt-In-nyckelord.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Avanmäl dig
 
       * Aktivera nyckelord som avanmäler användare och tar bort samtycke för att skicka textmeddelanden. När en användares meddelande matchar ett konfigurerat nyckelord avvisas användarens telefonnummer från att ta emot SMS-meddelanden.
@@ -126,9 +126,9 @@ För Sinch och Sinch Conversational skapar du en enda webkrok som hanterar både
 
       * Aktivera **[!UICONTROL Fuzzy Logic]** för att identifiera liknande nyckelord som de konfigurerade avanmälningsnyckelorden. Om en användares svar är nära men inte exakt skickas meddelandet som anges i fältet **[!UICONTROL Fuzzy Auto Response]**. Det här meddelandet anger vanligtvis att avanmälan inte gjordes och anger det exakta nyckelord som behövs för att avbryta prenumerationen.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Dubbel anmälan
 
       * Aktivera nyckelord för krav på dubbel anmälan. När en användares meddelande matchar ett konfigurerat nyckelord är de inte fullständigt inlagda i det här skedet. Detta tvåstegsarbetsflöde för samtycke kräver att användaren bekräftar sitt val med ett andra nyckelord.
@@ -137,7 +137,7 @@ För Sinch och Sinch Conversational skapar du en enda webkrok som hanterar både
 
    +++
 
-   * &#x200B;
+   * 
      +++ Hjälp
 
       * Aktivera nyckelord som ger ett standardsvar när hjälp begärs. När en användares meddelande matchar ett konfigurerat nyckelord får han/hon ett hjälpsvarsmeddelande.
@@ -146,16 +146,16 @@ För Sinch och Sinch Conversational skapar du en enda webkrok som hanterar både
 
       * Använd fältet **[!UICONTROL Reply Message]** för att skapa ett meddelande som skickas automatiskt när en användares inkommande meddelande matchar ett hjälpnyckelord.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Anpassad
 
       * Konfigurera ett enskilt anpassat nyckelord. När en användares meddelande matchar det här nyckelordet skrivs nyckelordet till **[!UICONTROL Message Feedback tracking]**-datauppsättningen för rapportering och målgruppsbyggande.
 
       * Bygg en målgrupp (direktuppspelning eller batch) som refererar till det här nyckelordet för användning i resor och kampanjer.
 
-   +++
+     +++
 
 1. Ange **[!UICONTROL Default Reply Message]**. Det här meddelandet skickas automatiskt när en användares svar inte matchar något konfigurerat nyckelord.
 
@@ -210,7 +210,7 @@ För Infobip skapar du två separata webhooks: en för Feedback-händelser och e
 
 1. Välj en nyckelordskategori i listrutan **[!UICONTROL Inbound Keyword Category]** för att konfigurera:
 
-   * &#x200B;
+   * 
      +++ Anmäl dig
 
       * Aktivera nyckelord som avanmäler användare med deras samtycke. När en användares meddelande matchar ett konfigurerat nyckelord väljs användarens telefonnummer in för att ta emot SMS-meddelanden.
@@ -219,9 +219,9 @@ För Infobip skapar du två separata webhooks: en för Feedback-händelser och e
 
       * Använd fältet **[!UICONTROL Reply Message]** för att skapa ett meddelande som skickas automatiskt när en användares inkommande meddelande matchar ett Opt-In-nyckelord.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Avanmäl dig
 
       * Aktivera nyckelord som avanmäler användare och tar bort samtycke för att skicka textmeddelanden. När en användares meddelande matchar ett konfigurerat nyckelord avvisas användarens telefonnummer från att ta emot SMS-meddelanden.
@@ -232,18 +232,18 @@ För Infobip skapar du två separata webhooks: en för Feedback-händelser och e
 
       * Aktivera **[!UICONTROL Fuzzy Logic]** för att identifiera liknande nyckelord som de konfigurerade avanmälningsnyckelorden. Om en användares svar är nära men inte exakt skickas meddelandet som anges i fältet **[!UICONTROL Fuzzy Auto Response]**. Det här meddelandet anger vanligtvis att avanmälan inte gjordes och anger det exakta nyckelord som behövs för att avbryta prenumerationen.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Dubbel anmälan
 
       * Aktivera nyckelord för krav på dubbel anmälan. När en användares meddelande matchar ett konfigurerat nyckelord är de inte fullständigt inlagda i det här skedet. Detta tvåstegsarbetsflöde för samtycke kräver att användaren bekräftar sitt val med ett andra nyckelord.
 
       * Använd fältet **[!UICONTROL Reply Message]** för att skapa ett meddelande som skickas automatiskt när ett nyckelord för dubbel anmälan matchas. Det här meddelandet instruerar användaren att ange ett avanmälningsnyckelord för att slutföra avanmälningsprocessen.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Hjälp
 
       * Aktivera nyckelord som ger ett standardsvar när hjälp begärs. När en användares meddelande matchar ett konfigurerat nyckelord får han/hon ett hjälpsvarsmeddelande.
@@ -252,16 +252,16 @@ För Infobip skapar du två separata webhooks: en för Feedback-händelser och e
 
       * Använd fältet **[!UICONTROL Reply Message]** för att skapa ett meddelande som skickas automatiskt när en användares inkommande meddelande matchar ett hjälpnyckelord.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Anpassad
 
       * Konfigurera ett enskilt anpassat nyckelord. När en användares meddelande matchar det här nyckelordet skrivs nyckelordet till **[!UICONTROL Message Feedback tracking]**-datauppsättningen för rapportering och målgruppsbyggande.
 
       * Bygg en målgrupp (direktuppspelning eller batch) som refererar till det här nyckelordet för användning i resor och kampanjer.
 
-   +++
+     +++
 
 1. Ange **[!UICONTROL Default Reply Message]**. Det här meddelandet skickas automatiskt när en användares svar inte matchar något konfigurerat nyckelord.
 
@@ -323,7 +323,7 @@ För anpassade SMS-leverantörer skapar du två separata webhooks: en för Feedb
 
 1. Välj en nyckelordskategori i listrutan **[!UICONTROL Inbound Keyword Category]** för att konfigurera:
 
-   * &#x200B;
+   * 
      +++ Anmäl dig
 
       * Aktivera nyckelord som avanmäler användare med deras samtycke. När en användares meddelande matchar ett konfigurerat nyckelord väljs användarens telefonnummer in för att ta emot SMS-meddelanden.
@@ -332,9 +332,9 @@ För anpassade SMS-leverantörer skapar du två separata webhooks: en för Feedb
 
       * Använd fältet **[!UICONTROL Reply Message]** för att skapa ett meddelande som skickas automatiskt när en användares inkommande meddelande matchar ett Opt-In-nyckelord.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Avanmäl dig
 
       * Aktivera nyckelord som avanmäler användare och tar bort samtycke för att skicka textmeddelanden. När en användares meddelande matchar ett konfigurerat nyckelord avvisas användarens telefonnummer från att ta emot SMS-meddelanden.
@@ -345,18 +345,18 @@ För anpassade SMS-leverantörer skapar du två separata webhooks: en för Feedb
 
       * Aktivera **[!UICONTROL Fuzzy Logic]** för att identifiera liknande nyckelord som de konfigurerade avanmälningsnyckelorden. Om en användares svar är nära men inte exakt skickas meddelandet som anges i fältet **[!UICONTROL Fuzzy Auto Response]**. Det här meddelandet anger vanligtvis att avanmälan inte gjordes och anger det exakta nyckelord som behövs för att avbryta prenumerationen.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Dubbel anmälan
 
       * Aktivera nyckelord för krav på dubbel anmälan. När en användares meddelande matchar ett konfigurerat nyckelord är de inte fullständigt inlagda i det här skedet. Detta tvåstegsarbetsflöde för samtycke kräver att användaren bekräftar sitt val med ett andra nyckelord.
 
       * Använd fältet **[!UICONTROL Reply Message]** för att skapa ett meddelande som skickas automatiskt när ett nyckelord för dubbel anmälan matchas. Det här meddelandet instruerar användaren att ange ett avanmälningsnyckelord för att slutföra avanmälningsprocessen.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Hjälp
 
       * Aktivera nyckelord som ger ett standardsvar när hjälp begärs. När en användares meddelande matchar ett konfigurerat nyckelord får han/hon ett hjälpsvarsmeddelande.
@@ -365,16 +365,16 @@ För anpassade SMS-leverantörer skapar du två separata webhooks: en för Feedb
 
       * Använd fältet **[!UICONTROL Reply Message]** för att skapa ett meddelande som skickas automatiskt när en användares inkommande meddelande matchar ett hjälpnyckelord.
 
-   +++
+     +++
 
-   * &#x200B;
+   * 
      +++ Anpassad
 
       * Konfigurera ett enskilt anpassat nyckelord. När en användares meddelande matchar det här nyckelordet skrivs nyckelordet till **[!UICONTROL Message Feedback tracking]**-datauppsättningen för rapportering och målgruppsbyggande.
 
       * Bygg en målgrupp (direktuppspelning eller batch) som refererar till det här nyckelordet för användning i resor och kampanjer.
 
-   +++
+     +++
 
 1. Ange **[!UICONTROL Default Reply Message]**. Det här meddelandet skickas automatiskt när en användares svar inte matchar något konfigurerat nyckelord.
 
@@ -393,7 +393,7 @@ För anpassade SMS-leverantörer skapar du två separata webhooks: en för Feedb
    +++Exempel på nyttolast
 
        &quot;json
-       &lbrace;
+       {
        &quot;inboundMessage&quot;: {{inboundMessage}},
        &quot;profileNumber&quot;: {{profileNumber}},
        &quot;requestId&quot;: {{requestId}},
@@ -432,14 +432,14 @@ För anpassade SMS-leverantörer skapar du två separata webhooks: en för Feedb
    +++Exempel på nyttolast
 
        &quot;json
-       &lbrace;
+       {
        &quot;clientReference&quot;: {{client_reference}}, 
-       &quot;status&quot;: &lbrack;
-&rbrack;       &lbrace;
-&rbrace;       &quot;code&quot;: &quot;{{failureCode}}&quot;, 
+       &quot;status&quot;: [
+]       {
+}       &quot;code&quot;: &quot;{{failureCode}}&quot;, 
        &quot;status&quot;: {{feedbackStatus}} 
         
-       &rbrack;
+       ]
         
        &quot;
    
