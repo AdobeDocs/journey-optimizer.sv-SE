@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 0088b81d0d8a45626611dfdcf063766e2bcf50c4
+source-git-commit: 50b32702daeb90fea097f384797dcb5f82c65796
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1487'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Om du vill få tillgång till Adobe Journey Optimizer loggar du in på [Adobe Ex
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 >* Dokumentationen uppdateras ofta. Vissa skärmbilder kan skilja sig något från gränssnittet.
 
 ## Snabbdemo {#quick-tour}
@@ -362,9 +362,4 @@ AI Assistant ger omedelbar hjälp och driftsinsikter. Klicka på ikonen AI-assis
 >[!CONTEXTUALHELP]
 >id="ajo_inbox_app_id"
 >title="Program-ID"
->abstract="."
-
->[!CONTEXTUALHELP]
->id="ajo_inbox_location"
->title="Plats eller sökväg i appen"
 >abstract="."
