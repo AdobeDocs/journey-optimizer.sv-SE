@@ -5,9 +5,9 @@ title: Samordnade kampanjer skyddar mot detaljer och begränsningar
 description: Läs mer om säkra kampanjer och begränsningar
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
 version: Campaign Orchestration
-source-git-commit: 266bf3afde663b17aedce5fb51e7c5f424fee9ad
+source-git-commit: 4c7aefc3f54c26bb3d1f84bc2fcf5ed984750494
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '519'
 ht-degree: 1%
 
 ---
@@ -33,15 +33,15 @@ Nedan visas säkerhetsbeskrivningar och begränsningar när du använder orkestr
 
 * Det genomsnittliga antalet attribut per schema **får inte överstiga 50 kolumner** för att upprätthålla hanterbarhet och prestanda.
 
-* Relationsscheman kan inte aktiveras för Adobe Experience Platform **profiler**. Endast XDM-standardscheman stöds för Adobe Experience Platform **Profiles**. Relationsscheman kan aktiveras för samordnade kampanjer eller åtgärdskampanjer. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
+* Relationsscheman kan inte aktiveras för Adobe Experience Platform **profiler**. Endast XDM-standardscheman stöds för Adobe Experience Platform **Profiles**. Relationsscheman kan aktiveras för samordnade kampanjer eller åtgärdskampanjer. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
 
-### Datainhämtning
+### Datainhämtning {#data-ingestion}
 
 * Profil + relationsdataöverföring krävs.
 
 * All förtäring måste ske via **källor för datainhämtning**:
 
-   * För **filbaserat**: `_change_request_type`-fält krävs. Värden som stöds är `U` (upsert) eller `D` (delete).
+   * För **filbaserat**: `_change_request_type`-fält krävs. Värden som stöds är `u` (upsert) eller `d` (delete). Värdena måste vara gemener `u` och `d`, inte versaler `U` och `D`.
 
    * För **molnbaserade**: Tabellloggning måste vara aktiverat.
 

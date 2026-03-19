@@ -7,9 +7,9 @@ feature: Integrations, Data Ingestion
 role: User
 level: Beginner
 exl-id: 359ea3c6-7746-469e-8a24-624f9726f2d8
-source-git-commit: 7864012ad148c2e52bc38598016e7bd7fac9644e
+source-git-commit: 4c7aefc3f54c26bb3d1f84bc2fcf5ed984750494
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '625'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ Journey Optimizer har stöd för olika typer av källor för att ansluta till er
 * Salesforce
 * Salesforce Marketing Cloud
 
-➡️ Se hela listan i [Experience Platform-källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE#sources-catalog){target="_blank"}
+➡️ Se hela listan i [Experience Platform-källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"}
 
 ## Innan du börjar {#prerequisites}
 
@@ -95,6 +95,10 @@ Adobe Journey Optimizer använder källramverket från Adobe Experience Platform
 
 När de är konfigurerade körs källorna automatiskt i bakgrunden, vilket håller kunddata aktuella och färdiga att användas på resorna.
 
+>[!NOTE]
+>
+>**Inläsning av data för orkestrerade kampanjer** - För filbaserade källor för registrering av ändringsdata som används med orkestrerade kampanjer krävs fältet `_change_request_type`. Värden som stöds är `u` (upsert) eller `d` (delete). Värdena måste vara gemener `u` och `d`, inte versaler `U` och `D`. [Läs mer om Orchestrated-kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
+
 ## Läs mer {#learn-more}
 
 ![](assets/sources-home.png)
@@ -109,7 +113,7 @@ Mer information om hur du konfigurerar och hanterar källor finns i [dokumentati
 
 Nu när ni förstår vilka källor som är och varför de är viktiga:
 
-* Utforska [källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE#sources-catalog){target="_blank"} för att hitta anslutningar för dina system
+* Utforska [källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"} för att hitta anslutningar för dina system
 * Lär dig hur du [skapar en källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/overview.html){target="_blank"}
 * Förstå [datamappning och -omvandling](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/overview.html){target="_blank"}
 * Se hur du [använder importerade data på resor](../building-journeys/journey-gs.md)
