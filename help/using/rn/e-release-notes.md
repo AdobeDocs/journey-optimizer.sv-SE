@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 9f59ceaa8dc3bb37b0e038df4319cccd790b495c
+source-git-commit: ca383beea12fe1a4420cd8e4a6cd3bde147ade71
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '39'
 ht-degree: 0%
 
 ---
@@ -18,27 +18,28 @@ ht-degree: 0%
 
 [!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras i slutet av varje månad i [versionsinformationen](release-notes.md).
 
-## Mars 26 förhandsversionsinformation {#march-26-rn}
+<!--
+## March '26 pre-release notes {#march-26-rn}
 
-**Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
+**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
-**Releasedatum**: 24-25 mars 2026
+**Release date**: March 24-25, 2026
 
-### Nya funktioner {#march-26-features}
+### New capabilities {#march-26-features}
 
 <table>
 <thead>
 <tr>
-<th><strong>e-postoptimering för LLM</strong><br/></th>
+<th><strong>LLM email optimizer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni optimera ert e-postinnehåll för leverans med hjälp av teknik för stor språkmodell (LLM). e-postoptimeraren för LLM analyserar ditt e-postinnehåll och ger användbara rekommendationer för att förbättra avsändarens anseende, undvika skräppostfilter och förbättra den övergripande leveransförmågan.</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14340">DOCAC-14340</a></p>
+<p>You can now optimize your email content for deliverability using large language model (LLM) technology. The LLM email optimizer analyzes your email content and provides actionable recommendations to improve sender reputation, avoid spam filters, and enhance overall deliverability performance.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14340">DOCAC-14340</a></p>
 </td>
 </tr>
 </tbody>
@@ -47,15 +48,15 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Konvertera bilder till e-postmallar</strong><br/></th>
+<th><strong>Convert images to email content templates</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du konvertera bilder till e-postmallar direkt i Journey Optimizer. Använd AI-baserad analys för att automatiskt generera strukturerade HTML-mallar från visuella referenser, vilket avsevärt minskar tiden för e-postdesign.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14324">DOCAC-14324</a></p>
+<p>You can now convert images into email content templates directly in Journey Optimizer. Use AI-powered analysis to automatically generate structured HTML templates from visual references, significantly reducing email design time.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14324">DOCAC-14324</a></p>
 </td>
 </tr>
 </tbody>
@@ -64,14 +65,14 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Inkrementell frågeaktivitet i samordnade kampanjer</strong><br/></th>
+<th><strong>Incremental query activity in Orchestrated Campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>En ny <strong>inkrementell frågeaktivitet</strong> är nu tillgänglig i Orchestrated Campaigns. Den här aktiviteten efterfrågar endast nya eller uppdaterade poster sedan den senaste arbetsflödeskörningen, vilket avsevärt minskar bearbetningstiden och förbättrar effektiviteten för återkommande kampanjer som riktar sig mot stora datauppsättningar.</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14262">DOCAC-14262</a></p>
+<p>A new <strong>Incremental query</strong> activity is now available in Orchestrated Campaigns. This activity queries only new or updated records since the last workflow execution, significantly reducing processing time and improving efficiency for recurring campaigns targeting large datasets.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14262">DOCAC-14262</a></p>
 </td>
 </tr>
 </tbody>
@@ -80,14 +81,14 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Transaktionsmeddelanden i samordnade kampanjer</strong><br/></th>
+<th><strong>Transactional messages in Orchestrated Campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Samordnade kampanjer har nu stöd för <strong>transaktionsmeddelanden</strong>, vilket gör att du kan utlösa händelsestyrda meddelanden i realtid, till exempel orderbekräftelser, bokningsmeddelanden och kontouppdateringar, direkt i kampanjarbetsflödet.</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14233">DOCAC-14233</a></p>
+<p>Orchestrated Campaigns now support <strong>transactional messaging</strong>, enabling you to trigger real-time, event-driven messages—such as order confirmations, booking notifications, and account updates—directly within your campaign workflow.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14233">DOCAC-14233</a></p>
 </td>
 </tr>
 </tbody>
@@ -96,14 +97,14 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Testaktivitet i samordnade kampanjer</strong><br/></th>
+<th><strong>Test activity in Orchestrated Campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>En ny <strong>Test</strong>-aktivitet är nu tillgänglig i Orchestrated Campaigns. Den här aktiviteten dirigerar arbetsflödeskörningen till olika grenar baserat på definierade villkor, vilket gör att du kan validera kampanjlogik och konfigurationer innan du aktiverar liveleveranser.</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14115">DOCAC-14115</a></p>
+<p>A new <strong>Test</strong> activity is now available in Orchestrated Campaigns. This activity routes workflow execution to different branches based on defined conditions, enabling you to validate campaign logic and configurations before activating live deliveries.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14115">DOCAC-14115</a></p>
 </td>
 </tr>
 </tbody>
@@ -112,15 +113,15 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Anpassade formulär på landningssidor</strong><br/></th>
+<th><strong>Custom forms in landing pages</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du skapa <strong>anpassade formulär</strong> på landningssidor för att samla in specifika prenumerationsdata utöver vanliga anmälningsfält. Definiera egna formulärfält, valideringsregler och överföringsbeteenden för att stödja fler användningsområden för prenumeration och profiler.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-13963">DOCAC-13963</a></p>
+<p>You can now create <strong>custom forms</strong> in landing pages to collect specific subscriber data beyond standard opt-in fields. Define your own form fields, validation rules, and submission behaviors to support a wider range of subscription and profile enrichment use cases.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-13963">DOCAC-13963</a></p>
 </td>
 </tr>
 </tbody>
@@ -129,14 +130,14 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Journey Agent: Skapa en välstrukturerad kampanj</strong><br/></th>
+<th><strong>Journey Agent: Create Orchestrated Campaign use case</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p><strong>Journey Agent</strong>, som drivs av Adobe Experience Platform Agent Orchestrator, kan nu skapa kompletta <strong>Samordnade kampanjer</strong> med ett naturligt språkgränssnitt. Beskriv kampanjens mål och krav på ett enkelt språk så konfigurerar Journey Agent kampanjstrukturen, aktiviteterna och målgruppsanpassningen åt er.</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-13768">DOCAC-13768</a></p>
+<p><strong>Journey Agent</strong>, powered by Adobe Experience Platform Agent Orchestrator, can now create complete <strong>Orchestrated Campaign</strong> use cases through a natural language interface. Describe your campaign goal and requirements in plain language, and Journey Agent configures the campaign structure, activities, and targeting for you.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-13768">DOCAC-13768</a></p>
 </td>
 </tr>
 </tbody>
@@ -145,14 +146,14 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Ny profilinhämtning på landningssidor</strong><br/></th>
+<th><strong>New profile acquisition in landing pages</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Landningssidor har nu stöd för <strong>nya arbetsflöden för profilinhämtning</strong>, vilket gör att du kan hämta och introducera nya målgruppsmedlemmar direkt från landningssidans upplevelser. Konfigurera förvärvsformulär för att samla in profildata och automatiskt tillhandahålla nya profiler i Adobe Experience Platform.</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-13757">DOCAC-13757</a></p>
+<p>Landing pages now support <strong>new profile acquisition</strong> workflows, enabling you to capture and onboard new audience members directly from your landing page experiences. Configure acquisition forms to collect profile data and automatically provision new profiles in Adobe Experience Platform.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-13757">DOCAC-13757</a></p>
 </td>
 </tr>
 </tbody>
@@ -161,15 +162,15 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Optimering av resväg</strong><br/></th>
+<th><strong>Journey path optimization</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p><strong>Optimering av kundresan</strong> använder AI för att analysera historiskt reseresultat och automatiskt välja den bästa vägen för varje kund, vilket maximerar konverterings- och engagemangsresultat.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-13492">DOCAC-13492</a></p>
+<p><strong>Journey path optimization</strong> uses AI to analyze historical journey performance and automatically select the best path for each customer, maximizing conversion and engagement outcomes.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-13492">DOCAC-13492</a></p>
 </td>
 </tr>
 </tbody>
@@ -178,15 +179,15 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Beslutsstöd i e-postkanal</strong><br/></th>
+<th><strong>Decisioning support in email channel</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Du kan nu använda <strong>Beslutsfattning</strong> för att anpassa och optimera innehållet i dina e-postmeddelanden. Utnyttja Priority Scores, Formulas eller AI Models för att visa de mest relevanta erbjudandena och innehållet för varje mottagare.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). I den här allmänna tillgänglighetsversionen stöds nu spegelsidor.</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-13182">DOCAC-13182</a></p>
+<p>You can now use <strong>Decisioning</strong> to personalize and optimize the content of your email messages. Leverage Priority Scores, Formulas, or AI Models to display the most relevant offers and content to each recipient.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). With this General Availability release, mirror pages are now supported.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-13182">DOCAC-13182</a></p>
 </td>
 </tr>
 </tbody>
@@ -195,14 +196,14 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Inkorgen för meddelanden</strong><br/></th>
+<th><strong>Message inbox</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>En ny <strong>meddelandeinkorg</strong> är nu tillgänglig i Adobe Journey Optimizer, vilket ger en centraliserad vy över mottagna meddelanden i appen, push och SMS. Mottagarna kan få tillgång till och interagera med alla sina meddelanden på ett och samma ställe, vilket möjliggör ett större engagemang och scenarier för återengagemang.</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-11382">DOCAC-11382</a></p>
+<p>A new <strong>Message Inbox</strong> is now available in Adobe Journey Optimizer, providing a centralized view of received in-app, push, and SMS messages. Recipients can access and interact with all their messages in one place, enabling richer engagement and re-engagement scenarios.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-11382">DOCAC-11382</a></p>
 </td>
 </tr>
 </tbody>
@@ -211,14 +212,14 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Åtgärdsaktiviteter för inbyggda kanaler har tagits bort</strong><br/></th>
+<th><strong>Native channel action activities deprecated</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Efter den allmänna tillgängligheten för <strong>åtgärdsaktiviteten</strong> i februari 2026 har tidigare inbyggda kanalåtgärdsaktiviteter (e-post, SMS, push, i appen osv.) på arbetsytan nu tagits bort. Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera utan några ändringar eller migrering.</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14144">DOCAC-14144</a></p>
+<p>Following the General Availability of the <strong>Action activity</strong> in February 2026, legacy native channel action activities (Email, SMS, Push, In-App, etc.) in the journey canvas are now deprecated. Existing journeys using legacy channel activities continue to function without any changes or migration required.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14144">DOCAC-14144</a></p>
 </td>
 </tr>
 </tbody>
@@ -227,14 +228,14 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Stöd för datauppslagssökning på resor</strong><br/></th>
+<th><strong>Dataset lookup support in journeys</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med en ny aktivitet på resorna, Dataset Lookup, kan du dynamiskt hämta data från Adobe Experience Platform postdatauppsättningar under körning. Genom att utnyttja den här funktionen kan ni få tillgång till data som kanske inte finns i profilen eller händelsens nyttolast, vilket säkerställer att era kundinteraktioner är både relevanta och aktuella. Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14351">DOCAC-14351</a></p>
+<p>A new activity in journeys, Dataset lookup, allows you to to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely. Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14351">DOCAC-14351</a></p>
 </td>
 </tr>
 </tbody>
@@ -243,79 +244,81 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Utlösa samordnade kampanjer med API</strong><br/></th>
+<th><strong>Trigger orchestrated campaigns using API</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du utlösa en orkestrerad kampanj via API. Konfigurera målkampanjen som"utlöst av en signal" och publicera den. Använd sedan ett API-anrop för att starta kampanjen. API-anropet kan innehålla parametrar som ska vara tillgängliga som variabler i den utlösta kampanjen.</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14030">DOCAC-14030</a></p>
+<p>You can now trigger an orchestrated campaign via API. Configure the target campaign as "Triggered by a signal" and publish it. Then use an API call to fire the campaign. The API call can include parameters that will be available as variables in the triggered campaign.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14030">DOCAC-14030</a></p>
 </td>
 </tr>
 </tbody>
 </table>
 
-### Förbättringar {#march-26-improv}
+### Improvements {#march-26-improv}
 
-Förbättringar i den här versionen visas nedan.
+Improvements coming with this release are listed below.
 
-#### Resor
+#### Journeys
 
-* **Journey-skiljeförfarande - AI-modeller** - Förutom rankningsformler kan AI-modeller nu användas tillsammans med Journey-skiljeförfarandet för att automatiskt rangordna och prioritera kundresan, med maskininlärning för att avgöra den mest relevanta resan för varje profil baserat på historiskt beteende och sammanhangsberoende signaler. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+* **Journey Arbitration - AI Models** - In addition to ranking formulas, AI models can now be used with Journey Arbitration to automatically rank and prioritize journey entry for customers, using machine learning to determine the most relevant journey for each profile based on historical behavior and contextual signals. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
-  Dokumentation för JIRA-aktivitet: [DOCAC-14295](https://jira.corp.adobe.com/browse/DOCAC-14295)
+  Documentation JIRA task: [DOCAC-14295](https://jira.corp.adobe.com/browse/DOCAC-14295)
 
-#### Rapportering
+#### Reporting
 
-* **Uteslut båda klickningarna för e-post- och SMS-rapportering** - E-post- och SMS-rapportering filtrerar nu automatiskt bort båda klickningarna från klickmätvärden, vilket ger mer korrekta interaktionsdata och förhindrar att automatiserad trafik ökar prestandamängderna.
-Dokumentation för JIRA-aktivitet: [DOCAC-14354](https://jira.corp.adobe.com/browse/DOCAC-14354)
+* **Exclude bot clicks for email and SMS reporting** - Email and SMS reporting now automatically filters out bot clicks from click metrics, providing more accurate engagement data and preventing automated traffic from inflating your performance figures.
+  Documentation JIRA task: [DOCAC-14354](https://jira.corp.adobe.com/browse/DOCAC-14354)
 
-* **Sändningsoptimering: Uppdaterad kontrollplats och ny lyftrapport** - STO-kontroller (Send-Time Optimization) har flyttats till Åtgärdskonfigurationsmenyn. Dessutom finns det nu en ny avbrottsrapport i Journeys-rapporter som mäter effekten av STO på kampanjens resultatstatistik.
+* **Send-Time Optimization: updated controls location and new lift report** - Send-Time Optimization (STO) controls have been relocated to the Action configuration menu. Additionally, a new lift report is now available in Journeys reports to measure the impact of STO on your campaign performance metrics.
 
-  Dokumentation för JIRA-aktivitet: [DOCAC-14335](https://jira.corp.adobe.com/browse/DOCAC-14335)
+  Documentation JIRA task: [DOCAC-14335](https://jira.corp.adobe.com/browse/DOCAC-14335)
 
-#### E-postdesigner
+#### Email Designer
 
-* **Anpassning i öppen tid med Dynamic Media (Beta)** - Nu kan du anpassa e-postinnehåll i öppen tid med Adobe Dynamic Media-resurser, vilket aktiverar mottagarspecifika bilder och bilder i realtid som genereras dynamiskt baserat på varje mottagares attribut när e-postmeddelandet öppnas. Den här funktionen finns för närvarande i Beta.
-Dokumentation för JIRA-aktivitet: [DOCAC-14353](https://jira.corp.adobe.com/browse/DOCAC-14353)
+* **Open-time personalization using Dynamic Media (Beta)** - You can now personalize email content at open time using Adobe Dynamic Media assets, enabling real-time, recipient-specific images and visuals that are generated dynamically based on each recipient's attributes at the moment of email opening. This capability is currently in Beta.
+  Documentation JIRA task: [DOCAC-14353](https://jira.corp.adobe.com/browse/DOCAC-14353)
 
-* **E-post-Designer visas i Unified Shell** - E-post-Designer visas nu i Unified Shell-upplevelsen, vilket ger en konsekvent navigerings- och rubrikupplevelse som överensstämmer med andra Adobe-program.
-Dokumentation för JIRA-aktivitet: [DOCAC-14254](https://jira.corp.adobe.com/browse/DOCAC-14254)
+* **Email Designer displayed in Unified Shell** - The Email Designer is now displayed within the Unified Shell experience, providing a consistent navigation and header experience that aligns with other Adobe applications.
+  Documentation JIRA task: [DOCAC-14254](https://jira.corp.adobe.com/browse/DOCAC-14254)
 
-* **Stöd för textläge i fragment** - Fragment har nu stöd för redigering i textläge, vilket gör att du kan skapa och hantera rena textversioner av dina innehållsfragment för användning i textbaserade e-postarbetsflöden och flerkanalsscenarier.
-Dokumentation för JIRA-aktivitet: [DOCAC-14204](https://jira.corp.adobe.com/browse/DOCAC-14204)
+* **Text mode support in fragments** - Fragments now support text mode editing, allowing you to create and manage plain text versions of your content fragments for use in text-based email workflows and multi-channel scenarios.
+  Documentation JIRA task: [DOCAC-14204](https://jira.corp.adobe.com/browse/DOCAC-14204)
 
-#### Beslut
+#### Decisioning
 
-* **Stöd för ändringsfeed för uttrycksfragmentreferens i Edge Decisioning** - Den här förbättringen gör att ändringar i fragmentreferenser automatiskt återspeglas i alla objekt som refererar till fragment, utan att något behöver uppdateras manuellt (kampanjen eller beslutsprincipen publiceras om).
-Dokumentation för JIRA-aktivitet: [DOCAC-14350](https://jira.corp.adobe.com/browse/DOCAC-14350)
+* **Expression Fragment Reference change feed support in Edge Decisioning** - This enhancement allows changes in fragment references to automatically be reflected in all items that reference fragments, without needing to refresh anything manually (republishing the campaign or decision policy).
+  Documentation JIRA task: [DOCAC-14350](https://jira.corp.adobe.com/browse/DOCAC-14350)
 
-* **Valfria fragment i beslutsobjekt** - Fragment som är kopplade till beslutsobjekt kan nu konfigureras som valfria, vilket ger större flexibilitet i innehållskompositionen när inte alla återgivningar av beslutsobjekt kräver ett visst fragment.
-Dokumentation för JIRA-aktivitet: [DOCAC-14309](https://jira.corp.adobe.com/browse/DOCAC-14309)
+* **Optional fragments in decision items** - Fragments attached to decision items can now be configured as optional, providing greater flexibility in content composition when not all decision item renderings require a specific fragment.
+  Documentation JIRA task: [DOCAC-14309](https://jira.corp.adobe.com/browse/DOCAC-14309)
 
-#### Konfiguration
+#### Configuration
 
-* **URL-parameterkryptering** - URL-parametrar i spårningslänkar och landningssidor kan nu krypteras, vilket ger ett extra säkerhetslager för känsliga parameterdata. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
-Dokumentation för JIRA-aktivitet: [DOCAC-14349](https://jira.corp.adobe.com/browse/DOCAC-14349)
+* **URL parameters encryption** - URL parameters in tracking links and landing pages can now be encrypted, providing an additional layer of security for sensitive parameter data. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+  Documentation JIRA task: [DOCAC-14349](https://jira.corp.adobe.com/browse/DOCAC-14349)
 
-* **Mappar för resor och kampanjer** - Nu kan du ordna dina resor och kampanjer i mappar, vilket möjliggör strukturerad navigering och enklare hantering för team som arbetar med stora innehållsvolymer. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
-Dokumentation för JIRA-aktivitet: [DOCAC-14038](https://jira.corp.adobe.com/browse/DOCAC-14038)
+* **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders, enabling structured navigation and easier management for teams working with large volumes of content. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+  Documentation JIRA task: [DOCAC-14038](https://jira.corp.adobe.com/browse/DOCAC-14038)
 
-#### Samordnade kampanjer
+#### Orchestrated campaigns
 
-* **Globala variabler i samordnade kampanjer** - Orchestrated Campaigns har nu stöd för globala variabler som kan definieras en gång och återanvändas i alla aktiviteter i ett arbetsflöde, vilket förenklar konfigurationen och säkerställer konsekvens i dynamiska värden, uttryck och innehållspersonalisering.
-Dokumentation för JIRA-aktivitet: [DOCAC-14113](https://jira.corp.adobe.com/browse/DOCAC-14113)
+* **Global variables in Orchestrated Campaigns** - Orchestrated Campaigns now support global variables that can be defined once and reused across all activities within a workflow, simplifying configuration and ensuring consistency in dynamic values, expressions, and content personalization.
+  Documentation JIRA task: [DOCAC-14113](https://jira.corp.adobe.com/browse/DOCAC-14113)
 
-* **Förenklad målgruppsdimension i samordnade kampanjer** - Nu kan du enkelt välja eller automatiskt minska rätt målgruppsanpassning och sekundära dimensioner i samordnade kampanjer för korrekt och effektiv målgruppsaktivering.
-Dokumentation för JIRA-aktivitet: [DOCAC-13554](https://jira.corp.adobe.com/browse/DOCAC-13554)
+* **Target dimension simplification in Orchestrated Campaigns** - You can now easily select or automatically deduce the right targeting and secondary dimensions in Orchestrated campaigns for accurate, efficient audience activation.
+  Documentation JIRA task: [DOCAC-13554](https://jira.corp.adobe.com/browse/DOCAC-13554)
+
+-->
 
 <!--
 ## February '26 pre-release notes {#feb-26-01-rn}
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: February 17, 2026
 
@@ -569,7 +572,7 @@ Improvements coming with this release are listed below.
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: January 27, 2026
 
@@ -746,7 +749,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Journey Create Agent enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create Agent, practitioners can quickly create journeys by describing their requirements in conversational prompts. The agent streamlines journey creation, allowing marketers to focus on strategy rather than technical configuration.</p>
-<p><a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
+<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
 <p><a href="https://jira.corp.adobe.com/browse/CJM-95142">Link to PRODUCT JIRA task</a></p>
 <p>Availability date: January 12, 2026</p>
 </td>

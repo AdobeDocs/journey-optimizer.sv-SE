@@ -7,10 +7,10 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 720cff6feca34f89851a28e1c2e6866ab2e51e2e
+source-git-commit: ca383beea12fe1a4420cd8e4a6cd3bde147ade71
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 8%
+source-wordcount: '3166'
+ht-degree: 5%
 
 ---
 
@@ -25,11 +25,234 @@ ht-degree: 8%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## Uppdateringar 26 mars {#march-26-rn}
+## Mars 26 förhandsversionsinformation {#march-26-rn}
+
+**Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
+
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+
+**Releasedatum**: 24-25 mars 2026
 
 ### Nya funktioner {#march-26-features}
+
+<!--
+<table>
+<thead>
+<tr>
+<th><strong>LLM email optimizer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now optimize your email content for deliverability using large language model (LLM) technology. The LLM email optimizer analyzes your email content and provides actionable recommendations to improve sender reputation, avoid spam filters, and enhance overall deliverability performance.</p>
+</td>
+</tr>
+</tbody>
+</table>
+-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Konvertera bilder till e-postmallar</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du konvertera bilder till e-postmallar direkt i Journey Optimizer. Använd AI-baserad analys för att automatiskt generera strukturerade HTML-mallar från visuella referenser, vilket avsevärt minskar tiden för e-postdesign.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Inkrementell frågeaktivitet i samordnade kampanjer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>En ny <strong>inkrementell frågeaktivitet</strong> är nu tillgänglig i Orchestrated Campaigns. Den här aktiviteten efterfrågar endast nya eller uppdaterade poster sedan den senaste arbetsflödeskörningen, vilket avsevärt minskar bearbetningstiden och förbättrar effektiviteten för återkommande kampanjer som riktar sig mot stora datauppsättningar.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Transaktionsmeddelanden i samordnade kampanjer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Samordnade kampanjer har nu stöd för <strong>transaktionsmeddelanden</strong>, vilket gör att du kan utlösa händelsestyrda meddelanden i realtid, till exempel orderbekräftelser, bokningsmeddelanden och kontouppdateringar, direkt i kampanjarbetsflödet.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Testaktivitet i samordnade kampanjer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>En ny <strong>Test</strong>-aktivitet är nu tillgänglig i Orchestrated Campaigns. Den här aktiviteten dirigerar arbetsflödeskörningen till olika grenar baserat på definierade villkor, vilket gör att du kan validera kampanjlogik och konfigurationer innan du aktiverar liveleveranser.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Anpassade formulär på landningssidor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du skapa <strong>anpassade formulär</strong> på landningssidor för att samla in specifika prenumerationsdata utöver vanliga anmälningsfält. Definiera egna formulärfält, valideringsregler och överföringsbeteenden för att stödja fler användningsområden för prenumeration och profiler.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Agent: Skapa en välstrukturerad kampanj</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Journey Agent</strong>, som drivs av Adobe Experience Platform Agent Orchestrator, kan nu skapa kompletta <strong>Samordnade kampanjer</strong> med ett naturligt språkgränssnitt. Beskriv kampanjens mål och krav på ett enkelt språk så konfigurerar Journey Agent kampanjstrukturen, aktiviteterna och målgruppsanpassningen åt er.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Ny profilinhämtning på landningssidor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Landningssidor har nu stöd för <strong>nya arbetsflöden för profilinhämtning</strong>, vilket gör att du kan hämta och introducera nya målgruppsmedlemmar direkt från landningssidans upplevelser. Konfigurera förvärvsformulär för att samla in profildata och automatiskt tillhandahålla nya profiler i Adobe Experience Platform.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Optimering av resväg</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Optimering av kundresan</strong> använder AI för att analysera historiskt reseresultat och automatiskt välja den bästa vägen för varje kund, vilket maximerar konverterings- och engagemangsresultat.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Beslutsstöd i e-postkanal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Du kan nu använda <strong>Beslutsfattning</strong> för att anpassa och optimera innehållet i dina e-postmeddelanden. Utnyttja Priority Scores, Formulas eller AI Models för att visa de mest relevanta erbjudandena och innehållet för varje mottagare.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). I den här allmänna tillgänglighetsversionen stöds nu spegelsidor.</p>
+<p>Mer information finns i den <a href="../experience-decisioning/create-decision-policy.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Inkorgen för meddelanden</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>En ny <strong>meddelandeinkorg</strong> är nu tillgänglig i Adobe Journey Optimizer, vilket ger en centraliserad vy över mottagna meddelanden i appen, push och SMS. Mottagarna kan få tillgång till och interagera med alla sina meddelanden på ett och samma ställe, vilket möjliggör ett större engagemang och scenarier för återengagemang.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Åtgärdsaktiviteter för inbyggda kanaler har tagits bort</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Efter den allmänna tillgängligheten för <strong>åtgärdsaktiviteten</strong> i februari 2026 har tidigare inbyggda kanalåtgärdsaktiviteter (e-post, SMS, push, i appen osv.) på arbetsytan nu tagits bort. Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera utan några ändringar eller migrering. Mer information finns i den <a href="../building-journeys/journey-action.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Stöd för datauppslagssökning på resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med en ny aktivitet på resorna, Dataset Lookup, kan du dynamiskt hämta data från Adobe Experience Platform postdatauppsättningar under körning. Genom att utnyttja den här funktionen kan ni få tillgång till data som kanske inte finns i profilen eller händelsens nyttolast, vilket säkerställer att era kundinteraktioner är både relevanta och aktuella. Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). Mer information finns i den <a href="../building-journeys/dataset-lookup.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Utlösa samordnade kampanjer med API</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du utlösa en orkestrerad kampanj via API. Konfigurera målkampanjen som"utlöst av en signal" och publicera den. Använd sedan ett API-anrop för att starta kampanjen. API-anropet kan innehålla parametrar som ska vara tillgängliga som variabler i den utlösta kampanjen.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -80,7 +303,7 @@ På grund av den här modellen uppdateras versionsinformationen mellan månadsve
 <td>
 <p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
 <p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html?lang=sv-SE">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 4 mars 2026</p>
 </td>
 </tr>
@@ -126,7 +349,11 @@ På grund av den här modellen uppdateras versionsinformationen mellan månadsve
 
 ### Förbättringar {#march-26-improv}
 
+Förbättringar i den här versionen visas nedan.
+
 #### Resor
+
+* **Journey-skiljeförfarande - AI-modeller** - Förutom rankningsformler kan AI-modeller nu användas tillsammans med Journey-skiljeförfarandet för att automatiskt rangordna och prioritera kundresan, med maskininlärning för att avgöra den mest relevanta resan för varje profil baserat på historiskt beteende och sammanhangsberoende signaler. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 * **Påfyllnadssändning av utgående meddelanden på resor** - Du kan nu schemalägga att meddelanden från Journey Optimizer-resor levereras i kontrollerade batchar över tid. [Läs mer](../building-journeys/send-using-waves.md)
 
@@ -138,15 +365,44 @@ På grund av den här modellen uppdateras versionsinformationen mellan månadsve
 
   Tillgänglighetsdatum: 2 mars 2026
 
+#### Rapportering
+
+* **Uteslut båda klickningarna för e-post- och SMS-rapportering** - E-post- och SMS-rapportering filtrerar nu automatiskt bort båda klickningarna från klickmätvärden, vilket ger mer korrekta interaktionsdata och förhindrar att automatiserad trafik ökar prestandamängderna.
+
+* **Sändningsoptimering: Uppdaterad kontrollplats och ny lyftrapport** - STO-kontroller (Send-Time Optimization) har flyttats till Åtgärdskonfigurationsmenyn. Dessutom finns det nu en ny avbrottsrapport i Journeys-rapporter som mäter effekten av STO på kampanjens resultatstatistik.
+
+#### E-postdesigner
+
+* **Anpassning i öppen tid med Dynamic Media (Beta)** - Nu kan du anpassa e-postinnehåll i öppen tid med Adobe Dynamic Media-resurser, vilket aktiverar mottagarspecifika bilder och bilder i realtid som genereras dynamiskt baserat på varje mottagares attribut när e-postmeddelandet öppnas. Den här funktionen finns för närvarande i Beta.
+
+* **E-post-Designer visas i Unified Shell** - E-post-Designer visas nu i Unified Shell-upplevelsen, vilket ger en konsekvent navigerings- och rubrikupplevelse som överensstämmer med andra Adobe-program.
+
+* **Stöd för textläge i fragment** - Fragment har nu stöd för redigering i textläge, vilket gör att du kan skapa och hantera rena textversioner av dina innehållsfragment för användning i textbaserade e-postarbetsflöden och flerkanalsscenarier.
+
+#### Beslut
+
+* **Stöd för ändringsfeed för uttrycksfragmentreferens i Edge Decisioning** - Den här förbättringen gör att ändringar i fragmentreferenser automatiskt återspeglas i alla objekt som refererar till fragment, utan att något behöver uppdateras manuellt (kampanjen eller beslutsprincipen publiceras om).
+
+* **Valfria fragment i beslutsobjekt** - Fragment som är kopplade till beslutsobjekt kan nu konfigureras som valfria, vilket ger större flexibilitet i innehållskompositionen när inte alla återgivningar av beslutsobjekt kräver ett visst fragment.
 
 #### Konfiguration
+
+* **URL-parameterkryptering** - URL-parametrar i spårningslänkar och landningssidor kan nu krypteras, vilket ger ett extra säkerhetslager för känsliga parameterdata. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+
+* **Mappar för resor och kampanjer** - Nu kan du ordna dina resor och kampanjer i mappar, vilket möjliggör strukturerad navigering och enklare hantering för team som arbetar med stora innehållsvolymer. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 * **Förändring i händelsedatauppsättningen för sekundär mottagarfeedback för AJO** - AJO e-post-BCC-feedbackhändelsedatauppsättning byter namn till AJO sekundära mottagarfeedbackhändelsedatauppsättning.
    * **Befintliga användare**: Endast visningsnamnet ändras. Det underliggande tabellnamnet ändras inte.
    * **Nya användare och nya sandlådor**: Både visningsnamnet och tabellnamnet använder det nya namnet.
    * **Befintliga användare/organisationer med nya sandlådor**: Både visningsnamnet och tabellnamnet ändras till det nya namnet.
 
-     Tillgänglighetsdatum: 2 mars 2026
+  Tillgänglighetsdatum: 2 mars 2026
+
+#### Samordnade kampanjer
+
+* **Globala variabler i samordnade kampanjer** - Orchestrated Campaigns har nu stöd för globala variabler som kan definieras en gång och återanvändas i alla aktiviteter i ett arbetsflöde, vilket förenklar konfigurationen och säkerställer konsekvens i dynamiska värden, uttryck och innehållspersonalisering.
+
+* **Förenklad målgruppsdimension i samordnade kampanjer** - Nu kan du enkelt välja eller automatiskt minska rätt målgruppsanpassning och sekundära dimensioner i samordnade kampanjer för korrekt och effektiv målgruppsaktivering.
 
 ## Versionsinformation 26 februari {#feb-26-01-rn}
 
@@ -154,7 +410,7 @@ Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01
 
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 <!--**Release date**: February 17-18, 2026-->
 
