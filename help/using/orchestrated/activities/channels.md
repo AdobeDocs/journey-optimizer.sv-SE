@@ -5,9 +5,9 @@ title: Lägga till en kanalaktivitet i en flerstegskampanj
 description: Lär dig hur du lägger till en kanalaktivitet i en flerstegskampanj
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 version: Campaign Orchestration
-source-git-commit: 266bf3afde663b17aedce5fb51e7c5f424fee9ad
+source-git-commit: 39e442d69296298cf6edb386fb5775a47b69f8cc
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1397'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,11 @@ ht-degree: 0%
 >id="ajo_orchestration_push"
 >title="Push-aktivitet"
 >abstract="Med aktiviteten Push kan du skicka push-meddelanden som en del av din orkestrerade kampanj. Det gör det möjligt att leverera både engångskampanjer och återkommande samordnade kampanjer, vilket automatiserar sändningen av push-meddelanden till ett fördefinierat mål inom samma samordnade kampanj. Ni kan kombinera kanalaktiviteter i kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_target"
+>title="Target"
+>abstract="Platshållare för målavsnitt"
 
 <!--
 UNUSED IDs in BJ
@@ -116,7 +121,7 @@ Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mott
 
 Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabb leverans används när fördröjd leverans av meddelanden är affärskritisk. Du vill till exempel skicka en snabb push-varning för mobiltelefoner, som att få nyheter till användare som har installerat din nyhetskanalapp. Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
