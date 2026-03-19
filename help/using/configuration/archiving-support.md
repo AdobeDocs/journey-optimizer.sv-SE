@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: arkiv, meddelanden, HIPAA, BCC, e-post
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: baf210042685316742dac85658d281fe2711d716
+source-git-commit: 63b5f1504679deb8e7a912341b7a2b470033de13
 workflow-type: tm+mt
 source-wordcount: '1279'
 ht-degree: 1%
@@ -90,7 +90,7 @@ Följ stegen nedan för att göra detta.
 
 1. Gå till **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** och välj **[!UICONTROL AJO Secondary Recipient Feedback Event Schema]**.
 
-   ![](assets/preset-bcc-schema.png)
+   ![](assets/preset-bcc-schema.png){width="95%"}
 
 1. Klicka för att expandera **[!UICONTROL _experience]**, **[!UICONTROL customerJourneyManagment]** och sedan **[!UICONTROL secondaryRecipientDetail]**.
 
@@ -102,7 +102,7 @@ Följ stegen nedan för att göra detta.
 
 1. Välj ett namnutrymme i listrutan.
 
-   ![](assets/preset-bcc-schema-identity.png)
+   ![](assets/preset-bcc-schema-identity.png){width="85%"}
 
 1. Klicka på **[!UICONTROL Apply]**.
 
@@ -116,11 +116,11 @@ Det går inte att rapportera som sådant på en hemlig kopia i rese- och meddela
 
 Om du vill komma åt den här datauppsättningen via användargränssnittet väljer du **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Läs mer om hur du får åtkomst till datauppsättningar i [det här avsnittet](../data/get-started-datasets.md#access-datasets).
 
-<!--![](assets/preset-bcc-dataset.png)-->
+![](assets/preset-bcc-dataset.png){width="85%"}
 
-Om du vill köra frågor mot den här datauppsättningen kan du använda frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
+Om du vill köra frågor mot den här datauppsättningen kan du använda frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
 
-![](assets/preset-bcc-queries.png)
+![](assets/preset-bcc-queries.png){width="100%"}
 
 Beroende på vilken information du söker kan du köra följande frågor.
 
@@ -145,7 +145,7 @@ Beroende på vilken information du söker kan du köra följande frågor.
    >
    >Om du vill hämta parametern `<journey version id>`väljer du motsvarande reseversion på menyn **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** . Resursversions-ID visas i slutet av den URL som visas i webbläsaren. [Läs mer om reseversioner](../building-journeys/publish-journey.md#journey-versions)
    >
-   >![](assets/preset-bcc-action-id.png)
+   >![](assets/preset-bcc-action-id.png){width="85%"}
 
 1. Kör den här frågan om du vill hämta alla meddelandefeedbackhändelser (särskilt feedbackstatus) som har genererats för ett visst meddelande som är riktat till en viss användare under de senaste två dagarna:
 
@@ -225,11 +225,11 @@ När dina BCC-kopior för e-post arkiveras på ett externt system kan du hämta 
 
 Alla e-postmeddelanden innehåller nu en rubrik med namnet `x-message-profile-id`. Värdet för det här huvudet är olika för varje profil: det är unikt för varje skickat e-postmeddelande och för motsvarande BCC-e-postkopia.
 
-Huvudet `x-message-profile-id` lagras också i följande systemdatauppsättningar: [AJO Message Feedback Event Dataset &#x200B;](../data/datasets-query-examples.md#message-feedback-event-dataset) (skickade e-postmeddelanden) och [AJO Secondary Recipient Recipient Feedback Event Dataset](#bcc-reporting) (BCC-kopior). Du kan söka efter dessa datauppsättningar för att stämma av kopian av den kostnadsfria kopian och motsvarande e-postadress.
+Huvudet `x-message-profile-id` lagras också i följande systemdatauppsättningar: [AJO Message Feedback Event Dataset ](../data/datasets-query-examples.md#message-feedback-event-dataset) (skickade e-postmeddelanden) och [AJO Secondary Recipient Recipient Feedback Event Dataset](#bcc-reporting) (BCC-kopior). Du kan söka efter dessa datauppsättningar för att stämma av kopian av den kostnadsfria kopian och motsvarande e-postadress.
 
 * Om du vill komma åt dessa datauppsättningar via användargränssnittet väljer du **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Läs mer om hur du får åtkomst till datauppsättningar i [det här avsnittet](../data/get-started-datasets.md#access-datasets).
 
-* Använd Frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
+* Använd Frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
 
 Nedan visas några exempelfrågor som du kan köra för att hämta information som motsvarar dina BCC-kopior.
 
