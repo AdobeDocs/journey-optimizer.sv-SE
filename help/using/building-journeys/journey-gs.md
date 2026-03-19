@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 version: Journey Orchestration
-source-git-commit: 7d176d5e2fbaa26d9b4ac22e08c7a86ccea22c45
+source-git-commit: e7586f50e9f806b7dccb6d88998c43a89feb392b
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1204'
 ht-degree: 1%
 
 ---
@@ -40,13 +40,11 @@ De viktigaste stegen för att skapa en resa finns på den här sidan. De är smi
 I den här guiden gör du följande:
 
 * Definiera en startpunkt för en resa - ett målgruppssegment eller en realtidshändelse
-* Lägga till meddelandeåtgärder i alla kanaler (e-post, push eller SMS)
+* Lägg till meddelandeåtgärder över flera kanaler - e-post, push, SMS, i appen, webb, kodbaserad upplevelse, innehållskort med mera. [Se kanaler som stöds](journey-action.md)
 * Testa resan med testprofiler före aktivering
 * Publicera resan och övervaka dess prestanda
 
-Bygg kundresor i flera steg för att initiera en sekvens av interaktioner, erbjudanden och meddelanden över alla kanaler i realtid. Detta arbetssätt säkerställer att kunderna engagerar sig i rätt ögonblick baserat på deras handlingar och relevanta affärssignaler. Målgrupper definieras utifrån beteende, kontextuella data och affärshändelser. Förutsättningar beror på ditt användningsfall och vilken [typ av resa](entry-management.md#types-of-journeys) du skapar.
-
-Läs mer om hur profiler flödar genom resor och bearbetningshastighet för resor i [det här avsnittet](entry-management.md#journey-processing-rate).
+Bygg kundresor i flera steg för att initiera en sekvens av interaktioner, erbjudanden och meddelanden över alla kanaler i realtid. Detta arbetssätt säkerställer att kunderna engagerar sig i rätt ögonblick baserat på deras handlingar och relevanta affärssignaler.
 
 <!--
 >[!TIP]
@@ -70,11 +68,9 @@ Följande element är valfria, men kan behövas beroende på ditt sätt att arbe
 
 >[!NOTE]
 >
->Om du är en datatekniker som ansvarar för den tekniska konfigurationen (händelser, datakällor och åtgärder), se [det här avsnittet](../configuration/about-data-sources-events-actions.md).
-
->[!NOTE]
+>* Om du är en datatekniker som ansvarar för den tekniska konfigurationen (händelser, datakällor och åtgärder), se [det här avsnittet](../configuration/about-data-sources-events-actions.md).
 >
->Reservoarer och begränsningar för resan finns på [den här sidan](../start/guardrails.md).
+>* Reservoarer och begränsningar för resan finns på [den här sidan](../start/guardrails.md).
 
 ## Skapa en resa {#jo-build}
 
@@ -88,7 +84,7 @@ Så här skapar du en resa i flera steg:
 
    >[!TIP]
    >
-   >**Vilken resetyp ska jag välja?** Om du inte har använt Journey Optimizer tidigare kan du börja med en målgruppsbaserad resa med en **[!UICONTROL Read Audience]** -aktivitet. Det kräver ingen tidigare händelsekonfiguration och är det enklaste sättet att bekanta sig med arbetsytan. För händelseutlösta upplevelser i realtid (till exempel respons på ett köp eller en formulärinlämning) ska du först konfigurera en händelse och använda en händelsebaserad post. Läs mer om [resetyper](entry-management.md#types-of-journeys).
+   >**Vilken resetyp ska jag välja?** Om du inte har använt Journey Optimizer tidigare kan du börja med en målgruppsbaserad resa med en **[!UICONTROL Read Audience]** -aktivitet. Det kräver ingen tidigare händelsekonfiguration och är det enklaste sättet att bekanta sig med arbetsytan. För händelseutlösta upplevelser i realtid (till exempel respons på ett köp eller en formulärinlämning) ska du först konfigurera en händelse och använda en händelsebaserad post. Är du redo att gå djupare? [Identifiera alla resetyper och deras anmälningsregler](entry-management.md#types-of-journeys).
 
    ![Resegenskapspanelen med inställningar och konfigurationsalternativ](assets/jo-properties.png)
 
@@ -118,7 +114,7 @@ Så här utformar du din resa:
 
 Testa resan innan du publicerar den när du har byggt den. Journey Optimizer erbjuder ett **testläge** som ett sätt att visa testprofiler under resan och upptäcka eventuella fel före aktiveringen. Genom att köra snabbtester kan du vara säker på att resorna fungerar som de ska så att du kan publicera dem med tillförsikt. Lär dig hur du testar din resa [i det här avsnittet](testing-the-journey.md)
 
-Du kan även utföra din resa i **Torr körning**. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live. Lär dig hur du publicerar en resa i körningsläget [&#x200B; i det här avsnittet](journey-dry-run.md).
+Du kan även utföra din resa i **Torr körning**. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live. Lär dig hur du publicerar en resa i körningsläget [ i det här avsnittet](journey-dry-run.md).
 
 ## Publicera resan {#jo-pub}
 
@@ -139,38 +135,39 @@ Vet du inte var du ska börja? Här är tre typiska scenarier där resor ger mes
 <table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
-      <a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">
-        <img src="../assets/do-not-localize/icon-quick-start.svg">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">
+        <img src="../assets/do-not-localize/icon-quick-start.svg" width="35px">
       </a>
       <div><strong>Välkomstserie</strong><br/>Införliva automatiskt nya användare med en meddelandesekvens efter registreringen och vägleda dem genom produkten eller tjänsten.</div>
     </td>
     <td>
-      <a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">
-        <img src="../assets/do-not-localize/icon-campaign.svg">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">
+        <img src="../assets/do-not-localize/icon-campaign.svg" width="35px">
       </a>
       <div><strong>Återkalla kunder som lämnat ett köp genom att skicka en påminnelse med personaliserat innehåll.</strong><br/>Återanslut kunder som slutat utan att slutföra ett köp.</div>
     </td>
     <td>
       <a href="jo-use-cases.md">
-        <img src="../assets/do-not-localize/icon-content.svg">
+        <img src="../assets/do-not-localize/icon-content.svg" width="35px">
       </a>
       <div><strong>Åter-engagemang</strong><br/>Åter inaktiva användare med riktade erbjudanden eller uppdateringar baserat på deras senaste kända beteende.</div>
     </td>
   </tr>
   <tr style="border: 0;">
-    <td align="center"><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="jo-use-cases.md"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
   </tr>
 </table>
 
 ## Ytterligare resurser
 
+* **[Resetyper och profilinmatning](entry-management.md)** - Förstå alla resetyper (enställig händelse, affärshändelse, läsmålgrupp, målgruppskvalifikation) och hur profiler går in, deltar på nytt och löper genom resor.
 * **[Översikt över resedesignern](using-the-journey-designer.md)** - bemästra arbetsytans gränssnitt för att designa och samordna kundresor.
 * **[Reseaktiviteter](about-journey-activities.md)** - Upptäck alla tillgängliga aktiviteter, inklusive händelser, åtgärder och orkestreringskomponenter.
 * **[Testar resor](testing-the-journey.md)** - Lär dig hur du testar dina resor i testläge innan du publicerar till produktion.
 * **[Publicerar resor](publish-journey.md)** - Förstå processen för att publicera resan och hur du hanterar direktresor.
 * **[Reserapportering](report-journey.md)** - Spåra och analysera reseprestanda med detaljerade mått och insikter.
 * **[Felsökning av resor](troubleshooting.md)** - Hitta lösningar på vanliga reseproblem och bästa praxis för felsökning.
-* **[Resehandledningar](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om resebyggande och metodtips.
+* **[Resehandledningar](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om resebyggande och metodtips.
 
