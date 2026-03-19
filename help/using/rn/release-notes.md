@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 48d1e15bab9bc01d31795358cc4f632fd2a5b7dc
+source-git-commit: fb267a12601f728e9c70ec0fd9dbcc7d6190f878
 workflow-type: tm+mt
-source-wordcount: '3121'
+source-wordcount: '3237'
 ht-degree: 5%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 5%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Mars 26 förhandsversionsinformation {#march-26-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 24-25 mars 2026
 
@@ -80,8 +80,24 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <td>
 <p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
 <p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html?lang=sv-SE">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 4 mars 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Arbitration - AI Models</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni använda AI-modeller i era rankningsformler för att automatiskt öka poängen för reseprioritet baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kan komma in på de mest relevanta resorna.</p>
+<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
 </td>
 </tr>
 </tbody>
@@ -150,14 +166,36 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
+<th><strong>Kryptering av URL-parametrar</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>URL-parametrar för spårning av länkar och landningssidor kan nu krypteras, vilket ger ett extra säkerhetslager för känsliga parameterdata.</p>
+<ul>
+<li>Registrera och hantera krypteringsnycklar i ett dedikerat <strong>Administration</strong> -register.</li>
+<li>Använd den nya krypteringshjälpen i uttryck för att kryptera känsliga data i spårningslänkar och URL:er för landningssidor för de frågeparametrar som du vill skydda vid återgivningen.</li>
+</ul>
+<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Optimering av resväg</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p><strong>Optimering av kundresan</strong> använder AI för att analysera historiskt reseresultat och automatiskt välja den bästa vägen för varje kund, vilket maximerar konverterings- och engagemangsresultat.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Använd den nya Optimera-noden för att rikta in er på specifika målgrupper eller kör A/B-tester för att fastställa den bästa vägen för att uppfylla era affärsinriktade nyckeltal.
+Med det här verktyget kan du testa och ändra, och anpassa kommunikation, sekvensering och timing för att nå dina kunder på bästa sätt.
+</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). <a href="../building-journeys/optimize.md">Läs mer</a></p>
 </td>
 </tr>
 </tbody>
@@ -187,7 +225,10 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tbody>
 <tr>
 <td>
-<p>Efter den allmänna tillgängligheten för <strong>åtgärdsaktiviteten</strong> i februari 2026 har tidigare inbyggda kanalåtgärdsaktiviteter (e-post, SMS, push, i appen osv.) på arbetsytan nu tagits bort. Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera utan några ändringar eller migrering. Mer information finns i den <a href="../building-journeys/journey-action.md">detaljerade dokumentationen</a>.</p>
+<p>Efter den allmänna tillgängligheten för aktiviteten <strong>Åtgärd</strong> i februari 2026 har tidigare inbyggda kanalaktiviteter (e-post, push, SMS, in-app, webb, kodbaserad upplevelse och innehållskort) på arbetsytan nu tagits bort.</p>
+<p>Du använder nu en enda <strong>åtgärdsaktivitet</strong> för att konfigurera alla kanalåtgärder och ersätta behovet av separata kanalspecifika noder.</p>
+Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera utan några ändringar eller migrering.
+<p>Mer information finns i den <a href="../building-journeys/journey-action.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -239,7 +280,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>Nu kan du skapa <strong>anpassade formulär</strong> på landningssidor för att samla in specifika prenumerationsdata utöver vanliga anmälningsfält. Definiera egna formulärfält, valideringsregler och överföringsbeteenden för att stödja fler användningsområden för prenumeration och profiler.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). <a href="../landing-pages/lp-forms.md">Läs mer</a></p>
 </td>
 </tr>
 </tbody>
@@ -270,7 +311,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>Nu kan du konvertera bilder till e-postmallar direkt i Journey Optimizer. Använd AI-baserad analys för att automatiskt generera strukturerade HTML-mallar från visuella referenser, vilket avsevärt minskar tiden för e-postdesign.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). <a href="../content-management/image-to-html.md">Läs mer</a></p>
 </td>
 </tr>
 </tbody>
@@ -338,8 +379,6 @@ Förbättringar i den här versionen visas nedan.
 
 #### Resor
 
-* **Journey-skiljeförfarande - AI-modeller** - Förutom rankningsformler kan AI-modeller nu användas tillsammans med Journey-skiljeförfarandet för att automatiskt rangordna och prioritera kundresan, med maskininlärning för att avgöra den mest relevanta resan för varje profil baserat på historiskt beteende och sammanhangsberoende signaler. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
-
 * **Påfyllnadssändning av utgående meddelanden på resor** - Du kan nu schemalägga att meddelanden från Journey Optimizer-resor levereras i kontrollerade batchar över tid. [Läs mer](../building-journeys/send-using-waves.md)
 
   Tidigare släppt i Begränsad tillgänglighet för användning under resor är den här funktionen nu tillgänglig i alla miljöer (allmän tillgänglighet).
@@ -362,24 +401,25 @@ Förbättringar i den här versionen visas nedan.
 
 * **E-post-Designer visas i Unified Shell** - E-post-Designer visas nu i Unified Shell-upplevelsen, vilket ger en konsekvent navigerings- och rubrikupplevelse som överensstämmer med andra Adobe-program.
 
-* **Stöd för textläge i fragment** - Fragment har nu stöd för redigering i textläge, vilket gör att du kan skapa och hantera rena textversioner av dina innehållsfragment för användning i textbaserade e-postarbetsflöden och flerkanalsscenarier.
+* **Stöd för textläge i fragment** - Om du vill ha stöd för textbaserade e-postarbetsflöden kan du nu skapa och hantera textversioner av dina visuella fragment för optimal användning i den oformaterade textversionen av e-postmeddelanden som innehåller det fragmentet.
+
+  **Varning!** När du använder ett fragment som skapades före den aktuella versionen kan fragmenttextversionen återges felaktigt, både i e-postmeddelandet och i det slutliga e-postmeddelandet som skickas till mottagarna. För bästa resultat med äldre fragment kan du redigera, spara och publicera om varje fragment.
 
 #### Beslut
 
-* **Stöd för ändringsfeed för uttrycksfragmentreferens i Edge Decisioning** - Den här förbättringen gör att ändringar i fragmentreferenser automatiskt återspeglas i alla objekt som refererar till fragment, utan att något behöver uppdateras manuellt (kampanjen eller beslutsprincipen publiceras om).
+* **Referensfeed för uttrycksfragmentsreferens i Edge Decisioning** - Den här förbättringen tillåter att ändringar i fragmentreferenser automatiskt återspeglas i alla objekt som refererar till fragment, utan att något behöver uppdateras manuellt (kampanjen eller beslutsprincipen publiceras om).
 
-* **Valfria fragment i beslutsobjekt** - Fragment som är kopplade till beslutsobjekt kan nu konfigureras som valfria, vilket ger större flexibilitet i innehållskompositionen när inte alla återgivningar av beslutsobjekt kräver ett visst fragment.
+* **Valfria fragment i beslutsobjekt** - När du använder fragment i beslutsobjekt kan du nu göra ett fragment valfritt så att om det inte är tillgängligt för tillfället på Edge hoppas det över och resan eller kampanjen fortsätter att återge i stället för att misslyckas.
 
 #### Konfiguration
 
-* **URL-parameterkryptering** - URL-parametrar i spårningslänkar och landningssidor kan nu krypteras, vilket ger ett extra säkerhetslager för känsliga parameterdata. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
-
 * **Mappar för resor och kampanjer** - Nu kan du ordna dina resor och kampanjer i mappar, vilket möjliggör strukturerad navigering och enklare hantering för team som arbetar med stora innehållsvolymer. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
-* **Förändring i händelsedatauppsättningen för sekundär mottagarfeedback för AJO** - AJO e-post-BCC-feedbackhändelsedatauppsättning byter namn till AJO sekundära mottagarfeedbackhändelsedatauppsättning.
-   * **Befintliga användare**: Endast visningsnamnet ändras. Det underliggande tabellnamnet ändras inte.
-   * **Nya användare och nya sandlådor**: Både visningsnamnet och tabellnamnet använder det nya namnet.
-   * **Befintliga användare/organisationer med nya sandlådor**: Både visningsnamnet och tabellnamnet ändras till det nya namnet.
+* **Datauppsättningen för den sekundära mottagarfeedbacken för AJO byter namn** - datauppsättningen `AJO Email BCC Feedback Event` har bytt namn till datauppsättningen `AJO Secondary Recipient Feedback Event`. Effekten varierar beroende på din situation:
+
+   * **Befintliga användare**: Endast visningsnamnet uppdateras. Det underliggande tabellnamnet ändras inte.
+   * **Nya användare och sandlådor**: Både visningsnamnet och tabellnamnet återspeglar det nya namnet.
+   * **Befintliga användare med nya sandlådor**: Både visningsnamnet och tabellnamnet uppdateras till det nya namnet.
 
   Tillgänglighetsdatum: 2 mars 2026
 
@@ -391,11 +431,11 @@ Förbättringar i den här versionen visas nedan.
 
 ## Versionsinformation 26 februari {#feb-26-01-rn}
 
-Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01-improv) omfattar funktioner som redan är tillgängliga. Avsnittet [Kommer snart](#coming-soon) innehåller funktioner och förbättringar som är planerade att släppas senare i februari.
+Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01-improv) omfattar funktioner som redan är tillgängliga. <!--The [Coming soon](#coming-soon) section lists features and improvements scheduled for release later in February.-->
 
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 <!--**Release date**: February 17-18, 2026-->
 
