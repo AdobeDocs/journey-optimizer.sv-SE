@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 version: Journey Orchestration
-source-git-commit: 2844374e2398e0f85fbb70eafea79c3887f398c6
+source-git-commit: 7d176d5e2fbaa26d9b4ac22e08c7a86ccea22c45
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1202'
 ht-degree: 1%
 
 ---
@@ -48,10 +48,11 @@ Bygg kundresor i flera steg för att initiera en sekvens av interaktioner, erbju
 
 Läs mer om hur profiler flödar genom resor och bearbetningshastighet för resor i [det här avsnittet](entry-management.md#journey-processing-rate).
 
-<!-->[!TIP]
-&#x200B;>>
-Är du inte säker på om du ska använda en resa eller en kampanj? [Lär dig välja rätt metod](../start/journeys-vs-campaigns.md).
->—>
+<!--
+>[!TIP]
+>
+>Not sure whether to use a journey or a campaign? [Learn how to choose the right approach](../start/journeys-vs-campaigns.md).
+-->
 
 ## Innan du börjar {#prerequisites}
 
@@ -117,7 +118,7 @@ Så här utformar du din resa:
 
 Testa resan innan du publicerar den när du har byggt den. Journey Optimizer erbjuder ett **testläge** som ett sätt att visa testprofiler under resan och upptäcka eventuella fel före aktiveringen. Genom att köra snabbtester kan du vara säker på att resorna fungerar som de ska så att du kan publicera dem med tillförsikt. Lär dig hur du testar din resa [i det här avsnittet](testing-the-journey.md)
 
-Du kan även utföra din resa i **Torr körning**. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live. Lär dig hur du publicerar en resa i körningsläget [&#x200B; i det här avsnittet](journey-dry-run.md).
+Du kan även utföra din resa i **Torr körning**. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live. Lär dig hur du publicerar en resa i körningsläget [ i det här avsnittet](journey-dry-run.md).
 
 ## Publicera resan {#jo-pub}
 
@@ -138,13 +139,13 @@ Vet du inte var du ska börja? Här är tre typiska scenarier där resor ger mes
 <table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
-      <a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">
         <img src="../assets/do-not-localize/icon-quick-start.svg">
       </a>
       <div><strong>Välkomstserie</strong><br/>Införliva automatiskt nya användare med en meddelandesekvens efter registreringen och vägleda dem genom produkten eller tjänsten.</div>
     </td>
     <td>
-      <a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">
         <img src="../assets/do-not-localize/icon-campaign.svg">
       </a>
       <div><strong>Återkalla kunder som lämnat ett köp genom att skicka en påminnelse med personaliserat innehåll.</strong><br/>Återanslut kunder som slutat utan att slutföra ett köp.</div>
@@ -157,8 +158,8 @@ Vet du inte var du ska börja? Här är tre typiska scenarier där resor ger mes
     </td>
   </tr>
   <tr style="border: 0;">
-    <td align="center"><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="jo-use-cases.md"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
   </tr>
 </table>
@@ -171,5 +172,5 @@ Vet du inte var du ska börja? Här är tre typiska scenarier där resor ger mes
 * **[Publicerar resor](publish-journey.md)** - Förstå processen för att publicera resan och hur du hanterar direktresor.
 * **[Reserapportering](report-journey.md)** - Spåra och analysera reseprestanda med detaljerade mått och insikter.
 * **[Felsökning av resor](troubleshooting.md)** - Hitta lösningar på vanliga reseproblem och bästa praxis för felsökning.
-* **[Resehandledningar](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om resebyggande och metodtips.
+* **[Resehandledningar](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om resebyggande och metodtips.
 
