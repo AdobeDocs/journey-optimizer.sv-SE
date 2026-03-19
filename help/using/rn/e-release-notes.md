@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 17e337a24f239aeb968962bb168d2f5a17bd6f3d
+source-git-commit: 6197ca7a3b2dc3d86df8262346198ca4d3a9fee2
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1421'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
-**Releasedatum**: 26 mars 2026
+**Releasedatum**: 24-25 mars 2026
 
 ### Nya funktioner {#march-26-features}
 
@@ -185,7 +185,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>Du kan nu använda <strong>Beslutsfattning</strong> för att anpassa och optimera innehållet i dina e-postmeddelanden. Utnyttja Priority Scores, Formulas eller AI Models för att visa de mest relevanta erbjudandena och innehållet för varje mottagare.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). I den här allmänna tillgänglighetsversionen stöds nu spegelsidor.</p>
 <p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-13182">DOCAC-13182</a></p>
 </td>
 </tr>
@@ -211,24 +211,6 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Stöd för Carbon copy (CC) för e-post</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Du kan nu lägga till <strong>mottagare av kopia (CC)</strong> i utgående e-postmeddelanden som skickas via Journey Optimizer. Använd den här funktionen för att skicka kopior av kundkommunikation till interna team eller efterlevnadsadresser för arkivering och tillsyn.</p>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Tillgänglighetsdatum: 2 mars 2026</p>
-<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14051">DOCAC-14051</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Åtgärdsaktiviteter för inbyggda kanaler har tagits bort</strong><br/></th>
 </tr>
 </thead>
@@ -242,19 +224,47 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Stöd för datauppslagssökning på resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med en ny aktivitet på resorna, Dataset Lookup, kan du dynamiskt hämta data från Adobe Experience Platform postdatauppsättningar under körning. Genom att utnyttja den här funktionen kan ni få tillgång till data som kanske inte finns i profilen eller händelsens nyttolast, vilket säkerställer att era kundinteraktioner är både relevanta och aktuella. Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14351">DOCAC-14351</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Utlösa samordnade kampanjer med API</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du utlösa en orkestrerad kampanj via API. Konfigurera målkampanjen som"utlöst av en signal" och publicera den. Använd sedan ett API-anrop för att starta kampanjen. API-anropet kan innehålla parametrar som ska vara tillgängliga som variabler i den utlösta kampanjen.</p>
+<p>Dokumentation för JIRA-aktivitet: <a href="https://jira.corp.adobe.com/browse/DOCAC-14030">DOCAC-14030</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Förbättringar {#march-26-improv}
 
 Förbättringar i den här versionen visas nedan.
 
 #### Resor
 
-* **Stöd för datauppslagssökning på resor** - Nu kan du söka efter data från Adobe Experience Platform-datauppsättningar direkt under resevillkor, uttryck och åtgärder, vilket förbättrar personaliseringen med katalogdata, referenstabeller och andra strukturerade datauppsättningar. Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).
-Dokumentation för JIRA-aktivitet: [DOCAC-14351](https://jira.corp.adobe.com/browse/DOCAC-14351)
-
 * **Journey-skiljeförfarande - AI-modeller** - Förutom rankningsformler kan AI-modeller nu användas tillsammans med Journey-skiljeförfarandet för att automatiskt rangordna och prioritera kundresan, med maskininlärning för att avgöra den mest relevanta resan för varje profil baserat på historiskt beteende och sammanhangsberoende signaler. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
-  Tillgänglighetsdatum: 26 februari 2026
-Dokumentation för JIRA-aktivitet: [DOCAC-14295](https://jira.corp.adobe.com/browse/DOCAC-14295)
+  Dokumentation för JIRA-aktivitet: [DOCAC-14295](https://jira.corp.adobe.com/browse/DOCAC-14295)
 
 #### Rapportering
 
@@ -263,8 +273,7 @@ Dokumentation för JIRA-aktivitet: [DOCAC-14354](https://jira.corp.adobe.com/bro
 
 * **Sändningsoptimering: Uppdaterad kontrollplats och ny hissrapport** - STO-kontroller (Send-Time Optimization) har flyttats från den vänstra listen för åtgärden till åtgärdskonfigurationen. Dessutom finns det nu en ny avbrottsrapport i Journeys-rapporter som mäter effekten av STO på kampanjens resultatstatistik.
 
-  Tillgänglighetsdatum: 10 mars 2026
-Dokumentation för JIRA-aktivitet: [DOCAC-14335](https://jira.corp.adobe.com/browse/DOCAC-14335)
+  Dokumentation för JIRA-aktivitet: [DOCAC-14335](https://jira.corp.adobe.com/browse/DOCAC-14335)
 
 #### E-postdesigner
 
@@ -279,7 +288,7 @@ Dokumentation för JIRA-aktivitet: [DOCAC-14204](https://jira.corp.adobe.com/bro
 
 #### Beslut
 
-* **Stöd för ändringsfeed för uttrycksfragment i Edge Decisioning** - Uttrycksfragment som används i Edge Decisioning har nu stöd för ändringsfeedmekanismen, vilket säkerställer att uppdateringar av uttrycksfragment sprids i realtid till kantnoder.
+* **Stöd för ändringsfeed för uttrycksfragmentreferens i Edge Decisioning** - Den här förbättringen gör att ändringar i fragmentreferenser automatiskt återspeglas i alla objekt som refererar till fragment, utan att något behöver uppdateras manuellt (kampanjen eller beslutsprincipen publiceras om).
 Dokumentation för JIRA-aktivitet: [DOCAC-14350](https://jira.corp.adobe.com/browse/DOCAC-14350)
 
 * **Valfria fragment i beslutsobjekt** - Fragment som är kopplade till beslutsobjekt kan nu konfigureras som valfria, vilket ger större flexibilitet i innehållskompositionen när inte alla återgivningar av beslutsobjekt kräver ett visst fragment.
@@ -298,7 +307,7 @@ Dokumentation för JIRA-aktivitet: [DOCAC-14038](https://jira.corp.adobe.com/bro
 * **Globala variabler i samordnade kampanjer** - Orchestrated Campaigns har nu stöd för globala variabler som kan definieras en gång och återanvändas i alla aktiviteter i ett arbetsflöde, vilket förenklar konfigurationen och säkerställer konsekvens i dynamiska värden, uttryck och innehållspersonalisering.
 Dokumentation för JIRA-aktivitet: [DOCAC-14113](https://jira.corp.adobe.com/browse/DOCAC-14113)
 
-* **Förenklad måldimension i samordnade kampanjer** - Måldimensionskonfigurationen i samordnade kampanjer har förenklats, vilket minskar de steg och den komplexitet som krävs för att definiera målgruppsanpassning för era kampanjarbetsflöden.
+* **Förenklad målgruppsdimension i samordnade kampanjer** - Nu kan du enkelt välja eller automatiskt minska rätt målgruppsanpassning och sekundära dimensioner i samordnade kampanjer för korrekt och effektiv målgruppsaktivering.
 Dokumentation för JIRA-aktivitet: [DOCAC-13554](https://jira.corp.adobe.com/browse/DOCAC-13554)
 
 <!--
@@ -306,7 +315,7 @@ Dokumentation för JIRA-aktivitet: [DOCAC-13554](https://jira.corp.adobe.com/bro
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: February 17, 2026
 
@@ -560,7 +569,7 @@ Improvements coming with this release are listed below.
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: January 27, 2026
 
@@ -737,7 +746,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Journey Create Agent enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create Agent, practitioners can quickly create journeys by describing their requirements in conversational prompts. The agent streamlines journey creation, allowing marketers to focus on strategy rather than technical configuration.</p>
-<p><a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
+<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
 <p><a href="https://jira.corp.adobe.com/browse/CJM-95142">Link to PRODUCT JIRA task</a></p>
 <p>Availability date: January 12, 2026</p>
 </td>
