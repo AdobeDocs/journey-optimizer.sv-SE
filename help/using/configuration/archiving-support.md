@@ -225,7 +225,7 @@ När dina BCC-kopior för e-post arkiveras på ett externt system kan du hämta 
 
 Alla e-postmeddelanden innehåller nu en rubrik med namnet `x-message-profile-id`. Värdet för det här huvudet är olika för varje profil: det är unikt för varje skickat e-postmeddelande och för motsvarande BCC-e-postkopia.
 
-Huvudet `x-message-profile-id` lagras också i följande systemdatauppsättningar: [AJO Message Feedback Event Dataset ](../data/datasets-query-examples.md#message-feedback-event-dataset) (skickade e-postmeddelanden) och [AJO Secondary Recipient Recipient Feedback Event Dataset](#bcc-reporting) (BCC-kopior). Du kan söka efter dessa datauppsättningar för att stämma av kopian av den kostnadsfria kopian och motsvarande e-postadress.
+Huvudet `x-message-profile-id` lagras också i följande systemdatauppsättningar: [AJO Message Feedback Event Dataset &#x200B;](../data/datasets-query-examples.md#message-feedback-event-dataset) (skickade e-postmeddelanden) och [AJO Secondary Recipient Recipient Feedback Event Dataset](#bcc-reporting) (BCC-kopior). Du kan söka efter dessa datauppsättningar för att stämma av kopian av den kostnadsfria kopian och motsvarande e-postadress.
 
 * Om du vill komma åt dessa datauppsättningar via användargränssnittet väljer du **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Läs mer om hur du får åtkomst till datauppsättningar i [det här avsnittet](../data/get-started-datasets.md#access-datasets).
 
