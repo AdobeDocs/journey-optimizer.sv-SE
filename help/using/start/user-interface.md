@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 1d09a7ce6428532822955186973b6a2d9973f522
+source-git-commit: 85c170fce64e3cdfa790234002758c8d5e43bafd
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1482'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Om du vill få tillgång till Adobe Journey Optimizer loggar du in på [Adobe Ex
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 >* Dokumentationen uppdateras ofta. Vissa skärmbilder kan skilja sig något från gränssnittet.
 
 ## Snabbdemo {#quick-tour}
@@ -338,3 +338,18 @@ AI Assistant ger omedelbar hjälp och driftsinsikter. Klicka på ikonen AI-assis
 >id="ajo_channels_feedback_webhook_settings_header_parameters"
 >title="Huvudparametrar"
 >abstract="I det här avsnittet kan du konfigurera ytterligare anpassade rubriker som ska skickas med varje webkrok-begäran."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_incrementalquery"
+>title="Inkrementell fråga"
+>abstract="Den inkrementella frågan är en målaktivitet som kör en databasfråga varje gång den samordnade kampanjen körs. Det returnerar bara nya poster och utesluter alla som redan har inkluderats i en tidigare körning, så du slipper omdirigera samma personer eller exportera om samma rader."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_incrementalquery_processeddata"
+>title="Bearbetade data"
+>abstract="Under Bearbetade data väljer du hur poster ska uteslutas från tidigare körningar. Med Uteslut resultat från tidigare körning sparar aktiviteten en lista med poster som returnerats i tidigare körningar. Varje körning exkluderar dessa och returnerar endast nya poster. Med alternativet Använd ett datumfält använder aktiviteten ett markerat datumfält i stället för att spåra enskilda ID:n, och varje körning returnerar endast rader vars datum är efter den senaste körningen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_incrementalquery_history"
+>title="Historik på dagar"
+>abstract="Den här inställningen styr hur länge listan behålls. Värdet 0 innebär obestämd lagring. Inga poster tas bort."
