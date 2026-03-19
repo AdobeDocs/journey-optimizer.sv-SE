@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: export, meddelanden, HIPAA, e-post, SMS, konfiguration
 exl-id: 7b50c933-9738-4b1b-acae-08f0a8d41dab
-source-git-commit: ab0f100d53cb987919eb134442bf05e64c30719a
+source-git-commit: e9b748591c425395e71b53c5e80f03a42ce0563d
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '690'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 1%
 >
 >Den här funktionen är bara tillgänglig för e-post- och SMS-kanalen, för organisationer som har köpt tillägget för meddelandeexport. Kontakta din Adobe-representant om du vill veta mer.
 
-Med **Meddelandeexport** kan du överföra skickat e-post- och SMS-meddelandeinnehåll från [!DNL Journey Optimizer] till ditt eget lagringsutrymme via [!DNL Adobe Experience Platform] mål, vilket gör att du kan leverera data från [!DNL Experience Platform] till externa slutpunkter. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home){target="_blank"}
+Med **Meddelandeexport** kan du överföra skickat e-post- och SMS-meddelandeinnehåll från [!DNL Journey Optimizer] till ditt eget lagringsutrymme via [!DNL Adobe Experience Platform] mål, vilket gör att du kan leverera data från [!DNL Experience Platform] till externa slutpunkter. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home){target="_blank"}
 
 Med den här funktionen skrivs innehållet i e-post- och SMS-meddelanden som skickas via [!DNL Journey Optimizer] och som har markerats för export till [!DNL Experience Platform] **AJO Message Export DataSet**. [Läs mer om datauppsättningar](../data/get-started-datasets.md)
 
 Posterna sparas sedan i datauppsättningen i sju kalenderdagar från intag, under vilka du kan exportera dem till valfritt externt system.
 
-## Guardrails
+## Skyddsräcken
 
 * Den här funktionen stöder bara kanalerna **Email** och **SMS**.
 * Poster i datauppsättningen för export av AJO-meddelanden behålls **i sju kalenderdagar från att användaren har fått det**.
@@ -52,15 +52,17 @@ Startprocessen för funktionen för meddelandeexport består av två steg:
 
 ### Ställ in exportdataflöde {#set-up-export-dataflow}
 
-Innan du kan exportera dina data måste du konfigurera exportprocessen genom att definiera [!DNL Experience Platform]-målet och datauppsättningen som ska användas. Följ stegen nedan.
+Innan du kan exportera dina data måste du konfigurera exportprocessen genom att definiera [!DNL Experience Platform]-målet och datauppsättningens exportflöde.
+
+Detaljerade steg, molnmål som stöds, nödvändiga behörigheter och mer information finns i [det här avsnittet](../data/export-datasets.md#export-datasets).
 
 >[!NOTE]
 >
 >Den här inställningen måste konfigureras för varje sandlåda.
 
-1. Välj en [måltyp](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/destination-types){target="_blank"} för Experience Platform. En lista över tillgängliga målplattformar som kan ta emot data finns tillgänglig på [den här sidan](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview){target="_blank"}.
+1. Välj en [måltyp](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/destination-types){target="_blank"} för Experience Platform. En lista över tillgängliga målplattformar som kan ta emot data finns tillgänglig på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview){target="_blank"}.
 
-1. I [!DNL Experience Platform] konfigurerar du målet genom att definiera autentiseringsuppgifter, bucket/container, sökvägsprefix och säkerhetsalternativ. [Lär dig hur](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/export-datasets){target="_blank"}
+1. I [!DNL Experience Platform] konfigurerar du målet genom att definiera autentiseringsuppgifter, bucket/container, sökvägsprefix och säkerhetsalternativ. [Lär dig hur](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets){target="_blank"}
 
 1. Skapa ett datauppsättningsexportflöde med följande data:
 

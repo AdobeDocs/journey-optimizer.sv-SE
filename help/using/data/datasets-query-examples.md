@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Experienced
 keywords: datauppsättning, optimering, användningsfall
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: e9b748591c425395e71b53c5e80f03a42ce0563d
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1086'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,10 @@ På den här sidan hittar du en lista över Adobe Journey Optimizer datamängder
 * [Händelsedatauppsättning för push-spårning](#push-tracking-experience-event-dataset)
 * [Resestegshändelse](#journey-step-event)
 * [Datamängd för beslutshändelse](#ode-decisionevents)
-* [BCC Feedback, händelsedatauppsättning](#bcc-feedback-event-dataset)
+* [Sekundära data om mottagarens feedback-händelse (BCC)](#bcc-feedback-event-dataset)
 * [Enhetsdatauppsättning](#entity-dataset)
 
-Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}.
+Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
 Se även flera vanliga [exempel som används för att ställa frågor om händelser i resesteg](../reports/query-examples.md).
 
@@ -336,11 +336,11 @@ select value.marketing.email.val FROM (
 ```
 -->
 
-## BCC Feedback, händelsedatauppsättning{#bcc-feedback-event-dataset}
+## Sekundära data om mottagarens feedback-händelse (BCC){#bcc-feedback-event-dataset}
 
-_Namn i gränssnittet: AJO BCC Feedback Event Dataset (systemdatauppsättning)_
+_Namn i gränssnittet: AJO-händelsedatauppsättning för sekundär mottagarfeedback (system dataset). Datatabellen kan fortfarande ha namnet `ajo_bcc_feedback_event_dataset` i frågetjänsten._
 
-Datauppsättning som lagrar information för BCC-meddelanden.
+Datauppsättning för e-postmeddelanden om hemlig kopia (sekundär mottagare) när BCC-arkivering är aktiverat.
 
 Fråga för alla BCC-meddelanden inom 2 dagar (för en viss kampanj):
 
