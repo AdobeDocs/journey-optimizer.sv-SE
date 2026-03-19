@@ -11,16 +11,16 @@ keywords: resa, kampanj, iscensatt, jämförelse, val, beslut, arbetsflöde, rea
 hide: true
 hidefromtoc: true
 exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
-source-git-commit: fc2dc5924f4998d1285dee9c19a0d7e71a1e5722
+source-git-commit: 2844374e2398e0f85fbb70eafea79c3887f398c6
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1613'
 ht-degree: 1%
 
 ---
 
 # Resor jämfört med kampanjer: Välj rätt metod {#journeys-vs-campaigns}
 
-[!DNL Adobe Journey Optimizer] erbjuder fyra sätt att nå och engagera dina kunder: **Resor**, **Åtgärdskampanjer**, **API-utlösta kampanjer** och **samordnade kampanjer**. Vilken som är rätt beror på om du behöver 1:1-samordning i realtid, schemalagda sändningar, händelsestyrda meddelanden eller komplexa batcharbetsflöden.
+[!DNL Adobe Journey Optimizer] erbjuder två sätt att nå och engagera dina kunder: **Resor** och **kampanjer**. Resor är utformade för att i realtid orkestrera i flera steg med hjälp av kundbeteende, medan kampanjer är bättre lämpade för enstaka eller schemalagda sändningar till en viss målgrupp. När ni väl har bestämt er för en kampanj kan ni sedan välja den kampanjtyp som bäst passar ert användningsfall.
 
 Den här guiden hjälper dig att välja baserat på körningsstil, databehov och användningsfall - med en snabb jämförelse, beslutsträd och konkreta exempel.
 
