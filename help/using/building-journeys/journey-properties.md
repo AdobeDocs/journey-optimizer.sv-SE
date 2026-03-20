@@ -10,10 +10,10 @@ level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 version: Journey Orchestration
-source-git-commit: c54237bba0597ecc0d4ebb6084063834e0d2ab70
+source-git-commit: fe1c75aee05606e5d9bb374e4f9a9cf7b6ca7577
 workflow-type: tm+mt
-source-wordcount: '3049'
-ht-degree: 0%
+source-wordcount: '3203'
+ht-degree: 7%
 
 ---
 
@@ -89,7 +89,7 @@ Hanteringen av profilentréer beror på typen av resa. Läs mer om hantering av 
 >id="ajo_journey_properties_entrance"
 >title="Tillåt återinträde"
 >abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** till exempel om du vill erbjuda en engångspresentation när en person går in i en affär."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går till en affär.
 
@@ -99,7 +99,7 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **
 >id="ajo_journey_properties_re-entrance_wait"
 >title="Vänteperiod för återinträde"
 >abstract="Ställ in väntetiden innan du tillåter att en profil går in på resan igen med enhetsresor. Detta förhindrar att användarna kommer in på resan igen under en viss tid. Maximal varaktighet: 90 dagar."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återkommande vänteperiod**. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
 
@@ -274,6 +274,22 @@ Från och med [!DNL Adobe Journey Optimizer] juni 2024 har den globala tidsgrän
       <p>Profilen kommer att ha en TTL på 91 dagar, vilket matchar TTL-värdet för den nypublicerade reseversionen. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
     </td>
   </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Kommer min återkommande målgruppsresa för att läsa innehåll att stanna efter 91 dagar?</p>
+    </td>
+    <td>
+      <p>Nej. En återkommande målgruppsresa med läsbehörighet utan slutdatum förblir <strong>Live</strong> så länge den publiceras. Den flyttas till statusen <strong>Slutförd</strong> endast 91 dagar efter körningen av dess <strong>senaste förekomst</strong>. Den globala tidsgränsen på 91 dagar gäller för enskilda profiler som löper genom resan (maximal aktiv varaktighet per profil), inte reseens Live-status.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad är skillnaden mellan tidsgränsen för en 91-dagars resa och rapportfönstret för 91 dagar?</p>
+    </td>
+    <td>
+      <p>Det här är två separata koncept. Den globala tidsgränsen <strong> för </strong>resan  (91 dagar) är den maximala tid en enskild profil kan förbli aktiv under en resa - efter 91 dagar avslutas profilen och dess data tas bort. <strong>rapporteringsfönstret</strong> (ungefär 91 dagar) är en visningsgräns i gränssnittet: prestandadata som är äldre än ~91 dagar visas inte längre i rapporteringen, men resan fortsätter att köras och nya profiler fortsätter att visas.</p>
+    </td>
+  </tr>
 </table>
 
 ## Sammanfoga profiler {#merge-policies}
@@ -286,7 +302,7 @@ Från och med [!DNL Adobe Journey Optimizer] juni 2024 har den globala tidsgrän
 
 [!DNL Adobe Journey Optimizer] tillämpar den sammanslagningsprincip som används under hela resan. Om flera målgrupper används i en resa (till exempel med in [`inAudience`-funktioner](functions/functioninaudience.md)) skapas därför inkonsekvenser med den sammanfogningsprincip som används för resan. Ett fel genereras och publikationen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
-Mer information om sammanfogningsprinciper finns i [[!DNL Adobe Experience Platform] dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+Mer information om sammanfogningsprinciper finns i [[!DNL Adobe Experience Platform] dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 >[!NOTE]
 >

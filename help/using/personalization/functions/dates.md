@@ -6,10 +6,10 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: 241af4304f0bed8f3addf28ed8e7bc746550d823
+source-git-commit: 2dd13148d34436f8d98f04a2f9143e942d0604c3
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 3%
+source-wordcount: '1419'
+ht-degree: 2%
 
 ---
 
@@ -483,6 +483,29 @@ Kombinera med funktionen `lowerCase` för gemener:
 Utdata: `sun`, `mon`, `tue` osv.
 
 +++
+
++++Formatera en tidsstämpel från en kontexthändelse
+
+När du använder en tidsstämpel från ett sammanhangsattribut för en resehändelse gäller två krav:
+
+* **Lägg in tidsstämpeln med`toDateTime()`** - tidsstämplar för kontexthändelser identifieras inte automatiskt som datum-/tidsvärden av `formatDate()`.
+* **Radbryt numeriska händelse-ID:n i backticks** - om händelse-ID:t är ett tal (till exempel `1697323153`) måste det föregås av bakterier i uttryckssökvägen. I annat fall genereras ett syntaxfel i PQL.
+* **Använd `{% let %}` tilldelningssyntax** - infogad `{%= %}`-syntax stöder inte det här mönstret. Tilldela resultatet till en variabel först och återge det sedan med `{{varName}}`.
+
+```handlebars
+{% let appointmentDate = formatDate(toDateTime(context.journey.events.`1697323153`.timestamp), "dd/MM/yyyy HH:mm") %}
+{{appointmentDate}}
+```
+
+Utdata (exempel): `18/03/2026 14:30`
+
++++
+
+>[!CAUTION]
+>
+>**Vanligt fel: &quot;indata som inte matchar&quot;(&quot; förväntas \&lt;EOF\>&quot;**
+>
+>Det här PQL-syntaxfelet inträffar när `formatDate()` används med en tidsstämpel för en kontexthändelse infogad (`{%= formatDate(...) %}`). De vanligaste orsakerna är ett numeriskt händelse-ID som inte är inkapslat i bakgrunder (`` ` ``) eller ett tidsstämpelfält som skickas direkt till `formatDate()` utan att först ha kapslat in det i `toDateTime()`. Om du vill åtgärda båda problemen använder du tilldelningsmönstret `{% let %}` som visas i exemplet ovan.
 
 ### Mönstertecken {#pattern-characters}
 

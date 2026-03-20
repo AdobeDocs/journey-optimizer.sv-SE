@@ -8,9 +8,10 @@ topic: Personalization
 role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, handtag, iteration, matriser, kontext, personalisering
-source-git-commit: a0e8ca1b45818014993c37ac41f25e30ee1d1bb5
+exl-id: 1a7c490f-6490-4785-a44d-bddd5482754d
+source-git-commit: 2dd13148d34436f8d98f04a2f9143e942d0604c3
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3060'
 ht-degree: 0%
 
 ---
@@ -68,9 +69,19 @@ context.journey.events.<event_ID>.<fieldPath>
 * `<event_ID>`: Det unika ID:t för din händelse som konfigurerats under resan
 * `<fieldPath>`: Sökvägen till fältet eller arrayen i ditt händelseschema
 
+>[!NOTE]
+>
+>**Numeriska händelse-ID:n kräver åtgärder.** Om ditt händelse-ID är ett tal (till exempel `1697323153`) kan du radbryta det i bakslag (`` ` ``) i din uttryckssökväg. Om det inte finns några bakgrunder genererar PQL-tolken ett syntaxfel.
+>
+>```handlebars
+>context.journey.events.`1697323153`.fieldName
+>```
+>
+>Mer information och ett fullständigt exempel med datumformatering från händelsetidsstämplar finns i [Formatera en tidsstämpel från en kontexthändelse](../personalization/functions/dates.md#format-date).
+
 ### Exempel: Skapa kundvagnsobjekt från en händelse
 
-Om ditt [händelseschema](../event/experience-event-schema.md) innehåller en `productListItems`-matris (standardformat [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html?lang=sv-SE){target="_blank"}) kan du visa kundvagnens innehåll enligt exemplet nedan.
+Om ditt [händelseschema](../event/experience-event-schema.md) innehåller en `productListItems`-matris (standardformat [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}) kan du visa kundvagnens innehåll enligt exemplet nedan.
 
 +++ Visa exempelkod
 
@@ -243,7 +254,7 @@ Om du vill visa dynamiska fördelar baserat på lojalitetsstatus, se exemplet ne
 
 ## Iterera sökresultat för datauppsättningar {#dataset-lookup}
 
-[Uppslagsaktiviteten för datauppsättningar](../building-journeys/dataset-lookup.md) gör att du kan hämta data från [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=sv-SE){target="_blank"} under körning. De inkapslade data lagras som en array och kan itereras över i dina meddelanden.
+[Uppslagsaktiviteten för datauppsättningar](../building-journeys/dataset-lookup.md) gör att du kan hämta data från [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"} under körning. De inkapslade data lagras som en array och kan itereras över i dina meddelanden.
 
 >[!AVAILABILITY]
 >
@@ -984,7 +995,7 @@ Har du problem med upprepningen? I det här avsnittet beskrivs vanliga problem o
 
 **Vanliga misstag**:
 
-* Avslutande taggar saknas: Varje `{{#each}}` måste ha en `{{/each}}`. Granska [Interaktionssyntaxen &#x200B;](#syntax) för att se om strukturen är korrekt.
+* Avslutande taggar saknas: Varje `{{#each}}` måste ha en `{{/each}}`. Granska [Interaktionssyntaxen ](#syntax) för att se om strukturen är korrekt.
 * Felaktigt variabelnamn: Kontrollera att variabelnamnet används konsekvent genom hela blocket. Mer information om namnkonventioner finns i [Bästa tillvägagångssätt](#best-practices).
 * Felaktiga sökvägsavgränsare: Använd punkter (`.`), inte snedstreck eller andra tecken
 
@@ -1020,7 +1031,7 @@ Läs mer om [att använda uttrycksfragment i slingor](use-expression-fragments.m
 
 ### Testa dina iterationer
 
-Använd [testläget &#x200B;](../building-journeys/testing-the-journey.md) för resan för att verifiera dina iterationer. Detta är särskilt viktigt när du använder [anpassade åtgärder](#custom-action-responses) eller [datauppsättningssökningar](#dataset-lookup):
+Använd [testläget ](../building-journeys/testing-the-journey.md) för resan för att verifiera dina iterationer. Detta är särskilt viktigt när du använder [anpassade åtgärder](#custom-action-responses) eller [datauppsättningssökningar](#dataset-lookup):
 
 +++ Visa teststeg
 
@@ -1033,13 +1044,12 @@ Använd [testläget &#x200B;](../building-journeys/testing-the-journey.md) för 
 
 ## Relaterade ämnen {#related-topics}
 
-**Grundläggande om Personalization:** [Kom igång med personalisering](personalize.md) | [Lägg till personalisering](personalization-build-expressions.md) | [Personalization-syntax &#x200B;](personalization-syntax.md) | [Hjälpfunktioner](functions/helpers.md) | [Skapa villkorliga regler](create-conditions.md)
+**Grundläggande om Personalization:** [Kom igång med personalisering](personalize.md) | [Lägg till personalisering](personalization-build-expressions.md) | [Personalization-syntax ](personalization-syntax.md) | [Hjälpfunktioner](functions/helpers.md) | [Skapa villkorliga regler](create-conditions.md)
 
-**Resekonfiguration:** [Om händelser](../event/about-events.md) | [Konfigurera anpassade åtgärder](../action/about-custom-action-configuration.md) | [Skicka samlingar till anpassade åtgärdsparametrar](../building-journeys/collections.md#passing-collection) | [Använd API-anropssvar i anpassade åtgärder](../action/action-response.md) | [Felsöka anpassade åtgärder](../action/troubleshoot-custom-action.md) | [Använd Adobe Experience Platform-data på resor](../building-journeys/dataset-lookup.md) | [Använd extra identifierare på resor](../building-journeys/supplemental-identifier.md) | [Skyddsritningar och begränsningar &#x200B;](../start/guardrails.md) | [Testa din resa](../building-journeys/testing-the-journey.md)
+**Resekonfiguration:** [Om händelser](../event/about-events.md) | [Konfigurera anpassade åtgärder](../action/about-custom-action-configuration.md) | [Skicka samlingar till anpassade åtgärdsparametrar](../building-journeys/collections.md#passing-collection) | [Använd API-anropssvar i anpassade åtgärder](../action/action-response.md) | [Felsöka anpassade åtgärder](../action/troubleshoot-custom-action.md) | [Använd Adobe Experience Platform-data på resor](../building-journeys/dataset-lookup.md) | [Använd extra identifierare på resor](../building-journeys/supplemental-identifier.md) | [Skyddsritningar och begränsningar ](../start/guardrails.md) | [Testa din resa](../building-journeys/testing-the-journey.md)
 
 **Reseuttrycksfunktioner:** [Avancerad uttrycksredigerare](../building-journeys/expression/expressionadvanced.md) | [Funktioner för samlingshantering](../building-journeys/expression/collection-management-functions.md) (först, alla, sist) | [Listfunktioner](../building-journeys/functions/list-functions.md) (serializeList, filter, sort) | [Arrayfunktioner](../personalization/functions/arrays-list.md) (head, tail)
 
 **Användningsexempel för Personalization:** [E-post om att kunden har lämnat en kundvagn](personalization-use-case-helper-functions.md) | [Meddelande om orderstatus](personalization-use-case.md)
 
 **Meddelandedesign:** [Kom igång med e-postdesign](../email/get-started-email-design.md) | [Skapa push-meddelanden](../push/create-push.md) | [Skapa SMS-meddelanden](../sms/create-sms.md) | [Förhandsgranska och testa ditt innehåll](../content-management/preview-test.md)
-

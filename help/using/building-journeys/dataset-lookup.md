@@ -10,10 +10,10 @@ level: Intermediate
 version: Journey Orchestration
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 4a5a512a3e9eddaf720e857f5a250c645b2454db
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 0%
+source-wordcount: '893'
+ht-degree: 8%
 
 ---
 
@@ -66,7 +66,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Dataset lookup]**:
 
 1. Öppna kategorin **[!UICONTROL Orchestration]** och släpp en **[!UICONTROL Dataset lookup]**-aktivitet på arbetsytan.
 
-   ![[!DNL Adobe Experience Platform]-datauppsättningssökningsaktivitet på resan &#x200B;](assets/aep-data-activity.png)
+   ![[!DNL Adobe Experience Platform]-datauppsättningssökningsaktivitet på resan ](assets/aep-data-activity.png)
 
 1. Lägg till en etikett och en beskrivning.
 
@@ -93,6 +93,10 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Dataset lookup]**:
    * Tangenter kan vara uttryck som härleds från kundresans kontext, t.ex. SKU:er, e-post-ID:n eller andra identifierare. Exempel: `@profile.email` eller `list(@event{purchase_event.products.sku})`.
 
    * Endast **strängar** eller **listor med strängar** stöds.
+
+   >[!IMPORTANT]
+   >
+   >Du måste definiera söknyckeln med **avancerat läge**. Om du använder ett enkelt läge för att ange nyckeln, kommer datauppsättningssökningsaktivitetens utdata inte att vara tillgängliga som ett kontextattribut i efterföljande aktiviteter, och syntaxen `@datasetLookup{}` kommer att misslyckas med felet&quot;Det gick inte att hitta någon datauppsättningssökning&quot; i villkorsaktiviteter.
 
    +++Exempel
 
@@ -191,3 +195,15 @@ De data som hämtas av aktiviteten **[!UICONTROL Dataset lookup]** lagras i rese
    ```
    {{context.journey.datasetLookup.1482319411.entity.loyaltyMember.loyaltyTier}}
    ```
+
++++
+
+## Felsökning {#troubleshooting}
+
+### Felet &quot;Datauppsättningssökning hittades inte&quot; i villkorsaktiviteten {#troubleshooting-not-found}
+
+**Symptom:** Syntaxen `@datasetLookup{}` i en villkorsaktivitets avancerade uttrycksredigerare returnerar felet&quot;Dataset lookup not found&quot;, även om datauppsättningssökningsaktiviteten har konfigurerats korrekt under resan.
+
+**Orsak:** Uppslagsnyckeln i datauppsättningssökningsaktiviteten angavs i enkelt läge. När nyckeln inte har definierats i avancerat läge visas inte aktivitetsutdata som ett kontextattribut i aktiviteter längre fram i kedjan.
+
+**Korrigera:** Öppna datauppsättningssökningsaktiviteten, leta reda på fältet **[!UICONTROL Lookup key(s)]** och växla till **avancerat läge** för att definiera om nyckeluttrycket. Spara aktiviteten och publicera om resan.
