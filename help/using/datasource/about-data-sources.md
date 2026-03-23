@@ -51,7 +51,7 @@ För varje datakälla definierar du den information som ska hämtas med fältgru
 
 ## Välj en strategi för dataåtkomst {#data-access-strategy}
 
-Innan du konfigurerar en datakälla bör du tänka på vilken metod som passar bäst för ditt användningssätt. Det finns tre alternativ, var och en med olika kompromisser vad gäller beständighet, profilberikning och återanvändbarhet. Mer information om de här alternativen finns i [Bästa tillvägagångssätt för avancerade resor i Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
+Innan du konfigurerar en datakälla bör du tänka på vilken metod som passar bäst för ditt användningssätt. Det finns tre alternativ, var och en med olika kompromisser vad gäller beständighet, profilberikning och återanvändbarhet. Mer information om de här alternativen finns i [Bästa tillvägagångssätt för avancerade resor i Journey Optimizer](https://experienceleague.adobe.com/sv/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
 
 **Alternativ 1 - få åtkomst till externa data via anpassade åtgärder (ingen datasjön)**
 
@@ -71,7 +71,7 @@ Infoga data i en datauppsättning för att utlösa och personalisera resor baser
 
 **Alternativ 3 - Profilaktiverad datauppsättning i datasjön**
 
-Infoga data i en [profilaktiverad datamängd](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile){target="_blank"} för att skapa målgrupper, förbättra identitetsdiagram och utnyttja data över flera resor och RT-CDP-destinationer. Passar bäst när:
+Infoga data i en [profilaktiverad datamängd](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#enable-profile){target="_blank"} för att skapa målgrupper, förbättra identitetsdiagram och utnyttja data över flera resor och RT-CDP-destinationer. Passar bäst när:
 
 * Data är användbara för målgruppsdefinitioner som används i kanaler utanför Journey Optimizer.
 * Data innehåller flera identiteter som bidrar till mer detaljerade, sammanfogade profilfragment.
@@ -82,7 +82,7 @@ Infoga data i en [profilaktiverad datamängd](https://experienceleague.adobe.com
 | **Alternativ 2** - Datauppsättningen har inte aktiverats för profilen | Ja | Nej |
 | **Alternativ 3** - Profilaktiverad datauppsättning | Ja | Ja |
 
-Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html){target="_blank"} för att få mer information om hur du konfigurerar en datakälla i Adobe Experience Platform och en extern datakälla samt hur du hittar och använder data i en resa.
+Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html?lang=sv-SE){target="_blank"} för att få mer information om hur du konfigurerar en datakälla i Adobe Experience Platform och en extern datakälla samt hur du hittar och använder data i en resa.
 
 ## Instruktionsvideo {#video}
 
