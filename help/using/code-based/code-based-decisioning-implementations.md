@@ -6,7 +6,7 @@ topic: Content Management
 role: Developer
 level: Experienced
 exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
-source-git-commit: 0cdc5dce00d2240b2de6c4cba1648b4517323cce
+source-git-commit: 2d1b74f28b355e1d3ab9a292bc1f1a7e03dadf1c
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
@@ -25,9 +25,7 @@ När du använder Beslutsfattning i kodbaserade upplevelser bör du överväga a
 
 ## Testa kodbaserade upplevelser med hjälp av beslut {#code-based-test-decisions}
 
-<!--Currently you cannot simulate content from the user interface in a [code-based experience](create-code-based.md) campaign or journey using decisions.-->
-
-När du testar [kodbaserad upplevelse](create-code-based.md) med beslut kan flaggan `dryRun` användas för att supress-feedback-händelser för både rapporter och appningsräknare.
+När du testar [kodbaserad upplevelse](create-code-based.md) med beslut kan flaggan `dryRun` användas för att inaktivera feedbackhändelser för både rapporter och appningsräknare.
 
 När du har publicerat kampanjen lägger du till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
 
@@ -299,8 +297,8 @@ Låt oss säga att ni har samma beslutspolicy med sidhuvuds- och sidfotsplacerin
 
 Lär dig hur du hämtar, visar och spårar kodbaserade upplevelser med [Adobe Journey Optimizer-tillägget](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/#implement-extension-in-mobile-app){target="_blank"} för Adobe Experience Platform Mobile SDK:er i [den här självstudiekursen](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
 
-Lär dig hur du använder beslut i Journey Optimizer för att anpassa innehållserbjudanden på din webbplats, med fokus på Web SDK-konfiguration, i [den här självstudiekursen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
+Lär dig hur du använder beslut i Journey Optimizer för att anpassa innehållserbjudanden på din webbplats, med fokus på Web SDK-konfiguration, i [den här självstudiekursen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
 
-Lär dig hur du konfigurerar SDK för webben och använder kodbaserade upplevelser för att anpassa erbjudanden med hjälp av väderdata i realtid och sammanhangsbaserad information i [den här självstudiekursen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction){target="_blank"}.
+Lär dig hur du konfigurerar SDK för webben och använder kodbaserade upplevelser för att anpassa erbjudanden med hjälp av väderdata i realtid och sammanhangsbaserad information i [den här självstudiekursen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction){target="_blank"}.
 
 

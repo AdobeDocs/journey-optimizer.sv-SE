@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 9a1c148c-a6c3-406b-8f2e-1cf8b8239e75
-source-git-commit: effc706cfa56eca21cde0f26fe7b6332d3728b74
+source-git-commit: 2d1b74f28b355e1d3ab9a292bc1f1a7e03dadf1c
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 0%
+source-wordcount: '764'
+ht-degree: 22%
 
 ---
 
@@ -38,10 +38,11 @@ Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaser
 
 Detaljerad information om hur du väljer testprofiler och förhandsgranskar ditt innehåll finns i [det här avsnittet](../content-management/preview.md).
 
+När din kodbaserade upplevelse använder [Experience Decision](../experience-decisioning/gs-experience-decisioning.md) kan du förhandsgranska de beslutsobjekt som kommer att levereras: välj en eller flera testprofiler i **[!UICONTROL Simulate content]** och förhandsgranskningen visar de beslutsobjekt som är kvalificerade för respektive profil.
+
 >[!NOTE]
 >
->För närvarande kan du inte simulera innehåll från användargränssnittet i en kodbaserad upplevelsekampanj eller upplevelseresa med [Beslutsfattning](../experience-decisioning/gs-experience-decisioning.md). Det finns en tillfällig lösning i [det här avsnittet](../experience-decisioning/create-decision.md#test-and-publish).
-
+>Den här förhandsgranskningen är bara **innehållsförhandsvisning**: den visar vilka beslutsobjekt som kvalificerar sig för den valda testprofilen och hur redigerat innehåll återges. **Kontextdata** som skickas i Edge-direktbegäranden (till exempel data som används i beslutskriterier eller som refereras i din klientimplementering) simuleras inte i **[!UICONTROL Simulate content]**-förhandsgranskningen.
 
 ## Förhandsgranska på enhet {#preview-on-device}
 
@@ -95,11 +96,11 @@ När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni f�
 
    * Välj knappen **[!UICONTROL Copy link]** och dela länken med ditt team och intressenter, som kan förhandsgranska den nya upplevelsen i vilken mobilwebbläsare som helst innan ändringarna publiceras.
 
-   * Skanna QR-koden med din mobila enhet för att öppna förhandsgranskningslänken direkt i mobilprogrammet. Du måste ange PIN-koden på enheten för att kunna upprätta [Assurance](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/implement-assurance){target="_blank"}-sessionen.
+   * Skanna QR-koden med din mobila enhet för att öppna förhandsgranskningslänken direkt i mobilprogrammet. Du måste ange PIN-koden på enheten för att kunna upprätta [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/implement-assurance){target="_blank"}-sessionen.
 
      >[!NOTE]
      >
-     >**Adobe Experience Platform Assurance** är en produkt från Adobe Experience Cloud som hjälper dig att inspektera, verifiera, simulera och validera hur du samlar in data eller levererar upplevelser i din mobilapp. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/home){target="_blank"}
+     >**Adobe Experience Platform Assurance** är en produkt från Adobe Experience Cloud som hjälper dig att inspektera, verifiera, simulera och validera hur du samlar in data eller levererar upplevelser i din mobilapp. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}
 
 1. Om du använder någon [annan plattform](code-based-configuration.md#other) i din kodbaserade konfiguration väljer du den [yt-URI](code-based-surface.md#surface-uri) som du vill förhandsgranska i listrutan.
 

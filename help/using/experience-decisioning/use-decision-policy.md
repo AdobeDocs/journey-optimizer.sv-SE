@@ -8,9 +8,9 @@ level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
 exl-id: 35fc3cf2-1b91-4f30-ad71-f9d7d2a0291c
-source-git-commit: 5d646a7c87daea27e6fbca8f754fc835dc82b494
+source-git-commit: 2d1b74f28b355e1d3ab9a292bc1f1a7e03dadf1c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -136,10 +136,6 @@ När innehållet är klart kan du granska och publicera kampanjen eller resan:
 * [Granska och aktivera en kampanj](../campaigns/review-activate-campaign.md)
 
 När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den yta som definieras i kanalkonfigurationen, kommer ändringarna att tillämpas på webbsidan eller appen för kodbaserade upplevelser.
-
->[!NOTE]
->
->Du kan för närvarande inte simulera beslutsbaserat innehåll för [kodbaserade upplevelser](../code-based/create-code-based.md)-kampanjer eller resor. Det finns en tillfällig lösning [här](../code-based/code-based-decisioning-implementations.md).
 
 ## Använda rapportpaneler
 
