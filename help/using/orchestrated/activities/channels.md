@@ -5,10 +5,10 @@ title: Lägga till en kanalaktivitet i en flerstegskampanj
 description: Lär dig hur du lägger till en kanalaktivitet i en flerstegskampanj
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 version: Campaign Orchestration
-source-git-commit: 44df78b89def6c4bd9a0070a627bfbd79ae66587
+source-git-commit: 6c318f0a11a59a80721f14d830be10ba4f29318f
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 20%
+source-wordcount: '1461'
+ht-degree: 18%
 
 ---
 
@@ -73,8 +73,8 @@ Genom att använda kanalaktiviteter kan ni skapa omfattande och personaliserade 
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_category"
->title="Target"
->abstract="Platshållare för kategorifält"
+>title="Kategori"
+>abstract="Välj Marknadsföring eller Transactional för den här kanalaktiviteten. Marknadsföringsmeddelanden använder konfigurationer av marknadsföringskanaler och följer era standardaffärsregler. Transaktionsmeddelanden är avsedda för operativ kommunikation - som ofta triggas av en persons åtgärd (t.ex. en lösenordsåterställning eller inköpsbekräftelse) eller för tidskänsliga meddelanden som avbrott eller uppsägningar. De använder transaktionskanalskonfigurationer, affärsregler ignoreras och deltagande krävs inte."
 
 >[!PREREQUISITES]
 >
@@ -126,7 +126,7 @@ Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mott
 
 Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabb leverans används när fördröjd leverans av meddelanden är affärskritisk. Du vill till exempel skicka en snabb push-varning för mobiltelefoner, som att få nyheter till användare som har installerat din nyhetskanalapp. Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
