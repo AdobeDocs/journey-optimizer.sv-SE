@@ -12,9 +12,9 @@ hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
 exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
-source-git-commit: c5d7cbde6e0a9b4b835abac19d33b973f9f364e4
+source-git-commit: 5d646a7c87daea27e6fbca8f754fc835dc82b494
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1389'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md)
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
-* **Skapa utmaningar** {2 }︎ ◀Du är här **&#x200B;**
+* **Skapa utmaningar** {2 }︎ ◀Du är här ****
 * [Skapa uppgifter](create-tasks.md)
 * [API-referens för lojalitetsutmaningar](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Den här funktionen finns för närvarande i **privat beta**. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
+>Den här funktionen finns för närvarande i **privat beta**. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](../rn/releases.md).
 
 På den här sidan beskrivs hela processen med att skapa en lojalitetsutmaning, från att välja utmaningstyp och konfigurera dess egenskaper till att generera och publicera den resa som kommer att leverera utmaningen till dina kunder.
 

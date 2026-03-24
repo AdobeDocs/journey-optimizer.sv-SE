@@ -11,10 +11,10 @@ keywords: uttryck, redigerare
 mini-toc-levels: 1
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: c5fe9a17bc0ddcffb1af63bf040a9c84d995fdba
+source-git-commit: 5d646a7c87daea27e6fbca8f754fc835dc82b494
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 0%
+source-wordcount: '924'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ Med [!DNL Journey Optimizer] kan du utnyttja data från [!DNL Adobe Experience P
 
 >[!NOTE]
 >
->Datasökningsfunktionen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
+>Datasökningsfunktionen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](../rn/releases.md).
 
 Läs mer om hur du får åtkomst till och arbetar med datauppsättningar i det här avsnittet: [Kom igång med datauppsättningar](../data/get-started-datasets.md)
 
@@ -77,7 +77,7 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 
 För att kunna utnyttja data från datauppsättningen för personalisering måste du aktivera datauppsättningen för sökning.
 
-### Förhandskrav {#prerequisites-enable}
+### Förutsättningar {#prerequisites-enable}
 
 Schemat som är associerat med din datauppsättning som du vill aktivera för sökning måste vara av posttyp. Schemat ska INTE vara av profil- eller händelseklass.
 
@@ -113,7 +113,7 @@ Använd växlingsknappen i användargränssnittet för datauppsättningshanterin
 
 Följ anvisningarna i [den här dokumentationen](https://developer.adobe.com/journey-optimizer-apis/references/authentication/) för att konfigurera miljön för att skicka API-kommandon.
 
-#### Förhandskrav
+#### Förutsättningar
 
 * Utvecklarprojektet måste ha Adobe Journey Optimizer- och Adobe Experience Platform-API:erna tillagda i projektet.
 

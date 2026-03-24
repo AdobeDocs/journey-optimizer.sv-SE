@@ -7,10 +7,10 @@ role: User
 level: Experienced
 exl-id: 008d42c7-a523-4857-b34e-0e8dd1dfa507
 version: Journey Orchestration
-source-git-commit: 741b39a7588ae4e1161891226d95609508b00031
+source-git-commit: 5d646a7c87daea27e6fbca8f754fc835dc82b494
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 17%
+source-wordcount: '344'
+ht-degree: 16%
 
 ---
 
@@ -37,7 +37,7 @@ Vårt nästa generations beslutsramverk, utformat för att förena befintliga Jo
 * Uppdaterad policy och konfiguration av urvalsstrategi: Tillåt återanvändning av beslutskomponenter
 * Experimentationsfunktioner: Testa beslutslogik mot andra innehållskomponenter för att mäta prestanda
 
-Beslut är tillgängligt för alla kunder för kanalerna **Kodbaserad upplevelse**, **Push-meddelanden** och **SMS**. Beslut för **e-postkanalen** finns i Begränsad tillgänglighet. Kontakta din Adobe-representant om du vill begära åtkomst till e-postbeslut. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
+Beslut är tillgängligt för alla kunder för kanalerna **Kodbaserad upplevelse**, **Push-meddelanden** och **SMS**. Beslut för **e-postkanalen** finns i Begränsad tillgänglighet. Kontakta din Adobe-representant om du vill begära åtkomst till e-postbeslut. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](../rn/releases.md).
 
 ➡️ [Kom igång med beslut](../experience-decisioning/gs-experience-decisioning.md)
 

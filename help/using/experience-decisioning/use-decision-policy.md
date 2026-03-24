@@ -8,9 +8,9 @@ level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
 exl-id: 35fc3cf2-1b91-4f30-ad71-f9d7d2a0291c
-source-git-commit: 708c67796974e019417efbf086ab60d26dfca866
+source-git-commit: 5d646a7c87daea27e6fbca8f754fc835dc82b494
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ När du har lagt till en beslutsprincip i innehållet kan du använda attribut f
 >
 >Beslutsprinciper är tillgängliga för alla kunder för kanalerna **Kodbaserad upplevelse**, **SMS** och **Push-meddelanden**.
 >
->Beslut för kanalen **Email** finns endast i Begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
+>Beslut för kanalen **Email** finns endast i Begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](../rn/releases.md).
 
 ## Infoga koden för beslutspolicy {#insert}
 
