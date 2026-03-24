@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4c2785d580e28bb7645b61edaef48929bf9f4ff3
+source-git-commit: c532c259538a3ce007621ae7e9f17a73623ea70d
 workflow-type: tm+mt
-source-wordcount: '2839'
+source-wordcount: '2974'
 ht-degree: 7%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 7%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Mars 26 förhandsversionsinformation {#march-26-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 24-25 mars 2026
 
@@ -42,13 +42,13 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Transaktionsmeddelanden i samordnade kampanjer</strong><br/></th>
+<th><strong>Transaktionssamordnade kampanjer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Samordnade kampanjer har nu stöd för <strong>transaktionsmeddelanden</strong>, vilket gör att du kan utlösa händelsestyrda meddelanden i realtid, till exempel orderbekräftelser, bokningsmeddelanden och kontouppdateringar, direkt i kampanjarbetsflödet.</p>
+<p>Orchestrerade kampanjer kan nu definieras som <strong>transactional</strong>. Detta gör det möjligt att leverera transaktionsmeddelanden som triggas av specifika åtgärder som utförs av enskilda, till exempel begäranden om lösenordsåterställning eller kundvagnsköp. Genom att tilldela den här kategorin tillämpas transaktionskanalskonfigurationer och affärsreglerna åsidosätts.</p>
 </td>
 </tr>
 </tbody>
@@ -116,7 +116,9 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <p>Använd den nya Optimera-noden för att rikta in er på specifika målgrupper eller kör A/B-tester för att fastställa den bästa vägen för att uppfylla era affärsinriktade nyckeltal.
 Med det här verktyget kan du testa och ändra, och anpassa kommunikation, sekvensering och timing för att nå dina kunder på bästa sätt.
 </p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). <a href="../building-journeys/optimize.md">Läs mer</a></p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Med allmän tillgänglighet introduceras i den här versionen <strong>experimentera med typ</strong> (A/B eller flerbeväpnad bandit) och <strong>Skala vinnaren</strong> för enhetsresor.</p>
+<p>Mer information finns i den <a href="../building-journeys/optimize.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -147,8 +149,8 @@ Med det här verktyget kan du testa och ändra, och anpassa kommunikation, sekve
 <tr>
 <td>
 <p>Efter den allmänna tillgängligheten för aktiviteten <strong>Åtgärd</strong> i februari 2026 har tidigare inbyggda kanalaktiviteter (e-post, push, SMS, in-app, webb, kodbaserad upplevelse och innehållskort) på arbetsytan nu tagits bort.</p>
-<p>Du använder nu en enda <strong>åtgärdsaktivitet</strong> för att konfigurera alla kanalåtgärder och ersätta behovet av separata kanalspecifika noder.</p>
-Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera utan några ändringar eller migrering.
+<p>Du använder nu en enda <strong>åtgärdsaktivitet</strong> för att konfigurera alla kanalåtgärder och ersätta behovet av separata kanalspecifika noder.
+Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera utan några ändringar eller migrering.</p>
 <p>Mer information finns i den <a href="../building-journeys/journey-action.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -271,7 +273,7 @@ Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera u
 <td>
 <p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
 <p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html?lang=sv-SE">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 4 mars 2026</p>
 </td>
 </tr>
@@ -305,10 +307,11 @@ Förbättringar i den här versionen visas nedan.
 
 #### Rapportering
 
-* **Uteslut båda klickningarna för e-post- och SMS-rapportering** - E-post- och SMS-rapportering filtrerar nu automatiskt bort båda klickningarna från klickmätvärden, vilket ger mer korrekta interaktionsdata och förhindrar att automatiserad trafik ökar prestandamängderna.
-
 * **Sändningsoptimering: Uppdaterad kontrollplats och ny lyftrapport** - STO-kontroller (Send-Time Optimization) har flyttats till Åtgärdskonfigurationsmenyn. Dessutom finns det nu en ny avbrottsrapport i Journeys-rapporter som mäter effekten av STO på kampanjens resultatstatistik.
+
 <!--
+* **Exclude bot clicks for email and SMS reporting** - Email and SMS reporting now automatically filters out bot clicks from click metrics, providing more accurate engagement data and preventing automated traffic from inflating your performance figures.
+
 #### Email Designer
 
 * **Email Designer displayed in Unified Shell** - The Email Designer is now displayed within the Unified Shell experience, providing a consistent navigation and header experience that aligns with other Adobe applications.
@@ -341,6 +344,12 @@ Förbättringar i den här versionen visas nedan.
 
 #### Resor
 
+* **Experimenttyp** - Du kan nu välja mellan A/B-experiment (fast delning i början) eller Multi-väpnad bandit (automatisk delning med veckoviktsuppdateringar) när du konfigurerar ett sökvägsexperiment.
+
+* **Banexperiment: Skala vinnaren** - Du kan nu automatiskt eller manuellt rulla ut den vinnande sökvägen för ett experiment till din fulla publik. När vinnaren väl har fastställts kan ni utöka dess räckvidd och effektivitet utan att hela tiden övervaka experimentet.
+
+  Denna kapacitet är endast tillgänglig vid enstaka resor (händelseresättda och målgruppskvalifikationer). Det är inte tillgängligt för målgruppsresor för läsning.
+
 * **Påfyllnadssändning av utgående meddelanden på resor** - Du kan nu schemalägga att meddelanden från Journey Optimizer-resor levereras i kontrollerade batchar över tid. [Läs mer](../building-journeys/send-using-waves.md)
 
   Tidigare släppt i Begränsad tillgänglighet för användning under resor är den här funktionen nu tillgänglig i alla miljöer (allmän tillgänglighet).
@@ -358,7 +367,7 @@ Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01
 
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 <!--**Release date**: February 17-18, 2026-->
 
@@ -583,6 +592,9 @@ Förbättringar i den här versionen visas nedan.
 
   Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
+* **Förhandsgranskning av beslut i den kodbaserade upplevelsekanalen** - Du kan nu förhandsgranska beslutsobjekt när du konfigurerar beslut med den kodbaserade upplevelsekanalen. Förhandsgranskningen är tillgänglig direkt i redigeringsgränssnittet innan den publiceras. [Läs mer](../code-based/test-code-based.md#preview-code-based)
+
+  Tillgänglighetsdatum: 18 februari 2026
 
 * **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla fragment till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutspolicyer. [Läs mer](../experience-decisioning/fragments-decision-policies.md)
 
@@ -607,11 +619,5 @@ Förbättringar i den här versionen visas nedan.
 <!--## Coming soon {#coming-soon}
 
 The features and improvements below are planned for release later in February. Release dates and scope may change without prior notice.
-
-### Improvements {#coming-soon-improv}
-
-* **Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
-
-  Availability date: February 18, 2026
 -->
 
