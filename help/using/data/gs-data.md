@@ -7,9 +7,9 @@ feature: Data Management
 role: Developer, Admin, User
 level: Beginner, Intermediate
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
-source-git-commit: 89d575834871a5c55bfce75511083b4b651301b8
+source-git-commit: 7094cb2717f36042fa0aec1c6442f8d00c593823
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2442'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ På den här sidan får du en praktisk utgångspunkt för att förstå:
 Använd den här guiden tillsammans med datatekniker, administratörer och marknadsförare så att alla kan få en gemensam bild av hur data flödar in i och ut från Journey Optimizer.
 
 >[!TIP]
->Har du inte använt datahanteringen i Journey Optimizer förut? Titta på självstudiekursen [Konfigurera dataöversikt](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/data-management/set-up-data-overview){target="_blank"} för en praktisk, nybörjarvänlig genomgång av scheman, datauppsättningar och källor.
+>Har du inte använt datahanteringen i Journey Optimizer förut? Titta på självstudiekursen [Konfigurera dataöversikt](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/set-up-data-overview){target="_blank"} för en praktisk, nybörjarvänlig genomgång av scheman, datauppsättningar och källor.
 
 ## Hur Journey Optimizer använder Adobe Experience Platform-data {#aep-data}
 
@@ -40,7 +40,7 @@ Scheman och datauppsättningar finns i Adobe Experience Platform. Identiteter oc
 >[!TIP]
 >Se Adobe Experience Platform som ert centrala datalager och Journey Optimizer som en tillämpning som ordnar resor och meddelanden med denna gemensamma datamgrund.
 
-➡️ [Läs mer om Journey Optimizer-arkitektur](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/essentials/understanding-ajo#architecture-details){target="_blank"}
+➡️ [Läs mer om Journey Optimizer-arkitektur](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/essentials/understanding-ajo#architecture-details){target="_blank"}
 
 ## Viktiga databegrepp i Journey Optimizer {#key-concepts}
 
@@ -79,12 +79,12 @@ En källanslutning (kallas även **källa**) hjälper dig att importera data fr�
 
 ### Datakälla (Journey Optimizer) {#data-source}
 
-En datakälla i Journey Optimizer definierar vilka fält från Adobe Experience Platform (eller externa API:er) som exponeras inuti resor och meddelanden. Datakällor som konfigureras i Journey Optimizer-gränssnittet innehåller vanligtvis den inbyggda Adobe Experience Platform-datakällan (som visar attribut och händelser för kundprofiler i realtid) och externa eller anpassade datakällor som anropas under kundresan för ytterligare berikning. De används för resevillkor, anpassade åtgärder och personalisering av meddelanden.
+En datakälla i Journey Optimizer definierar vilka fält från Adobe Experience Platform (eller externa API:er) som exponeras inuti resor och meddelanden. Datakällor som konfigureras i Journey Optimizer-gränssnittet innehåller vanligtvis den inbyggda Adobe Experience Platform-datakällan (som visar kundprofilattribut i realtid) och externa eller anpassade datakällor som anropas under körningen för ytterligare berikning. De används för resevillkor, anpassade åtgärder och personalisering av meddelanden.
 
 ➡️ [Läs mer om datakällor](../datasource/about-data-sources.md)
 
 >[!NOTE]
->[Adobe Experience Platform-ordlistan](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/glossary){target="_blank"} definierar&quot;datakälla&quot; i allmänhet som datas ursprung (en CRM, mobilapp osv.). I Journey Optimizer har **datakällan** en specifik betydelse: en gränssnittskonfiguration som styr vilka fält som visas i resor och meddelanden.
+>[Adobe Experience Platform-ordlistan](https://experienceleague.adobe.com/en/docs/experience-platform/landing/glossary){target="_blank"} definierar&quot;datakälla&quot; i allmänhet som datas ursprung (en CRM, mobilapp osv.). I Journey Optimizer har **datakällan** en specifik betydelse: en gränssnittskonfiguration som styr vilka fält som visas i resor och meddelanden.
 
 ### Identitet och kundprofil i realtid {#identity}
 
@@ -146,7 +146,7 @@ Konfigurera källkopplingar för företagssystem - som Adobe Analytics, Adobe Ex
 
 ➡️ [Läs mer om källanslutningar](../start/get-started-sources.md)
 
-➡️ [Självstudiekurs: Skapa datauppsättningar och importera data](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/data-management/create-datasets-and-ingest-data){target="_blank"}
+➡️ [Självstudiekurs: Skapa datauppsättningar och importera data](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/create-datasets-and-ingest-data){target="_blank"}
 
 +++
 
@@ -157,7 +157,7 @@ Datakällor är ett Journey Optimizer-specifikt koncept: de är inte där dina d
 Journey Optimizer innehåller en inbyggd [Adobe Experience Platform-datakälla](../datasource/adobe-experience-platform-data-source.md) som ger direktåtkomst till kundprofilattribut i realtid. Detta omfattar de flesta användningsfall: läsprofilattribut för personalisering eller kontroll av samtycke och inställningsfält. Du kan också konfigurera [externa datakällor](../datasource/external-data-sources.md) så att externa API:er anropas vid körning, till exempel för att hämta en kundlojalitetspoäng i realtid, en produktrekommendation eller en lagerlagernivå som inte lagras i Adobe Experience Platform.
 
 >[!NOTE]
->Direktåtkomst till händelsedata för upplevelser via den inbyggda Adobe Experience Platform-datakällan är föråldrad och inaktiveras stegvis. [Läs mer](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/exp-event-lookup){target="_blank"}.
+>Direktåtkomst till händelsedata för upplevelser via den inbyggda Adobe Experience Platform-datakällan är föråldrad och inaktiveras stegvis. [Läs mer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/exp-event-lookup){target="_blank"}.
 
 Att konfigurera datakällor är en administrativ uppgift som låser upp hela datalagret för reseförfattare och marknadsförare. När ett fält exponeras via en datakälla blir det tillgängligt i transportvillkorsbyggaren, i redigeringsprogram för meddelandeanpassning och i regler för beslut om erbjudanden - utan att det krävs något ytterligare konstruktionsarbete vid resans byggtid.
 
@@ -216,7 +216,7 @@ Det här flödet visar hur scheman, datauppsättningar, källor, datakällor och
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 **Kom igång med scheman**
 
@@ -226,7 +226,7 @@ Lär dig hur du skapar XDM-scheman i Adobe Experience Platform, väljer rätt kl
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
 
 **Arbeta med datauppsättningar**
 
@@ -236,7 +236,7 @@ Lär dig hur du skapar profilaktiverade data och händelsedatamängder, övervak
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Konfigurera datakällor**
 
@@ -246,7 +246,7 @@ Stegvisa anvisningar om hur du konfigurerar den inbyggda Adobe Experience Platfo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 **Använd Adobe Experience Platform-data (sökning)**
 
@@ -256,7 +256,7 @@ Upptäck hur ni förbättrar meddelanden under körning med referens- eller tran
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Kom igång med frågor**
 
@@ -266,7 +266,7 @@ Använd frågetjänsten för att analysera Journey Optimizer-datauppsättningar,
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Kom igång med profiler**
 
@@ -276,23 +276,23 @@ Se hur kundprofilen i realtid fungerar i Journey Optimizer och hur du bläddrar 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 **Ställa in en översikt**
 
 En nybörjarvänlig videogenomgång av datainställningar i Journey Optimizer som omfattar scheman, datauppsättningar och källor från början till slut.
 
-[Titta på självstudiekursen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/data-management/set-up-data-overview){target="_blank"}
+[Titta på självstudiekursen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/set-up-data-overview){target="_blank"}
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 **Skapa datauppsättningar och importera data, genomgång**
 
 En praktisk självstudiekurs som visar hur du skapar datauppsättningar i Adobe Experience Platform och importerar data med hjälp av källanslutningar, med stegvisa instruktioner som du kan följa i din egen sandlåda.
 
-[Titta på självstudiekursen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/data-management/create-datasets-and-ingest-data){target="_blank"}
+[Titta på självstudiekursen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/create-datasets-and-ingest-data){target="_blank"}
 :::
 
 ::::
