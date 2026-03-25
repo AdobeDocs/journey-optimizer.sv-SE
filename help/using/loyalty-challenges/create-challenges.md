@@ -12,9 +12,9 @@ hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
 exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
-source-git-commit: 5d646a7c87daea27e6fbca8f754fc835dc82b494
+source-git-commit: 226b1fcb1129410781262db9e53673faffa970da
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md)
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
-* **Skapa utmaningar** {2 }︎ ◀Du är här **&#x200B;**
+* **Skapa utmaningar** {2 }︎ ◀Du är här ****
 * [Skapa uppgifter](create-tasks.md)
 * [API-referens för lojalitetsutmaningar](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
 
@@ -66,6 +66,11 @@ På fliken **[!UICONTROL Structure]** definierar du hur utmaningen är organiser
 
 ### Definiera utmaningsegenskaperna och använd anpassade metadata {#properties}
 
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_properties"
+>title="Utmaningsegenskaper"
+>abstract="I rutan för utmaningsegenskaper anger du utmaningsnamnet och beskrivningen och lägger till anpassade nyckel-/värdemetadata för spårning eller externa integreringar."
+
 1. Definiera globala inställningar för utmaningen i rutan **[!UICONTROL Challenge properties]**:
 
    * **[!UICONTROL Name]**: Ange ett beskrivande namn för utmaningen. Det här namnet visas i listan över utmaningar.
@@ -76,6 +81,11 @@ På fliken **[!UICONTROL Structure]** definierar du hur utmaningen är organiser
    ![](assets/challenge-create-properties.png)
 
 ### Schemalägg utmaningen {#schedule}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_schedule"
+>title="Schema för utmaning"
+>abstract="Använd schemat för att definiera när utmaningen ska vara aktiv: ange startdatum och starttid när den blir tillgänglig för kunderna och slutdatum och sluttid när den inte längre accepterar slutförda ändringar. Välj en tidszon och välj när kunder kan slutföra uppgifter i **[!UICONTROL Task completion window section]**."
 
 Konfigurera när utmaningen körs:
 
@@ -96,6 +106,11 @@ Konfigurera när utmaningen körs:
 Utfrågningsschemat har konfigurerats. Lägg sedan till de uppgifter kunderna behöver för att slutföra.
 
 ### Lägga till uppgifter {#add-tasks}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_tasks"
+>title="Uppgifter"
+>abstract="Välj vilka uppgifter som ska utföras för att slutföra utmaningen. Konfigurera sedan hur utmaningen ska slutföras - de tillgängliga alternativen beror på din utmaningstyp (Standard, Streak eller Sequential)."
 
 Uppgifter definierar de specifika åtgärder som kunderna måste utföra för att få belöningar. Du kan konfigurera uppgiftstyper (inköp, utgifter), kvantiteter, produktfilter och andra attribut.
 
@@ -147,6 +162,11 @@ När du har lagt till uppgifter i din utmaning kan du konfigurera belöningar so
 
 ### Konfigurera belöningar {#rewards}
 
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_rewards"
+>title="Belöningar"
+>abstract="Välj när kunderna tjänar poäng: när de slutför hela utmaningen eller vid milstolpar när de arbetar. Välj din belöningsleverantör (den lojalitetslösning som hanterar poäng och belöningar) och ange sedan belopp: en totalsumma för fullständigt utförande eller per uppgift för milstolpar, och endast för de uppgifter du vill betala ut."
+
 Belöningar är de förmånspoäng eller fördelar kunderna får för att klara av utmaningar.
 
 Så här konfigurerar du när och hur belöningar levereras:
@@ -191,6 +211,11 @@ När du har konfigurerat utmaningsstrukturen med uppgifter och belöningar kan d
 
 ## Konfigurera innehållskort {#configure-content-cards}
 
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_content"
+>title="Innehåll"
+>abstract="Konfigurera det innehållskort som utgör din utmaning på kundenheter och visa probleminformation, framsteg och belöningar. Ange ett namn för kortet, välj en kanalkonfiguration så att leveransen använder rätt tekniska inställningar (t.ex. rubriker, underdomän eller mobilappar) och välj sedan Redigera innehåll för att utforma och anpassa kortupplevelsen."
+
 Innehållskort utgör en visuell utmaning på kundenheter och visar information om utmaningar, framsteg och belöningar. [Läs mer om innehållskort](../content-card/create-content-card.md).
 
 Så här konfigurerar du innehållskort för din utmaning:
@@ -206,6 +231,11 @@ Så här konfigurerar du innehållskort för din utmaning:
 När du har konfigurerat innehållskortet kan du konfigurera meddelanden för att engagera kunderna under hela provcykeln.
 
 ### Konfigurera meddelanden {#configure-messaging}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_messaging"
+>title="Meddelanden"
+>abstract="Meddelanden hjälper till att engagera i hela problemcykeln. På fliken Meddelanden lägger du till meddelanden för varje fas: Starta (när utmaningen startar), Pågående (påminnelser och förloppsuppdateringar) och Slutföra (fira lyckade och bekräfta belöningar). För varje fas lägger du till ett meddelande, väljer kanal, markerar en kanalkonfiguration och väljer sedan Redigera för att utforma meddelandeinnehållet."
 
 Skapa flerkanalsmeddelanden för att engagera kunderna i viktiga stadier av utmaningens livscykel. Meddelanden är valfria men rekommenderas för att maximera kundengagemanget.
 
@@ -228,6 +258,11 @@ Lär dig hur du skapar meddelanden för specifika kanaler i följande avsnitt: [
 När du är klar med meddelandekonfigurationen definierar du vilka kunder som är berättigade att delta i utmaningen.
 
 ## Välj den utmanande målgruppen {#audience}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_audience"
+>title="Målgrupp"
+>abstract="På fliken Målgrupp väljer du vem som kan delta i utmaningen. Välj Välj målgrupp, välj målgrupp bland de tillgängliga Adobe Experience Platform-målgrupperna i dialogrutan och välj sedan Lägg till målgrupp. Endast medlemmar av den målgruppen är berättigade. Målgrupperna definieras i Experience Platform - använd en befintlig målgrupp eller skapa en sådan innan du slutför det här steget."
 
 Definiera vilka kunder som kan delta i er lojalitetsutmaning.
 

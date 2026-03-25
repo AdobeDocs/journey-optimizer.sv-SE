@@ -12,9 +12,9 @@ hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
 exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
-source-git-commit: 5d646a7c87daea27e6fbca8f754fc835dc82b494
+source-git-commit: 226b1fcb1129410781262db9e53673faffa970da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 **Dokumentation om lojalitetsproblem:**
 
-* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här **&#x200B;**
+* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här ****
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
 * [Skapa utmaningar](create-challenges.md)
 * [Skapa uppgifter](create-tasks.md)
@@ -38,6 +38,11 @@ ht-degree: 0%
 >Den här funktionen finns för närvarande i **privat beta**. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](../rn/releases.md).
 
 ## Översikt {#overview}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_inventory"
+>title="Lojalitetsutmaningar"
+>abstract="Lojalitetsutmaningar är spel som belönar kunder för att de utför uppgifter. Lär dig vad de är, hur utmaningarna Standard, Streak och Sequential skiljer sig åt och vad du kan konfigurera innan du skapar en utmaning."
 
 Lojalitetsutmaningar gör att ni kan skapa engagerande, spelade lojalitetsprogram som driver kundbeteenden och fördjupar varumärkesrelationerna. Bygg utmaningar som belönar kunder för specifika åtgärder - från att göra köp och skriva recensioner till att engagera i sociala medier och referera till vänner.
 

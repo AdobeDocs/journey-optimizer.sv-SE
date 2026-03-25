@@ -12,9 +12,9 @@ hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
 exl-id: c1e49173-69cc-4729-9f9a-afea2ccff3fa
-source-git-commit: 5d646a7c87daea27e6fbca8f754fc835dc82b494
+source-git-commit: 226b1fcb1129410781262db9e53673faffa970da
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 * [Kom igång med lojalitetsutmaningar](get-started.md)
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
 * [Skapa utmaningar](create-challenges.md)
-* **Skapa aktiviteter** {2 }︎ ◀Du är här **&#x200B;**
+* **Skapa aktiviteter** {2 }︎ ◀Du är här ****
 * [API-referens för lojalitetsutmaningar](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
 
 >[!ENDSHADEBOX]
@@ -42,6 +42,11 @@ Uppgifter definierar de specifika åtgärder eller milstolpar som kunderna måst
 Varje uppgift representerar en mätbar åtgärd som bidrar till att slutföra en utmaning. Uppgifter är återanvändbara komponenter som kan skapas oberoende av varandra och sedan läggas till i en eller flera utmaningar, eller skapas direkt i en utmaning.
 
 ## Skapa en uppgift {#create-task}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_task_create"
+>title="Skapa en uppgift"
+>abstract="Välj en kundaktivitet (Inköp eller Utgift) och konfigurera sedan aktivitetsspecifika attribut: kvantiteter eller belopp, kvalificerade artiklar och undantag samt valfria gränser som minsta utgift eller högsta antal transaktioner. I rutan Egenskaper anger du uppgiftens namn och beskrivning."
 
 Du kan skapa uppgifter från två startpunkter. Konfigurationsprocessen är densamma oavsett var du börjar.
 
@@ -82,7 +87,7 @@ Konfigurera aktivitetsattributen baserat på den valda aktivitetstypen. Bläddra
 Tillgängliga attribut för **Inköp**-aktiviteter:
 
 * **[!UICONTROL Quantity]**: Ange antalet artiklar som måste köpas för att den här uppgiften ska kunna slutföras.
-* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag &#x200B;](#eligible-items-exclusions)
+* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag ](#eligible-items-exclusions)
 * **[!UICONTROL Minimum spend value amount]**: Ange ett minimikrav för inköpsbelopp.
 * **[!UICONTROL Maximum number of transactions]**: Begränsa hur många transaktioner som kan användas för att slutföra uppgiften.
 
@@ -93,7 +98,7 @@ Tillgängliga attribut för **Inköp**-aktiviteter:
 Tillgängliga attribut för **Utlägg**-aktiviteter:
 
 * **[!UICONTROL Amount]**: Ange det totala utgiftsbeloppet som krävs för att slutföra uppgiften.
-* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag &#x200B;](#eligible-items-exclusions)
+* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag ](#eligible-items-exclusions)
 * **[!UICONTROL Maximum number of transactions]**: Ange hur många transaktioner som tillåts för att uppfylla utgiftsbehovet. Du kan aktivera det här attributet från parameterikonen.
 
 ![](assets/task-create-spend.png)
@@ -101,6 +106,11 @@ Tillgängliga attribut för **Utlägg**-aktiviteter:
 >[!ENDTABS]
 
 ## Definiera kvalificerade artiklar och undantag {#eligible-items-exclusions}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_task_eligible_items_exclusion"
+>title="Godtagbara artiklar och undantag"
+>abstract="Styr vilka inköp som räknas för Inköp- och utgiftsaktiviteter. I det första fältet anger du kommaavgränsade objekt-ID:n, kategorier eller mål-ID:n så att endast dessa tillåts. Lämna det tomt så att alla inköp räknas, eller skriv en asterisk för att ange alla inköp. I det andra fältet anger du objekt eller kategorier som aldrig ska räknas, t.ex. presentkort eller clearance."
 
 <!-- SCREENSHOT: Eligible items & exclusions popup showing the two sections: "Eligible task purchases are limited to the following" and "The following are excluded from this task" with text input fields -->
 
