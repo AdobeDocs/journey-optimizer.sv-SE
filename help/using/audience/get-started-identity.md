@@ -7,9 +7,9 @@ feature: Profiles, Identities
 role: User
 level: Beginner
 exl-id: 90e892e9-33c2-4da5-be1d-496b42572897
-source-git-commit: b6fe3fec0c64983fc2317027a5748a0d44c18469
+source-git-commit: a422cad5349de0ad87aa3a11ce923e04e862a63c
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,9 @@ Med menyn **Identiteter** i [!DNL Adobe Journey Optimizer] kan användare effekt
 Den innehåller ett **identitetsdiagram**, som är en karta över relationer mellan olika identiteter för en viss kund. I det här diagrammet visas hur en kund interagerar med ett varumärke i olika kanaler. Alla kundidentitetsdiagram hanteras och uppdateras gemensamt av Adobe Experience Platform Identity Service som svar på kundaktivitet.
 
 Detaljerad information om hur du arbetar med identiteter finns i [identitetstjänstens dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target="_blank"}.
+
+>[!MORELIKETHIS]
+>
+>* [Kom igång med datahantering i Journey Optimizer](../data/gs-data.md)
+>* [Kom igång med profiler](get-started-profiles.md)
+>* [Identitetstjänstens dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target="_blank"}

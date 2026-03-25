@@ -8,9 +8,9 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
 redpen-status: PASS_||_2025-04-28_15-13-07
-source-git-commit: fd10a600cb54b8c35e2d195be7379b0dd120b6a7
+source-git-commit: a422cad5349de0ad87aa3a11ce923e04e862a63c
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1867'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Som dataarkitekt eller ingenjör kan ni skapa och underhålla kundprofildata och
 * **Profilhantering**: Aktivera datauppsättningar för kundprofil i realtid för att stärka personaliserade upplevelser
 * **Datakvalitet**: Övervaka datainmatning för att säkerställa att allt flyter smidigt in i Journey Optimizer
 
-**Börja med:** Modellera ditt första kundprofilschema och konfigurera en källkoppling för att börja inhämta data.
+**Börja med:** Granska [Kom igång med datahantering](../data/gs-data.md)-översikten för att förstå scheman, datauppsättningar, identiteter och den fullständiga checklistan för datainställningar. Modellera sedan ditt första kundprofilschema och konfigurera en källanslutning för att börja inhämta data.
 
 [Kom igång som datatekniker →](path/data-engineer.md)
 
@@ -210,7 +210,7 @@ Framgångsrika Journey Optimizer-implementeringar kräver samarbete i alla rolle
 
 Titta på introduktionsvideon om du vill veta mer om Journey Optimizer nyckelfunktioner och personligheter. Videon går igenom användargränssnittet och markerar viktiga funktioner baserat på rollspecifika arbetsflöden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430318?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
 
 ## Ytterligare resurser
 
@@ -220,7 +220,8 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 >[!TAB Utbildning och dokumentation]
 
-* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"} - Självstudiekurser steg för steg för alla roller
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Självstudiekurser steg för steg för alla roller
+* [Kom igång med datahantering](../data/gs-data.md) - Scheman, datauppsättningar, identiteter och checklistan för databeredskap för Journey Optimizer
 * [Bibliotek för reseanvändningsexempel](../building-journeys/jo-use-cases.md) - Praktiska exempel och implementeringsmönster
 * [AI och intelligenta funktioner](ai-features.md) - Läs mer om AI Assistant, optimering vid sändning och innehållsgenerering
 * [Användargränssnittshandbok](user-interface.md) - Navigera effektivt i Journey Optimizer
@@ -233,7 +234,7 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 >[!TAB Community och support]
 
-* [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"} - Kontakta andra användare och experter
-* [Produktforum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"} - Ställ frågor och dela kunskap
+* [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Kontakta andra användare och experter
+* [Produktforum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Ställ frågor och dela kunskap
 
 >[!ENDTABS]

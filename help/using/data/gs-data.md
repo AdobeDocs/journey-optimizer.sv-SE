@@ -2,91 +2,208 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med datahantering i Journey Optimizer
-description: Lär dig arbeta med data i Journey Optimizer
-feature: Journeys
-topic: Content Management
-role: User
-level: Intermediate
-keywords: data, hantering, plattform
+description: Lär dig hur data flödar in i och ut från Adobe Journey Optimizer, inklusive viktiga koncept, konfigurationssteg och skyddsprofiler.
+feature: Data Management
+role: Developer, Admin, User
+level: Beginner, Intermediate
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: ec952f64508618fa14d6f0eb16534209baa1a505
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '2371'
 ht-degree: 0%
 
 ---
 
+
 # Kom igång med datahantering {#about-data}
 
-Riktighet och täckning av slutkundsdata är vad som definierar styrkan och framgången hos alla kundupplevelselösningar, och dessa data är skalbara och av högsta värde för varje enskild kund. Teknikval är nu inbyggt i en strikt utvärdering av datahanteringsfunktioner.
+Data är grunden för varje resa, beslut och meddelande som du levererar med [!DNL Adobe Journey Optimizer].
 
-Med [!DNL Adobe Journey Optimizer] kan du enkelt hantera, behålla och exportera dessa data till plattformar eller system som ingår i din teknikstack.
+På den här sidan får du en praktisk utgångspunkt för att förstå:
 
-**Mina data, Mina regler** - [!DNL Adobe Journey Optimizer] skapar kontinuerligt (och i realtid) en omfattande uppsättning kundprofildata, utöver alla kundresedata och erbjuder data som är inbyggda i dess åtgärder. Med smidiga versioner av användardata som hämtas från era databaser kan ni berika och omvandla dem till värdefulla data med täckning och djup. Ni vill att dessa data ska vara säkra, och samtidigt vara universella, så att ni kan utnyttja deras värde i hela IT-ekosystemet.
+* Journey Optimizer kärndatabyggningsblock (scheman, datamängder, identiteter, profiler)
+* Hur Journey Optimizer använder Adobe Experience Platform-data
+* Vilka datainställningssteg teamet måste slutföra innan de kan skapa resor och kampanjer
+* Här följer en översikt över konfiguration och bästa praxis
 
-Den flexibilitet du vill ha från dina data är dessutom:
+Använd den här guiden tillsammans med datatekniker, administratörer och marknadsförare så att alla kan få en gemensam bild av hur data flödar in i och ut från Journey Optimizer.
 
+>[!TIP]
+>Har du inte använt datahanteringen i Journey Optimizer förut? Titta på självstudiekursen [Konfigurera dataöversikt](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/set-up-data-overview){target="_blank"} för en praktisk, nybörjarvänlig genomgång av scheman, datauppsättningar och källor.
 
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-  <td>
-    <div><img alt="mål" src="assets/do-not-localize/dest.png" /> 
-    <br> Finns för andra ändamål - Även om [!DNL Adobe Journey Optimizer] kan göra data mer tilltalande och integrerade för en hyperpersonaliserad kundupplevelse, vill du ha dessa data i andra system i det övergripande tekniska landskapet, samtidigt som du letar efter andra sätt att utnyttja dessa data.
-    <div>
-     <a href="../integrations/ajo-integrations.md">Läs mer</a></div>
-    </div>
-    <br>
-  </td>
-</tr>
-</table>
+## Hur Journey Optimizer använder Adobe Experience Platform-data {#aep-data}
 
-<!--td>
-    <div><img alt="retention" src="assets/do-not-localize/retention.png" />  
-    <br>Retained for a stipulated duration – Industry or regional regulations (such as GDPR or CCPA) or internal data governance policies stipulate how long or how short a duration, data needs to be maintained or archived in Adobe Experience Platform Data Lake. <a href="../privacy/get-started-privacy.md">Learn more</a></div>
-  </td>
-</tr>
-<tr style="border: 0;"-->
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-  <td>
-    <div><img alt="policy" src="assets/do-not-localize/policy.png" /> 
-    <br> Borttagen grund, en överenskommen tidslinje eller din policy - Dataradering är en viktig del av dataskyddet och är ett viktigt steg i alla datastyrningsprocesser. [!DNL Adobe Journey Optimizer] kan producera mer data än vad som krävs. Dessutom vill ni ta största möjliga hand om vad som händer efter att en datamängd har fått den varaktighet som krävs - oavsett om det beror på verktyg eller reglering. Den kontroll du behöver är att ta bort data vid en given tidpunkt. 
-    </div>
-      <div>
-     <a href="../privacy/data-hygiene.md">Läs mer</a></div>
-    </div>
-  </td>
-</tr>
-</table>
+[!DNL Adobe Journey Optimizer] är byggt på [!DNL Adobe Experience Platform]. Den har inte ett separat, isolerat datalager. I stället används samma grund som andra Experience Cloud-program.
 
-[!DNL Adobe Experience Platform], som [!DNL Adobe Journey Optimizer] byggs på, ger dig störst kontroll över data - både under engagemanget och i slutet av engagemanget. Inom [!DNL Journey Optimizer] har du fullständig kontroll över data (som hämtas till eller skapas av [!DNL Journey Optimizer]), den styrning som överlagras för dessa data och de destinationer dit dessa data skickas.
+Scheman och datauppsättningar finns i Adobe Experience Platform. Identiteter och [Real-Time Customer Profile](../audience/get-started-profiles.md) hanteras av identitetstjänsten och profiltjänsten. Journey Optimizer läser profil- och händelsedata från Adobe Experience Platform för att utvärdera resevillkor, personalisera meddelanden och utvalda erbjudanden. Här skrivs interaktionsdata - som skicka, öppna, klicka och studsa händelser och kundstegshändelser - tillbaka till Experience Platform datauppsättningar. Det kan även söka efter ytterligare datauppsättningar vid körning utan att kopiera dessa data till profilen.
 
-Alla data betraktas som kundens egendom och kan bara underhållas, krypteras, distribueras eller förstöras på din begäran. Adobe fungerar som förvaltare, utan några som helst rättigheter till era data.
+>[!TIP]
+>Se Adobe Experience Platform som ert centrala datalager och Journey Optimizer som en tillämpning som ordnar resor och meddelanden med denna gemensamma datamgrund.
 
-Du kan använda flexibiliteten för data i [!DNL Journey Optimizer] för att uppfylla dina specifika krav för datalagring, arkivering eller borttagning:
+➡️ [Läs mer om Journey Optimizer-arkitektur](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/essentials/understanding-ajo#architecture-details){target="_blank"}
 
-* **Dataextrahering/export**: Du kan initiera extraheringen av källdata när som helst via API:t för dataåtkomst utan straffar eller tidsfördröjningar. [API:t för dataåtkomst](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=sv-SE){target="_blank"} ger användarna ett RESTful-gränssnitt som fokuserar på identifierbarhet och tillgänglighet för kapslade datauppsättningar i [!DNL Adobe Experience Platform]. <!--In the future (on roadmap), you can use file-based destinations to export and migrate log data from Adobe Journey Optimizer. -->
+## Viktiga databegrepp i Journey Optimizer {#key-concepts}
 
-  Observera att innehåll som används i resor eller kampanjer inte kan extraheras via API- eller målmetoder som nämns ovan.
+När du arbetar med data i Journey Optimizer kommer du att stöta på flera närliggande begrepp. Tabellen nedan ger dig en snabb översikt. I avsnitten som följer beskrivs varje koncept mer ingående.
 
-<!--
-* **Profile Service Data Retention**: For Behavioral and Time series data appended to any Profile, you may choose to use Journey Optimizer's default setting of retaining this data for up to 91 days from the date of its addition to a Profile, or until an alternative time-period selected by the you. The time that Adobe keeps this data varies from contract to contract, and is outlined in an organization's data retention policy.
+| Koncept | Vad det är | Primär användning i Journey Optimizer |
+|---|---|---|
+| XDM-schema | Regler som representerar, validerar och formaterar data (skapade från en klass + fältgrupper) | Modellprofilattribut och beteendehändelser |
+| Datauppsättning | Lagringstabell för data som överensstämmer med ett schema | Håll kvar profil, händelse och systemgenererade data |
+| Source Connector | Direktuppspelar eller batchbearbetar data från externa system till AEP | Ingest CRM, analyser och webbdata |
+| Datakälla | Visar AEP eller externa fält inom resorna | Stärk resevillkoren och personalisering av meddelanden |
+| Identitet | Identifierare som unikt representerar en enskild kund | Fästa profiler över flera kanaler |
+| Sök datauppsättning | Körningsreferens till AEP-data utan profillagring | Förbättra meddelanden med live-referensdata |
 
-  Learn more about Experience Event expirations in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/event-expirations.html?lang=sv-SE){target="_blank"}.
--->
+### Schema (XDM-schema) {#schema}
 
-* **Töm- och arkiveringsmekanismer**: Tömning av data och arkivering kan definieras fritt och automatiseras i [!DNL Adobe Journey Optimizer] för att automatisera datalagringsprinciper. Det är möjligt att definiera olika strategier för åldersfördelning för olika datatabeller. Exportmekanismer kan också definieras för att automatiskt exportera åldersfördelningsdata innan de rensas eller arkiveras.
+Ett schema är en uppsättning regler som representerar, validerar och formaterar dina data. Den består av en **klass** (som definierar basbeteendet: post- eller tidsserie) och valfria **fältgrupper** (som lägger till specifika fält). Scheman definieras med XDM-standarder (Experience Data Model) och finns i Adobe Experience Platform.
 
-  Med arbetsytan Datalängd kan du skapa och övervaka olika uppgifter under datalängd, till exempel ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer på [den här sidan](../privacy/data-hygiene.md).
+XDM löser ett verkligt problem: samma koncept - en kund, ett inköp, en produkt - namnges och struktureras på olika sätt i olika källsystem. XDM är ett delat språk som förenar dessa begrepp i en enda definition, oavsett var informationen kommer från. Detta gör att Journey Optimizer kan arbeta enhetligt med data från CRM, er webbplats, er mobilapp och ert datalager samtidigt.
 
-<!--
-* **Data Lake and Deletions**: Customer Data stored in the Data Lake can be retained by Journey Optimizer:
-    
-    * for 7 days to facilitate the onboarding of Customer Data into the Profile Services, after which it may be permanently deleted, or
-    * until chosen to be deleted by you
+I Journey Optimizer arbetar du vanligtvis med **XDM Individual Profile**-scheman för kundattribut (namn, inställningar, medgivande) och **XDM ExperienceEvent**-scheman för beteendehändelser (inköp, sidvisningar, registreringar).
 
--->
+➡️ [Läs mer om scheman](get-started-schemas.md)
 
-* **Dataextrahering vid avtalsslut/ avslut**: När kontraktet avslutas tas dina data bort helt från Adobe lagringsutrymme. Du kan även hämta fullständiga profilextraheringar innan du säger upp ett avtal. Det kostar inget mer. Detta kan göras när som helst och inte bara när det sägs upp.
+### Datauppsättning {#dataset}
 
-Ovannämnda metoder är avtalsenligt definierade och detaljerade i det databehandlingsavtal (DPA) som Adobe kommer överens med er i början av ett ärende. Adobe-program, inklusive [!DNL Journey Optimizer], är uppbyggda kring principen att varje kunds data behandlas som den klientens egna datatillgångar.
+En datauppsättning är en lagrings- och hanteringskonstruktion för data som följer ett schema - tänk på det som en tabell med en definierad uppsättning kolumner och rader. Alla data som används av Journey Optimizer lagras i Adobe Experience Platform datamängder. Dessa kan vara profildatauppsättningar (som bidrar till kundprofilen i realtid), händelsedatamängder (som lagrar beteendedata för resor och analys) eller systemdatauppsättningar som automatiskt skapas av Journey Optimizer för spårning, feedback och kundstegshändelser.
+
+➡️ [Läs mer om datauppsättningar](get-started-datasets.md)
+
+### Source Connector {#source-connector}
+
+En källanslutning (kallas även **källa**) hjälper dig att importera data från flera system - som Adobe Analytics, Adobe Experience Platform Web SDK, molnlagring (S3, Azure Blob) eller CRM-databaser - till Adobe Experience Platform. Förutom råmaterialsanvändning möjliggör kopplingar strukturering, märkning och förbättring av data med hjälp av Experience Platform tjänster, inklusive fältmappning till XDM-scheman och datastyrningsetiketter.
+
+➡️ [Läs mer om källanslutningar](../start/get-started-sources.md)
+
+### Datakälla (Journey Optimizer) {#data-source}
+
+En datakälla i Journey Optimizer definierar vilka fält från Adobe Experience Platform (eller externa API:er) som exponeras inuti resor och meddelanden. Datakällor som konfigureras i Journey Optimizer-gränssnittet innehåller vanligtvis den inbyggda Adobe Experience Platform-datakällan (som visar attribut och händelser för kundprofiler i realtid) och externa eller anpassade datakällor som anropas under kundresan för ytterligare berikning. De används för resevillkor, anpassade åtgärder och personalisering av meddelanden.
+
+➡️ [Läs mer om datakällor](../datasource/about-data-sources.md)
+
+>[!NOTE]
+>[Adobe Experience Platform-ordlistan](https://experienceleague.adobe.com/en/docs/experience-platform/landing/glossary){target="_blank"} definierar&quot;datakälla&quot; i allmänhet som datas ursprung (en CRM, mobilapp osv.). I Journey Optimizer har **datakällan** en specifik betydelse: en gränssnittskonfiguration som styr vilka fält som visas i resor och meddelanden.
+
+### Identitet och kundprofil i realtid {#identity}
+
+En identitet är en identifierare som unikt representerar en enskild kund, till exempel ett cookie-ID, ett enhets-ID, en e-postadress eller ett CRM-ID. Identiteter ordnas i namnutrymmen (e-post, ECID, CRMID), och flera identiteter för samma person sammanfogas i ett enhetligt identitetsdiagram. Kundprofilen i realtid använder det diagrammet för att få en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online-, offline-, CRM- och tredjepartskällor.
+
+Ett nyckelkoncept för nybörjare är **profilfragmentmodellen**. Varje gång en kund interagerar med ert varumärke på en viss enhet eller kanal - på er webbplats, i en mobilapp eller i en butik - registreras den interaktionen som ett profilfragment: en partiell bild av kunden baserat på den specifika kontaktytan. Kundprofilen i realtid sammanfogar dessa fragment kontinuerligt baserat på delade identitetsvärden och skapar en komplett, aktuell profil. Journey Optimizer läser från den här sammansatta profilen för att utvärdera villkoren, välja erbjudanden och personalisera meddelanden i realtid.
+
+➡️ [Läs mer om identiteter i Journey Optimizer](../audience/get-started-identity.md)
+
+### Sök datauppsättning {#lookup-dataset}
+
+Med en uppslagsdatauppsättning kan Journey Optimizer hämta referens- eller transaktionsdata vid körning från en Adobe Experience Platform-datauppsättning, utan att lagra dessa data i kundprofilen i realtid. Detta är användbart för ofta ändrade referensdata (priser, lager, lagertimmar) eller transaktionsdata som behövs vid meddelandetillfället men som inte hör till profilen. Journey Optimizer utför sökningen under resan eller meddelandekörningen baserat på en nyckel som ett produkt-ID.
+
+➡️ [Läs mer om uppslagsdatauppsättningar](lookup-aep-data.md)
+
+## Checklista för databeredskap {#checklist}
+
+Innan marknadsförarna börjar bygga resor och kampanjer bör organisationen slutföra en uppsättning databeredskapsåtgärder. Detta garanterar att Journey Optimizer kan använda rätt data vid rätt tidpunkt och på ett kompatibelt sätt.
+
+>[!NOTE]
+>Stegen nedan har flera roller: datatekniker, administratörer och marknadsförare. Använd checklistan som en delad plan för att förbereda din miljö. Steg 1-4 slutförs i Adobe Experience Platform; steg 5-6 konfigureras i Journey Optimizer.
+
+### &#x200B;1. Definiera din identitetsstrategi {#identity-strategy}
+
+Välj en primär identitet för dina kunder (till exempel ECID, e-post eller CRMID) och konfigurera motsvarande namnutrymmen i Adobe Experience Platform Identity Service. Kontrollera att det finns identitetsfält i profilaktiverade scheman och validera att profilerna är korrekt sammanfogade i identitetsdiagrammet.
+
+➡️ [Läs mer om identiteter i Journey Optimizer](../audience/get-started-identity.md)
+
+### &#x200B;2. Utforma scheman för profil- och händelsedata {#design-schemas}
+
+Skapa **XDM-scheman för enskild profil** om du vill samla in kundattribut som namn och kontaktinformation, inställningar och intressen samt livscykelstadium eller medgivandetillstånd. Skapa **XDM ExperienceEvent**-scheman för att hämta beteendedata och transaktionsdata, till exempel webb- och apphändelser, köp och offlineinteraktioner. Markera de rätta fälten som identiteter och profilattribut där så är lämpligt.
+
+➡️ [Läs mer om scheman](get-started-schemas.md)
+
+### &#x200B;3. Skapa profilaktiverade datauppsättningar {#create-datasets}
+
+I Adobe Experience Platform skapar du datauppsättningar baserade på dina XDM-scheman och aktiverar profil på alla datauppsättningar som ska bidra till kundprofilen i realtid. Kontrollera att systemgenererade datauppsättningar som skapats av Journey Optimizer visas på arbetsytan Datauppsättningar.
+
+➡️ [Läs mer om datauppsättningar](get-started-datasets.md)
+
+### &#x200B;4. Hämta in data från dina källor {#ingest-data}
+
+Konfigurera källkopplingar för företagssystem - som Adobe Analytics, Adobe Experience Platform Web SDK eller dina CRM- och POS-plattformar - och mappa inkommande fält till XDM-scheman. Verifiera att data får plats i rätt datauppsättningar och visas i kundprofilen i realtid där det förväntas.
+
+➡️ [Läs mer om källanslutningar](../start/get-started-sources.md)
+
+➡️ [Självstudiekurs: Skapa datauppsättningar och importera data](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/create-datasets-and-ingest-data){target="_blank"}
+
+### &#x200B;5. Konfigurera datakällor i Journey Optimizer {#configure-data-sources}
+
+Datakällor är ett Journey Optimizer-specifikt koncept: de är inte där dina data finns, men där du deklarerar vilka fält som Journey Optimizer får läsa under resan och meddelandekörningen. Innan en resa kan utvärdera ett villkor som&quot;är kunden en lojalitetsmedlem?&quot; Om du vill anpassa ett meddelande med ett förnamn måste de relevanta profilfälten visas via en datakällkonfiguration.
+
+Journey Optimizer innehåller en inbyggd [Adobe Experience Platform-datakälla](../datasource/adobe-experience-platform-data-source.md) som ger direktåtkomst till kundprofilattribut i realtid. Detta omfattar de flesta användningsfall: läsprofilattribut för personalisering eller kontroll av samtycke och inställningsfält. Du kan också konfigurera [externa datakällor](../datasource/external-data-sources.md) så att externa API:er anropas vid körning, till exempel för att hämta en kundlojalitetspoäng i realtid, en produktrekommendation eller en lagerlagernivå som inte lagras i Adobe Experience Platform.
+
+>[!NOTE]
+>Direktåtkomst till händelsedata för upplevelser via den inbyggda Adobe Experience Platform-datakällan är föråldrad och inaktiveras stegvis. [Läs mer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/exp-event-lookup){target="_blank"}.
+
+Att konfigurera datakällor är en administrativ uppgift som låser upp hela datalagret för reseförfattare och marknadsförare. När ett fält exponeras via en datakälla blir det tillgängligt i transportvillkorsbyggaren, i redigeringsprogram för meddelandeanpassning och i regler för beslut om erbjudanden - utan att det krävs något ytterligare konstruktionsarbete vid resans byggtid.
+
+➡️ [Läs mer om konfiguration av datakälla](../datasource/about-data-sources.md)
+
+### &#x200B;6. Verifiera spårning, feedback och resedatauppsättningar {#verify-datasets}
+
+Kontrollera att systemgenererade Journey Optimizer-datauppsättningar är tillgängliga på arbetsytan Datauppsättningar. Kör testresor och -kampanjer och använd sedan Frågeredigeraren för att verifiera att skicka-, öppna-, klicknings- och studshändelser registreras och att steg-händelser och lägen för resan fångas in korrekt. Använd dessa datauppsättningar för kontinuerlig övervakning, felsökning och optimering av kundresan.
+
+➡️ [Läs mer om frågor i Journey Optimizer](get-started-queries.md)
+
+## Skyddsritningar och datadesignöverväganden {#guardrails}
+
+Vissa skyddsmekanismer och begränsningar kan påverka hur du utformar din datamodell och dina resor. Granska dessa tidigt för att undvika omarbetningar senare.
+
+>[!IMPORTANT]
+>Se alltid sidan [Journey Optimizer-skyddsförslag och begränsningar](../start/guardrails.md) för den senaste informationen. Sammanfattningarna nedan markerar viktiga objekt, men kan förändras över tid.
+
+### Journey Optimizer systemdatauppsättningar och TTL {#datasets-ttl}
+
+Journey Optimizer skapar flera systemgenererade datauppsättningar för spårning, feedback och steg för kundresan. Från och med februari 2025 introduceras ett TTL-skydd (time-to-live) för vissa av dessa datauppsättningar, vilket kan påverka hur länge data lagras för analys och felsökning.
+
+➡️ [Läs mer om TTL-skyddsräcken för datauppsättningar](datasets-ttl.md)
+
+### Direktuppspelningssegmentering och Journey Optimizer-event {#streaming-segmentation}
+
+Från och med 1 november 2024 har direktuppspelningssegmentering inte längre stöd för skicka och öppna händelser från Journey Optimizer spårnings- och feedbackdatauppsättningar. Använd [Affärsregler](../conflict-prioritization/rule-sets.md) i stället för att direktuppspela segment baserat på skicka/öppna händelser för användningsfall som till exempel frekvensbegränsning och trötthetshantering.
+
+➡️ [Läs mer om datauppsättningar](get-started-datasets.md)
+
+### Uppslag och beslut för datauppsättningar {#lookup-guardrails}
+
+Datauppslagning är idealiskt för attribut som ofta ändras (lager, priser, väder) eller data som inte behöver lagras i kundprofilen i realtid. Granska produktspecifika utkast som storleksbegränsningar för datauppsättningar och frågetak i relevant dokumentation innan du utformar din sökstrategi.
+
+➡️ [Läs mer om uppslagsdatauppsättningar](lookup-aep-data.md)
+
+## Exempel: förbereda data för en välkomstresa {#example}
+
+I följande exempel visas hur koncepten på den här sidan fungerar tillsammans i ett enkelt scenario.
+
+1. En datatekniker skapar ett [XDM Individual Profile-schema](get-started-schemas.md) för kundattribut (namn, e-post, lojalitetsnivå, medgivande) och ett XDM ExperienceEvent-schema för webbregistreringshändelser.
+1. [Profilaktiverade datauppsättningar](get-started-datasets.md) skapas för varje schema: en för CRM-attribut och en för registreringshändelser.
+1. Registreringshändelser direktuppspelas via Adobe Experience Platform Web SDK. CRM-data hämtas via en [källanslutning](../start/get-started-sources.md).
+1. En administratör konfigurerar datakällan [Adobe Experience Platform](../datasource/adobe-experience-platform-data-source.md) i Journey Optimizer och visar fält som `profile.person.name.firstName`, `profile.personalEmail.address` och `profile.loyaltyTier`.
+1. En marknadsförare [skapar en välkomstresa](../building-journeys/journey-gs.md) som lyssnar efter en registreringshändelse och använder dessa profilattribut för att [anpassa välkomstmeddelandet](../personalization/personalize.md). Journey Optimizer skriver skicka och öppna händelser för att spåra datauppsättningar och loggar reseförloppet i händelsedatamängder för kundsteg.
+1. En utvecklare använder [Frågeredigeraren](get-started-queries.md) för att verifiera att händelser flödar korrekt och analyserar prestanda (öppnar, klickar, går att skicka). Teamet anpassar kundresan och innehållet baserat på dessa insikter.
+
+Det här flödet visar hur scheman, datauppsättningar, källor, datakällor och frågor fungerar tillsammans i ett komplett, nybörjarvänligt användningsfall.
+
+## Relaterade resurser {#related-resources}
+
+* **[Kom igång med scheman](get-started-schemas.md)** - Lär dig hur du skapar XDM-scheman i Adobe Experience Platform, väljer rätt klass och fältgrupper och modellerar profilattribut och beteendehändelser.
+
+* **[Arbeta med datauppsättningar](get-started-datasets.md)** - Lär dig hur du skapar profilaktiverade och händelsedatamängder, övervakar datainmatning och utforskar de systemgenererade datauppsättningar som Journey Optimizer skapar automatiskt för spårning, feedback och steg för kundresan.
+
+* **[Konfigurera datakällor](../datasource/about-data-sources.md)** - Stegvis vägledning om hur du konfigurerar den inbyggda Adobe Experience Platform-datakällan och valfria externa datakällor för att visa profilfält och externa API-svar på dina resor.
+
+* **[Använd Adobe Experience Platform-data (sökning)](lookup-aep-data.md)** - Upptäck hur du kan förbättra meddelanden vid körning med referens- eller transaktionsdata från AEP-datauppsättningar, utan att lagra dessa data i kundprofilen i realtid.
+
+* **[Kom igång med frågor](get-started-queries.md)** - Använd frågetjänsten för att analysera Journey Optimizer-datauppsättningar, verifiera att händelser flödar korrekt och skapa rapporteringsfrågor när du skickar, öppnar, klickar och studsar data.
+
+* **[Kom igång med profiler](../audience/get-started-profiles.md)** - Upptäck hur kundprofilen i realtid fungerar i Journey Optimizer och hur du bläddrar bland, inspekterar och validerar enskilda kundprofiler i användargränssnittet för plattformen.
+
+* **[Konfigurera dataöversiktsjälvstudiekurs](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/set-up-data-overview){target="_blank"}** - En nybörjarvänlig videogenomgång av datainställningarna i Journey Optimizer som omfattar scheman, datauppsättningar och källor från början till slut.
+
+* **[Skapa datauppsättningar och importera datauppsättningar, självstudiekurs](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/create-datasets-and-ingest-data){target="_blank"}** - En praktisk självstudiekurs som visar hur du skapar datauppsättningar i Adobe Experience Platform och importerar data med hjälp av källanslutningar, med stegvisa instruktioner som du kan följa i din egen sandlåda.

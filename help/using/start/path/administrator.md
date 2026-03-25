@@ -7,9 +7,9 @@ feature: Get Started
 role: Admin
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: fd10a600cb54b8c35e2d195be7379b0dd120b6a7
+source-git-commit: a422cad5349de0ad87aa3a11ce923e04e862a63c
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1052'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Följ de här stegen för att konfigurera åtkomsthantering:
 
 1. **Använd åtkomstkontroll på objektnivå** (valfritt). Använd etiketter på objekt som resor, kampanjer och kanalkonfigurationer för att styra vilka användare som har tillgång till specifika resurser. Läs mer om [Åtkomstkontroll på objektnivå (OLAC)](../../administration/object-based-access.md).
 
-Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html?lang=sv-SE){target="_blank"}.
+Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 När du använder [!DNL Journey Optimizer] för första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 
@@ -102,7 +102,7 @@ Tack vare ert administrativa arbete kan alla team lyckas:
 
 >[!TAB Supporttekniker]
 
-Samarbeta med [datatekniker](data-engineer.md) om datahantering och åtkomst:
+Samarbeta med [datatekniker](data-engineer.md) om datahantering och åtkomst. Granska översikten [Kom igång med datahantering](../../data/gs-data.md) för att förstå de scheman, datamängder och datakällor som datateknikerna behöver konfigurera.
 
 * Bevilja behörigheter för datahantering och schemaskapande
 * Godkänn sandlådeåtkomst för utveckling och testning

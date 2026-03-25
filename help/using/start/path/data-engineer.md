@@ -7,9 +7,9 @@ feature: Get Started
 role: Developer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: fd10a600cb54b8c35e2d195be7379b0dd120b6a7
+source-git-commit: a422cad5349de0ad87aa3a11ce923e04e862a63c
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '966'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,11 @@ Som **dataarkitekt** eller **datatekniker** konfigurerar och underhåller du kun
 
 >[!NOTE]
 >
->Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+>Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
+
+>[!TIP]
+>
+>Har du inte använt data tidigare i Journey Optimizer? Börja med översikten [Kom igång med datahantering](../../data/gs-data.md) om du vill förstå scheman, datauppsättningar, identiteter, profilfragmentmodellen och den fullständiga checklistan för databeredskap innan du dykar upp i konfigurationen.
 
 ## Konfigurationssteg för viktiga data
 

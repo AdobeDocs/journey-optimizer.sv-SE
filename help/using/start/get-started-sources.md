@@ -7,9 +7,9 @@ feature: Integrations, Data Ingestion
 role: User
 level: Beginner
 exl-id: 359ea3c6-7746-469e-8a24-624f9726f2d8
-source-git-commit: 4c7aefc3f54c26bb3d1f84bc2fcf5ed984750494
+source-git-commit: a422cad5349de0ad87aa3a11ce923e04e862a63c
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '646'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ Journey Optimizer har stöd för olika typer av källor för att ansluta till er
 * Salesforce
 * Salesforce Marketing Cloud
 
-➡️ Se hela listan i [Experience Platform-källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE#sources-catalog){target="_blank"}
+➡️ Se hela listan i [Experience Platform-källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"}
 
 ## Innan du börjar {#prerequisites}
 
@@ -113,7 +113,8 @@ Mer information om hur du konfigurerar och hanterar källor finns i [dokumentati
 
 Nu när ni förstår vilka källor som är och varför de är viktiga:
 
-* Utforska [källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE#sources-catalog){target="_blank"} för att hitta anslutningar för dina system
+* Utforska [källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"} för att hitta anslutningar för dina system
 * Lär dig hur du [skapar en källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/overview.html){target="_blank"}
 * Förstå [datamappning och -omvandling](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/overview.html){target="_blank"}
 * Se hur du [använder importerade data på resor](../building-journeys/journey-gs.md)
+* Granska översikten [Kom igång med datahantering](../data/gs-data.md) för att förstå hur källor passar in i den fullständiga datakonfigurationen för Journey Optimizer
