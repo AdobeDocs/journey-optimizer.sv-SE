@@ -11,9 +11,9 @@ keywords: uttryck, redigerare
 mini-toc-levels: 1
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: 5d646a7c87daea27e6fbca8f754fc835dc82b494
+source-git-commit: 8da2bb4123394d60e397409f6401434d215fd463
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '891'
 ht-degree: 4%
 
 ---
@@ -56,8 +56,6 @@ Läs följande begränsningar och riktlinjer innan du börjar:
   **Grupp 3**: Sku7, Sku8, Sku9, Sku10
 
   Om du tar bort **Grupp 1** tas Sku1, Sku2 och Sku3 bort från sökningsarkivet. De resulterande sökdata kommer sedan att innehålla: Sku4, Sku5, Sku6, Sku7, Sku8, Sku9, Sku10.
-
-* **Inga kedjade sökningar** - Det går inte att koppla datauppsättningssökningar. Du kan med andra ord inte använda resultatet av en sökning som en variabel för att sedan bli nyckeln för att utföra en andra sökning.
 
 ### Tillstånd för sökningstjänst
 
