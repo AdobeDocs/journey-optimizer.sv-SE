@@ -8,12 +8,11 @@ topic: Content Management
 role: User
 level: Intermediate
 version: Journey Orchestration
-badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
-source-git-commit: 4a5a512a3e9eddaf720e857f5a250c645b2454db
+source-git-commit: b6b74e357029f4924f9699c05af3a0fcd7fcefd6
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 8%
+source-wordcount: '871'
+ht-degree: 7%
 
 ---
 
@@ -31,10 +30,6 @@ Viktiga fördelar:
 * **Realtidspersonalisering**: Skräddarsy kundupplevelser med hjälp av berikade data.
 * **Dynamiskt beslutsfattande**: Använd externa data för att driva kundlogik och -åtgärder.
 * **Förbättrad dataåtkomst**: Hämta produktmetadata, pristabeller eller relationsdata som är kopplade till specifika nycklar.
-
->[!AVAILABILITY]
->
->Den här aktiviteten är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 ## Måste läsas {#must-read}
 
@@ -66,7 +61,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Dataset lookup]**:
 
 1. Öppna kategorin **[!UICONTROL Orchestration]** och släpp en **[!UICONTROL Dataset lookup]**-aktivitet på arbetsytan.
 
-   ![[!DNL Adobe Experience Platform]-datauppsättningssökningsaktivitet på resan &#x200B;](assets/aep-data-activity.png)
+   ![[!DNL Adobe Experience Platform]-datauppsättningssökningsaktivitet på resan ](assets/aep-data-activity.png)
 
 1. Lägg till en etikett och en beskrivning.
 

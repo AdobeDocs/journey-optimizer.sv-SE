@@ -10,10 +10,10 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
 version: Journey Orchestration
-source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
+source-git-commit: b6b74e357029f4924f9699c05af3a0fcd7fcefd6
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 0%
+source-wordcount: '1394'
+ht-degree: 8%
 
 ---
 
@@ -24,19 +24,17 @@ ht-degree: 0%
 >title="Åtgärdsaktivitet"
 >abstract="Med aktiviteten **Åtgärd** kan du konfigurera en enskild ursprunglig kanalåtgärd och flera inkommande aktiviteter med möjlighet att lägga till optimering till alla inbyggda kanalåtgärder."
 
-[!DNL Journey Optimizer] innehåller en ny allmän **Åtgärd**-aktivitet som gör att du kan konfigurera en enda inbyggd kanalåtgärd och även flera inkommande aktiviteter.
+Aktiviteten **Åtgärd** är den enda startpunkten för alla kanalåtgärder på arbetsytan för resan. Den ersätter de tidigare inbyggda kanalaktiviteterna och konsoliderar e-post, push, SMS, In-app, webb, kodbaserad upplevelse och innehållskort i en enda typ av aktivitet.
 
-Åtgärdsaktiviteten erbjuder:
+Använd den för att:
 
-* En förenklad inbyggd åtgärdskonfiguration på arbetsytan för resan.
-* Kapaciteten för att skapa inkommande åtgärdsgrupper med flera åtgärder.
-* Möjlighet att lägga till optimering till alla inbyggda kanalåtgärder.
-
-Använd aktiviteten **Åtgärd** om du vill lägga till en inbyggd kanalåtgärd för din resa. Denna enhetliga aktivitet konsoliderar alla kanalåtgärder (e-post, push, SMS, in-app, webb, kodbaserad upplevelse och innehållskort) till en enda aktivitetstyp som ersätter de tidigare kanalaktiviteterna.
+* Konfigurera alla inbyggda kanalåtgärder från ett enda smidigt gränssnitt.
+* Bygg grupper med inkommande åtgärder.
+* Optimera alla kanalåtgärder.
 
 >[!IMPORTANT]
 >
->Alla inbyggda kanaler som nu är tillgängliga via aktiviteten Åtgärd kommer äldre inbyggda kanalaktiviteter att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
+>Gamla inbyggda kanalaktiviteter (e-post, push, SMS, in-app, webb, kodbaserad upplevelse och innehållskort) är föråldrade från och med mars 2026. Befintliga resor som använder dessa aktiviteter fortsätter att fungera utan ändringar - ingen migrering krävs.
 
 Du kan också konfigurera anpassade åtgärder för att skicka meddelanden i [!DNL Journey Optimizer]. [Läs mer](#recommendation)
 
@@ -44,7 +42,9 @@ Du kan också konfigurera anpassade åtgärder för att skicka meddelanden i [!D
 
 Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för din resa med aktiviteten **[!UICONTROL Action]**.
 
-Mer information om vilka kanaler som är tillgängliga under resor finns i tabellen i det här avsnittet: [Kanaler under resor och kampanjer](../channels/gs-channels.md#channels).
+>[!NOTE]
+>
+>Mer information om vilka kanaler som är tillgängliga under resor finns i tabellen i det här avsnittet: [Kanaler under resor och kampanjer](../channels/gs-channels.md#channels).
 
 1. Starta din resa med en [Event](general-events.md)- eller [Read Audience](read-audience.md)-aktivitet.
 
@@ -191,7 +191,7 @@ Snabba leveranser används när fördröjningar i meddelandeleverans är affärs
 
 Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [[!DNL Adobe Journey Optimizer] produktbeskrivningen](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [[!DNL Adobe Journey Optimizer] produktbeskrivningen](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 

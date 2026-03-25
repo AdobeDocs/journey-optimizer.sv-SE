@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 97fa287d94efb7fb95817fc15268e736517cb629
+source-git-commit: b6b74e357029f4924f9699c05af3a0fcd7fcefd6
 workflow-type: tm+mt
 source-wordcount: '2087'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ Så här lägger du till ett meddelande i appen under en resa:
 
    >[!IMPORTANT]
    >
-   >Alla inbyggda kanaler som nu är tillgängliga via aktiviteten Åtgärd kommer äldre inbyggda kanalaktiviteter att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.
+   >Gamla inbyggda kanalaktiviteter (e-post, push, SMS, in-app, webb, kodbaserad upplevelse och innehållskort) är föråldrade från och med mars 2026. Befintliga resor som använder dessa aktiviteter fortsätter att fungera utan ändringar - ingen migrering krävs.
 
 1. Välj **[!UICONTROL In-app]** som åtgärdstyp.
 
@@ -246,7 +246,7 @@ Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns p�
 
   +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3451886?captions=swe&quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
 
   +++
 
@@ -254,7 +254,7 @@ Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns p�
 
   +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3445292/?captions=swe&learn=on&autoplay=true)
+  >[!VIDEO](https://video.tv.adobe.com/v/3419898/?learn=on&autoplay=true)
 
   +++
 
@@ -262,7 +262,7 @@ Mer information om hur du skapar, konfigurerar och aktiverar en kampanj finns p�
 
   +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3451836/?captions=swe&learn=on&autoplay=true)
+  >[!VIDEO](https://video.tv.adobe.com/v/3423077/?learn=on&autoplay=true)
 
   +++
 
