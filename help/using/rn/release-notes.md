@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: c532c259538a3ce007621ae7e9f17a73623ea70d
+source-git-commit: 83da64e7985b9fb5b723c60473db6ea743e3fe6e
 workflow-type: tm+mt
-source-wordcount: '2974'
+source-wordcount: '1551'
 ht-degree: 7%
 
 ---
@@ -25,49 +25,20 @@ ht-degree: 7%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## Mars 26 förhandsversionsinformation {#march-26-rn}
+## Versionsinformation 26 mars {#march-26-rn}
 
-**Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
+Avsnitten [Nya funktioner](#march-26-features) och [Förbättringar](#march-26-improv) omfattar funktioner som redan är tillgängliga. Avsnittet [Kommer snart](#coming-soon) innehåller funktioner och förbättringar som är planerade att släppas senare i mars.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+<!--
+**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
+
+See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 **Releasedatum**: 24-25 mars 2026
 
 ### Nya funktioner {#march-26-features}
-
-
-
-<table>
-<thead>
-<tr>
-<th><strong>Transaktionssamordnade kampanjer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Orchestrerade kampanjer kan nu definieras som <strong>transactional</strong>. Detta gör det möjligt att leverera transaktionsmeddelanden som triggas av specifika åtgärder som utförs av enskilda, till exempel begäranden om lösenordsåterställning eller kundvagnsköp. Genom att tilldela den här kategorin tillämpas transaktionskanalskonfigurationer och affärsreglerna åsidosätts.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Utlösa samordnade kampanjer med API</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan du utlösa en orkestrerad kampanj via API. Konfigurera målkampanjen som"utlöst av en signal" och publicera den. Använd sedan ett API-anrop för att starta kampanjen. API-anropet kan innehålla parametrar som ska vara tillgängliga som variabler i den utlösta kampanjen.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -79,46 +50,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>En ny <strong>Test</strong>-aktivitet är nu tillgänglig i Orchestrated Campaigns. Den här aktiviteten dirigerar arbetsflödeskörningen till olika grenar baserat på definierade villkor, vilket gör att du kan validera kampanjlogik och konfigurationer innan du aktiverar liveleveranser.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>URL-parameterkryptering</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>URL-parametrar för spårning av länkar och landningssidor kan nu krypteras, vilket ger ett extra säkerhetslager för känsliga parameterdata.</p>
-<ul>
-<li>Registrera och hantera krypteringsnycklar i ett dedikerat <strong>Administration</strong> -register.</li>
-<li>Använd den nya krypteringshjälpen i uttryck för att kryptera känsliga data i spårningslänkar och URL:er för landningssidor för de frågeparametrar som du vill skydda vid återgivningen.</li>
-</ul>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Optimering av resväg</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Använd den nya Optimera-noden för att rikta in er på specifika målgrupper eller kör A/B-tester för att fastställa den bästa vägen för att uppfylla era affärsinriktade nyckeltal.
-Med det här verktyget kan du testa och ändra, och anpassa kommunikation, sekvensering och timing för att nå dina kunder på bästa sätt.
-</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Med allmän tillgänglighet introduceras i den här versionen <strong>experimentera med typ</strong> (A/B eller flerbeväpnad bandit) och <strong>Skala vinnaren</strong> för enhetsresor.</p>
-<p>Mer information finns i den <a href="../building-journeys/optimize.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../orchestrated/activities/test.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -151,60 +83,32 @@ Med det här verktyget kan du testa och ändra, och anpassa kommunikation, sekve
 <p>Efter den allmänna tillgängligheten för aktiviteten <strong>Åtgärd</strong> i februari 2026 har tidigare inbyggda kanalaktiviteter (e-post, push, SMS, in-app, webb, kodbaserad upplevelse och innehållskort) på arbetsytan nu tagits bort.</p>
 <p>Du använder nu en enda <strong>åtgärdsaktivitet</strong> för att konfigurera alla kanalåtgärder och ersätta behovet av separata kanalspecifika noder.
 Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera utan några ändringar eller migrering.</p>
+<p><img src="assets/do-not-localize/action-activity.gif"></p>
 <p>Mer information finns i den <a href="../building-journeys/journey-action.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-<table>
+<!--<table>
 <thead>
 <tr>
-<th><strong>Beslutsstöd i e-postkanal</strong><br/></th>
+<th><strong>Decisioning support in email channel</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Du kan nu använda <strong>Beslutsfattning</strong> för att anpassa och optimera innehållet i dina e-postmeddelanden. Utnyttja Priority Scores, Formulas eller AI Models för att visa de mest relevanta erbjudandena och innehållet för varje mottagare.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). I den här allmänna tillgänglighetsversionen stöds nu spegelsidor.</p>
-<p>Mer information finns i den <a href="../experience-decisioning/create-decision-policy.md">detaljerade dokumentationen</a>.</p>
+<p>You can now use <strong>Decisioning</strong> to personalize and optimize the content of your email messages. Leverage Priority Scores, Formulas, or AI Models to display the most relevant offers and content to each recipient.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). With this General Availability release, mirror pages are now supported.</p>
+<p><img src="assets/do-not-localize/exd-email.gif"></p>
+<p>For more information, refer to the <a href="../experience-decisioning/create-decision-policy.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
-<table>
-<thead>
-<tr>
-<th><strong>Konvertera bilder till e-postmallar</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan du konvertera bilder till e-postmallar direkt i Journey Optimizer. Använd AI-baserad analys för att automatiskt generera strukturerade HTML-mallar från visuella referenser, vilket avsevärt minskar tiden för e-postdesign.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). <a href="../content-management/image-to-html.md">Läs mer</a></p>
-</td>
-</tr>
-</tbody>
-</table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Inkorg</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Inkorgen</strong> är en mobilfunktion, tillgänglig med innehållskort, som gör det möjligt för kunder att skapa en central plats i appen eller på webbplatsen för att visa meddelanden som skickas till användarna. Detta förlänger marknadsföringskommunikationernas livstid genom att säkerställa att de förblir tillgängliga även efter att de har avvisats.</p>
-<p>Tillgänglighetsdatum: 31 mars 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -273,7 +177,7 @@ Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera u
 <td>
 <p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
 <p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html?lang=sv-SE">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 4 mars 2026</p>
 </td>
 </tr>
@@ -304,12 +208,12 @@ Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera u
 
 Förbättringar i den här versionen visas nedan.
 
-
-#### Rapportering
-
-* **Sändningsoptimering: Uppdaterad kontrollplats och ny lyftrapport** - STO-kontroller (Send-Time Optimization) har flyttats till Åtgärdskonfigurationsmenyn. Dessutom finns det nu en ny avbrottsrapport i Journeys-rapporter som mäter effekten av STO på kampanjens resultatstatistik.
-
 <!--
+#### Reporting
+
+* **Send-Time Optimization: updated controls location and new lift report** - Send-Time Optimization (STO) controls have been relocated to the Action configuration menu. Additionally, a new lift report is now available in Journeys reports to measure the impact of STO on your campaign performance metrics.
+
+
 * **Exclude bot clicks for email and SMS reporting** - Email and SMS reporting now automatically filters out bot clicks from click metrics, providing more accurate engagement data and preventing automated traffic from inflating your performance figures.
 
 #### Email Designer
@@ -319,14 +223,15 @@ Förbättringar i den här versionen visas nedan.
 * **Text mode support in fragments** - To support text-based email workflows, you can now create and manage text versions of your visual fragments for optimal use in the plain text version of emails that include that fragment.
 
   **Caution:** When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered—both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.-->
+<!--
+#### Decisioning
 
-#### Beslut
-
-* **Valfria fragment i beslutsobjekt** - När du använder fragment i beslutsobjekt kan du nu göra ett fragment valfritt så att om det inte är tillgängligt för tillfället på Edge hoppas det över och resan eller kampanjen fortsätter att återge i stället för att misslyckas.
+* **Optional fragments in decision items** - When using fragments in decision items, you can now make a fragment optional so that if it is temporarily unavailable on Edge, it is skipped and the journey or campaign continues rendering instead of failing.
+-->
 
 #### Konfiguration
 
-* **Mappar för resor och kampanjer** - Nu kan du ordna dina resor och kampanjer i mappar, vilket möjliggör strukturerad navigering och enklare hantering för team som arbetar med stora innehållsvolymer. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+<!--* **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders, enabling structured navigation and easier management for teams working with large volumes of content. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.-->
 
 * **Datauppsättningen för den sekundära mottagarfeedbacken för AJO byter namn** - datauppsättningen `AJO Email BCC Feedback Event` har bytt namn till datauppsättningen `AJO Secondary Recipient Feedback Event`. Effekten varierar beroende på din situation:
 
@@ -336,19 +241,10 @@ Förbättringar i den här versionen visas nedan.
 
   Tillgänglighetsdatum: 2 mars 2026
 
-#### Samordnade kampanjer
-
-* **Globala variabler i samordnade kampanjer** - Orchestrated Campaigns har nu stöd för globala variabler som kan definieras en gång och återanvändas i alla aktiviteter i ett arbetsflöde, vilket förenklar konfigurationen och säkerställer konsekvens i dynamiska värden, uttryck och innehållspersonalisering.
-
-* **Förenklad målgruppsdimension i samordnade kampanjer** - Nu kan du enkelt välja eller automatiskt minska rätt målgruppsanpassning och sekundära dimensioner i samordnade kampanjer för korrekt och effektiv målgruppsaktivering.
 
 #### Resor
 
-* **Experimenttyp** - Du kan nu välja mellan A/B-experiment (fast delning i början) eller Multi-väpnad bandit (automatisk delning med veckoviktsuppdateringar) när du konfigurerar ett sökvägsexperiment.
-
-* **Banexperiment: Skala vinnaren** - Du kan nu automatiskt eller manuellt rulla ut den vinnande sökvägen för ett experiment till din fulla publik. När vinnaren väl har fastställts kan ni utöka dess räckvidd och effektivitet utan att hela tiden övervaka experimentet.
-
-  Denna kapacitet är endast tillgänglig vid enstaka resor (händelseresättda och målgruppskvalifikationer). Det är inte tillgängligt för målgruppsresor för läsning.
+* **Åtgärden Uppdatera profil: stöd för flera profilattribut** - Åtgärdsaktiviteten **Uppdatera profil** stöder nu uppdatering av upp till fem profilattribut i en enda nod. Tidigare kunde varje åtgärd bara uppdatera ett attribut i taget, vilket innebar att flera noder måste uppdatera flera attribut. Använd den nya knappen **Uppdatera ett annat fält** om du vill lägga till fler fält-/värdepar, vilket minskar arbetsytans komplexitet och förbättrar prestandan. [Läs mer](../building-journeys/update-profiles.md)
 
 * **Påfyllnadssändning av utgående meddelanden på resor** - Du kan nu schemalägga att meddelanden från Journey Optimizer-resor levereras i kontrollerade batchar över tid. [Läs mer](../building-journeys/send-using-waves.md)
 
@@ -361,33 +257,60 @@ Förbättringar i den här versionen visas nedan.
   Tillgänglighetsdatum: 2 mars 2026
 
 
-## Versionsinformation 26 februari {#feb-26-01-rn}
+## Kommer snart {#coming-soon}
 
-Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01-improv) omfattar funktioner som redan är tillgängliga. <!--The [Coming soon](#coming-soon) section lists features and improvements scheduled for release later in February.-->
-
-<!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
-
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
-
-<!--**Release date**: February 17-18, 2026-->
-
-### Nya funktioner {#feb-26-01-features}
-
+Funktionerna och förbättringarna nedan planeras släppas senare i mars/början av april. Releasedatum och omfång kan ändras utan föregående meddelande.
 
 <table>
 <thead>
 <tr>
-<th><strong>Skiljeförfarande på resan</strong><br/></th>
+<th><strong>Utlös samordnade kampanjer med en signal</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Du kan nu använda <strong>rankningsformler</strong> för att automatiskt öka prioritetspoängen för resan baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kan komma in på de mest relevanta resorna.</p>
-<p><img src="assets/do-not-localize/journey-arbitration-formulas.gif"/></p>
+<p>Nu kan du utlösa en orkestrerad kampanj via en signal som skickas via API:er. Konfigurera målkampanjen som"utlöst av en signal" och publicera den. Använd sedan ett API-anrop för att starta kampanjen. API-anropet kan innehålla parametrar som ska vara tillgängliga som variabler i den utlösta kampanjen. Obs! En orkestrerad kampanj som startats av en signal är fortfarande en **batch**-kampanj och är inte detsamma som API-utlösta kampanjer.</p>
+<p><img src="assets/do-not-localize/oc-triggered.gif"></p>
+<p>Tillgänglighetsdatum: 1 april 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Konvertera bilder till e-postmallar</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du konvertera bilder till e-postmallar direkt i Journey Optimizer. Använd AI-baserad analys för att automatiskt generera strukturerade HTML-mallar från visuella referenser, vilket avsevärt minskar tiden för e-postdesign.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). <a href="../content-management/image-to-html.md">Läs mer</a></p>
+<p>Tillgänglighetsdatum: 26 mars 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>URL-parameterkryptering</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>URL-parametrar för spårning av länkar och landningssidor kan nu krypteras, vilket ger ett extra säkerhetslager för känsliga parameterdata.</p>
+<ul>
+<li>Registrera och hantera krypteringsnycklar i ett dedikerat <strong>Administration</strong> -register.</li>
+<li>Använd den nya krypteringshjälpen i uttryck för att kryptera känsliga data i spårningslänkar och URL:er för landningssidor för de frågeparametrar som du vill skydda vid återgivningen.</li>
+</ul>
 <p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="../conflict-prioritization/journey-ranking-formulas.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 24 februari 2026</p>
+<p>Tillgänglighetsdatum: 31 mars 2026</p>
 </td>
 </tr>
 </tbody>
@@ -396,24 +319,15 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Verksamhet under resor</strong><br/></th>
+<th><strong>Transaktionskategori i orkestrerade kampanjer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer har stöd för en ny generisk <strong>åtgärdsaktivitet</strong> som gör att du kan konfigurera både enskilda åtgärder och inkommande åtgärdsgrupper för flera åtgärder, vilket ger en smidig åtgärdskonfiguration på arbetsytan. Den här nya funktionen gör det möjligt att:</p>
-<ul>
-<li>En förenklad inbyggd åtgärdskonfiguration på arbetsytan för resan.</li>
-<li>Kapaciteten för att skapa inkommande åtgärdsgrupper med flera åtgärder.</li>
-<li>Möjlighet att lägga till optimering till alla inbyggda kanalåtgärder.</li>
-<li>Möjlighet att lägga till både experimentella och flerspråkiga alternativ i alla funktionsmakron.</li>
-</ul>
-<p><img src="assets/do-not-localize/action-activity.gif"/></p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Mer information finns i den <a href="../building-journeys/journey-action.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 20 februari 2026</p>
-<p><strong>Obs!</strong> Alla inbyggda kanaler är nu tillgängliga via åtgärdsreseaktiviteten. Gamla inbyggda kanalaktiviteter kommer att bli inaktuella i mars-versionen. Befintliga resor med äldre åtgärder kommer att fortsätta att fungera som de är - ingen migrering krävs.</p>
+<p>I samordnade kampanjer kan du nu ange en kanalaktivitet till kategorin <strong>Transactional</strong>. Detta tillämpar transaktionskanalskonfigurationer för den aktiviteten och är användbart när affärsregler inte ska gälla eller när kundernas deltagande inte krävs.</p>
+<p><img src="assets/do-not-localize/oc-transactional.gif"></p>
+<p>Tillgänglighetsdatum: 26 mars 2026 - Den här funktionen kommer gradvis att lanseras för alla regioner under de närmaste dagarna.</p>
 </td>
 </tr>
 </tbody>
@@ -422,24 +336,14 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Påfyllnadssändning av utgående meddelanden</strong><br/></th>
+<th><strong>Inkorg</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni schemalägga meddelanden från Journey Optimizer kampanjer eller resor som ska levereras i kontrollerade omgångar över tid.</p>
-<p>Wave-sändning ger följande fördelar:</p>
-<ul>
-<li>Bättre leveransförmåga - Spridning skickar över tid för att bevara ett starkt avsändarrykte och minska risken för att flaggas som skräppost.</li>
-<li>Belastningskontroll - Undvik överväldigande system längre fram i kedjan (t.ex. callcenters, landningssidor) genom att begränsa hur många meddelanden som skickas samtidigt.</li>
-<li>Användningsfall med stor volym och tidskänslighet - Passar för stora målgrupper eller när du behöver styra timing (t.ex. callcenters kapacitet, uppfartsavtal eller tidsbundna erbjudanden).</li>
-</ul>
-<p><img src="assets/do-not-localize/waves.gif"/></p>
-<p>I <strong>kampanjer</strong> är den här funktionen tillgänglig för alla miljöer (allmän tillgänglighet). Mer information finns i den <a href="../campaigns/send-using-waves.md">detaljerade dokumentationen</a>.</p>
-
-<p>På <strong>resor</strong> är den här funktionen bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet) - Kontakta din Adobe-representant för att få åtkomst. Mer information finns i den <a href="../building-journeys/send-using-waves.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 19 februari 2026</p>
+<p><strong>Inkorgen</strong> är en mobilfunktion, tillgänglig med innehållskort, som gör det möjligt för kunder att skapa en central plats i appen eller på webbplatsen för att visa meddelanden som skickas till användarna. Detta förlänger marknadsföringskommunikationernas livstid genom att säkerställa att de förblir tillgängliga även efter att de har avvisats.</p>
+<p>Tillgänglighetsdatum: 31 mars 2026</p>
 </td>
 </tr>
 </tbody>
@@ -448,176 +352,24 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Migrera underdomäner till anpassad delegering</strong><br/></th>
+<th><strong>Optimering av resväg</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du migrera underdomäner med CNAME-delegeringsläget till anpassad delegering direkt från gränssnittet, så att du kan följa striktare säkerhetsregler i enlighet med företagets riktlinjer utan att behöva skapa kanalkonfigurationer på nytt.</p>
-<p><img src="assets/do-not-localize/subdomain-migration.gif"/></p>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="../configuration/custom-subdomain-migration.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 19 februari 2026</p>
+<p>Använd den nya Optimera-noden för att rikta in er på specifika målgrupper eller kör A/B-tester för att fastställa den bästa vägen för att uppfylla era affärsinriktade nyckeltal.
+Med det här verktyget kan du testa och ändra, och anpassa kommunikation, sekvensering och timing för att nå dina kunder på bästa sätt.
+</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). <a href="../building-journeys/optimize.md">Läs mer</a></p>
+<p>Tillgänglighetsdatum: 3 april 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Webbpush-meddelandekanal</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer har nu stöd för <strong>webb-push-meddelanden</strong>, vilket utökar push-kanalen bortom mobilen. Du kan enkelt leverera meddelanden till både <strong>mobilwebbläsare och datorwebbläsare</strong>, så att du kan nå kunder direkt på deras enheter utan att behöva använda en app. Den här förbättringen gör att ni kan engagera användarna med rätt, personaliserade meddelanden i realtid, och utnyttja samma arbetsflöden och målgruppsfunktioner som redan finns för mobilpush.</p>
-<p><img src="assets/do-not-localize/web-push.gif"/></p>
-<p>Den här funktionen lanserades tidigare i Beta och är tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Mer information finns i den <a href="../push/push-configuration-web.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 13 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
+### Förbättringar
 
-<table>
-<thead>
-<tr>
-<th><strong>Aktivitet för innehållsbeslut</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>En ny <strong>aktivitet för innehållsbeslut</strong> är nu tillgänglig på arbetsytan för att integrera personaliserade erbjudanden direkt i kundresorna. Med den här aktiviteten kan ni leverera beslutsbaserat innehåll och hänvisa till dessa erbjudanden under hela kundresan, under villkor för att skapa kvalificeringsbaserade förgreningar, i anpassade åtgärder för att skicka erbjudandedata till externa system och i andra aktiviteter för att skapa helt personaliserade kundupplevelser.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p><img src="assets/do-not-localize/content-decision.gif"/></p>
-<p>Mer information finns i den <a href="../building-journeys/content-decision.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 10 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
+* **Globala variabler i samordnade kampanjer** - Orchestrated Campaigns har nu stöd för globala variabler som kan definieras en gång och återanvändas för alla aktiviteter i ett arbetsflöde, vilket förenklar konfigurationen och säkerställer konsekvens i dynamiska värden och uttryck. <br/>Tillgänglighetsdatum: 1 april 2026
 
-<table>
-<thead>
-<tr>
-<th><strong>Verktyg-API:er för självbetjäningsmigrering</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Migreringsverktygs-API:er är nu tillgängliga för programmatisk migrering av <strong>beslutshantering</strong>-entiteter till <strong>beslutshantering</strong>, med:</p>
-<ul>
-<li>Flexibla migreringsomfång (sandlåda, erbjudande eller beslutsnivå)</li>
-<li>Automatisk beroendeanalys och validering</li>
-<li>Återställningsstöd för slutförda migreringar</li>
-<li>Detaljerade migreringsrapporter med objektmappningar</li>
-</ul>
-<p>Mer information finns i den <a href="../experience-decisioning/decisioning-migration-api.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 3 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Övervakning av anpassade åtgärder</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Få djupare insikter i hälsa och prestanda för era anpassade åtgärdsslutpunkter med en ny kontrollpanel och förbättrade händelsedata för kundsteg. Spåra lyckade samtal, fel, dataflöde, svarstider och väntetider för kön för att snabbt förstå när, var och varför avvikelser inträffar.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Mer information finns i den <a href="../action/reporting.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 3 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Beslutsstöd i SMS-kanal</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Ni kan nu personalisera och optimera innehållet i era SMS-meddelanden med Beslutsfattning. Använd prioriteringspoäng, formler eller AI-modeller för att visa det bästa innehållet för era kunder.</p>
-<p>Mer information finns i den <a href="../experience-decisioning/create-decision.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 2 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-### Förbättringar {#feb-26-01-improv}
-
-Förbättringar i den här versionen visas nedan.
-
-#### Konfiguration
-
-* **Upplev händelseanvändning i reseuttryck** - Från och med 1 april 2026 stöds inte längre användningen av upplevelsehändelseattribut i reseuttryck för organisationer som inte har använt den här funktionen de senaste 90 dagarna. Den här funktionen har redan varit otillgänglig för nya kundorganisationer sedan 8 juli 2025. Mer information finns i [Upplevelsesökning under resor](../building-journeys/exp-event-lookup.md).
-
-#### Innehållshantering
-
-<!--
-* **Update brands with new color tab** - Brand guidelines help ensure your brand is presented consistently across all touchpoints. The new <strong>Colors</strong> section defines the standards for your brand's color system, outlining how colors are selected, organized, and applied across experiences. It ensures consistent use of primary, secondary, accent, and neutral colors to support a cohesive, accessible, and recognizable brand identity. [Read more](../content-management/brands.md)
--->
-
-* **Använd teman för att konvertera bilder till e-postmallar** - När du konverterar en bild till en e-postmall i Journey Optimizer kan du nu använda ett tema som indata så att den genererade HTML följer varumärkesparametrarna. Formatering som bakgrundsfärg, knappfärg, teckensnitt, radavstånd, marginaler och utfyllnad tillämpas automatiskt, vilket minskar det manuella arbetet och ger en mall som är klar att användas med minimala redigeringar. [Läs mer](../content-management/image-to-html.md)
-
-  Tillgänglighetsdatum: 17 februari 2026.
-
-<!--* **Text mode for fragments** - You can now create and manage text versions of your fragments, supporting workflows that rely on plain text content and providing the same flexibility as in email content. [Read more](../content-management/create-fragments.md)-->
-
-#### E-postdesigner
-
-* **Textindrag** - Du kan nu använda anpassningsbara vänsterindrag på den första raden med stycken i textkomponenter direkt från egenskapspanelen. <!--The new **Indentation** control lets you define indentation in pixels or percentage via a numeric input or slider, with live preview on the canvas. -->Detta förbättrar läsbarheten för innehåll i lång form, t.ex. redigeringar och artiklar. [Läs mer](../email/get-started-email-style.md)
-
-  Tillgänglighetsdatum: 18 februari 2026.
-
-#### Beslut
-
-* **Stöd för inkommande trafik från Edge för användning av Adobe Experience Platform-data i beslut** - Om du använder Adobe Experience Platform-data i beslut stöds nu även kantinkommande användningsfall, förutom e-post och anpassade åtgärder på resor. [Läs mer](../experience-decisioning/aep-data-exd.md)
-
-  Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
-
-* **Förhandsgranskning av beslut i den kodbaserade upplevelsekanalen** - Du kan nu förhandsgranska beslutsobjekt när du konfigurerar beslut med den kodbaserade upplevelsekanalen. Förhandsgranskningen är tillgänglig direkt i redigeringsgränssnittet innan den publiceras. [Läs mer](../code-based/test-code-based.md#preview-code-based)
-
-  Tillgänglighetsdatum: 18 februari 2026
-
-* **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla fragment till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutspolicyer. [Läs mer](../experience-decisioning/fragments-decision-policies.md)
-
-  Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).
-
-  Tillgänglighetsdatum: 12 februari 2026.
-
-#### Personalisering
-
-* **Hjälp för körningsmetadata** - Hjälpfunktionen `executionMetadata` är nu tillgänglig för alla Journey Optimizer-kunder. Använd den för att dynamiskt lägga till sammanhangsbaserad information till alla interna åtgärder och hämta in den i en datauppsättning för export till externa system. [Läs mer](../personalization/functions/helpers.md#execution-metadata)
-
-  Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).
-
-  Tillgänglighetsdatum: 20 februari 2026.
-
-#### SMS
-
-* **SMS-webbhooks** - Webbhooks stöds nu av alla SMS-leverantörer. Du kan konfigurera varje webkrok baserat på dess avsedda syfte: inkommande webbhooks för att fånga inkommande meddelanden och Feedback-webbhooks för att ta emot leveranskvitton, statusuppdateringar och andra meddelanderelaterade händelser. [Läs mer](../sms/sms-webhook.md)
-
-  Tillgänglighetsdatum: 2 februari 2026.
-
-<!--## Coming soon {#coming-soon}
-
-The features and improvements below are planned for release later in February. Release dates and scope may change without prior notice.
--->
-
+<!--WAITING RELEASE DATE CONFIRMATION * **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.-->
