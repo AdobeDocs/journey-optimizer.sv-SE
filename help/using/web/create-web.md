@@ -274,4 +274,4 @@ När en webbresa eller kampanj är aktiv kan ni stoppa den för att hindra publi
 
 I videon nedan visas hur du skapar en webbkampanj, konfigurerar dess egenskaper, granskar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418800/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449985/?captions=swe&quality=12&learn=on)
