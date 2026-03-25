@@ -61,7 +61,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Dataset lookup]**:
 
 1. Öppna kategorin **[!UICONTROL Orchestration]** och släpp en **[!UICONTROL Dataset lookup]**-aktivitet på arbetsytan.
 
-   ![[!DNL Adobe Experience Platform]-datauppsättningssökningsaktivitet på resan ](assets/aep-data-activity.png)
+   ![[!DNL Adobe Experience Platform]-datauppsättningssökningsaktivitet på resan &#x200B;](assets/aep-data-activity.png)
 
 1. Lägg till en etikett och en beskrivning.
 
