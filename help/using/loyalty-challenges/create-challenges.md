@@ -12,9 +12,9 @@ hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
 exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
-source-git-commit: 226b1fcb1129410781262db9e53673faffa970da
+source-git-commit: 89e1348a98596b8ecefabab571d2c1af299f1ed8
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1674'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md)
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
-* **Skapa utmaningar** {2 }︎ ◀Du är här **&#x200B;**
+* **Skapa utmaningar** {2 }︎ ◀Du är här ****
 * [Skapa uppgifter](create-tasks.md)
 * [API-referens för lojalitetsutmaningar](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
 
@@ -262,7 +262,7 @@ När du är klar med meddelandekonfigurationen definierar du vilka kunder som ä
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_audience"
 >title="Målgrupp"
->abstract="På fliken Målgrupp väljer du vem som kan delta i utmaningen. Välj Välj målgrupp, välj målgrupp bland de tillgängliga Adobe Experience Platform-målgrupperna i dialogrutan och välj sedan Lägg till målgrupp. Endast medlemmar av den målgruppen är berättigade. Målgrupperna definieras i Experience Platform - använd en befintlig målgrupp eller skapa en sådan innan du slutför det här steget."
+>abstract="På fliken Audience väljer du vem som kan delta i utmaningen från de tillgängliga Adobe Experience Platform-målgrupperna."
 
 Definiera vilka kunder som kan delta i er lojalitetsutmaning.
 

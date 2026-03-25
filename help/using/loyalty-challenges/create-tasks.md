@@ -12,9 +12,9 @@ hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
 exl-id: c1e49173-69cc-4729-9f9a-afea2ccff3fa
-source-git-commit: 226b1fcb1129410781262db9e53673faffa970da
+source-git-commit: 89e1348a98596b8ecefabab571d2c1af299f1ed8
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 * [Kom igång med lojalitetsutmaningar](get-started.md)
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
 * [Skapa utmaningar](create-challenges.md)
-* **Skapa aktiviteter** {2 }︎ ◀Du är här **&#x200B;**
+* **Skapa aktiviteter** {2 }︎ ◀Du är här ****
 * [API-referens för lojalitetsutmaningar](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
 
 >[!ENDSHADEBOX]
@@ -87,7 +87,7 @@ Konfigurera aktivitetsattributen baserat på den valda aktivitetstypen. Bläddra
 Tillgängliga attribut för **Inköp**-aktiviteter:
 
 * **[!UICONTROL Quantity]**: Ange antalet artiklar som måste köpas för att den här uppgiften ska kunna slutföras.
-* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag &#x200B;](#eligible-items-exclusions)
+* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag ](#eligible-items-exclusions)
 * **[!UICONTROL Minimum spend value amount]**: Ange ett minimikrav för inköpsbelopp.
 * **[!UICONTROL Maximum number of transactions]**: Begränsa hur många transaktioner som kan användas för att slutföra uppgiften.
 
@@ -98,7 +98,7 @@ Tillgängliga attribut för **Inköp**-aktiviteter:
 Tillgängliga attribut för **Utlägg**-aktiviteter:
 
 * **[!UICONTROL Amount]**: Ange det totala utgiftsbeloppet som krävs för att slutföra uppgiften.
-* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag &#x200B;](#eligible-items-exclusions)
+* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag ](#eligible-items-exclusions)
 * **[!UICONTROL Maximum number of transactions]**: Ange hur många transaktioner som tillåts för att uppfylla utgiftsbehovet. Du kan aktivera det här attributet från parameterikonen.
 
 ![](assets/task-create-spend.png)
@@ -110,7 +110,7 @@ Tillgängliga attribut för **Utlägg**-aktiviteter:
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_task_eligible_items_exclusion"
 >title="Godtagbara artiklar och undantag"
->abstract="Styr vilka inköp som räknas för Inköp- och utgiftsaktiviteter. I det första fältet anger du kommaavgränsade objekt-ID:n, kategorier eller mål-ID:n så att endast dessa tillåts. Lämna det tomt så att alla inköp räknas, eller skriv en asterisk för att ange alla inköp. I det andra fältet anger du objekt eller kategorier som aldrig ska räknas, t.ex. presentkort eller clearance."
+>abstract="För både **Inköp**- och **Utgift**-aktiviteter kan du använda attributet **[!UICONTROL Eligible items & exclusions]** för att definiera vilka objekt och grupper som är kvalificerade och vilka som är uteslutna. På så sätt kan ni inrikta er på specifika produkter, kategorier eller platser för att passa in i era utmaningsmål. Du kan t.ex. begränsa en utgiftsaktivitet till specifika produktkategorier eller utesluta presentkort eller kampanjartiklar från att räknas när aktiviteten är slutförd."
 
 <!-- SCREENSHOT: Eligible items & exclusions popup showing the two sections: "Eligible task purchases are limited to the following" and "The following are excluded from this task" with text input fields -->
 
