@@ -7,10 +7,10 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: cf5bfa196f96612434235dce6736ec933ac655ef
+source-git-commit: 116be2f43d9ac359dcd5c32be5f8a2b2dd3c9f91
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 6%
+source-wordcount: '1584'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation 26 mars {#march-26-rn}
 
@@ -34,11 +34,31 @@ Avsnitten [Nya funktioner](#march-26-features) och [Förbättringar](#march-26-i
 <!--
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 **Releasedatum**: 24-25 mars 2026
 
 ### Nya funktioner {#march-26-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>Anpassade formulär för landningssida</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med [!DNL Journey Optimizer] kan du hämta profilattribut via dina landningssidor.</p>
+<p>Skapa, designa och hantera anpassade formulär som är skräddarsydda efter era behov utifrån en specifik datamängd. Du kan sedan använda dessa formulär på landningssidor för att lägga till de profilattribut du väljer i datauppsättningen som definieras för varje formulär.</p>
+<p>Tidigare släppt i begränsad tillgänglighet för kunder i USA och Australien är den här funktionen nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p><img src="assets/do-not-localize/forms.gif"/></p>
+<p>Mer information finns i den <a href="../landing-pages/lp-forms.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 26 mars 2026.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -181,7 +201,7 @@ Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera u
 <td>
 <p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
 <p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html?lang=sv-SE" target="_blank">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html" target="_blank">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 4 mars 2026</p>
 </td>
 </tr>
