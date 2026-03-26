@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: a4d1ef8820ef3cafc4dae5d897c850b106163868
+source-git-commit: cf5bfa196f96612434235dce6736ec933ac655ef
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1497'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation 26 mars {#march-26-rn}
 
@@ -34,7 +34,7 @@ Avsnitten [Nya funktioner](#march-26-features) och [Förbättringar](#march-26-i
 <!--
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 **Releasedatum**: 24-25 mars 2026
 
@@ -181,7 +181,7 @@ Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera u
 <td>
 <p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
 <p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html?lang=sv-SE" target="_blank">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html" target="_blank">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 4 mars 2026</p>
 </td>
 </tr>
@@ -375,9 +375,5 @@ Med det här verktyget kan du testa och ändra, och anpassa kommunikation, sekve
 </tr>
 </tbody>
 </table>
-
-### Förbättringar
-
-* **Globala variabler i samordnade kampanjer** - Orchestrated Campaigns har nu stöd för globala variabler som kan definieras en gång och återanvändas för alla aktiviteter i ett arbetsflöde, vilket förenklar konfigurationen och säkerställer konsekvens i dynamiska värden och uttryck. <br/>Tillgänglighetsdatum: 1 april 2026
 
 <!--WAITING RELEASE DATE CONFIRMATION * **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.-->
