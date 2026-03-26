@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 80241ba0afa94d6683f0fd562bb3185876c55cac
+source-git-commit: a4d1ef8820ef3cafc4dae5d897c850b106163868
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1535'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation 26 mars {#march-26-rn}
 
@@ -34,7 +34,7 @@ Avsnitten [Nya funktioner](#march-26-features) och [Förbättringar](#march-26-i
 <!--
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 **Releasedatum**: 24-25 mars 2026
 
@@ -161,7 +161,7 @@ Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera u
 <tbody>
 <tr>
 <td>
-<p>Ge realtidsupplevelserna direkt till kundens Lock Screens och Dynamic Island med iOS Live Activity i Adobe Journey Optimizer. Leverera live-uppdateringar, från orderspårning och flygstatus till händelseräkningar, livepoäng och leveransförlopp, utan att användarna behöver öppna er app. Håll er målgrupp informerad och engagerad i precis rätt ögonblick, precis där de är.</p>
+<p>Ge realtidsupplevelser direkt till kundens Lock Screens och Dynamic Island med <strong>iOS Live Activity</strong> i Adobe Journey Optimizer. Leverera live-uppdateringar, från orderspårning och flygstatus till händelseräkningar, livepoäng och leveransförlopp, utan att användarna behöver öppna er app. Håll er målgrupp informerad och engagerad i precis rätt ögonblick, precis där de är.</p>
 <p>Den här funktionen lanserades tidigare i betaversionen och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p>Mer information finns i den <a href="../mobile-live/get-started-mobile-live.md">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 3 mars 2026</p>
@@ -181,7 +181,7 @@ Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera u
 <td>
 <p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
 <p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html?lang=sv-SE">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html" target="_blank">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 4 mars 2026</p>
 </td>
 </tr>
@@ -272,23 +272,6 @@ Funktionerna och förbättringarna nedan planeras släppas senare i mars/början
 <table>
 <thead>
 <tr>
-<th><strong>Utlös samordnade kampanjer med en signal</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Orchestrerade kampanjer kan nu aktiveras via en <strong>API-signal</strong>. Konfigurera målkampanjen som <strong>utlöst av en signal</strong>, publicera den och utlösa den sedan med ett API-anrop för att konfigurera den. Alla parametrar som ingår i API-anropet är tillgängliga som variabler i den kampanj som körs. Observera att signalutlösta orkestrerade kampanjer förblir <strong>batch</strong>-kampanjer och skiljer sig från API-utlösta kampanjer.</p>
-<p><img src="assets/do-not-localize/oc-triggered.gif"></p>
-<p>Tillgänglighetsdatum: 1 april 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Konvertera bilder till e-postmallar</strong><br/></th>
 </tr>
 </thead>
@@ -298,6 +281,23 @@ Funktionerna och förbättringarna nedan planeras släppas senare i mars/början
 <p>Nu kan du konvertera bilder till e-postmallar direkt i Journey Optimizer. Använd AI-baserad analys för att automatiskt generera strukturerade HTML-mallar från visuella referenser, vilket avsevärt minskar tiden för e-postdesign.</p>
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). <a href="../content-management/image-to-html.md">Läs mer</a></p>
 <p>Tillgänglighetsdatum: 26 mars 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Transaktionskategori i orkestrerade kampanjer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>I samordnade kampanjer kan du nu ange en kanalaktivitet till kategorin <strong>Transactional</strong>. Detta tillämpar transaktionskanalskonfigurationer för den aktiviteten och är användbart när affärsregler inte ska gälla eller när kundernas deltagande inte krävs.</p>
+<p><img src="assets/do-not-localize/oc-transactional.gif"></p>
+<p>Tillgänglighetsdatum: 26 mars 2026 - Den här funktionen kommer gradvis att lanseras för alla regioner under de närmaste dagarna.</p>
 </td>
 </tr>
 </tbody>
@@ -327,23 +327,6 @@ Funktionerna och förbättringarna nedan planeras släppas senare i mars/början
 <table>
 <thead>
 <tr>
-<th><strong>Transaktionskategori i orkestrerade kampanjer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>I samordnade kampanjer kan du nu ange en kanalaktivitet till kategorin <strong>Transactional</strong>. Detta tillämpar transaktionskanalskonfigurationer för den aktiviteten och är användbart när affärsregler inte ska gälla eller när kundernas deltagande inte krävs.</p>
-<p><img src="assets/do-not-localize/oc-transactional.gif"></p>
-<p>Tillgänglighetsdatum: 26 mars 2026 - Den här funktionen kommer gradvis att lanseras för alla regioner under de närmaste dagarna.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Inkorg</strong><br/></th>
 </tr>
 </thead>
@@ -352,6 +335,23 @@ Funktionerna och förbättringarna nedan planeras släppas senare i mars/början
 <td>
 <p><strong>Inkorgen</strong> är en mobilfunktion, tillgänglig med innehållskort, som gör det möjligt för kunder att skapa en central plats i appen eller på webbplatsen för att visa meddelanden som skickas till användarna. Detta förlänger marknadsföringskommunikationernas livstid genom att säkerställa att de förblir tillgängliga även efter att de har avvisats.</p>
 <p>Tillgänglighetsdatum: 31 mars 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Utlös samordnade kampanjer med en signal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Orchestrerade kampanjer kan nu aktiveras via en <strong>API-signal</strong>. Konfigurera målkampanjen som <strong>utlöst av en signal</strong>, publicera den och utlösa den sedan med ett API-anrop för att konfigurera den. Alla parametrar som ingår i API-anropet är tillgängliga som variabler i den kampanj som körs. Observera att signalutlösta orkestrerade kampanjer förblir <strong>batch</strong>-kampanjer och skiljer sig från API-utlösta kampanjer.</p>
+<p><img src="assets/do-not-localize/oc-triggered.gif"></p>
+<p>Tillgänglighetsdatum: 1 april 2026</p>
 </td>
 </tr>
 </tbody>
