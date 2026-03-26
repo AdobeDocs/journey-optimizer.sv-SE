@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: landning, landningssida, design, HTML
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
+source-git-commit: d0dd382521aeb2c7e18dc547c2ec55fa1472ab8d
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
+source-wordcount: '233'
+ht-degree: 3%
 
 ---
 
@@ -30,9 +30,11 @@ Därifrån kan man
 
 * **Kod eller klistra in HTML i Raw-format** direkt i innehållsdesignern. Lär dig hur du kodar ditt eget innehåll [i det här avsnittet](../email/code-content.md).
 
-* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar innehåll [&#x200B; i det här avsnittet](../email/existing-content.md).
+* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar innehåll [ i det här avsnittet](../email/existing-content.md).
 
 * **Använd en sparad landningssidmall** som skapats i [!DNL Journey Optimizer]. [Läs mer](lp-templates.md)
+
+När du har skapat innehållet på landningssidan kan du använda samma komponenter som för ett e-postmeddelande och definiera innehåll som är specifikt för landningssidan med hjälp av formulärkomponenten. [Lär dig hur](lp-content.md)
 
 >[!NOTE]
 >

@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, sida, formulär, komponent
 exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
-source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
+source-git-commit: d0dd382521aeb2c7e18dc547c2ec55fa1472ab8d
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 2%
+source-wordcount: '1467'
+ht-degree: 8%
 
 ---
 
@@ -22,11 +22,15 @@ ht-degree: 2%
 >id="ac_lp_components"
 >title="Använda innehållskomponenter"
 >abstract="Innehållskomponenterna är tomma platshållare för innehåll som du kan använda för att skapa layouten för en landningssida. Använd formulärkomponenten för att definiera specifikt innehåll som gör att användare kan välja och skicka sina val."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/design-email/add-content/content-components#add-content-components" text="Lägga till innehållskomponenter"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/content-components#add-content-components" text="Lägga till innehållskomponenter"
 
 Om du vill utforma innehållet på landningssidan kan du använda samma komponenter som för ett e-postmeddelande. [Läs mer](../email/content-components.md#add-content-components)
 
-Om du vill utforma specifikt innehåll som gör det möjligt för användare att markera och skicka sina val, [använder du formulärkomponenten](#use-form-component) och definierar dess [landningssidspecifika format](#lp-form-styles).
+Använd **formulärkomponenten** för att utforma specifikt innehåll som gör att användare kan välja och skicka sina val:
+
+* För scenarier för deltagande, avanmälan och prenumeration använder du den [inbyggda formulärkomponenten](#use-form-component) och definierar dess [landningssidsspecifika format](#lp-form-styles).
+
+* Om du vill att användare ska kunna skicka data via ett specifikt formulär (till exempel för att berika en [!DNL Experience Platform]-datauppsättning) [bäddar du in ett publicerat formulär](#embed-form) på en **[!UICONTROL Data Capture]** -landningssida. [Läs mer om att skapa formulär](lp-forms.md)
 
 >[!NOTE]
 >
@@ -44,7 +48,7 @@ Med hjälp av layoutaren för landningssidans innehåll kan du även utnyttja sa
 >id="ac_lp_formfield"
 >title="Ange formulärkomponentfälten"
 >abstract="Definiera hur dina mottagare ska se och skicka sina val från din landningssida."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/landing-pages/landing-pages-design/lp-content#lp-form-styles" text="Definiera format för landningssidor"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/landing-pages/landing-pages-design/lp-content#lp-form-styles" text="Definiera format för landningssidor"
 
 >[!CONTEXTUALHELP]
 >id="ac_lp_submission"
@@ -167,6 +171,40 @@ Använd komponenten **[!UICONTROL Form]** om du vill definiera specifikt innehå
 1. Expandera avsnittet **[!UICONTROL Form error]** för att justera visningen av felmeddelandet som visas om ett problem inträffar. Markera motsvarande alternativ om du vill förhandsgranska feltexten i formuläret.
 
    ![](assets/lp_designer-form-error-preview.png)
+
+## Bädda in ett formulär (datainhämtning) {#embed-form}
+
+För landningssidor som skapats med typen [Datainhämtning](get-started-lp.md#data-capture-lp) kan du bädda in ett [publicerat formulär](lp-forms.md) som du har skapat. Sändningar skickas till direktuppspelningsanslutningen och datauppsättningen som är konfigurerad i formulärförinställningen.
+
+Följ stegen nedan i designern för landningssidans innehåll.
+
+1. Dra och släpp en **[!UICONTROL Structure]**-komponent i innehållet och dra och släpp sedan **[!UICONTROL Form]**-komponenten i den strukturen.
+
+   >[!NOTE]
+   >
+   >Endast **publicerade** formulär kan markeras på landningssidan.
+
+1. I avsnittet **[!UICONTROL Embed form]** väljer du det formulär som ska visas.
+
+   ![](assets/lp_embed-form.png)
+
+   >[!NOTE]
+   >
+   >Använd **[!UICONTROL Edit form]** om du behöver ändra formulärets innehåll eller Tack-sidans beteende. Formuläret öppnas på en ny flik. [Läs mer om att redigera formulär](lp-forms.md#edit-form)
+
+1. I avsnittet **[!UICONTROL Follow up type]** definierar du vad som ska hända efter sändning:
+
+   * **[!UICONTROL Form defined]** - Använd åtgärden Tack på sidan som konfigurerats i det inbäddade formuläret. [Läs mer](lp-forms.md#thank-you-page)
+   * **Publicerad landningssida** - Omdirigera till en annan publicerad [landningssida](create-lp.md).
+   * **Extern URL** - Omdirigera till en fullständig URL.
+
+1. Spara innehållet på landningssidan när du är klar.
+
+Mer information om det fullständiga arbetsflödet (skapande, testning och publicering av landningssidor) finns i [Utnyttja formuläret på en landningssida](lp-forms.md#leverage-form-in-lp).
+
+>[!NOTE]
+>
+>Den här inbäddade formulärupplevelsen gäller endast **[!UICONTROL Data Capture]** landningssidor.
 
 ## Använd primär sidkontext {#use-primary-page-context}
 

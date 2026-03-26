@@ -2,28 +2,23 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skapa och använda formulär för landningssidor
-description: Lär dig skapa och använda formulär för landningssidor i Journey Optimizer
+description: Lär dig hur du skapar och använder formulär för dina landningssidor i Journey Optimizer
 feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
 keywords: landning, landningssida, skapande, sida, formulär
-badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: c688ac5e-eb09-445b-a3f0-1627b40cddc8
-source-git-commit: 58565932ccd2ecf95bafece71bf182fa9082cec6
+source-git-commit: d0dd382521aeb2c7e18dc547c2ec55fa1472ab8d
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 0%
+source-wordcount: '1928'
+ht-degree: 7%
 
 ---
 
 # Använd formulär på dina landningssidor {#lp-forms}
 
->[!AVAILABILITY]
->
->Den här funktionen är för närvarande begränsad för kunder i USA och Australien. Kontakta din Adobe-representant för att få åtkomst.
-
-Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor och berika dina [!DNL Experience Platform] datauppsättningar kan du använda formulär på dina landningssidor.
+Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor och berika dina [!DNL Experience Platform] datauppsättningar kan du använda formulär på dina landningssidor. En översikt över scenarier och krav för datainhämtning finns i [Datainhämtning med landningssidor](get-started-lp.md#data-capture-lp).
 
 ## Skapa en formulärförinställning {#create-form-preset}
 
@@ -31,7 +26,7 @@ Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor 
 >id="ajo_lp_form_connection"
 >title="Markera den slutpunkt som ska användas"
 >abstract="Definiera slutpunkten för direktuppspelning där data skickas när formuläret skickas."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_dataset"
@@ -69,7 +64,7 @@ Följ stegen nedan för att skapa en formulärförinställning.
 
 1. Välj **[!UICONTROL Streaming connection]** som ska användas för det formuläret. Det här är slutpunkten för direktuppspelning där data skickas när formuläret skickas.
 
-   Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
+   Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
 
    >[!IMPORTANT]
    >
@@ -78,7 +73,7 @@ Följ stegen nedan för att skapa en formulärförinställning.
    >* **Datatypen** måste anges till **XDM** (inte Raw-data)
    >* **Autentisering** måste vara **inaktiverad** (icke-autentiserad anslutning)
    >
-   >Om din direktuppspelningsanslutning inte visas i listan kontrollerar du att båda villkoren är uppfyllda. <!--Learn how to [create a non-authenticated connection with XDM data type](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http#create-a-streaming-connection){target="_blank"}.-->
+   >Om din direktuppspelningsanslutning inte visas i listan kontrollerar du att båda villkoren är uppfyllda. <!--Learn how to [create a non-authenticated connection with XDM data type](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http#create-a-streaming-connection){target="_blank"}.-->
 
 1. Välj en **[!UICONTROL Dataset]** att länka till formuläret. Här lagras och speglas formulärsvaren. Du kan skriva för att söka efter en viss datauppsättning eller välja den i listan.
 
@@ -102,7 +97,7 @@ Alla befintliga formulär visas. Du kan filtrera formulär baserat på deras sta
 >id="ajo_lp_form_preset"
 >title="Välj en förinställning"
 >abstract="Välj en fördefinierad förinställning som innehåller anslutningen som ska användas och en fördefinierad datauppsättning för formuläret."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
 
 Följ stegen nedan när du vill skapa ett formulär.
 
@@ -270,7 +265,7 @@ Nu kan du bädda in det här formuläret på en landningssida för att samla in 
 
    >[!NOTE]
    >
-   >Du kan uppdatera det markerade formuläret med knappen **[!UICONTROL Edit form]**. Formuläret öppnas på en ny flik. Stegen för att redigera formulärinnehållet beskrivs i [det här avsnittet](#create-form).
+   >Du kan uppdatera det markerade formuläret med knappen **[!UICONTROL Edit form]**. Formuläret öppnas på en ny flik. Stegen för att redigera formulärinnehållet beskrivs i [det här avsnittet](#edit-form).
 
 1. Konfigurera vad som ska hända när en användare fyller i formuläret i avsnittet **[!UICONTROL Follow up type]**:
 
@@ -282,8 +277,65 @@ Nu kan du bädda in det här formuläret på en landningssida för att samla in 
 
 1. Spara och testa landningssidan. [Lär dig hur](create-lp.md#test-landing-page)
 
-När landningssidan är [publicerad](create-lp.md#publish-landing-page) och används på en resa, hämtas den angivna informationen till den valda datauppsättningen när användarna fyller i formuläret.
+När landningssidan är [publicerad](create-lp.md#publish-landing-page) och används på en resa, hämtas den angivna informationen till den valda datauppsättningen när användarna fyller i formuläret. Det kan ta upp till 15 minuter för data att bearbetas och vara tillgängliga för användning.
 
 >[!NOTE]
 >
 >Om du avpublicerar ett formulär som används på en landningssida, redigerar formuläret och publicerar det igen, används alltid den senaste publicerade versionen av formuläret på landningssidan.
+
+## Vanliga frågor och svar {#lp-forms-faq}
+
++++Vilken typ av landningssida behöver jag använda?
+
+När du skapar en landningssida väljer du **[!UICONTROL Data Capture]** som typ av landningssida. Detta är den enda typ av landningssida som har stöd för inbäddning av ett formulär för datainsamling.
+
++++
+
++++Kan jag använda en datauppsättning med en formulärförinställning?
+
+Endast **profilaktiverade**- och **icke-profilaktiverade** [!DNL Adobe Experience Platform]-datauppsättningar är tillgängliga för urval. Systemdatauppsättningar kan inte användas för att spara formulärdata, och bara en datauppsättning kan väljas per förinställning.
+
++++
+
++++Kan jag återanvända samma datauppsättning eller direktuppspelningsanslutning för flera formulärförinställningar?
+
+Ja. Samma datauppsättning eller direktuppspelningsanslutning kan återanvändas i flera förinställningar. Du kan också ställa in flera förinställningar med olika kombinationer av datauppsättningar och direktuppspelningsanslutningar för olika scenarier för datainhämtning.
+
++++
+
++++Kan jag använda ett utkast på en landningssida?
+
+Nej. Endast **publicerade** formulär kan markeras och bäddas in på en landningssida.
+
++++
+
++++Om jag redigerar och publicerar om ett formulär som redan är inbäddat på en landningssida, vilken version använder landningssidan?
+
+På landningssidan används alltid den **senaste publicerade versionen** av formuläret. Ändringarna träder inte i kraft förrän det uppdaterade formuläret publiceras.
+
++++
+
++++Kan jag dirigera om användare till olika sidor baserat på hur de fyller i formuläret?
+
+Ja. Du kan konfigurera en **[!UICONTROL Conditional redirect]** på sidan Tack och definiera regler för att visa olika uppföljningsåtgärder baserat på formulärsvar, t.ex. omdirigering av besökare i ett land till en sida och besökare i ett annat land till en annan sida, med en standardreserv för alla andra. [Läs mer](#thank-you-page)
+
++++
+
++++Kan formulärfält fyllas i i förväg med befintliga profildata?
+
+Ja. När du konfigurerar ett fält kan du aktivera alternativet **[!UICONTROL Prefilled Enabled]** så att fältet fylls i automatiskt från den kända profilens information när den är tillgänglig.
+
++++
+
++++Kan jag göra ett fält obligatoriskt så att användare inte kan hoppa över det?
+
+Ja. Välj **[!UICONTROL Field behaviors]** i avsnittet **[!UICONTROL Required]** i ett fälts konfiguration. Användarna kan inte skicka formuläret förrän alla obligatoriska fält har fyllts i.
+
++++
+
++++Var skickas data när användaren skickar in formuläret?
+
+När formuläret skickas skickas data till **direktuppspelningsanslutningen** som definieras i formulärförinställningen. Den överförs sedan till den länkade **[!DNL Experience Platform]-datamängden** via ett automatiskt genererat källflöde som hanterar mappning, omformning och validering.
+
++++
+
