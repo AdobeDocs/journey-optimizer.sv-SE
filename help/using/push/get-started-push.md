@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1f16edd-efdf-41c2-a0ad-5f55009008f5
-source-git-commit: 279fd366b14520daec1df7f843ed337348e145a5
+source-git-commit: ad3b64cb0ba6af5df654b340b4524161a94297e1
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -29,13 +29,13 @@ Push-meddelanden kan skapas:
 
 * I en **resa**: När du har lagt till en push-aktivitet i din resa och definierat grundläggande inställningar använder du den högra panelen i **[!UICONTROL Actions: Push]** för att skapa innehållet för push-meddelanden. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
 
-* I en **kampanj**: När du har skapat en kampanj väljer du Push-meddelande som åtgärd och definierar grundläggande inställningar. Lär dig skapa [en åtgärdskampanj](../campaigns/campaign-action.md#action-campaign-action) | [en API-utlöst kampanj](../campaigns/api-triggered-campaigns.md) | [en orkestrerad kampanj](../orchestrated/create-orchestrated-campaign.md#create)
+* I en **kampanj**: När du har skapat en kampanj väljer du Push-meddelande som åtgärd och definierar grundläggande inställningar. Lär dig hur du skapar [en åtgärdskampanj](../campaigns/campaign-action.md#action-campaign-action) | [en API-utlöst kampanj](../campaigns/api-triggered-campaigns.md) | [en strukturerad kampanj](../orchestrated/create-orchestrated-campaign.md#create)
 
 Använd de dedikerade flikarna för att definiera inställningar för push-meddelanden för plattformarna **iOS**, **Android** och **Web**.
 
 >[!NOTE]
 >
->I **[!DNL Journey Optimizer]** finns sätt att hantera avanmälan i e-postmeddelanden och SMS-meddelanden, men push-meddelanden kräver ingen åtgärd från din sida, eftersom mottagarna kan avbeställa prenumerationen via sina enheter själva. När du till exempel hämtar eller använder programmet kan de välja att stoppa meddelanden. På samma sätt kan de ändra meddelandeinställningarna via det mobila operativsystemet eller webbläsarinställningarna.
+>I **[!DNL Journey Optimizer]** finns sätt att hantera avanmälan i e-postmeddelanden och SMS-meddelanden, men push-meddelanden kräver ingen åtgärd från din sida, eftersom mottagarna kan avbeställa prenumerationen via sina enheter själva. När du till exempel hämtar eller använder programmet kan de välja att stoppa meddelanden. På samma sätt kan de ändra meddelandeinställningarna via det mobila operativsystemet eller webbläsarinställningarna. Information om hur du verifierar en profils status för push-medgivande i AEP profilvisningsprogram finns i [Kontrollera status för push-avanmälan](../privacy/opt-out.md#push-opt-out-status).
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

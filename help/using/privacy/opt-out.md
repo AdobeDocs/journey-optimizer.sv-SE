@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: ad3b64cb0ba6af5df654b340b4524161a94297e1
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Att ge mottagarna möjlighet att avbryta prenumerationen på information från ett varumärke är ett juridiskt krav, liksom att se till att detta val respekteras. Om ni inte följer dessa regler medför detta juridiska risker för ert varumärke. Det hjälper er att undvika att skicka oombedda meddelanden till era mottagare, vilket kan få dem att märka era meddelanden som skräppost och skada ert rykte.
 
-Läs mer om gällande lagstiftning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=sv-SE#regulations){target="_blank"}.
+Läs mer om gällande lagstiftning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html#regulations){target="_blank"}.
 
 ## Hantera avbeställningar under resor och kampanjer {#opt-out-ajo}
 
@@ -31,6 +31,19 @@ I **[!DNL Journey Optimizer]** finns sätt att hantera avanmälan i e-postmeddel
 >
 >Dessutom kan du använda Journey Optimizer **Suppression REST API** för att styra dina utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
+### Kontrollera status för push-avanmälan {#push-opt-out-status}
+
+Push-avanmälan för mobilappar hanteras på enhetsnivå: när en användare inaktiverar meddelanden på sin enhet tas push-token bort från sin profil. **närvaron av en push-token** i en profil är därför indikatorn för implicit push-samtycke.
+
+Så här verifierar du en profils push-medgivandestatus i Adobe Experience Platform:
+
+1. Öppna profilen i avsnittet **[!UICONTROL Profiles]** i Adobe Experience Platform.
+1. Gå till fliken **[!UICONTROL Attributes]** och leta efter fältgruppen **[!UICONTROL Push Notification Details]**.
+1. Om det finns en push-token har profilen implicit godkänt att ta emot push-meddelanden. Om ingen token hittas har användaren valt ut på enhetsnivå.
+
+>[!NOTE]
+>
+>För efterlevnadsfall som kräver explicit spårning av push-samtycke använder du attributet **`consents.marketing.push.val`** i fältgruppen [Innehåll och inställningar](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Värdet `y` anger explicit deltagande. `n` anger explicit avanmälan.
 
 Lär dig hur du hanterar avanmälan i Journey Optimizer e-post och SMS-meddelanden i följande avsnitt:
 
@@ -55,7 +68,7 @@ Lär dig hur du hanterar avanmälan i Journey Optimizer e-post och SMS-meddeland
 
 >[!NOTE]
 >
->I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=sv-SE){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=sv-SE#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
+>I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
 
 ## Genomför personalisering {#opt-out-personalization}
 
@@ -69,7 +82,7 @@ När du utnyttjar erbjudanden implementeras inte personaliseringsinställningar 
 >
 >Beslutsomfattningar som används i [!DNL Journey Optimizer] skapade kanaler uppfyller detta krav från den resa eller kampanj de tillhör.
 
-1. Skapa en [Adobe Experience Platform-målgrupp](../audience/about-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE){target="_blank"} och använd ett profilattribut som **[!UICONTROL Personalize Content = Yes (opt-in)]** för målanvändare som har samtyckt till personalisering.
+1. Skapa en [Adobe Experience Platform-målgrupp](../audience/about-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"} och använd ett profilattribut som **[!UICONTROL Personalize Content = Yes (opt-in)]** för målanvändare som har samtyckt till personalisering.
 
    ![](assets/perso-consent-od-audience.png)
 
@@ -121,7 +134,7 @@ Följ ett av alternativen nedan om du manuellt vill framtvinga godkännande av p
 
 Du kan använda segmentregelbyggaren för att skapa en målgrupp som innehåller avanmälningsprofiler.
 
-1. Skapa en [Adobe Experience Platform-målgrupp](../audience/about-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE){target="_blank"}.
+1. Skapa en [Adobe Experience Platform-målgrupp](../audience/about-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"}.
 
    ![](assets/perso-consent-audience-build-rule.png)
 
@@ -159,7 +172,7 @@ Du kan också lägga till en kontroll för godkännande av personalisering till 
 
 1. **[!UICONTROL Path 1]** blir den icke-personliga målgruppen. Välj en relevant etikett.
 
-1. Välj lämpligt värde i [listan](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=sv-SE#choice-values){target="_blank"}.
+1. Välj lämpligt värde i [listan](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
 
    I det här fallet använder vi `n` för att ange att användare inte godkänner att deras data används för personalisering.
 
