@@ -7,7 +7,7 @@ role: User
 level: Experienced
 version: Journey Orchestration
 exl-id: e7a89354-28ea-431f-a15d-a8c18946d266
-source-git-commit: 5d646a7c87daea27e6fbca8f754fc835dc82b494
+source-git-commit: 36a98c7d256f732901ece7a5abd484d72b57db6e
 workflow-type: tm+mt
 source-wordcount: '2114'
 ht-degree: 6%
@@ -30,7 +30,7 @@ ht-degree: 6%
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. För att göra detta, följ nedanstående steg:
 
