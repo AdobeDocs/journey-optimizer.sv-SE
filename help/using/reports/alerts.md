@@ -8,9 +8,9 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: fb33b8ce7205e5420c09f41812cc286c2b651e26
+source-git-commit: 6184ea004448b95ba6a75139124b47cf775a0fb1
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2848'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ Adobe Journey Optimizer erbjuder två typer av varningar:
 
 Systemvarningar är tillgängliga på menyn **[!UICONTROL Alerts]** under **[!UICONTROL Administration]**. Adobe Experience Platform tillhandahåller flera fördefinierade varningsregler som du kan aktivera, inklusive [!DNL Adobe Journey Optimizer]-specifika aviseringar för resor och kanalkonfigurationer.
 
-## Förhandskrav
+## Förutsättningar
 
 Innan du arbetar med varningar:
 
-* **Behörigheter**: Du behöver särskilda behörigheter för att visa och hantera aviseringar. Se [nödvändiga behörigheter i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE#permissions){target="_blank"}.
+* **Behörigheter**: Du behöver särskilda behörigheter för att visa och hantera aviseringar. Se [nödvändiga behörigheter i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html#permissions){target="_blank"}.
 
 * **Sandlådemedvetenhet**: Varningsprenumerationer är sandlådespecifika. När du prenumererar på aviseringar gäller de bara den aktuella sandlådan. När en sandlåda återställs återställs även alla aviseringsprenumerationer.
 
@@ -48,7 +48,7 @@ Innan du arbetar med varningar:
 
 >[!NOTE]
 >
->Journey Optimizer-specifika aviseringar gäller endast för **live**-resor. Varningar utlöses inte för resor i testläge. Mer information om varningsramverket finns i [Adobe Experience Platform-varningsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
+>Journey Optimizer-specifika aviseringar gäller endast för **live**-resor. Varningar utlöses inte för resor i testläge. Mer information om varningsramverket finns i [Adobe Experience Platform-varningsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
 ## Tillgängliga aviseringar i Journey Optimizer {#available-alerts}
 
@@ -58,7 +58,7 @@ Journey Optimizer tillhandahåller förkonfigurerade varningsregler som övervak
 
 Navigera till **[!UICONTROL Administration]** > **[!UICONTROL Alerts]** på den vänstra menyn. Fliken **Bläddra** visar alla förkonfigurerade aviseringar som är tillgängliga för Journey Optimizer.
 
-![](assets/updated-alerts-list.png){width=50%}
+![](assets/updated-alerts-list.png){width=60%}
 
 ### Aviseringskategorier
 
@@ -84,13 +84,13 @@ Upptäck problem med e-postleveransinställningar:
 
 * [DNS-post för AJO-domän saknas](#alert-dns-record-missing) - Identifierar saknade eller felkonfigurerade DNS-poster
 * [AJO-kanalkonfigurationsfel](#alert-channel-config-failure) - Identifierar e-postkonfigurationsproblem (SPF-, DKIM-, MX-poster)
-  <!--* the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
+* [Det gick inte att förnya AJO domäncertifikat](#alert-certificates-renewal) - Varnar om resurs- eller spårningscertifikat för en anpassad delegeringsunderdomän snart upphör att gälla eller har gått ut
 
 >[!ENDTABS]
 
 >[!NOTE]
 >
->Information om varningar från andra Adobe Experience Platform-tjänster (datainmatning, identitetsupplösning, segmentering med mera) finns i [standarddokumentationen för varningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html?lang=sv-SE){target="_blank"}.
+>Information om varningar från andra Adobe Experience Platform-tjänster (datainmatning, identitetsupplösning, segmentering med mera) finns i [standarddokumentationen för varningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html){target="_blank"}.
 
 ## Prenumerera på aviseringar {#subscribe-alerts}
 
@@ -122,7 +122,7 @@ Du kan prenumerera på aviseringar på två sätt:
 
 **Alternativ prenumerationsmetod:**
 
-För avancerade integreringar kan du prenumerera via I/O Events för att skicka aviseringar till externa system. Se [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}.
+För avancerade integreringar kan du prenumerera via I/O Events för att skicka aviseringar till externa system. Se [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}.
 
 
 ### Global prenumeration {#global-subscription}
@@ -149,7 +149,7 @@ Klicka på **[!UICONTROL Unsubscribe]** bredvid aviseringen.
 
 **Alternativ prenumerationsmetod:**
 
-Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"} som tillåter integrering med externa system. Evenemangsprenumerationsnamn för Journey Optimizer-aviseringar visas i varje [varningsbeskrivning nedan](#journey-alerts).
+Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"} som tillåter integrering med externa system. Evenemangsprenumerationsnamn för Journey Optimizer-aviseringar visas i varje [varningsbeskrivning nedan](#journey-alerts).
 
 ### Resespecifik prenumeration {#unitary-subscription}
 
@@ -183,7 +183,7 @@ Med resespecifika abonnemang kan ni övervaka enskilda högprioriterade resor ut
 >
 >Varningen [Read Audience Trigger Unsuccess](#alert-read-audiences) är bara tillgänglig via global prenumeration, inte per resa.
 
-<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.-->
+<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
 ## Resevarningar {#journey-alerts}
 
@@ -316,7 +316,7 @@ Om ändringarna inte löser problemet kommer samma varning att utlösas igen nä
 
 Den här varningen utlöses om systemgranskningen upptäcker e-postkanalens konfigurationsproblem. Dessa problem kan vara felkonfigurerade kanalinställningar, ogiltig DNS-konfiguration, problem med utelämningslista, IP-inkonsekvenser eller andra fel som kan påverka e-postleveransen.
 
-Om du får en sådan varning visas lösningsstegen nedan:
+Om du får en sådan varning visas lösningsstegen nedan.
 
 1. Klicka på aviseringen om du vill dirigeras till den påverkade [e-postkanalskonfigurationen](../email/get-started-email-config.md) i [!DNL Journey Optimizer]-gränssnittet.
 
@@ -349,9 +349,29 @@ När du åtgärdar e-postkonfigurationsproblem bör du tänka på de bästa meto
 * Agera snabbt - Åtgärda konfigurationsfel så snart de upptäcks för att undvika avbrott i e-postleveransen.
 * Kontrollera alla konfigurationer - Om varningen indikerar flera påverkade e-postkonfigurationer granskar och åtgärdar du var och en av dem.
 
-<!--### AJO domain certificates renewal unsuccessful {#alert-certificates-renewal}
+### Förnyelse av AJO domäncertifikat misslyckades {#alert-certificates-renewal-unsuccessful}
 
-This alert warns you if a domain certificate (CDN, tracking URL) renewal failed for a specific Journey Optimizer subdomain.-->
+>[!IMPORTANT]
+>
+>Den här varningen gäller endast kanalkonfigurationer som använder delegeringstypen [anpassad underdomän](../configuration/delegate-custom-subdomain.md).
+
+Den här varningen meddelar dig när ett resurs- eller spårningsdomäncertifikat för en anpassad delegeringsunderdomän går ut inom 30 dagar eller redan har gått ut. Utan giltiga certifikat kan e-postleveransen och länkspårningen avbrytas.
+
+>[!NOTE]
+>
+>Kontrollen körs **varje vecka**.
+
+Om den här varningen utlöses följer du stegen nedan för att undersöka och lösa problemet.
+
+1. Klicka på varningen för att öppna den påverkade [underdomänen](../configuration/delegate-subdomain.md) i [!DNL Journey Optimizer].
+
+1. Granska informationen för att se om certifikatförnyelse behövs.
+
+   * Om förfallodatumet infaller i framtiden kan du planera åtgärder - varningen kan ge upp till 30 dagar av varning.
+   * Om certifikatet redan har upphört att gälla ska du omedelbart vidta åtgärder.
+   * Om problemet inte löses utlöses samma varning igen nästa vecka.
+
+1. Kontrollera att alla poster som krävs för delegering av underdomäner fortfarande matchar värdena som visas i [!DNL Journey Optimizer] i din DNS-värdlösning, inklusive poster som används för SSL-validering.
 
 ## Hantera aviseringar {#manage-alerts}
 
@@ -415,7 +435,7 @@ Om du vill ta bort prenumeranter tar du bort deras e-postadress från de aktuell
 
 **Varningsramverk:**
 
-* [Adobe Experience Platform Alerts Overview](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"} - Understanding the alert framework
-* [Hantera aviseringar i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE){target="_blank"} - Visa, prenumerera och hantera aviseringar
-* [Prenumerera på aviseringar via I/O-händelser](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"} - Avancerade integreringsalternativ
-* [Standardvarningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html?lang=sv-SE){target="_blank"} - Fullständig lista över tillgängliga plattformsaviseringar
+* [Adobe Experience Platform Alerts Overview](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"} - Understanding the alert framework
+* [Hantera aviseringar i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html){target="_blank"} - Visa, prenumerera och hantera aviseringar
+* [Prenumerera på aviseringar via I/O-händelser](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"} - Avancerade integreringsalternativ
+* [Standardvarningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html){target="_blank"} - Fullständig lista över tillgängliga plattformsaviseringar
