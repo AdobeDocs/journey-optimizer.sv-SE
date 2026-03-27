@@ -10,10 +10,10 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
 version: Journey Orchestration
-source-git-commit: b6b74e357029f4924f9699c05af3a0fcd7fcefd6
+source-git-commit: 4f22dd804410ba20a5f7364f5100f5b24ed851c4
 workflow-type: tm+mt
-source-wordcount: '1394'
-ht-degree: 8%
+source-wordcount: '1481'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,9 @@ ht-degree: 8%
 >title="Åtgärdsaktivitet"
 >abstract="Med aktiviteten **Åtgärd** kan du konfigurera en enskild ursprunglig kanalåtgärd och flera inkommande aktiviteter med möjlighet att lägga till optimering till alla inbyggda kanalåtgärder."
 
-Aktiviteten **Åtgärd** är den enda startpunkten för alla kanalåtgärder på arbetsytan för resan. Den ersätter de tidigare inbyggda kanalaktiviteterna och konsoliderar e-post, push, SMS, In-app, webb, kodbaserad upplevelse och innehållskort i en enda typ av aktivitet.
+Aktiviteten **Åtgärd** är den enda startpunkten för alla kanalåtgärder på arbetsytan för resan.
+
+Den ersätter de tidigare inbyggda kanalaktiviteterna och konsoliderar e-post, push, SMS, In-app, webb, kodbaserad upplevelse och innehållskort i en enda typ av aktivitet.
 
 Använd den för att:
 
@@ -32,11 +34,21 @@ Använd den för att:
 * Bygg grupper med inkommande åtgärder.
 * Optimera alla kanalåtgärder.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Gamla inbyggda kanalaktiviteter (e-post, push, SMS, in-app, webb, kodbaserad upplevelse och innehållskort) är föråldrade från och med mars 2026. Befintliga resor som använder dessa aktiviteter fortsätter att fungera utan ändringar - ingen migrering krävs.
+>Du kan också konfigurera anpassade åtgärder för att skicka meddelanden i [!DNL Journey Optimizer]. [Läs mer](#recommendation)
 
-Du kan också konfigurera anpassade åtgärder för att skicka meddelanden i [!DNL Journey Optimizer]. [Läs mer](#recommendation)
+## Om äldre kanalaktiviteter
+
+Gamla inbyggda kanalaktiviteter (e-post, push, SMS, in-app, webb, kodbaserad upplevelse och innehållskort) är **föråldrade från och med mars 2026-utgåvan**.
+
+Befintliga resor som använder dessa aktiviteter fortsätter att fungera utan ändringar - ingen migrering krävs.
+
+Äldre aktiviteter för inbyggda kanaler bevaras också i följande fall:
+
+* **Duplicera en resa** - Den duplicerade resan fortsätter att använda äldre aktiviteter. Du kan redigera och publicera det som det är; ingen migrering krävs.
+* **Skapa en ny reseversion** - Den nya versionen fortsätter att använda äldre aktiviteter. Du kan redigera och publicera det som det är; ingen migrering krävs.
+* **Kopiera och klistra in äldre aktiviteter på en resa** - Inklistrade aktiviteter är fortfarande äldre aktiviteter. Du kan redigera och publicera dem som de är; ingen migrering krävs.
 
 ## Lägg till en inbyggd kanalåtgärd till en resa  {#add-action}
 
@@ -191,7 +203,7 @@ Snabba leveranser används när fördröjningar i meddelandeleverans är affärs
 
 Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [[!DNL Adobe Journey Optimizer] produktbeskrivningen](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [[!DNL Adobe Journey Optimizer] produktbeskrivningen](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 

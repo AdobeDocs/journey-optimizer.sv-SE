@@ -9,10 +9,10 @@ role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: a06360239996b21f2bd71b1ff61d759a85564c5c
+source-git-commit: 4f22dd804410ba20a5f7364f5100f5b24ed851c4
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 2%
+source-wordcount: '1893'
+ht-degree: 13%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 >id="ajo_admin_subdomainname"
 >title="Delegering av underdomän"
 >abstract="Med Journey Optimizer kan du delegera dina underdomäner till Adobe. Du kan delegera en underdomän helt till Adobe, vilket är den rekommenderade metoden. </br>Du kan också skapa en underdomän med CNAME för att peka på Adobe-specifika poster, men på det här sättet måste du behålla och hantera DNS-poster på egen hand."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname_header"
@@ -39,6 +39,7 @@ Du kan antingen:
 
 * Delegera en underdomän fullständigt - [Lär dig hur](#set-up-subdomain)
 * Skapa en underdomän med CNAME för att peka på Adobe-specifika poster - [Lär dig hur](#set-up-subdomain)
+* Delegera en anpassad underdomän - [Lär dig mer](delegate-custom-subdomain.md)
 
 Den **fullständiga underdomändelegeringen** rekommenderas. Läs mer om skillnaderna mellan olika konfigurationsmetoder för underdomäner i [det här avsnittet](about-subdomain-delegation.md#subdomain-delegation-methods).
 
