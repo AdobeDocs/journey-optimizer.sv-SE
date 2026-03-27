@@ -5,10 +5,10 @@ title: Använd aktiviteten Vänta i orkestrerade kampanjer
 description: Lär dig hur du använder aktiviteten Vänta i orkestrerade kampanjer
 exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: c783d638bd2a64298ff587067c29639636da0c54
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 2%
+source-wordcount: '219'
+ht-degree: 8%
 
 ---
 
@@ -26,6 +26,10 @@ Du kan till exempel vänta några dagar efter en e-postleverans för att spåra 
 
 ## Konfiguration{#wait-configuration}
 
+>[!IMPORTANT]
+>
+>Data i temporära tabeller finns inte längre än **5 dagar**. När du använder **[!UICONTROL Duration]** eller **[!UICONTROL Fixed time]** väntar ska du se till att den förflutna tiden tills nästa aktivitet har slutförts inom den gränsen så att mellanliggande data förblir tillgängliga.
+
 Så här konfigurerar du aktiviteten **[!UICONTROL Wait]**:
 
 1. Lägg till en **[!UICONTROL Wait]**-aktivitet i din Orchestrated-kampanj.
@@ -40,6 +44,6 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Wait]**:
 
 ## Exempel{#wait-example}
 
-I följande exempel visas aktiviteten **[!UICONTROL Wait]** i ett typiskt användningsfall.  Ett e-postmeddelande med en kampanjkod skickas till profiler som firar sina födelsedagar. Efter 29 dagar skickas ett SMS till samma grupp som en påminnelse om att deras födelsedagskod snart går ut.
+I följande exempel visas aktiviteten **[!UICONTROL Wait]** i ett typiskt användningsfall.  Ett e-postmeddelande med en kampanjkod skickas till profiler som firar sina födelsedagar. Efter två dagar skickas ett SMS till samma grupp som en påminnelse om att deras födelsedagskod snart går ut.
 
 ![](../assets/wait-example.png)
