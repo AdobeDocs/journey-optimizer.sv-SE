@@ -7,10 +7,10 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 116be2f43d9ac359dcd5c32be5f8a2b2dd3c9f91
+source-git-commit: 85c9ecf8e9a8ce955cd95cc02fb22a793fcfb416
 workflow-type: tm+mt
-source-wordcount: '1584'
-ht-degree: 7%
+source-wordcount: '1650'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 7%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation 26 mars {#march-26-rn}
 
@@ -34,7 +34,7 @@ Avsnitten [Nya funktioner](#march-26-features) och [Förbättringar](#march-26-i
 <!--
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 **Releasedatum**: 24-25 mars 2026
 
@@ -114,26 +114,6 @@ Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera u
 </tbody>
 </table>
 
-<!--<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in email channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now use <strong>Decisioning</strong> to personalize and optimize the content of your email messages. Leverage Priority Scores, Formulas, or AI Models to display the most relevant offers and content to each recipient.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). With this General Availability release, mirror pages are now supported.</p>
-<p><img src="assets/do-not-localize/exd-email.gif"></p>
-<p>For more information, refer to the <a href="../experience-decisioning/create-decision-policy.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>-->
-
-
-
 <table>
 <thead>
 <tr>
@@ -201,7 +181,7 @@ Befintliga resor som använder äldre kanalaktiviteter fortsätter att fungera u
 <td>
 <p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
 <p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html?lang=sv-SE" target="_blank">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html" target="_blank">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 4 mars 2026</p>
 </td>
 </tr>
@@ -390,6 +370,25 @@ Funktionerna och förbättringarna nedan planeras släppas senare i mars/början
 Med det här verktyget kan du testa och ändra, och anpassa kommunikation, sekvensering och timing för att nå dina kunder på bästa sätt.
 </p>
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). <a href="../building-journeys/optimize.md">Läs mer</a></p>
+<p>Tillgänglighetsdatum: 3 april 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Beslutsstöd i e-postkanal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Du kan nu använda <strong>Beslutsfattning</strong> för att anpassa och optimera innehållet i dina e-postmeddelanden. Utnyttja Priority Scores, Formulas eller AI Models för att visa de mest relevanta erbjudandena och innehållet för varje mottagare.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). I den här allmänna tillgänglighetsversionen stöds nu spegelsidor.</p>
+<p><img src="assets/do-not-localize/exd-email.gif"></p>
+<!--<p>For more information, refer to the <a href="../experience-decisioning/create-decision-policy.md">detailed documentation</a>.</p>-->
 <p>Tillgänglighetsdatum: 3 april 2026</p>
 </td>
 </tr>
