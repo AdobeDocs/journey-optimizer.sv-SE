@@ -6,10 +6,10 @@ description: Lär dig hur du kommer igång med samordnade kampanjer
 short-description: Upptäck de viktigaste funktionerna för samordnade kampanjer samt användningsfall.
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 version: Campaign Orchestration
-source-git-commit: 266bf3afde663b17aedce5fb51e7c5f424fee9ad
+source-git-commit: 5ca8ff7abaaf4eef33a85682370a125af6836f2f
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 3%
+source-wordcount: '803'
+ht-degree: 10%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 >title="campaign_overview_orchestrated"
 >abstract="<b>Kampanjsamordning</b><br/>Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/> <b>Utnyttja data för flera enheter</b><br/>Lär dig hur orkestrerade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering<br/><br/><b>Ad-hoc-segmentering och exakt antal</b><br/>Bygg ditt segment steg för steg med exakt antal<br/><br/><b>Tillgängliga kanaler</b><br/>E-post, SMS, push-meddelanden, direktreklam"
 
-Kampanjsamordning i [!DNL Adobe Journey Optimizer] driver avancerade, varumärkesinitierade marknadsföringskampanjer över alla kanaler, vilket hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
+Kampanjsamordning i [!DNL Adobe Journey Optimizer] driver avancerade, varumärkesinitierade kampanjer i alla kanaler, både **marknadsföring** och **transaktioner**. Marknadsföringskampanjer hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala. Transaktionsmeddelanden kräver inte deltagande och är lämpliga för tidskänslig kommunikation som avbrott, nödsituationer eller annulleringar.
 
 >[!IMPORTANT]
 >
@@ -130,4 +130,4 @@ Nu när ni vet vad som är samordnade kampanjer är det dags att fördjupa er i 
 * **[Starta och övervaka kampanjer](start-monitor-campaigns.md)** - Lär dig de bästa sätten att starta kampanjer och övervaka deras körning i realtid.
 * **[Garantier och begränsningar](guardrails.md)** - Granska viktiga säkerhetsutkast, begränsningar och bästa praxis för att säkerställa optimala kampanjresultat.
 * **[Vanliga frågor och svar](orchestrated-campaigns-faq.md)** - Hitta svar på vanliga frågor om orkestrerade kampanjfunktioner, funktioner och användningsexempel.
-* **[Samordnade kampanjsjälvstudiekurser](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/create-campaigns/orchestrated-campaigns/introduction-to-orchestrated-campaigns){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om funktioner och bästa praxis.
+* **[Samordnade kampanjsjälvstudiekurser](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-campaigns/orchestrated-campaigns/introduction-to-orchestrated-campaigns){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om funktioner och bästa praxis.

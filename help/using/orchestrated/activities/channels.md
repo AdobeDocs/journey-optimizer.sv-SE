@@ -5,9 +5,9 @@ title: Lägga till en kanalaktivitet i en flerstegskampanj
 description: Lär dig hur du lägger till en kanalaktivitet i en flerstegskampanj
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 version: Campaign Orchestration
-source-git-commit: 6c318f0a11a59a80721f14d830be10ba4f29318f
+source-git-commit: 5ca8ff7abaaf4eef33a85682370a125af6836f2f
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1495'
 ht-degree: 18%
 
 ---
@@ -55,7 +55,7 @@ UNUSED IDs in BJ
 >title="Aktivitet för direktreklam"
 >abstract="Aktiviteten Direktutskick underlättar direktutskick inom din samordnade kampanj, både för enstaka och återkommande meddelanden. Den automatiserar processen för att generera extraheringsfilen som krävs av direktreklamleverantörer. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
 
-Med [!DNL Adobe Journey Optimizer] kan du automatisera och köra marknadsföringskampanjer över flera kanaler - e-post, SMS, push-meddelanden och direktreklam. Ni kan kombinera de här kanalaktiviteterna i kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer. Dessa kampanjer kan utlösa åtgärder baserat på kundbeteende och data.
+Med [!DNL Adobe Journey Optimizer] kan du automatisera och köra kampanjer i olika kanaler - e-post, SMS, push-meddelanden och direktreklam - för både marknadsförings- och transaktionsmeddelanden. Ni kan kombinera de här kanalaktiviteterna i kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer. Dessa kampanjer kan utlösa åtgärder baserat på kundbeteende och data.
 
 Exempel:
 
@@ -83,6 +83,8 @@ Genom att använda kanalaktiviteter kan ni skapa omfattande och personaliserade 
 1. Lägg till en kanalaktivitet på arbetsytan. De tillgängliga kanalaktiviteterna är **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push]** och **[!UICONTROL Direct mail]**.
 
    ![bild som visar arbetsytan med tillgängliga aktiviteter](../assets/channel-add.png)
+
+1. Använd fältet **[!UICONTROL Category]** till höger för att välja **[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]** för det här meddelandet. Transaktionsmeddelanden kräver inte deltagande och är lämpliga för tidskänslig kommunikation som avbrott, nödsituationer eller annulleringar.
 
 1. Markera aktiviteten och klicka på **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]** eller **[!UICONTROL Edit direct mail]** beroende på vald kanal.
 
@@ -126,7 +128,7 @@ Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mott
 
 Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabb leverans används när fördröjd leverans av meddelanden är affärskritisk. Du vill till exempel skicka en snabb push-varning för mobiltelefoner, som att få nyheter till användare som har installerat din nyhetskanalapp. Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
